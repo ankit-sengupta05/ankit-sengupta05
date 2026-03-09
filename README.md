@@ -1,254 +1,376 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Ankit%20Sengupta&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32&desc=Backend%20Developer%20%7C%20AI%20Engineer%20%7C%20CS%20Undergrad%20%40%20VIT%20'28&descAlignY=52&descSize=16" />
+<!-- ╔══════════════════════════════════════════════════╗
+     ║          CUSTOM ANIMATED SVG BANNER             ║
+     ╚══════════════════════════════════════════════════╝ -->
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&duration=3000&pause=800&color=36BCF7&center=true&vCenter=true&multiline=false&width=700&lines=🤖+Building+Intelligent+Systems+from+Scratch;🔥+RAG+Pipelines+%26+Autonomous+AI+Agents;🌐+Full-Stack+%7C+Mobile+%7C+Embedded+IoT;⚡+Turning+Ideas+into+Real-World+Impact)](https://git.io/typing-svg)
+<svg width="900" height="155" viewBox="0 0 900 155" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#060010"/>
+      <stop offset="50%" style="stop-color:#06001a"/>
+      <stop offset="100%" style="stop-color:#0a0020"/>
+    </linearGradient>
+    <linearGradient id="nameGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#38bdf8"/>
+      <stop offset="40%" style="stop-color:#818cf8"/>
+      <stop offset="100%" style="stop-color:#f472b6"/>
+    </linearGradient>
+    <linearGradient id="edgeGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#38bdf8;stop-opacity:0"/>
+      <stop offset="25%" style="stop-color:#38bdf8;stop-opacity:1"/>
+      <stop offset="75%" style="stop-color:#f472b6;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#f472b6;stop-opacity:0"/>
+    </linearGradient>
+    <radialGradient id="centerBloom" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#818cf8;stop-opacity:0.07"/>
+      <stop offset="100%" style="stop-color:#818cf8;stop-opacity:0"/>
+    </radialGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="155" fill="url(#bg)" rx="10"/>
+  <rect width="900" height="155" fill="url(#centerBloom)" rx="10"/>
+
+  <!-- Circuit traces LEFT — cyan -->
+  <g opacity="0.22" stroke="#38bdf8" stroke-width="1" fill="none" filter="url(#softGlow)">
+    <polyline points="0,28 55,28 55,52 90,52"/>
+    <polyline points="0,52 30,52 30,80 70,80"/>
+    <polyline points="0,95 45,95 45,115 80,115"/>
+    <polyline points="0,125 60,125 60,95"/>
+    <line x1="120" y1="0" x2="120" y2="28"/>
+    <line x1="140" y1="52" x2="140" y2="28" />
+    <line x1="155" y1="80" x2="155" y2="155"/>
+    <circle cx="55"  cy="28"  r="2.5" fill="#38bdf8" stroke="none"/>
+    <circle cx="90"  cy="52"  r="2.5" fill="#38bdf8" stroke="none"/>
+    <circle cx="30"  cy="52"  r="2.5" fill="#38bdf8" stroke="none"/>
+    <circle cx="70"  cy="80"  r="2.5" fill="#38bdf8" stroke="none"/>
+    <circle cx="45"  cy="95"  r="2.5" fill="#38bdf8" stroke="none"/>
+    <circle cx="80"  cy="115" r="2.5" fill="#38bdf8" stroke="none"/>
+    <circle cx="120" cy="28"  r="2"   fill="none" stroke="#38bdf8"/>
+    <circle cx="140" cy="28"  r="2"   fill="none" stroke="#38bdf8"/>
+    <!-- Pulse animation on one node -->
+    <circle cx="70" cy="80" r="5" fill="none" stroke="#38bdf8" stroke-width="1" opacity="0">
+      <animate attributeName="r" values="3;9;3" dur="2.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0;0.6" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Circuit traces RIGHT — pink -->
+  <g opacity="0.20" stroke="#f472b6" stroke-width="1" fill="none" filter="url(#softGlow)">
+    <polyline points="900,28 845,28 845,52 810,52"/>
+    <polyline points="900,52 870,52 870,80 830,80"/>
+    <polyline points="900,95 855,95 855,115 820,115"/>
+    <polyline points="900,125 840,125 840,95"/>
+    <line x1="780" y1="0"   x2="780" y2="28"/>
+    <line x1="760" y1="52"  x2="760" y2="28"/>
+    <line x1="745" y1="80"  x2="745" y2="155"/>
+    <circle cx="845" cy="28"  r="2.5" fill="#f472b6" stroke="none"/>
+    <circle cx="810" cy="52"  r="2.5" fill="#f472b6" stroke="none"/>
+    <circle cx="870" cy="52"  r="2.5" fill="#f472b6" stroke="none"/>
+    <circle cx="830" cy="80"  r="2.5" fill="#f472b6" stroke="none"/>
+    <circle cx="855" cy="95"  r="2.5" fill="#f472b6" stroke="none"/>
+    <circle cx="820" cy="115" r="2.5" fill="#f472b6" stroke="none"/>
+    <circle cx="780" cy="28"  r="2"   fill="none" stroke="#f472b6"/>
+    <circle cx="760" cy="28"  r="2"   fill="none" stroke="#f472b6"/>
+    <circle cx="830" cy="80" r="5" fill="none" stroke="#f472b6" stroke-width="1" opacity="0">
+      <animate attributeName="r" values="3;9;3" dur="3s" begin="1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0;0.6" dur="3s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Top + bottom chromatic edge lines -->
+  <rect x="0" y="0"   width="900" height="1.5" fill="url(#edgeGlow)" rx="1"/>
+  <rect x="0" y="153" width="900" height="1.5" fill="url(#edgeGlow)" rx="1"/>
+
+  <!-- Ghost code brackets -->
+  <text x="192" y="105" font-family="monospace" font-size="64" fill="#818cf8" opacity="0.07" font-weight="900">{</text>
+  <text x="688" y="105" font-family="monospace" font-size="64" fill="#818cf8" opacity="0.07" font-weight="900">}</text>
+
+  <!-- Role label -->
+  <text x="450" y="38" text-anchor="middle"
+        font-family="'Courier New',monospace" font-size="10.5"
+        fill="#38bdf8" opacity="0.75" letter-spacing="6">
+    AI ENGINEER · BACKEND DEV · EMBEDDED SYSTEMS
+  </text>
+
+  <!-- NAME with gradient + glow -->
+  <text x="450" y="94" text-anchor="middle"
+        font-family="'Segoe UI','SF Pro Display',Arial,sans-serif"
+        font-size="50" font-weight="800"
+        fill="url(#nameGrad)" filter="url(#glow)" letter-spacing="-1.5">
+    Ankit Sengupta
+  </text>
+
+  <!-- Blinking cursor -->
+  <rect x="660" y="67" width="3" height="32" fill="#38bdf8" rx="1">
+    <animate attributeName="opacity" values="1;0;1" dur="1.1s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Bottom info line -->
+  <text x="450" y="130" text-anchor="middle"
+        font-family="'Courier New',monospace" font-size="11"
+        fill="#94a3b8" opacity="0.85" letter-spacing="2.5">
+    VIT Amaravati · Class of 2028 · CGPA 8.35 · 🏅 Selected — Internal Expo
+  </text>
+</svg>
+
+<!-- ╔══════════════════════════════════════════════════╗
+     ║        ANIMATED TYPING TAGLINE                  ║
+     ╚══════════════════════════════════════════════════╝ -->
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=16&duration=2400&pause=700&color=38BDF8&center=true&vCenter=true&width=680&lines=🤖+Building+RAG+Pipelines+%26+Autonomous+AI+Agents;🏅+Smart+Glasses+%E2%80%94+Selected+for+VIT+Internal+Expo;⚡+Python+%7C+Django+%7C+TensorFlow+%7C+Android+%7C+ESP32;🔥+Turning+ML+Theory+into+Deployed+Real-World+Systems;🎓+VIT+Amaravati+CS+%28AI+%26+ML%29+·+CGPA+8.35)](https://git.io/typing-svg)
 
 <br/>
 
-[![Gmail](https://img.shields.io/badge/📧%20Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ankit.sengupta05@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/💼%20LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/Sengupta-ankit)
-[![GitHub](https://img.shields.io/badge/🐙%20GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ankit-sengupta05)
-[![Portfolio](https://img.shields.io/badge/🌐%20Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)](#)
+<!-- ╔══════════════════════════════════════════════════╗
+     ║        CONTACT BADGES                           ║
+     ╚══════════════════════════════════════════════════╝ -->
+
+[![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ankit.sengupta05@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/Sengupta-ankit)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ankit-sengupta05)
 
 <br/>
 
-![Profile Views](https://komarev.com/ghpvc/?username=ankit-sengupta05&style=for-the-badge&color=blueviolet&label=PROFILE+VIEWS)
-![Followers](https://img.shields.io/github/followers/ankit-sengupta05?style=for-the-badge&color=36BCF7&label=FOLLOWERS)
+![Profile Views](https://komarev.com/ghpvc/?username=ankit-sengupta05&style=flat-square&color=818cf8&label=👁️+Profile+Views)
+![Followers](https://img.shields.io/github/followers/ankit-sengupta05?style=flat-square&color=f472b6&logo=github&label=⭐+Followers)
 
 </div>
 
 ---
 
-## <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28"/> About Me
+## 🧑‍💻 &nbsp;About Me
 
-<img align="right" alt="Coding" width="380" src="https://raw.githubusercontent.com/devSouvik/devSouvik/master/gif3.gif" />
+<table>
+<tr>
+<td valign="top" width="54%">
 
 ```python
 class AnkitSengupta:
-    def __init__(self):
-        self.name       = "Ankit Sengupta"
-        self.role       = "Backend Dev & AI Engineer"
-        self.university = "VIT Amaravati, Class of '28"
-        self.cgpa       = 8.35
-        self.focus      = ["RAG Pipelines", "AI Agents",
-                           "Scalable Backends"]
-        self.languages  = ["Python 🐍", "Java ☕",
-                           "C++", "JavaScript"]
-        self.superpower = "Bridging ML theory → production"
+
+    name       = "Ankit Sengupta"
+    role       = "AI Engineer & Backend Developer"
+    university = "VIT Amaravati · Class of 2028"
+    cgpa       = 8.35
+
+    skills = {
+      "AI / ML"    : ["RAG Pipelines", "AI Agents",
+                      "TensorFlow", "YOLO", "OpenCV"],
+      "Backend"    : ["Django", "FastAPI", "Flask",
+                      "Node.js", "MongoDB"],
+      "Mobile"     : ["Android", "Kotlin", "Firebase"],
+      "Embedded"   : ["ESP32", "Arduino C++", "IoT"],
+    }
+
+    trophy   = "🏅 Selected · VIT Internal Expo"
+    goal     = "ML theory → deployed products"
 
     def say_hi(self):
-        print("Thanks for dropping by! Let's build something cool 🚀")
-
-me = AnkitSengupta()
-me.say_hi()
+        print("Let's build something awesome 🚀")
 ```
 
-<br clear="right"/>
+</td>
+<td valign="top" width="46%" align="center">
 
-- 🎓 **CS (AI & ML)** student at VIT Amaravati — *CGPA: 8.35*
-- 🤖 Specializing in **RAG pipelines**, **AI agents**, and **automated ML systems**
-- ⚡ Building end-to-end: databases → backend APIs → Android apps → embedded IoT
-- 🌱 Currently diving deep into **AI agent orchestration** and **scalable architectures**
-- 💡 Passionate about bridging theoretical ML with practical, deployable systems
-- 📫 Reach me: **ankit.sengupta05@gmail.com**
+<img src="https://raw.githubusercontent.com/devSouvik/devSouvik/master/gif3.gif" width="96%"/>
+
+<br/>
+
+🎓 **B.Tech CS (AI & ML)**
+📍 VIT Amaravati &nbsp;|&nbsp; India
+⭐ CGPA **8.35** &nbsp;·&nbsp; 🏅 **Expo Selected**
+
+</td>
+</tr>
+</table>
 
 ---
 
-## <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width="26"> Tech Stack & Arsenal
+## 🛠️ &nbsp;Tech Stack
 
 <div align="center">
 
-### 🤖 AI & Machine Learning
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=FFD43B)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
-![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
-![YOLO](https://img.shields.io/badge/YOLO-00FFFF?style=for-the-badge&logo=yolo&logoColor=black)
-![RAG](https://img.shields.io/badge/RAG_Pipelines-8A2BE2?style=for-the-badge&logo=openai&logoColor=white)
+<img src="https://skillicons.dev/icons?i=python,tensorflow,opencv,django,fastapi,flask,nodejs,mongodb,androidstudio,kotlin,java,firebase,cpp,arduino,github&perline=8&theme=dark" />
+
+<br/><br/>
+
+![RAG Pipelines](https://img.shields.io/badge/RAG_Pipelines-8A2BE2?style=for-the-badge&logo=openai&logoColor=white)
 ![AI Agents](https://img.shields.io/badge/AI_Agents-FF4500?style=for-the-badge&logo=probot&logoColor=white)
-
-### 🌐 Backend & Web Development
-![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
-![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
-
-### 📱 Mobile & Embedded Systems
-![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
-![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
-![Arduino](https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white)
+![YOLO](https://img.shields.io/badge/YOLO-00FFFF?style=for-the-badge&logo=yolo&logoColor=black)
 ![ESP32](https://img.shields.io/badge/ESP32-E7352C?style=for-the-badge&logo=espressif&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
-
-### 🛠️ Tools & Platforms
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
-![Tkinter](https://img.shields.io/badge/Tkinter-FF6B35?style=for-the-badge&logo=python&logoColor=white)
-![Pytesseract](https://img.shields.io/badge/Pytesseract_OCR-4285F4?style=for-the-badge&logo=google&logoColor=white)
 
 </div>
 
 ---
 
-## 🚀 Featured Projects
+## 🚀 &nbsp;Projects
 
 <div align="center">
 
-| 🏷️ Project | 🔧 Stack | ✨ Highlights |
-|:---|:---|:---|
-| 🌾 **Smart Agriculture Assistant** | Python · TensorFlow · OpenCV · Django | Crop yield prediction + health detection via CV |
-| 💳 **Smart Budget Manager** | Android · Java/Kotlin · Firebase | Auto-parses bank SMS for real-time expense tracking |
-| 🧠 **AI Mental Health Chatbot** | TensorFlow · Pytesseract · Pandas | Emotion detection + OCR medical report scanner |
-| 🕶️ **Smart Vision Aid** | ESP32-CAM · YOLO · Android · C++ | Real-time spatial awareness for the visually impaired |
-| 💊 **Echo Health AI Assistant** | Python · FuzzyWuzzy · Tkinter | Symptom matching + medication + diet tracking chatbot |
+| &nbsp; | Project | Stack | &nbsp; |
+|:------:|:--------|:------|:------:|
+| 🕶️ | **Smart Vision Aid** | ESP32 · YOLO · Android · C++ | 🏅 **Expo Selected** |
+| 🌾 | **Smart Agriculture Assistant** | TensorFlow · Django · OpenCV | 🌱 AI + CV |
+| 💳 | **Smart Budget Manager** | Android · Kotlin · Firebase | 📊 FinTech |
+| 🧠 | **AI Mental Health Chatbot** | TensorFlow · Pytesseract | 💬 NLP + OCR |
+| 💊 | **Echo Health AI Assistant** | Python · FuzzyWuzzy | 🩺 Health AI |
 
 </div>
 
 <br/>
 
 <details>
-<summary><b>🌾 Smart Agriculture Assistant — click to expand</b></summary>
+<summary><b>🏆&nbsp; 🕶️ Smart Vision Aid &nbsp;—&nbsp; <img src="https://img.shields.io/badge/🏅_VIT_Internal_Expo-Selected-FFD700?style=flat-square"/> &nbsp;(expand)</b></summary>
 <br/>
 
-> *AI-powered platform bridging farmers and buyers through intelligent crop analysis.*
+> *Real-time AI-powered assistive glasses giving spatial awareness to the visually impaired*
 
-[![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)](https://python.org)
-[![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)](https://tensorflow.org)
-[![Django](https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white)](https://djangoproject.com)
+[![ESP32](https://img.shields.io/badge/ESP32-E7352C?style=flat-square&logo=espressif&logoColor=white)](#)
+[![YOLO](https://img.shields.io/badge/YOLO-00FFFF?style=flat-square&logo=yolo&logoColor=black)](#)
+[![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)](#)
+[![Android](https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white)](#)
+[![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)](#)
 
-- 🔬 Built ML pipeline for **crop yield prediction** using TensorFlow
-- 👁️ Integrated **computer vision** (OpenCV) to detect crop health issues
-- 🌐 Django/Flask backend connecting **farmers with buyers**
-- 📊 Farm data management and analytics via Pandas
+- 📷 **3× ESP32-CAM modules** + ultrasonic sensors → 360° spatial coverage
+- ⚡ **YOLO real-time object detection** for precise obstacle identification
+- 📱 Android companion app with **live audio alerts & navigation feedback**
+- 🔧 **C++ on Arduino IDE** for ultra-low-latency embedded performance
+- 🏅 **Recognised & selected for VIT Amaravati Internal Expo**
 
 </details>
 
 <details>
-<summary><b>💳 Smart Budget Management System — click to expand</b></summary>
+<summary><b>🌾&nbsp; Smart Agriculture Assistant &nbsp;(expand)</b></summary>
 <br/>
 
-> *Your bank account, intelligently parsed and beautifully visualized.*
+> *AI-powered platform bridging farmers and buyers through intelligent crop analysis*
 
-[![Android](https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white)](https://developer.android.com)
-[![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black)](https://firebase.google.com)
-[![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white)](https://kotlinlang.org)
+[![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)](#)
+[![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)](#)
+[![Django](https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white)](#)
+[![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)](#)
 
-- 💬 Securely **parses bank transaction SMS** for automated expense tracking
-- 📈 Real-time **financial insights dashboard**
-- 🔐 Firebase authentication + cloud backup integration
+- 🔬 ML pipeline for **crop yield prediction** — TensorFlow + Pandas
+- 👁️ Computer vision for real-time **crop disease detection**
+- 🌐 Django/Flask backend connecting **farmers directly with buyers**
 
 </details>
 
 <details>
-<summary><b>🧠 AI Mental Health Chatbot + OCR Scanner — click to expand</b></summary>
+<summary><b>💳&nbsp; Smart Budget Manager &nbsp;(expand)</b></summary>
 <br/>
 
-> *Where emotional intelligence meets medical data parsing.*
+> *Automatically tracks your spending by securely parsing bank transaction SMS*
 
-[![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)](https://tensorflow.org)
-[![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)](https://python.org)
+[![Android](https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white)](#)
+[![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white)](#)
+[![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black)](#)
+
+- 💬 Parses **bank transaction SMS** — zero-effort expense tracking
+- 📈 Real-time financial insights dashboard
+- 🔐 Firebase auth + encrypted cloud backup
+
+</details>
+
+<details>
+<summary><b>🧠&nbsp; AI Mental Health Chatbot + OCR Scanner &nbsp;(expand)</b></summary>
+<br/>
+
+> *Emotion detection meets medical report parsing*
+
+[![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)](#)
+[![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)](#)
+[![OCR](https://img.shields.io/badge/Pytesseract_OCR-4285F4?style=flat-square&logo=google&logoColor=white)](#)
 
 - 💬 **Sentiment analysis** for real-time emotional state detection
-- 📄 **OCR pipeline** (Pytesseract) to extract structured data from medical reports
-- 🔗 Cross-references health info with curated datasets
+- 📄 **OCR pipeline** extracts structured data from medical reports
+- 🔗 Cross-references health info with curated medical datasets
 
 </details>
 
 <details>
-<summary><b>🕶️ Smart Vision Aid for the Visually Impaired — click to expand</b></summary>
+<summary><b>💊&nbsp; Echo Personal AI Health Assistant &nbsp;(expand)</b></summary>
 <br/>
 
-> *Three cameras, one goal: independence for the visually impaired.*
+> *AI-powered symptom tracker and health companion*
 
-[![ESP32](https://img.shields.io/badge/ESP32-E7352C?style=flat-square&logo=espressif&logoColor=white)](https://espressif.com)
-[![YOLO](https://img.shields.io/badge/YOLO-00FFFF?style=flat-square&logo=yolo&logoColor=black)](https://ultralytics.com)
-[![Android](https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white)](https://developer.android.com)
-
-- 📷 **3× ESP32-CAM modules** + ultrasonic sensors for full spatial awareness
-- ⚡ **YOLO real-time object detection** for obstacle identification
-- 📱 Android app delivers **live audio alerts and navigation feedback**
-
-</details>
-
-<details>
-<summary><b>💊 Echo Personal AI Health Assistant — click to expand</b></summary>
-<br/>
-
-> *Your AI-powered personal health companion.*
-
-[![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)](https://python.org)
-[![Tkinter](https://img.shields.io/badge/Tkinter-FF6B35?style=flat-square&logo=python&logoColor=white)](https://python.org)
+[![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)](#)
+[![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)](#)
 
 - 🔍 **Fuzzy logic symptom matching** via FuzzyWuzzy
-- 💊 Tracks symptoms, medications, and **diet recommendations**
-- 🖥️ Clean Tkinter GUI with CSV dataset integration
+- 💊 Tracks symptoms, medications & diet recommendations
+- 🖥️ Tkinter GUI with CSV dataset integration
 
 </details>
 
 ---
 
-## 📊 GitHub Stats
+## 📊 &nbsp;GitHub Stats
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=ankit-sengupta05&show_icons=true&theme=tokyonight&hide_border=true&title_color=36BCF7&icon_color=36BCF7&bg_color=0D1117&text_color=C9D1D9&border_radius=10" height="165" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ankit-sengupta05&layout=compact&theme=tokyonight&hide_border=true&title_color=36BCF7&bg_color=0D1117&text_color=C9D1D9&border_radius=10" height="165" />
-
-<br/>
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=ankit-sengupta05&theme=tokyonight&hide_border=true&background=0D1117&ring=36BCF7&fire=FF6F00&currStreakLabel=36BCF7" height="165" />
-
-<br/>
-
-[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=ankit-sengupta05&theme=tokyo-night&hide_border=true&bg_color=0D1117&color=36BCF7&line=36BCF7&point=FFFFFF)](https://github.com/ashutosh00710/github-readme-activity-graph)
-
-</div>
-
----
-
-## 🏆 Achievements
-
-<div align="center">
-
-[![Trophies](https://github-profile-trophy.vercel.app/?username=ankit-sengupta05&theme=tokyonight&no-frame=true&no-bg=true&margin-w=4&row=1)](https://github.com/ryo-ma/github-profile-trophy)
-
-</div>
-
----
-
-## 🎯 Current Focus
-
-<div align="center">
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│                    🧭 What I'm Building                      │
-├─────────────────────────────────────────────────────────────┤
-│  🤖  Autonomous AI Agent Systems                            │
-│  📚  Retrieval-Augmented Generation (RAG) Pipelines         │
-│  ⚡  Scalable Backend Architectures (FastAPI / Django)      │
-│  🔗  Intelligent Automation & Workflow Orchestration        │
-└─────────────────────────────────────────────────────────────┘
-```
-
-</div>
-
----
-
-## 🤝 Let's Connect & Collaborate
-
-<div align="center">
-
-<a href="mailto:ankit.sengupta05@gmail.com">
-  <img src="https://img.shields.io/badge/📧_Drop_me_an_email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
-</a>
+<img src="https://github-readme-stats.vercel.app/api?username=ankit-sengupta05&show_icons=true&theme=tokyonight&hide_border=true&title_color=38bdf8&icon_color=f472b6&bg_color=06001a&text_color=e2e8f0&border_radius=12&include_all_commits=true&count_private=true" height="162"/>
 &nbsp;
-<a href="https://linkedin.com/in/Sengupta-ankit">
-  <img src="https://img.shields.io/badge/💼_Connect_on_LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
-</a>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ankit-sengupta05&layout=compact&theme=tokyonight&hide_border=true&title_color=38bdf8&bg_color=06001a&text_color=e2e8f0&border_radius=12&langs_count=8" height="162"/>
+
+<br/><br/>
+
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=ankit-sengupta05&theme=tokyonight&hide_border=true&background=06001a&ring=38bdf8&fire=f472b6&currStreakLabel=818cf8&sideLabels=94a3b8&border_radius=12" width="68%"/>
+
+<br/><br/>
+
+[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=ankit-sengupta05&theme=tokyo-night&hide_border=true&bg_color=06001a&color=38bdf8&line=818cf8&point=f472b6&area=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
+
+</div>
+
+---
+
+## 🏆 &nbsp;Trophies
+
+<div align="center">
+
+[![Trophies](https://github-profile-trophy.vercel.app/?username=ankit-sengupta05&theme=tokyonight&no-frame=true&no-bg=true&margin-w=8&row=1&column=7)](https://github.com/ryo-ma/github-profile-trophy)
+
+</div>
+
+---
+
+## 🎯 &nbsp;Currently Building
+
+<div align="center">
+
+```
+╔════════════════════════════════════════════════════════════╗
+║                  🧭  On My Workbench                       ║
+╠════════════════════════════════════════════════════════════╣
+║  🤖  Autonomous AI Agent Systems                           ║
+║  📚  Retrieval-Augmented Generation (RAG) Pipelines        ║
+║  ⚡  Scalable Backends  ·  FastAPI / Django / Node         ║
+║  🔗  Intelligent Automation & Workflow Orchestration       ║
+╚════════════════════════════════════════════════════════════╝
+```
+
+</div>
+
+---
+
+<div align="center">
+
+## 🤝 &nbsp;Let's Connect
+
+[![Email](https://img.shields.io/badge/📧_Email_Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ankit.sengupta05@gmail.com)
+&nbsp;
+[![LinkedIn](https://img.shields.io/badge/💼_LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/Sengupta-ankit)
 
 <br/><br/>
 
@@ -256,8 +378,11 @@ me.say_hi()
 
 <br/>
 
-![Snake animation](https://raw.githubusercontent.com/platane/platane/output/github-contribution-grid-snake-dark.svg)
+<img src="https://raw.githubusercontent.com/platane/platane/output/github-contribution-grid-snake-dark.svg" width="100%"/>
+
+<br/>
+
+<!-- Thin closing gradient strip -->
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:38bdf8,50:818cf8,100:f472b6&height=3&section=footer"/>
 
 </div>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer&animation=twinkling" />
