@@ -295,7 +295,9 @@ class AnkitSengupta:
 
 <br/>
 
-[![Trophies](https://github-profile-trophy.vercel.app/?username=ankit-sengupta05&theme=tokyonight&no-frame=true&no-bg=true&margin-w=8&row=1&column=7)](https://github.com/ryo-ma/github-profile-trophy)
+<a href="https://github.com/ryo-ma/github-profile-trophy">
+  <img src="https://github-profile-trophy.vercel.app/?username=ankit-sengupta05&theme=nord&no-frame=true&no-bg=true&margin-w=6&margin-h=6&column=7" alt="Ankit Sengupta GitHub Trophies" width="100%"/>
+</a>
 
 </div>
 
