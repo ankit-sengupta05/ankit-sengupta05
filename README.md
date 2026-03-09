@@ -291,13 +291,23 @@ class AnkitSengupta:
 <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:a855f7,100:ffd700&height=2"/>
 <br/>
 
-## 🏆 GitHub Trophies
+## 🏆 Highlights & Achievements
 
 <br/>
 
-<a href="https://github.com/ryo-ma/github-profile-trophy">
-  <img src="https://github-profile-trophy.vercel.app/?username=ankit-sengupta05&theme=nord&no-frame=true&no-bg=true&margin-w=6&margin-h=6&column=7" alt="Ankit Sengupta GitHub Trophies" width="100%"/>
-</a>
+| 🏅 | 🎓 | 🤖 | 🔧 | 📱 |
+|:---:|:---:|:---:|:---:|:---:|
+| **VIT Internal Expo** | **CGPA 8.35** | **AI & ML** | **Embedded IoT** | **Android Dev** |
+| Smart Vision Aid Selected | B.Tech CS · 2028 | RAG · Agents · YOLO | ESP32 · Arduino | Kotlin · Firebase |
+
+<br/>
+
+![Python](https://img.shields.io/badge/Python-Expert-3776AB?style=for-the-badge&logo=python&logoColor=FFD43B)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-Advanced-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
+![Django](https://img.shields.io/badge/Django-Advanced-092E20?style=for-the-badge&logo=django&logoColor=white)
+![Android](https://img.shields.io/badge/Android-Intermediate-3DDC84?style=for-the-badge&logo=android&logoColor=white)
+![ESP32](https://img.shields.io/badge/ESP32-Intermediate-E7352C?style=for-the-badge&logo=espressif&logoColor=white)
+![OpenCV](https://img.shields.io/badge/OpenCV-Advanced-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
 
 </div>
 
