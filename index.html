@@ -443,6 +443,384 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:26px 72px
 </footer>
 
 <script>
+/* ╔══════════════════════════════════════════════════════════════════════════╗
+   ║                                                                          ║
+   ║   ✏️  YOUR PORTFOLIO DATA — EDIT EVERYTHING HERE                         ║
+   ║                                                                          ║
+   ║   HOW IT WORKS:                                                          ║
+   ║   • Change any value below → save → push to GitHub                      ║
+   ║   • Vercel auto-deploys in ~30 seconds, site updates instantly           ║
+   ║   • Project count, CGPA, all stats — auto-calculated from this object   ║
+   ║   • Add a new project to the projects[] array — it auto-renders         ║
+   ║                                                                          ║
+   ╚══════════════════════════════════════════════════════════════════════════╝ */
+
+const DATA = {
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     👤  PERSONAL INFO
+     Updates: name, title, university, CGPA, email, social links, nav status
+  ───────────────────────────────────────────────────────────────────────── */
+  meta: {
+    name:       "Ankit Sengupta",
+    role:       "AI Eng & Backend Dev",
+    university: "VIT Amaravati",
+    batch:      "2028",                         // graduation year
+    cgpa:       8.35,                           // ← update this anytime
+    email:      "ankit.sengupta05@gmail.com",
+    linkedin:   "https://linkedin.com/in/Sengupta-ankit",
+    github:     "https://github.com/ankit-sengupta05",
+    instagram:  "https://www.instagram.com/ankit_sengupta/",
+    trophy:     "🏅 VIT Internal Expo 2025",
+    status:     "🟢 Open to internships!",      // shown in nav bar
+
+    // Typewriter phrases in hero section — add/remove as you like
+    typedPhrases: [
+      "AI Engineer — RAG Pipelines & AI Agents",
+      "Backend Dev — Django · FastAPI · Node.js",
+      "Embedded IoT — ESP32 · YOLO · OpenCV",
+      "VIT Amaravati · CS AI&ML · Class of 2028",
+      "🟢 Open to Internships 2025–26"
+    ]
+  },
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     📊  HERO STATS
+     project count is AUTO-CALCULATED from projects[] below — don't set it
+     manually. Just update cgpa, domains, classOf here.
+  ───────────────────────────────────────────────────────────────────────── */
+  stats: {
+    cgpa:    8.35,   // ← keep in sync with meta.cgpa above
+    domains: 6,      // number of tech domains
+    classOf: 2028    // graduation year
+  },
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     ✅  OPEN TO (contact section pills)
+  ───────────────────────────────────────────────────────────────────────── */
+  openTo: [
+    "💼 Internships 2025–26",
+    "🤖 AI/ML Collabs",
+    "📂 Open Source",
+    "🏆 Hackathons",
+    "🔬 Research",
+    "⚡ Freelance"
+  ],
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     🛠️  SKILL CATEGORIES
+     Each category renders as a card in the Skills section.
+     cls values: "tc"=cyan  "tv"=violet  "tp"=pink  "tg"=green  "ty"=yellow
+  ───────────────────────────────────────────────────────────────────────── */
+  skillCategories: [
+    {
+      icon: "🤖", title: "AI & Machine Learning",
+      colorVar: "var(--c)", gradient: "linear-gradient(90deg,#00f0ff,#a855f7)",
+      sub: "// Neural networks · Agents · Computer vision",
+      tags: [
+        {label:"RAG Pipelines",cls:"tc"}, {label:"AI Agents",cls:"tc"},
+        {label:"TensorFlow",cls:"tc"},    {label:"YOLO v5/v8",cls:"tc"},
+        {label:"OpenCV",cls:"tc"},        {label:"NLP / Sentiment",cls:"tc"},
+        {label:"Pytesseract OCR",cls:"tc"},{label:"FuzzyWuzzy",cls:"tc"},
+        {label:"Pandas",cls:"tc"},         {label:"NumPy",cls:"tc"},
+        {label:"Computer Vision",cls:"tc"},{label:"Object Detection",cls:"tc"},
+        {label:"ML Pipelines",cls:"tc"},   {label:"Model Deployment",cls:"tc"},
+        {label:"LSTM",cls:"tc"}
+      ]
+    },
+    {
+      icon: "🌐", title: "Backend & APIs",
+      colorVar: "var(--v)", gradient: "linear-gradient(90deg,#a855f7,#ff2d78)",
+      sub: "// REST · Async · Databases · Microservices",
+      tags: [
+        {label:"Django",cls:"tv"},                {label:"Django REST Framework",cls:"tv"},
+        {label:"FastAPI",cls:"tv"},               {label:"Flask",cls:"tv"},
+        {label:"Node.js",cls:"tv"},               {label:"Express.js",cls:"tv"},
+        {label:"MongoDB",cls:"tv"},               {label:"REST APIs",cls:"tv"},
+        {label:"JWT Auth",cls:"tv"},              {label:"WebSockets",cls:"tv"},
+        {label:"Async Python",cls:"tv"},          {label:"Microservices",cls:"tv"},
+        {label:"SQLite",cls:"tv"},                {label:"Celery",cls:"tv"}
+      ]
+    },
+    {
+      icon: "💻", title: "Programming Languages",
+      colorVar: "var(--p)", gradient: "linear-gradient(90deg,#ff2d78,#ffd700)",
+      sub: "// Core dev stack · Scripting · Systems",
+      tags: [
+        {label:"Python",cls:"tp"},      {label:"JavaScript",cls:"tp"},
+        {label:"TypeScript",cls:"tp"},  {label:"Java",cls:"tp"},
+        {label:"Kotlin",cls:"tp"},      {label:"C++",cls:"tp"},
+        {label:"C (Embedded)",cls:"tp"},{label:"MATLAB",cls:"tp"},
+        {label:"HTML5",cls:"tp"},       {label:"CSS3",cls:"tp"},
+        {label:"Bash / Shell",cls:"tp"}
+      ]
+    },
+    {
+      icon: "📱", title: "Mobile Development",
+      colorVar: "var(--g)", gradient: "linear-gradient(90deg,#00ff88,#00f0ff)",
+      sub: "// Android native · Firebase · Real-time",
+      tags: [
+        {label:"Android (Native)",cls:"tg"},      {label:"Kotlin",cls:"tg"},
+        {label:"Java (Android)",cls:"tg"},        {label:"Firebase Auth",cls:"tg"},
+        {label:"Firestore DB",cls:"tg"},          {label:"Firebase Storage",cls:"tg"},
+        {label:"SMS BroadcastReceiver",cls:"tg"}, {label:"Android Studio",cls:"tg"},
+        {label:"RecyclerView",cls:"tg"},          {label:"Room DB",cls:"tg"},
+        {label:"MPAndroidChart",cls:"tg"}
+      ]
+    },
+    {
+      icon: "🔧", title: "Embedded & IoT",
+      colorVar: "var(--y)", gradient: "linear-gradient(90deg,#ffd700,#ff2d78)",
+      sub: "// Firmware · Sensors · Real-time systems",
+      tags: [
+        {label:"ESP32",cls:"ty"},             {label:"ESP32-CAM",cls:"ty"},
+        {label:"Arduino IDE",cls:"ty"},       {label:"C++ (Firmware)",cls:"ty"},
+        {label:"Ultrasonic Sensors",cls:"ty"},{label:"I2C / SPI / UART",cls:"ty"},
+        {label:"Wi-Fi Streaming",cls:"ty"},   {label:"GPIO Control",cls:"ty"},
+        {label:"Interrupt Handling",cls:"ty"},{label:"Low-Latency Sys",cls:"ty"},
+        {label:"IoT Protocols",cls:"ty"}
+      ]
+    },
+    {
+      icon: "🛠️", title: "Tools & Dev Environment",
+      colorVar: "var(--c)", gradient: "linear-gradient(90deg,#a855f7,#00f0ff)",
+      sub: "// Version control · Build · Deploy",
+      tags: [
+        {label:"Git / GitHub",cls:"tc"},    {label:"VS Code",cls:"tc"},
+        {label:"PyCharm",cls:"tc"},         {label:"Android Studio",cls:"tc"},
+        {label:"Arduino IDE",cls:"tc"},     {label:"Vite",cls:"tc"},
+        {label:"Postman",cls:"tc"},         {label:"Jupyter Notebook",cls:"tc"},
+        {label:"Vercel",cls:"tc"},          {label:"GitHub Actions",cls:"tc"},
+        {label:"Linux / Ubuntu",cls:"tc"}
+      ]
+    }
+  ],
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     🚀  PROJECTS
+     ─ project count in hero stats is AUTO-CALCULATED as projects.length
+     ─ filter buttons are AUTO-GENERATED from the categories[] you set
+     ─ set featured:true on ONE project for the wide full-width hero card
+     ─ github / demo: set "" to hide the button
+     ─ catTags clr: "c"=cyan  "p"=pink  "v"=violet  "g"=green  "y"=yellow
+
+     TO ADD A NEW PROJECT: copy any block below, paste at the end of this
+     array (before the final ]), fill in your details. Done.
+  ───────────────────────────────────────────────────────────────────────── */
+  projects: [
+
+    /* ── PROJECT 1 — FEATURED (full-width card) ── */
+    {
+      id:          "smart-vision-aid",
+      featured:     true,
+      title:       "Smart Vision Aid",
+      emoji:       "🕶️",
+      subtitle:    "AI-powered assistive smart glasses — real-time 360° spatial awareness for the visually impaired",
+      description: "An end-to-end embedded AI system giving visually impaired users real-time 360° spatial awareness. Three ESP32-CAM modules feed live video into a YOLO object detection pipeline. Ultrasonic sensors provide proximity data. The Android companion app converts all detections into instant audio alerts and turn-by-turn navigation guidance. All firmware runs in C++ for microsecond-level response.",
+      github:      "https://github.com/ankit-sengupta05",   // ← paste your actual repo URL
+      demo:        "",                                        // ← paste live demo URL or leave ""
+      categories:  ["embedded","ai","mobile"],
+      badge:       "🏅 VIT Amaravati Internal Expo — Selected 2025",
+      iconBg:      "rgba(0,240,255,0.07)",
+      highlights: [
+        {icon:"📷", color:"c", title:"Vision System",    detail:"3× ESP32-CAM OV2640 modules + HC-SR04 ultrasonic sensors providing full 360° overlapping spatial coverage"},
+        {icon:"⚡", color:"p", title:"AI Detection",     detail:"YOLOv5/v8 real-time object detection; identifies obstacles, people & hazards with precise bounding box coordinates"},
+        {icon:"📱", color:"g", title:"Android Companion",detail:"Receives live Wi-Fi detection data, delivers contextual audio alerts & navigation feedback via TTS engine"},
+        {icon:"🔧", color:"v", title:"Embedded Core",    detail:"Interrupt-driven C++ on Arduino IDE; sensor fusion pipeline with <50ms end-to-end latency"},
+        {icon:"🏅", color:"y", title:"Achievement",      detail:"Selected for VIT Amaravati Internal Expo 2025 as a standout assistive technology innovation"}
+      ],
+      specs: [
+        {label:"Cameras",   value:"3× ESP32-CAM OV2640"},
+        {label:"Proximity", value:"HC-SR04 Ultrasonic ×3"},
+        {label:"AI Model",  value:"YOLOv5 / YOLOv8"},
+        {label:"Latency",   value:"<50ms End-to-End"},
+        {label:"Link",      value:"ESP32 Wi-Fi Stream"},
+        {label:"App",       value:"Android + TTS Alerts"}
+      ],
+      tech:    ["ESP32-CAM","YOLO","OpenCV","Android / Kotlin","C++","Arduino IDE","Wi-Fi Streaming","Ultrasonic Sensors"],
+      catTags: [{label:"Embedded",clr:"c"},{label:"AI/ML",clr:"p"},{label:"Mobile",clr:"g"}]
+    },
+
+    /* ── PROJECT 2 ── */
+    {
+      id:          "smart-agriculture",
+      featured:     false,
+      title:       "Smart Agriculture Assistant",
+      emoji:       "🌾",
+      subtitle:    "AI-powered crop analysis & farmer–buyer marketplace",
+      description: "Full-stack platform using TensorFlow for crop yield prediction and OpenCV for real-time crop disease detection. A Django/Flask marketplace connects farmers directly with buyers, with ML-driven pricing recommendations and an intelligent supply-demand engine.",
+      github:      "https://github.com/ankit-sengupta05",
+      demo:        "",
+      categories:  ["ai","backend"],
+      badge:       "",
+      iconBg:      "rgba(0,255,136,0.07)",
+      iconBorderColor: "rgba(0,255,136,0.2)",
+      highlights: [
+        {icon:"🔬",color:"g",title:"ML Pipeline",         detail:"TensorFlow model trained on crop dataset; Pandas for data preprocessing, feature engineering and yield trend analysis"},
+        {icon:"👁️",color:"c",title:"Computer Vision",     detail:"OpenCV disease detection pipeline with confidence scoring; identifies blight, rust, and fungal infections from photos"},
+        {icon:"🌐",color:"v",title:"Backend Marketplace", detail:"Django/Flask REST API connecting farmers with buyers; order management, inventory tracking, and ML-driven pricing logic"}
+      ],
+      specs: [
+        {label:"ML Framework",value:"TensorFlow + Pandas"},
+        {label:"Vision",      value:"OpenCV Disease Det."},
+        {label:"Backend",     value:"Django REST / Flask"},
+        {label:"Database",    value:"MongoDB / SQLite"}
+      ],
+      tech:    ["Python","TensorFlow","OpenCV","Django","Flask","Pandas","MongoDB"],
+      catTags: [{label:"AI/ML",clr:"c"},{label:"Backend",clr:"v"}]
+    },
+
+    /* ── PROJECT 3 ── */
+    {
+      id:          "smart-budget-manager",
+      featured:     false,
+      title:       "Smart Budget Manager",
+      emoji:       "💳",
+      subtitle:    "Zero-effort SMS-based expense tracking for Android",
+      description: "Native Android app that passively reads bank transaction SMS and auto-categorises spending. Real-time dashboard with visual charts, Firebase-secured cloud sync, and encrypted local backup — no manual entry needed. Supports all major Indian banks.",
+      github:      "https://github.com/ankit-sengupta05",
+      demo:        "",
+      categories:  ["mobile"],
+      badge:       "",
+      iconBg:      "rgba(255,215,0,0.07)",
+      iconBorderColor: "rgba(255,215,0,0.2)",
+      highlights: [
+        {icon:"💬",color:"y",title:"SMS Engine", detail:"Android BroadcastReceiver captures bank messages; regex + NLP extracts amount, merchant, category automatically"},
+        {icon:"📈",color:"c",title:"Dashboard",  detail:"MPAndroidChart visualisations; monthly summaries, category breakdowns, spend trend graphs and financial insights"},
+        {icon:"🔐",color:"p",title:"Security",   detail:"Firebase Auth, encrypted Firestore storage, biometric lock, local Room DB cache for full offline access"}
+      ],
+      specs: [
+        {label:"Platform",value:"Android Native"},
+        {label:"Language",value:"Kotlin + Java"},
+        {label:"Auth",    value:"Firebase Auth"},
+        {label:"DB",      value:"Firestore + Room"}
+      ],
+      tech:    ["Android","Kotlin","Java","Firebase","Room DB","MPAndroidChart"],
+      catTags: [{label:"Mobile",clr:"y"}]
+    },
+
+    /* ── PROJECT 4 ── */
+    {
+      id:          "mental-health-chatbot",
+      featured:     false,
+      title:       "AI Mental Health Chatbot + OCR",
+      emoji:       "🧠",
+      subtitle:    "Sentiment analysis · Medical report parsing · Health intelligence",
+      description: "Dual-intelligence system: a TensorFlow NLP chatbot detecting emotional state in real time, paired with a Pytesseract OCR pipeline extracting structured data from medical reports and cross-referencing curated health datasets for personalised guidance.",
+      github:      "https://github.com/ankit-sengupta05",
+      demo:        "",
+      categories:  ["ai"],
+      badge:       "",
+      iconBg:      "rgba(168,85,247,0.07)",
+      iconBorderColor: "rgba(168,85,247,0.2)",
+      highlights: [
+        {icon:"💬",color:"v",title:"NLP Engine",          detail:"TensorFlow LSTM classifies emotional states (anxiety, depression, neutral) with 87%+ accuracy in real time"},
+        {icon:"📄",color:"c",title:"OCR Pipeline",        detail:"Pytesseract extracts and structures text from lab reports; Pandas normalises and stores data for cross-referencing"},
+        {icon:"🔗",color:"g",title:"Health Intelligence", detail:"Cross-references user health data with curated medical datasets for personalised actionable health recommendations"}
+      ],
+      specs: [
+        {label:"NLP Model",value:"TensorFlow LSTM"},
+        {label:"OCR",      value:"Pytesseract"},
+        {label:"Data",     value:"Pandas + CSV"},
+        {label:"Accuracy", value:"87%+ Sentiment"}
+      ],
+      tech:    ["Python","TensorFlow","Pytesseract","Pandas","NLTK","NumPy"],
+      catTags: [{label:"AI/ML",clr:"v"}]
+    },
+
+    /* ── PROJECT 5 ── */
+    {
+      id:          "echo-health-assistant",
+      featured:     false,
+      title:       "Echo — Personal AI Health Assistant",
+      emoji:       "💊",
+      subtitle:    "Fuzzy symptom matching · Medication guide · Diet recommendations",
+      description: "Desktop AI health companion using fuzzy string matching to map user-described symptoms to known conditions in a 5,000+ entry medical CSV dataset. Provides medication guidance and personalised dietary recommendations via a clean Tkinter GUI.",
+      github:      "https://github.com/ankit-sengupta05",
+      demo:        "",
+      categories:  ["ai"],
+      badge:       "",
+      iconBg:      "rgba(255,45,120,0.07)",
+      iconBorderColor: "rgba(255,45,120,0.2)",
+      highlights: [
+        {icon:"🔍",color:"p",title:"Fuzzy Matching",  detail:"FuzzyWuzzy token-sort ratio maps typed symptoms (even with typos) to 5,000+ medical conditions in the dataset"},
+        {icon:"💊",color:"c",title:"Health Tracking", detail:"Logs symptoms, medications, dietary recommendations; tracks full history across sessions with CSV persistence"},
+        {icon:"🖥️",color:"y",title:"Desktop UI",      detail:"Clean multi-tab Tkinter GUI with real-time search, history view, and exportable health session reports"}
+      ],
+      specs: [
+        {label:"Matching",  value:"FuzzyWuzzy Token-Sort"},
+        {label:"Dataset",   value:"5,000+ Conditions"},
+        {label:"Interface", value:"Tkinter Multi-Tab"},
+        {label:"Storage",   value:"CSV Session Logging"}
+      ],
+      tech:    ["Python","FuzzyWuzzy","Pandas","Tkinter","CSV Datasets"],
+      catTags: [{label:"AI/ML",clr:"p"}]
+    }
+
+    /* ── ADD NEW PROJECTS HERE ──────────────────────────────────────────────
+       Copy the block above, paste it after the last },  and fill in your data.
+       The site will automatically:
+         ✓ add a new card in the Projects section
+         ✓ increment the project counter in Hero stats
+         ✓ update the filter buttons if you add a new category
+         ✓ update the Stats section card count
+    ─────────────────────────────────────────────────────────────────────── */
+
+  ], // ← end of projects[]
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     🔨  CURRENTLY BUILDING
+  ───────────────────────────────────────────────────────────────────────── */
+  building: [
+    {
+      icon:"🤖", title:"Autonomous AI Agent Systems",
+      desc:"Self-directed agents with multi-step reasoning, tool use, memory, and autonomous decision-making. Exploring LangChain, LangGraph, and custom orchestration frameworks for complex real-world automation.",
+      status:"Active Development"
+    },
+    {
+      icon:"📚", title:"Production RAG Pipelines",
+      desc:"End-to-end Retrieval-Augmented Generation systems with vector databases (FAISS / Chroma / Pinecone), semantic chunking, hybrid search, and context-aware LLM response generation.",
+      status:"Active Development"
+    },
+    {
+      icon:"⚡", title:"Scalable Backend Architectures",
+      desc:"High-performance async APIs with FastAPI and Django, focusing on horizontal scalability, Celery task queues, Redis caching, and clean microservices patterns deployable on cloud infrastructure.",
+      status:"Ongoing"
+    },
+    {
+      icon:"🔗", title:"Intelligent Automation & Workflows",
+      desc:"LLM-powered workflow orchestration — combining AI reasoning with programmatic control flows, API integrations, and event-driven automation to handle complex multi-step business processes.",
+      status:"Research Phase"
+    }
+  ],
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     💻  CODE BLOCK (About section — the Python snippet)
+     Short skill preview shown in the animated code card.
+  ───────────────────────────────────────────────────────────────────────── */
+  codeBlock: {
+    skills: {
+      "AI/ML":     ["RAG", "Agents", "YOLO", "TF"],
+      "Backend":   ["Django", "FastAPI", "Node"],
+      "Languages": ["Python", "JS", "TS", "C++"],
+      "Mobile":    ["Android", "Kotlin", "Firebase"],
+      "Embedded":  ["ESP32", "Arduino", "C++"]
+    }
+  }
+
+}; /* ═══ END OF DATA ═══ ALL VALUES ABOVE ARE EDITABLE ═══════════════════ */
+
+/* ══════════════════════════════════════════════════════════════════════════
+   AUTO-COMPUTED VALUES — derived from DATA, do not edit
+══════════════════════════════════════════════════════════════════════════ */
+const PROJECT_COUNT = DATA.projects.length;  // auto-counts your projects[]
+const CGPA          = DATA.stats.cgpa;       // single source of truth for CGPA
+const GITHUB        = DATA.meta.github;      // used in hero + footer
+
+/* ══════════════════════════════════════════════════════════════════════════
+   ENGINE — render functions below, no need to edit
+══════════════════════════════════════════════════════════════════════════ */
+
 /* ══════════════════════════════════════════
    CURSOR
 ══════════════════════════════════════════ */
@@ -472,7 +850,7 @@ function conn(){for(let i=0;i<pts.length;i++)for(let j=i+1;j<pts.length;j++){con
 (function anim(){ctx.clearRect(0,0,W,H);conn();pts.forEach(p=>{p.u();p.d();});requestAnimationFrame(anim);})();
 
 /* ══════════════════════════════════════════
-   SCROLL REVEAL + BARS + NAV
+   SCROLL REVEAL + SKILL BARS + NAV
 ══════════════════════════════════════════ */
 const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('on');});},{threshold:.1,rootMargin:'0px 0px -50px 0px'});
 function observeReveal(){document.querySelectorAll('.rev,.revL,.revR').forEach(el=>obs.observe(el));}
@@ -480,13 +858,13 @@ observeReveal();
 const bobs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.style.width=e.target.dataset.w+'%';bobs.unobserve(e.target);}});},{threshold:.3});
 document.querySelectorAll('.bfi').forEach(b=>bobs.observe(b));
 const secs=document.querySelectorAll('section[id]'),nls=document.querySelectorAll('.nli a');
-addEventListener('scroll',()=>{let cs='';secs.forEach(s=>{if(scrollY>=s.offsetTop-160)cs=s.id;});nls.forEach(a=>{const active=a.getAttribute('href')==='#'+cs;a.classList.toggle('act',active);});},{passive:true});
+addEventListener('scroll',()=>{let cs='';secs.forEach(s=>{if(scrollY>=s.offsetTop-160)cs=s.id;});nls.forEach(a=>{a.classList.toggle('act',a.getAttribute('href')==='#'+cs);});},{passive:true});
 nls.forEach(a=>{a.addEventListener('click',e=>{e.preventDefault();document.querySelector(a.getAttribute('href'))?.scrollIntoView({behavior:'smooth'});});});
 
 /* ══════════════════════════════════════════
-   TYPED EFFECT — phrases come from data.json
+   TYPED EFFECT
 ══════════════════════════════════════════ */
-let typedPhrases=["AI Engineer — RAG Pipelines & AI Agents","Backend Dev — Django · FastAPI · Node.js","🟢 Open to Internships 2025–26"];
+let typedPhrases=DATA.meta.typedPhrases||["AI Engineer","Backend Dev","Open to Internships"];
 let pi=0,ci=0,deleting=false;
 const tel=document.getElementById('typed');
 function type(){
@@ -498,7 +876,7 @@ function type(){
 type();
 
 /* ══════════════════════════════════════════
-   CARD GLOW MOUSE TRACKING
+   CARD GLOW
 ══════════════════════════════════════════ */
 function hookGlow(){
   document.querySelectorAll('.pcard').forEach(c=>{
@@ -514,7 +892,7 @@ function hookGlow(){
 /* ══════════════════════════════════════════
    HTML HELPERS
 ══════════════════════════════════════════ */
-function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
 function kw(t){return`<span class="kw">${t}</span>`;}
 function cl(t){return`<span class="cl">${t}</span>`;}
 function fn(t){return`<span class="fn">${t}</span>`;}
@@ -527,30 +905,27 @@ function sp(n){return'&nbsp;'.repeat(n);}
    RENDER: CODE BLOCK
 ══════════════════════════════════════════ */
 function renderCodeBlock(d){
-  const m=d.meta||{}, cb=d.codeBlock||{};
-  const skills=cb.skills||{};
+  const m=d.meta||{},cb=d.codeBlock||{},skills=cb.skills||{};
   const skillLines=Object.entries(skills).map(([k,v])=>{
-    const vals=v.map(x=>st(x)).join(', ');
     const pad=Math.max(1,12-k.length);
-    return `${sp(6)}${st(k)}${sp(pad)}: [${vals}],`;
+    return `${sp(6)}${st(k)}${sp(pad)}: [${v.map(x=>st(x)).join(', ')}],`;
   }).join('<br>');
-
-  const lines=[
-    cm('# ── auto-loaded from data.json ─────'),
+  document.getElementById('codeblock-body').innerHTML=[
+    cm('# ── edit DATA at top of this file ──'),
     '<br>',
     `${kw('class')} ${cl('AnkitSengupta')}:`,
     `${sp(2)}${kw('def')} ${fn('__init__')}(${nm('self')}):`,
-    `${sp(4)}${nm('self')}.name${sp(7)}= ${st(m.name||'Ankit Sengupta')}`,
-    `${sp(4)}${nm('self')}.role${sp(7)}= ${st(m.role||'AI Eng & Backend Dev')}`,
-    `${sp(4)}${nm('self')}.university = ${st(m.university||'VIT Amaravati · 2028')}`,
-    `${sp(4)}${nm('self')}.cgpa${sp(7)}= ${nm(d.stats?.cgpa||m.cgpa||8.35)}`,
-    `${sp(4)}${nm('self')}.email${sp(6)}= ${st(m.email||'')}`,
+    `${sp(4)}${nm('self')}.name${sp(7)}= ${st(m.name)}`,
+    `${sp(4)}${nm('self')}.role${sp(7)}= ${st(m.role)}`,
+    `${sp(4)}${nm('self')}.university = ${st(m.university)}`,
+    `${sp(4)}${nm('self')}.cgpa${sp(7)}= ${nm(d.stats?.cgpa||m.cgpa)}`,
+    `${sp(4)}${nm('self')}.email${sp(6)}= ${st(m.email)}`,
     `${sp(4)}${nm('self')}.skills = {`,
     skillLines,
     `${sp(4)}}`,
-    `${sp(4)}${nm('self')}.trophy = ${st(m.trophy||'🏅 VIT Internal Expo 2025')}`,
-    `${sp(4)}${nm('self')}.power${sp(4)}= ${st(m.power||'ML theory → production')}`,
-    `${sp(4)}${nm('self')}.status = ${st(m.status||'🟢 Open to internships!')}`,
+    `${sp(4)}${nm('self')}.trophy = ${st(m.trophy)}`,
+    `${sp(4)}${nm('self')}.power${sp(4)}= ${st(m.power)}`,
+    `${sp(4)}${nm('self')}.status = ${st(m.status)}`,
     '<br>',
     `${sp(2)}${kw('def')} ${fn('say_hi')}(${nm('self')}):`,
     `${sp(4)}${kw('print')}(${st("Let's build something 🚀")})`,
@@ -560,15 +935,10 @@ function renderCodeBlock(d){
     `dev.${fn('say_hi')}()<span class="cblink"></span>`,
   ].join('<br>');
 
-  document.getElementById('codeblock-body').innerHTML=lines;
-
-  const count=d.projects?.length||0;
   const cgpa=d.stats?.cgpa||m.cgpa||8.35;
   document.getElementById('codeblock-footer').innerHTML=[
-    {e:'📊',l:`CGPA: ${cgpa}`},
-    {e:'🏅',l:'Expo Selected'},
-    {e:'📦',l:`${count} Projects`},
-    {e:'🟢',l:'Available'},
+    {e:'📊',l:`CGPA: ${cgpa}`},{e:'🏅',l:'Expo Selected'},
+    {e:'📦',l:`${PROJECT_COUNT} Projects`},{e:'🟢',l:'Available'},
   ].map(p=>`<span class="cblpill"><span class="pdot"></span>${p.e} ${p.l}</span>`).join('');
 }
 
@@ -576,45 +946,30 @@ function renderCodeBlock(d){
    RENDER: HERO STATS
 ══════════════════════════════════════════ */
 function renderHeroStats(d){
-  const m=d.meta||{}, s=d.stats||{};
-  const count=d.projects?.length||0;
-  const items=[
-    {n:count+'+', l:'AI Projects'},
-    {n:s.cgpa||m.cgpa||8.35, l:'CGPA'},
-    {n:'🏅', l:'Expo Selected'},
-    {n:s.classOf||2028, l:'Class Of'},
-    {n:s.domains||6, l:'Tech Domains'},
-  ];
-  document.getElementById('hero-stats').innerHTML=items.map((it,i)=>
-    (i===0?'':' <div class="hdi"></div> ')+
-    `<div><div class="hsn">${it.n}</div><div class="hsl">${it.l}</div></div>`
-  ).join('');
-
-  // update hero github link
-  if(m.github) document.getElementById('hero-gh').href=m.github;
+  const m=d.meta||{},s=d.stats||{};
+  document.getElementById('hero-stats').innerHTML=[
+    {n:PROJECT_COUNT+'+',l:'AI Projects'},{n:CGPA,l:'CGPA'},
+    {n:'🏅',l:'Expo Selected'},{n:s.classOf||2028,l:'Class Of'},{n:s.domains||6,l:'Tech Domains'},
+  ].map((it,i)=>(i?'<div class="hdi"></div>':'')+`<div><div class="hsn">${it.n}</div><div class="hsl">${it.l}</div></div>`).join('');
+  document.getElementById('hero-gh').href=GITHUB;
   document.getElementById('about-cgpa').textContent=`🎓 CGPA ${s.cgpa||m.cgpa} · B.Tech CS AI&ML`;
   document.getElementById('nav-status').textContent=m.status||'Open to Internship';
-  document.getElementById('footer-name').textContent=(m.name||'Ankit Sengupta').toUpperCase();
-  document.getElementById('footer-sub').textContent=`// ${m.university||'VIT Amaravati · 2028'} · CGPA ${s.cgpa||m.cgpa}`;
-
-  // typed phrases
-  if(m.typedPhrases?.length) typedPhrases=m.typedPhrases;
+  document.getElementById('footer-name').textContent=(m.name||'').toUpperCase();
+  document.getElementById('footer-sub').textContent=`// ${m.university} · CGPA ${s.cgpa||m.cgpa}`;
 }
 
 /* ══════════════════════════════════════════
-   RENDER: SKILLS GRID
+   RENDER: SKILLS
 ══════════════════════════════════════════ */
 function renderSkills(d){
-  const cats=d.skillCategories||[];
-  const html=cats.map((c,i)=>`
-    <div class="skc rev" style="--cg:${c.gradient||''};transition-delay:${i*.07}s">
-      <div class="skico">${c.icon||'🔧'}</div>
-      <div class="skttl" style="color:${c.colorVar||'var(--c)'}">${esc(c.title)}</div>
-      <div class="sksub">${esc(c.sub||'')}</div>
-      <div class="skts">${(c.tags||[]).map(t=>`<span class="skt ${t.cls||'tc'}">${esc(t.label)}</span>`).join('')}</div>
-      <div style="position:absolute;top:0;left:0;right:0;height:2px;background:${c.gradient||'var(--c)'}"></div>
+  document.getElementById('skills-grid').innerHTML=(d.skillCategories||[]).map((c,i)=>`
+    <div class="skc rev" style="transition-delay:${i*.07}s">
+      <div style="position:absolute;top:0;left:0;right:0;height:2px;background:${c.gradient}"></div>
+      <div class="skico">${c.icon}</div>
+      <div class="skttl" style="color:${c.colorVar}">${esc(c.title)}</div>
+      <div class="sksub">${esc(c.sub)}</div>
+      <div class="skts">${(c.tags||[]).map(t=>`<span class="skt ${t.cls}">${esc(t.label)}</span>`).join('')}</div>
     </div>`).join('');
-  document.getElementById('skills-grid').innerHTML=html;
 }
 
 /* ══════════════════════════════════════════
@@ -622,23 +977,16 @@ function renderSkills(d){
 ══════════════════════════════════════════ */
 function renderProjects(d){
   const projs=d.projects||[];
-  // collect all unique categories
   const allCats=new Set();
   projs.forEach(p=>(p.categories||[]).forEach(c=>allCats.add(c)));
+  const catLabel={ai:'AI / ML',embedded:'Embedded',mobile:'Mobile',backend:'Backend'};
 
-  // filter bar
-  const filterBar=document.getElementById('filter-bar');
-  const catLabels={'all':'All','ai':'AI / ML','embedded':'Embedded','mobile':'Mobile','backend':'Backend'};
-  let filterBtns=`<button class="pfb on" data-f="all">All (${projs.length})</button>`;
-  allCats.forEach(c=>{ filterBtns+=`<button class="pfb" data-f="${c}">${catLabels[c]||c}</button>`; });
-  filterBar.innerHTML=filterBtns;
+  document.getElementById('filter-bar').innerHTML=
+    `<button class="pfb on" data-f="all">All (${PROJECT_COUNT})</button>`+
+    [...allCats].map(c=>`<button class="pfb" data-f="${c}">${catLabel[c]||c}</button>`).join('');
 
-  // cards
-  document.getElementById('projects-grid').innerHTML=projs.map((p,idx)=>
-    p.featured ? renderFeaturedCard(p) : renderCard(p,idx)
-  ).join('');
+  document.getElementById('projects-grid').innerHTML=projs.map((p,i)=>p.featured?featCard(p):card(p,i)).join('');
 
-  // filter logic
   document.querySelectorAll('.pfb').forEach(b=>{
     b.addEventListener('click',()=>{
       document.querySelectorAll('.pfb').forEach(x=>x.classList.remove('on'));
@@ -649,135 +997,90 @@ function renderProjects(d){
       });
     });
   });
-  hookGlow();
-  hookCursor();
+  hookGlow(); hookCursor();
 }
 
-function specHtml(specs){
-  return(specs||[]).map(s=>`<div class="psp"><div class="pspl">${esc(s.label)}</div><div class="pspv">${esc(s.value)}</div></div>`).join('');
-}
-function highlightHtml(hls){
-  return(hls||[]).map(h=>`
-    <div class="phi">
-      <div class="phb bc-${h.color||'c'}">${h.icon||'•'}</div>
-      <div class="pht"><strong>${esc(h.title)}</strong> — ${esc(h.detail)}</div>
-    </div>`).join('');
-}
-function techHtml(tech){return(tech||[]).map(t=>`<span class="ptp">${esc(t)}</span>`).join('');}
-function catTagHtml(tags){return(tags||[]).map(t=>`<span class="pctag clr-${t.clr||'c'}">${esc(t.label)}</span>`).join('');}
-function linksHtml(p){
-  let h='';
-  if(p.github) h+=`<a href="${p.github}" target="_blank" class="plk">↗ GitHub</a>`;
-  if(p.demo)   h+=`<a href="${p.demo}" target="_blank" class="plk demo">▶ Live Demo</a>`;
-  return h;
-}
+function hls(arr){return(arr||[]).map(h=>`
+  <div class="phi"><div class="phb bc-${h.color||'c'}">${h.icon}</div>
+  <div class="pht"><strong>${esc(h.title)}</strong> — ${esc(h.detail)}</div></div>`).join('');}
+function specs(arr){return(arr||[]).map(s=>`<div class="psp"><div class="pspl">${esc(s.label)}</div><div class="pspv">${esc(s.value)}</div></div>`).join('');}
+function techs(arr){return(arr||[]).map(t=>`<span class="ptp">${esc(t)}</span>`).join('');}
+function ctags(arr){return(arr||[]).map(t=>`<span class="pctag clr-${t.clr||'c'}">${esc(t.label)}</span>`).join('');}
+function plinks(p){return(p.github?`<a href="${p.github}" target="_blank" class="plk">↗ GitHub</a>`:'')+
+                         (p.demo  ?`<a href="${p.demo}"   target="_blank" class="plk demo">▶ Demo</a>`:'');}
 
-function renderFeaturedCard(p){
-  return`<div class="pcard pfeat rev" data-cat="${(p.categories||[]).join(' ')}">
+function featCard(p){return`
+<div class="pcard pfeat rev" data-cat="${(p.categories||[]).join(' ')}">
   <div class="pglow"></div>
   <div class="pfin">
     <div style="display:flex;flex-direction:column">
       <div class="phd">
-        <div>
-          ${p.badge?`<div class="ptro">${esc(p.badge)}</div>`:''}
-          <div class="pti">${p.emoji||''} ${esc(p.title)}</div>
-          <div class="psu">${esc(p.subtitle||'')}</div>
-        </div>
-        <div class="pic" style="background:${p.iconBg||'rgba(0,240,255,.07)'}">${p.emoji||'🚀'}</div>
+        <div>${p.badge?`<div class="ptro">${esc(p.badge)}</div>`:''}<div class="pti">${p.emoji} ${esc(p.title)}</div><div class="psu">${esc(p.subtitle)}</div></div>
+        <div class="pic" style="background:${p.iconBg||'rgba(0,240,255,.07)'}">${p.emoji}</div>
       </div>
-      <div class="pbo">
-        <p class="pde">${esc(p.description||'')}</p>
-        <div class="phli">${highlightHtml(p.highlights)}</div>
-        <div class="psps">${specHtml(p.specs)}</div>
-        <div class="ptec">${techHtml(p.tech)}</div>
-      </div>
-      <div class="pfo">
-        <div class="pls">${linksHtml(p)}</div>
-        <div class="pcats">${catTagHtml(p.catTags)}</div>
-      </div>
+      <div class="pbo"><p class="pde">${esc(p.description)}</p><div class="phli">${hls(p.highlights)}</div><div class="psps">${specs(p.specs)}</div><div class="ptec">${techs(p.tech)}</div></div>
+      <div class="pfo"><div class="pls">${plinks(p)}</div><div class="pcats">${ctags(p.catTags)}</div></div>
     </div>
-    <div class="pfvis">${featuredVisual()}</div>
+    <div class="pfvis">${glassesVis()}</div>
   </div>
-</div>`;
-}
+</div>`;}
 
-function renderCard(p,idx){
-  return`<div class="pcard rev" data-cat="${(p.categories||[]).join(' ')}" style="transition-delay:${idx*.08}s">
+function card(p,i){return`
+<div class="pcard rev" data-cat="${(p.categories||[]).join(' ')}" style="transition-delay:${i*.08}s">
   <div class="pglow"></div>
   <div class="phd">
-    <div>
-      ${p.badge?`<div class="ptro">${esc(p.badge)}</div>`:''}
-      <div class="pti">${p.emoji||''} ${esc(p.title)}</div>
-      <div class="psu">${esc(p.subtitle||'')}</div>
-    </div>
-    <div class="pic" style="background:${p.iconBg||'rgba(0,240,255,.07)'};border-color:${p.iconBorderColor||'rgba(0,240,255,.2)'}">${p.emoji||'🚀'}</div>
+    <div>${p.badge?`<div class="ptro">${esc(p.badge)}</div>`:''}<div class="pti">${p.emoji} ${esc(p.title)}</div><div class="psu">${esc(p.subtitle)}</div></div>
+    <div class="pic" style="background:${p.iconBg||'rgba(0,240,255,.07)'};border-color:${p.iconBorderColor||'rgba(0,240,255,.2)'}">${p.emoji}</div>
   </div>
-  <div class="pbo">
-    <p class="pde">${esc(p.description||'')}</p>
-    <div class="phli">${highlightHtml(p.highlights)}</div>
-    <div class="psps">${specHtml(p.specs)}</div>
-    <div class="ptec">${techHtml(p.tech)}</div>
-  </div>
-  <div class="pfo">
-    <div class="pls">${linksHtml(p)}</div>
-    <div class="pcats">${catTagHtml(p.catTags)}</div>
-  </div>
-</div>`;
-}
+  <div class="pbo"><p class="pde">${esc(p.description)}</p><div class="phli">${hls(p.highlights)}</div><div class="psps">${specs(p.specs)}</div><div class="ptec">${techs(p.tech)}</div></div>
+  <div class="pfo"><div class="pls">${plinks(p)}</div><div class="pcats">${ctags(p.catTags)}</div></div>
+</div>`;}
 
-function featuredVisual(){
-  return`<svg viewBox="0 0 320 320" width="290" height="290" xmlns="http://www.w3.org/2000/svg">
-    <defs><filter id="fg"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
-    <g filter="url(#fg)" stroke="#00f0ff" stroke-width="2.2" fill="none" opacity=".95">
-      <rect x="28" y="118" width="96" height="72" rx="14"/>
-      <rect x="196" y="118" width="96" height="72" rx="14"/>
-      <line x1="124" y1="154" x2="196" y2="154"/>
-      <line x1="28" y1="154" x2="8" y2="168"/><line x1="292" y1="154" x2="312" y2="168"/>
-    </g>
-    <g stroke="#00f0ff" stroke-width=".7">
-      ${[130,142,154,166,178].map((y,i)=>`
-        <line x1="38" y1="${y}" x2="114" y2="${y}"><animate attributeName="opacity" values=".4;1;.4" dur="1.6s" begin="${i*.25}s" repeatCount="indefinite"/></line>
-        <line x1="206" y1="${y}" x2="282" y2="${y}"><animate attributeName="opacity" values=".4;1;.4" dur="1.6s" begin="${i*.25+.1}s" repeatCount="indefinite"/></line>
-      `).join('')}
-    </g>
-    <g stroke="#ff2d78" stroke-width="1.8" fill="none" filter="url(#fg)">
-      <rect x="44" y="124" width="36" height="36" rx="2"><animate attributeName="opacity" values="0;1;1;0" dur="2.8s" repeatCount="indefinite"/></rect>
-      <rect x="218" y="127" width="34" height="34" rx="2"><animate attributeName="opacity" values="0;1;1;0" dur="2.8s" begin=".9s" repeatCount="indefinite"/></rect>
-    </g>
-    <text x="46" y="122" fill="#ff2d78" font-size="7.5" font-family="Space Mono,monospace"><animate attributeName="opacity" values="0;1;1;0" dur="2.8s" repeatCount="indefinite"/>OBJ 0.94</text>
-    <text x="218" y="125" fill="#ff2d78" font-size="7.5" font-family="Space Mono,monospace"><animate attributeName="opacity" values="0;1;1;0" dur="2.8s" begin=".9s" repeatCount="indefinite"/>PATH 0.87</text>
-    <g fill="rgba(0,240,255,.06)" stroke="#a855f7" stroke-width="1.2">
-      <rect x="55" y="234" width="52" height="30" rx="3"/>
-      <rect x="134" y="234" width="52" height="30" rx="3"/>
-      <rect x="213" y="234" width="52" height="30" rx="3"/>
-    </g>
-    <g font-family="Space Mono,monospace" font-size="7.5" text-anchor="middle" fill="#a855f7">
-      <text x="81" y="253">ESP32</text><text x="160" y="253">ESP32</text><text x="239" y="253">ESP32</text>
-    </g>
-    <line x1="81" y1="234" x2="72" y2="190" stroke="#a855f7" stroke-width="1" opacity=".5"/>
-    <line x1="160" y1="234" x2="160" y2="190" stroke="#a855f7" stroke-width="1" opacity=".5"/>
-    <line x1="239" y1="234" x2="248" y2="190" stroke="#a855f7" stroke-width="1" opacity=".5"/>
-    <g stroke="#00ff88" stroke-width="1.8" fill="none" filter="url(#fg)" opacity=".75">
-      <path d="M150,72 Q160,62 170,72"><animate attributeName="opacity" values=".75;1;.75" dur="1.1s" repeatCount="indefinite"/></path>
-      <path d="M141,63 Q160,47 179,63"><animate attributeName="opacity" values=".5;1;.5" dur="1.1s" begin=".25s" repeatCount="indefinite"/></path>
-      <path d="M132,54 Q160,32 188,54"><animate attributeName="opacity" values=".3;.8;.3" dur="1.1s" begin=".5s" repeatCount="indefinite"/></path>
-      <circle cx="160" cy="78" r="3.5" fill="#00ff88"/>
-    </g>
-    <text x="160" y="218" text-anchor="middle" font-family="Space Mono,monospace" font-size="7.5" fill="#00f0ff" opacity=".6">3× CAM · YOLO · 360° COVERAGE</text>
-  </svg>`;
-}
+function glassesVis(){return`<svg viewBox="0 0 320 320" width="290" height="290" xmlns="http://www.w3.org/2000/svg">
+  <defs><filter id="fg"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+  <g filter="url(#fg)" stroke="#00f0ff" stroke-width="2.2" fill="none" opacity=".95">
+    <rect x="28" y="118" width="96" height="72" rx="14"/><rect x="196" y="118" width="96" height="72" rx="14"/>
+    <line x1="124" y1="154" x2="196" y2="154"/><line x1="28" y1="154" x2="8" y2="168"/><line x1="292" y1="154" x2="312" y2="168"/>
+  </g>
+  <g stroke="#00f0ff" stroke-width=".7">
+    ${[130,142,154,166,178].map((y,i)=>`
+      <line x1="38" y1="${y}" x2="114" y2="${y}"><animate attributeName="opacity" values=".4;1;.4" dur="1.6s" begin="${i*.25}s" repeatCount="indefinite"/></line>
+      <line x1="206" y1="${y}" x2="282" y2="${y}"><animate attributeName="opacity" values=".4;1;.4" dur="1.6s" begin="${i*.25+.1}s" repeatCount="indefinite"/></line>`).join('')}
+  </g>
+  <g stroke="#ff2d78" stroke-width="1.8" fill="none" filter="url(#fg)">
+    <rect x="44" y="124" width="36" height="36" rx="2"><animate attributeName="opacity" values="0;1;1;0" dur="2.8s" repeatCount="indefinite"/></rect>
+    <rect x="218" y="127" width="34" height="34" rx="2"><animate attributeName="opacity" values="0;1;1;0" dur="2.8s" begin=".9s" repeatCount="indefinite"/></rect>
+  </g>
+  <text x="46" y="122" fill="#ff2d78" font-size="7.5" font-family="Space Mono,monospace"><animate attributeName="opacity" values="0;1;1;0" dur="2.8s" repeatCount="indefinite"/>OBJ 0.94</text>
+  <text x="218" y="125" fill="#ff2d78" font-size="7.5" font-family="Space Mono,monospace"><animate attributeName="opacity" values="0;1;1;0" dur="2.8s" begin=".9s" repeatCount="indefinite"/>PATH 0.87</text>
+  <g fill="rgba(0,240,255,.06)" stroke="#a855f7" stroke-width="1.2">
+    <rect x="55" y="234" width="52" height="30" rx="3"/><rect x="134" y="234" width="52" height="30" rx="3"/><rect x="213" y="234" width="52" height="30" rx="3"/>
+  </g>
+  <g font-family="Space Mono,monospace" font-size="7.5" text-anchor="middle" fill="#a855f7">
+    <text x="81" y="253">ESP32</text><text x="160" y="253">ESP32</text><text x="239" y="253">ESP32</text>
+  </g>
+  <line x1="81" y1="234" x2="72" y2="190" stroke="#a855f7" stroke-width="1" opacity=".5"/>
+  <line x1="160" y1="234" x2="160" y2="190" stroke="#a855f7" stroke-width="1" opacity=".5"/>
+  <line x1="239" y1="234" x2="248" y2="190" stroke="#a855f7" stroke-width="1" opacity=".5"/>
+  <g stroke="#00ff88" stroke-width="1.8" fill="none" filter="url(#fg)" opacity=".75">
+    <path d="M150,72 Q160,62 170,72"><animate attributeName="opacity" values=".75;1;.75" dur="1.1s" repeatCount="indefinite"/></path>
+    <path d="M141,63 Q160,47 179,63"><animate attributeName="opacity" values=".5;1;.5" dur="1.1s" begin=".25s" repeatCount="indefinite"/></path>
+    <path d="M132,54 Q160,32 188,54"><animate attributeName="opacity" values=".3;.8;.3" dur="1.1s" begin=".5s" repeatCount="indefinite"/></path>
+    <circle cx="160" cy="78" r="3.5" fill="#00ff88"/>
+  </g>
+  <text x="160" y="218" text-anchor="middle" font-family="Space Mono,monospace" font-size="7.5" fill="#00f0ff" opacity=".6">3× CAM · YOLO · 360° COVERAGE</text>
+</svg>`;}
 
 /* ══════════════════════════════════════════
-   RENDER: BUILDING GRID
+   RENDER: BUILDING
 ══════════════════════════════════════════ */
 function renderBuilding(d){
-  const items=d.building||[];
-  document.getElementById('building-grid').innerHTML=items.map((b,i)=>`
+  document.getElementById('building-grid').innerHTML=(d.building||[]).map((b,i)=>`
     <div class="bca rev" style="transition-delay:${i*.08}s">
-      <div class="bic">${b.icon||'⚙️'}</div>
+      <div class="bic">${b.icon}</div>
       <div class="btti">${esc(b.title)}</div>
       <div class="bde">${esc(b.desc)}</div>
-      <div class="bst">${esc(b.status||'In Progress')}</div>
+      <div class="bst">${esc(b.status)}</div>
     </div>`).join('');
 }
 
@@ -785,16 +1088,13 @@ function renderBuilding(d){
    RENDER: STATS CARDS
 ══════════════════════════════════════════ */
 function renderStats(d){
-  const count=d.projects?.length||0;
-  const cgpa=d.stats?.cgpa||d.meta?.cgpa||8.35;
-  const cards=[
-    {n:count+'+', l:'Projects Shipped', g:'linear-gradient(135deg,var(--c),var(--v))', cb:'var(--c)'},
-    {n:cgpa,       l:'CGPA',             g:'linear-gradient(135deg,var(--v),var(--p))', cb:'var(--v)'},
-    {n:'🏅',       l:'Expo Selected',    g:'linear-gradient(135deg,var(--p),var(--y))', cb:'var(--p)'},
-    {n:d.stats?.domains||6, l:'Tech Domains', g:'linear-gradient(135deg,var(--g),var(--c))', cb:'var(--g)'},
-  ];
-  document.getElementById('stats-cards').innerHTML=cards.map((c,i)=>`
-    <div class="stc rev" style="--cb:${c.cb};transition-delay:${i*.08}s">
+  document.getElementById('stats-cards').innerHTML=[
+    {n:PROJECT_COUNT+'+',l:'Projects Shipped',g:'linear-gradient(135deg,var(--c),var(--v))'},
+    {n:CGPA,     l:'CGPA',            g:'linear-gradient(135deg,var(--v),var(--p))'},
+    {n:'🏅',     l:'Expo Selected',   g:'linear-gradient(135deg,var(--p),var(--y))'},
+    {n:d.stats?.domains||6,l:'Tech Domains',g:'linear-gradient(135deg,var(--g),var(--c))'},
+  ].map((c,i)=>`
+    <div class="stc rev" style="transition-delay:${i*.08}s">
       <div style="position:absolute;top:0;left:0;right:0;height:2px;background:${c.g}"></div>
       <div class="stn" style="background:${c.g};-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">${c.n}</div>
       <div class="stl">${c.l}</div>
@@ -806,15 +1106,14 @@ function renderStats(d){
 ══════════════════════════════════════════ */
 function renderContact(d){
   const m=d.meta||{};
-  const cards=[
-    {href:`mailto:${m.email}`,cls:'cce',grad:'linear-gradient(135deg,rgba(255,45,120,.06),transparent)',hov:'rgba(255,45,120,.28)',icb:'rgba(255,45,120,.28)',icbg:'rgba(255,45,120,.06)',clr:'var(--p)',icon:'📧',title:'Email — Primary Contact',detail:m.email||'',note:'Best for internship enquiries, project collabs & opportunities',act:'Send email'},
-    {href:m.linkedin,cls:'ccl',grad:'linear-gradient(135deg,rgba(0,240,255,.06),transparent)',hov:'rgba(0,240,255,.28)',icb:'rgba(0,240,255,.28)',icbg:'rgba(0,240,255,.06)',clr:'var(--c)',icon:'💼',title:'LinkedIn — Professional',detail:(m.linkedin||'').replace('https://',''),note:'Connect for professional networking, recommendations & opportunities',act:'View profile'},
-    {href:m.github,cls:'ccg',grad:'linear-gradient(135deg,rgba(168,85,247,.06),transparent)',hov:'rgba(168,85,247,.28)',icb:'rgba(168,85,247,.28)',icbg:'rgba(168,85,247,.06)',clr:'var(--v)',icon:'🐙',title:'GitHub — Code & Projects',detail:(m.github||'').replace('https://',''),note:'Browse all source code, repositories & open-source contributions',act:'See all code'},
-    {href:m.instagram,cls:'cci2',grad:'linear-gradient(135deg,rgba(255,215,0,.05),transparent)',hov:'rgba(255,215,0,.28)',icb:'rgba(255,215,0,.28)',icbg:'rgba(255,215,0,.05)',clr:'var(--y)',icon:'📸',title:'Instagram',detail:(m.instagram||'').replace('https://www.instagram.com/','@').replace('/',''),note:'Dev updates, project previews & behind-the-scenes builds',act:'Follow me'},
-  ];
-  document.getElementById('contact-cards').innerHTML=cards.filter(c=>c.href).map(c=>`
+  document.getElementById('contact-cards').innerHTML=[
+    {href:`mailto:${m.email}`,hov:'rgba(255,45,120,.28)',icb:'rgba(255,45,120,.28)',icbg:'rgba(255,45,120,.06)',clr:'var(--p)',icon:'📧',title:'Email — Primary Contact',detail:m.email,note:'Best for internship enquiries, project collabs & opportunities',act:'Send email'},
+    {href:m.linkedin,hov:'rgba(0,240,255,.28)',icb:'rgba(0,240,255,.28)',icbg:'rgba(0,240,255,.06)',clr:'var(--c)',icon:'💼',title:'LinkedIn — Professional',detail:(m.linkedin||'').replace('https://',''),note:'Connect for networking, recommendations & opportunities',act:'View profile'},
+    {href:m.github,hov:'rgba(168,85,247,.28)',icb:'rgba(168,85,247,.28)',icbg:'rgba(168,85,247,.06)',clr:'var(--v)',icon:'🐙',title:'GitHub — Code & Projects',detail:(m.github||'').replace('https://',''),note:'Browse all source code, repositories & contributions',act:'See all code'},
+    {href:m.instagram,hov:'rgba(255,215,0,.28)',icb:'rgba(255,215,0,.28)',icbg:'rgba(255,215,0,.05)',clr:'var(--y)',icon:'📸',title:'Instagram',detail:(m.instagram||'').replace('https://www.instagram.com/','@').replace('/',''),note:'Dev updates, project previews & behind-the-scenes builds',act:'Follow me'},
+  ].filter(c=>c.href).map(c=>`
     <a href="${c.href}" target="${c.href.startsWith('mailto')?'_self':'_blank'}" class="cca"
-      style="--cgg:${c.grad}"
+      style="--cgg:linear-gradient(135deg,${c.icbg},transparent)"
       onmouseenter="this.style.borderColor='${c.hov}'"
       onmouseleave="this.style.borderColor=''">
       <div class="cci" style="border-color:${c.icb};background:${c.icbg}">${c.icon}</div>
@@ -824,65 +1123,34 @@ function renderContact(d){
       <div class="cca2" style="color:${c.clr}">${c.act} <span class="car">→</span></div>
     </a>`).join('');
 
-  // open to pills
   document.getElementById('open-to-pills').innerHTML=(d.openTo||[]).map(x=>`<span class="opp">${esc(x)}</span>`).join('');
-
-  // CTA
   document.getElementById('contact-cta').innerHTML=`
-    <a href="mailto:${m.email||''}" class="btn bs" style="padding:14px 36px;font-size:.76rem">📧 Hire Me — Send Email</a>
+    <a href="mailto:${m.email}" class="btn bs" style="padding:14px 36px;font-size:.76rem">📧 Hire Me — Send Email</a>
     <a href="${m.linkedin||'#'}" target="_blank" class="btn bo">💼 LinkedIn</a>
     <a href="${m.github||'#'}" target="_blank" class="btn bv">🐙 GitHub</a>`;
-
-  // footer links
   document.getElementById('footer-links').innerHTML=[
-    {l:'Email',h:`mailto:${m.email}`},
-    {l:'GitHub',h:m.github},
-    {l:'LinkedIn',h:m.linkedin},
-    {l:'Instagram',h:m.instagram},
+    {l:'Email',h:`mailto:${m.email}`},{l:'GitHub',h:m.github},
+    {l:'LinkedIn',h:m.linkedin},{l:'Instagram',h:m.instagram},
   ].filter(x=>x.h).map(x=>`<a href="${x.h}" target="_blank">${x.l}</a>`).join('');
 }
 
 /* ══════════════════════════════════════════
-   MAIN — FETCH data.json AND BOOT
+   BOOT — uses DATA object defined above
 ══════════════════════════════════════════ */
-async function boot(){
-  let d;
-  try{
-    // cache-bust: forces Vercel CDN to always serve the latest data.json
-    const res=await fetch('./data.json?v='+Date.now());
-    if(!res.ok) throw new Error('HTTP '+res.status);
-    const raw=await res.text();
-    try{ d=JSON.parse(raw); }
-    catch(parseErr){
-      console.error('data.json has a JSON syntax error:',parseErr.message);
-      throw parseErr;
-    }
-    console.log('%c data.json loaded OK','color:#00f0ff',d);
-  }catch(e){
-    console.error('Could not load data.json:',e.message,'-- using fallback');
-    // graceful fallback — site still works with bare-minimum data
-    console.warn('data.json not found — using fallback');
-    d={meta:{name:'Ankit Sengupta',role:'AI Eng & Backend Dev',university:'VIT Amaravati · 2028',cgpa:8.35,email:'ankit.sengupta05@gmail.com',linkedin:'https://linkedin.com/in/Sengupta-ankit',github:'https://github.com/ankit-sengupta05',instagram:'https://www.instagram.com/ankit_sengupta/',trophy:'🏅 VIT Internal Expo 2025',power:'ML theory → production',status:'🟢 Open to internships!'},stats:{cgpa:8.35,domains:6,classOf:2028},projects:[],building:[],skillCategories:[],openTo:[],codeBlock:{skills:{}}};
-  }
-
-  // render all sections
-  renderHeroStats(d);
-  renderCodeBlock(d);
-  renderSkills(d);
-  renderProjects(d);
-  renderBuilding(d);
-  renderStats(d);
-  renderContact(d);
-
-  // re-observe any new .rev elements injected by JS
+function boot(){
+  renderHeroStats(DATA);
+  renderCodeBlock(DATA);
+  renderSkills(DATA);
+  renderProjects(DATA);
+  renderBuilding(DATA);
+  renderStats(DATA);
+  renderContact(DATA);
   observeReveal();
   hookCursor();
-
-  // hide loader
-  setTimeout(()=>document.getElementById('loader').classList.add('hide'),400);
+  setTimeout(()=>document.getElementById('loader').classList.add('hide'),300);
 }
-
 boot();
+
 </script>
 </body>
 </html>
