@@ -111,11 +111,26 @@ section{position:relative;z-index:2;padding:110px 72px;}
 .bpc{font-family:var(--ffm);font-size:.59rem;color:var(--muted);}
 .btr{height:3px;background:var(--bg4);border-radius:2px;overflow:hidden;}
 .bfi{height:100%;width:0;border-radius:2px;transition:width 1.3s cubic-bezier(.4,0,.2,1);}
-.cbl{background:var(--bg3);border:1px solid var(--border);border-radius:6px;overflow:hidden;font-family:var(--ffm);}
-.cblh{background:var(--bg4);padding:10px 16px;display:flex;align-items:center;gap:8px;border-bottom:1px solid var(--border);}
+.cbl{background:var(--bg3);border:1px solid var(--border);border-radius:6px;overflow:hidden;font-family:var(--ffm);display:flex;flex-direction:column;}
+.cblh{background:var(--bg4);padding:10px 16px;display:flex;align-items:center;gap:8px;border-bottom:1px solid var(--border);flex-shrink:0;}
 .cdot{width:10px;height:10px;border-radius:50%;}
-.cblb{padding:17px 21px;font-size:.67rem;line-height:1.95;overflow-x:auto;}
+/* Code body — single controlled font size, no inheritance blowout */
+.cblb{padding:16px 20px;font-size:.68rem;line-height:1.85;overflow-x:auto;flex:1;}
+.cblb *{font-size:.68rem !important;line-height:1.85;font-family:var(--ffm) !important;}
 .cblb .kw{color:var(--v);}.cblb .cl{color:var(--y);}.cblb .fn{color:var(--c);}.cblb .st{color:var(--g);}.cblb .nm{color:var(--p);}.cblb .cm{color:var(--muted);}
+/* ── Cursor blink inside code block ── */
+.cblb .codeblink{display:inline-block;width:7px;height:.75em;background:var(--c);vertical-align:text-bottom;margin-left:2px;animation:cb .7s infinite;}
+/* ── Mini stat pills below code ── */
+.cbl-footer{background:var(--bg4);border-top:1px solid var(--border);padding:10px 18px;display:flex;gap:10px;flex-wrap:wrap;flex-shrink:0;}
+.cbl-pill{display:inline-flex;align-items:center;gap:5px;padding:4px 10px;border-radius:2px;font-family:var(--ffm);font-size:.58rem;letter-spacing:.1em;border:1px solid var(--border);color:var(--muted);transition:all .25s;}
+.cbl-pill:hover{border-color:var(--c);color:var(--c);}
+.cbl-pill .dot{width:5px;height:5px;border-radius:50%;background:var(--g);box-shadow:0 0 6px var(--g);}
+/* ── Live CGPA badge ── */
+.cgpa-live{display:inline-flex;align-items:center;gap:6px;padding:2px 8px;border-radius:2px;background:rgba(0,245,212,.07);border:1px solid rgba(0,240,255,.25);cursor:default;}
+.cgpa-live .val{color:var(--c);font-weight:700;transition:color .3s;}
+/* ── Edit tooltip hint ── */
+.edit-hint{font-family:var(--ffm);font-size:.52rem;color:var(--muted);letter-spacing:.1em;margin-top:8px;display:flex;align-items:center;gap:5px;opacity:.7;}
+.edit-hint::before{content:'✎';color:var(--c);}
 #skills{background:var(--bg2);}
 .ski{font-size:1.03rem;line-height:1.7;color:rgba(226,240,255,.62);max-width:620px;margin:10px 0 48px;}
 .skg{display:grid;grid-template-columns:repeat(auto-fit,minmax(278px,1fr));gap:22px;}
@@ -353,37 +368,20 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:26px 72px
         <div class="brow"><div class="bhead"><span class="bnm">JavaScript / TypeScript</span><span class="bpc">68%</span></div><div class="btr"><div class="bfi" data-w="68" style="background:linear-gradient(90deg,#00ff88,#00f0ff)"></div></div></div>
       </div>
     </div>
-    <div class="cbl revR">
+    <div class="cbl revR" id="code-card">
       <div class="cblh">
         <div class="cdot" style="background:#ff5f57"></div>
         <div class="cdot" style="background:#febc2e"></div>
         <div class="cdot" style="background:#28c840"></div>
         <span style="font-family:var(--ffm);font-size:.6rem;color:var(--muted);margin-left:8px">ankit_sengupta.py</span>
+        <span style="margin-left:auto;font-family:var(--ffm);font-size:.55rem;color:var(--g);letter-spacing:.1em;display:flex;align-items:center;gap:4px"><span style="width:5px;height:5px;border-radius:50%;background:var(--g);display:inline-block;box-shadow:0 0 6px var(--g)"></span>data.json</span>
       </div>
-      <div class="cblb">
-<span class="kw">class</span> <span class="cl">AnkitSengupta</span>:<br>
-&nbsp;&nbsp;<span class="kw">def</span> <span class="fn">__init__</span>(<span class="nm">self</span>):<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="nm">self</span>.name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= <span class="st">"Ankit Sengupta"</span><br>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="nm">self</span>.role&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= <span class="st">"AI Eng &amp; Backend Dev"</span><br>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="nm">self</span>.university = <span class="st">"VIT Amaravati · 2028"</span><br>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="nm">self</span>.cgpa&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= <span class="nm">8.35</span><br>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="nm">self</span>.email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= <span class="st">"ankit.sengupta05@gmail"</span><br>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="nm">self</span>.skills = {<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="st">"AI/ML"</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: [<span class="st">"RAG"</span>,<span class="st">"Agents"</span>,<span class="st">"YOLO"</span>,<span class="st">"TF"</span>],<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="st">"Backend"</span>&nbsp;&nbsp;&nbsp;: [<span class="st">"Django"</span>,<span class="st">"FastAPI"</span>,<span class="st">"Node"</span>],<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="st">"Languages"</span> : [<span class="st">"Python"</span>,<span class="st">"JS"</span>,<span class="st">"TS"</span>,<span class="st">"C++"</span>],<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="st">"Mobile"</span>&nbsp;&nbsp;&nbsp;&nbsp;: [<span class="st">"Android"</span>,<span class="st">"Kotlin"</span>,<span class="st">"FB"</span>],<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="st">"Embedded"</span>&nbsp;&nbsp;: [<span class="st">"ESP32"</span>,<span class="st">"Arduino"</span>,<span class="st">"C++"</span>],<br>
-&nbsp;&nbsp;&nbsp;&nbsp;}<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="nm">self</span>.trophy = <span class="st">"🏅 VIT Internal Expo 2025"</span><br>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="nm">self</span>.power&nbsp;&nbsp;= <span class="st">"ML theory → production"</span><br>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="nm">self</span>.status = <span class="st">"🟢 Open to internships!"</span><br><br>
-&nbsp;&nbsp;<span class="kw">def</span> <span class="fn">say_hi</span>(<span class="nm">self</span>):<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="kw">print</span>(<span class="st">"Let's build something 🚀"</span>)<br><br>
-<span class="cm"># initialise</span><br>
-dev = <span class="cl">AnkitSengupta</span>()<br>
-dev.<span class="fn">say_hi</span>()
+      <!-- JS renders code here -->
+      <div class="cblb" id="codeblock-body">
+        <span style="color:var(--muted)">// loading data.json…</span>
       </div>
+      <!-- Creative footer with live stats -->
+      <div class="cbl-footer" id="codeblock-footer"></div>
     </div>
   </div>
 </section>
@@ -738,10 +736,10 @@ dev.<span class="fn">say_hi</span>()
   </div>
   <div style="max-width:800px;margin:0 auto">
     <div class="cgri rev">
-      <a href="mailto:ankit.sengupta05@gmail.com" class="cca cce">
+      <a href="/cdn-cgi/l/email-protection#ceafa0a5a7bae0bdaba0a9bbbebaaffefb8ea9a3afa7a2e0ada1a3" class="cca cce">
         <div class="cci">📧</div>
         <div class="cct">Email — Primary Contact</div>
-        <div class="ccd">ankit.sengupta05@gmail.com</div>
+        <div class="ccd"><span class="__cf_email__" data-cfemail="dfbeb1b4b6abf1acbab1b8aaafabbeefea9fb8b2beb6b3f1bcb0b2">[email&#160;protected]</span></div>
         <div class="ccn">Best for internship enquiries, project collabs &amp; opportunities</div>
         <div class="cca2">Send email <span class="car">→</span></div>
       </a>
@@ -779,7 +777,7 @@ dev.<span class="fn">say_hi</span>()
       </div>
     </div>
     <div class="ctar rev">
-      <a href="mailto:ankit.sengupta05@gmail.com" class="btn bs" style="padding:14px 36px;font-size:.76rem">📧 Hire Me — Send Email</a>
+      <a href="/cdn-cgi/l/email-protection#fa9b9491938ed4899f949d8f8a8e9bcacfba9d979b9396d4999597" class="btn bs" style="padding:14px 36px;font-size:.76rem">📧 Hire Me — Send Email</a>
       <a href="https://linkedin.com/in/Sengupta-ankit" target="_blank" class="btn bo">💼 LinkedIn</a>
       <a href="https://github.com/ankit-sengupta05" target="_blank" class="btn bv">🐙 GitHub</a>
     </div>
@@ -790,14 +788,14 @@ dev.<span class="fn">say_hi</span>()
   <div class="fn">ANKIT SENGUPTA</div>
   <div class="fco">// VIT Amaravati · CS AI&amp;ML · Class of 2028 · CGPA 8.35</div>
   <div class="fli">
-    <a href="mailto:ankit.sengupta05@gmail.com">Email</a>
+    <a href="/cdn-cgi/l/email-protection#2647484d4f52085543484153565247161366414b474f4a0845494b">Email</a>
     <a href="https://github.com/ankit-sengupta05" target="_blank">GitHub</a>
     <a href="https://linkedin.com/in/Sengupta-ankit" target="_blank">LinkedIn</a>
     <a href="https://www.instagram.com/ankit_sengupta/" target="_blank">Instagram</a>
   </div>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 const cur=document.getElementById('cur'),cur2=document.getElementById('cur2');
 let mx=0,my=0,rx=0,ry=0;
 document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cur.style.left=mx+'px';cur.style.top=my+'px';});
@@ -832,6 +830,86 @@ document.querySelectorAll('.pcard').forEach(c=>{c.addEventListener('mousemove',e
 const secs=document.querySelectorAll('section[id]'),nls=document.querySelectorAll('.nli a');
 window.addEventListener('scroll',()=>{let cs='';secs.forEach(s=>{if(window.scrollY>=s.offsetTop-160)cs=s.id;});nls.forEach(a=>{a.style.color=a.getAttribute('href')==='#'+cs?'var(--c)':'';});},{passive:true});
 nls.forEach(a=>{a.addEventListener('click',e=>{e.preventDefault();document.querySelector(a.getAttribute('href'))?.scrollIntoView({behavior:'smooth'});});});
+
+/* ══ DATA.JSON LOADER ══
+   Edit data.json in the same directory to update CGPA, name, skills etc.
+   The code block in the About section re-renders automatically.
+══════════════════════ */
+async function loadData(){
+  let d;
+  try{
+    const res=await fetch('./data.json');
+    if(!res.ok)throw new Error();
+    d=await res.json();
+  }catch(e){
+    d={name:"Ankit Sengupta",role:"AI Eng & Backend Dev",university:"VIT Amaravati · 2028",
+       cgpa:8.35,email:"ankit.sengupta05@gmail.com",trophy:"🏅 VIT Internal Expo 2025",
+       power:"ML theory → production",status:"🟢 Open to internships!",projects:5,
+       skills:{"AI/ML":["RAG","Agents","YOLO","TF"],"Backend":["Django","FastAPI","Node"],
+                "Languages":["Python","JS","TS","C++"],"Mobile":["Android","Kotlin","FB"],
+                "Embedded":["ESP32","Arduino","C++"]}};
+  }
+  renderCode(d);
+  updateStats(d);
+}
+function kw(t){return`<span class="kw">${t}</span>`;}
+function cl2(t){return`<span class="cl">${t}</span>`;}
+function fn2(t){return`<span class="fn">${t}</span>`;}
+function st2(t){return`<span class="st">"${String(t).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}"</span>`;}
+function nm2(t){return`<span class="nm">${t}</span>`;}
+function cm2(t){return`<span class="cm">${t}</span>`;}
+function sp(n){return'&nbsp;'.repeat(n);}
+
+function renderCode(d){
+  const skills=d.skills||{};
+  const skillLines=Object.entries(skills).map(([k,v])=>{
+    const vals=v.map(x=>st2(x)).join(', ');
+    const pad=Math.max(1,11-k.length);
+    return `${sp(6)}${st2(k)}${sp(pad)}: [${vals}],`;
+  }).join('<br>');
+
+  const html=[
+    cm2('# ── loaded from data.json ──────'),
+    '<br>',
+    `${kw('class')} ${cl2('AnkitSengupta')}:`,
+    `${sp(2)}${kw('def')} ${fn2('__init__')}(${nm2('self')}):`,
+    `${sp(4)}${nm2('self')}.name${sp(7)}= ${st2(d.name)}`,
+    `${sp(4)}${nm2('self')}.role${sp(7)}= ${st2(d.role)}`,
+    `${sp(4)}${nm2('self')}.university = ${st2(d.university)}`,
+    `${sp(4)}${nm2('self')}.cgpa${sp(7)}= <span class="nm" id="live-cgpa">${d.cgpa}</span>`,
+    `${sp(4)}${nm2('self')}.email${sp(6)}= ${st2(d.email)}`,
+    `${sp(4)}${nm2('self')}.skills = {`,
+    skillLines,
+    `${sp(4)}}`,
+    `${sp(4)}${nm2('self')}.trophy = ${st2(d.trophy)}`,
+    `${sp(4)}${nm2('self')}.power${sp(4)}= ${st2(d.power)}`,
+    `${sp(4)}${nm2('self')}.status = ${st2(d.status)}`,
+    '<br>',
+    `${sp(2)}${kw('def')} ${fn2('say_hi')}(${nm2('self')}):`,
+    `${sp(4)}${kw('print')}(${st2('Lets build something 🚀')})`,
+    '<br>',
+    cm2('# ── initialise ──'),
+    `dev = ${cl2('AnkitSengupta')}()`,
+    `dev.${fn2('say_hi')}()<span class="codeblink"></span>`,
+  ].join('<br>');
+
+  const body=document.getElementById('codeblock-body');
+  if(body) body.innerHTML=html;
+
+  const footer=document.getElementById('codeblock-footer');
+  if(footer) footer.innerHTML=[
+    {e:'📊',l:`CGPA: ${d.cgpa}`},{e:'🏅',l:'Expo Selected'},
+    {e:'📦',l:`${d.projects||5}+ Projects`},{e:'🟢',l:'Available'},
+  ].map(p=>`<span class="cbl-pill"><span class="dot"></span>${p.e} ${p.l}</span>`).join('');
+}
+
+function updateStats(d){
+  const ns=document.querySelectorAll('.hsn');
+  if(ns[0]) ns[0].textContent=(d.projects||5)+'+';
+  if(ns[1]) ns[1].textContent=d.cgpa||'8.35';
+}
+
+loadData();
 </script>
 </body>
 </html>
