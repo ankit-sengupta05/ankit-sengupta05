@@ -848,10 +848,18 @@ function renderContact(d){
 async function boot(){
   let d;
   try{
-    const res=await fetch('./data.json');
-    if(!res.ok) throw 0;
-    d=await res.json();
+    // cache-bust: forces Vercel CDN to always serve the latest data.json
+    const res=await fetch('./data.json?v='+Date.now());
+    if(!res.ok) throw new Error('HTTP '+res.status);
+    const raw=await res.text();
+    try{ d=JSON.parse(raw); }
+    catch(parseErr){
+      console.error('data.json has a JSON syntax error:',parseErr.message);
+      throw parseErr;
+    }
+    console.log('%c data.json loaded OK','color:#00f0ff',d);
   }catch(e){
+    console.error('Could not load data.json:',e.message,'-- using fallback');
     // graceful fallback — site still works with bare-minimum data
     console.warn('data.json not found — using fallback');
     d={meta:{name:'Ankit Sengupta',role:'AI Eng & Backend Dev',university:'VIT Amaravati · 2028',cgpa:8.35,email:'ankit.sengupta05@gmail.com',linkedin:'https://linkedin.com/in/Sengupta-ankit',github:'https://github.com/ankit-sengupta05',instagram:'https://www.instagram.com/ankit_sengupta/',trophy:'🏅 VIT Internal Expo 2025',power:'ML theory → production',status:'🟢 Open to internships!'},stats:{cgpa:8.35,domains:6,classOf:2028},projects:[],building:[],skillCategories:[],openTo:[],codeBlock:{skills:{}}};
