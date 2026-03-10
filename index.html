@@ -4,44 +4,42 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Ankit Sengupta — AI Engineer & Backend Developer</title>
-<meta name="description" content="Ankit Sengupta — AI Engineer, Backend Developer, Embedded IoT. VIT Amaravati CS AI ML 2028."/>
+<meta name="description" content="Ankit Sengupta — AI Engineer, Backend Dev, Embedded IoT. VIT Amaravati CS AI ML 2028."/>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Space+Mono:wght@400;700&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#02020a;--bg2:#06060f;--bg3:#0a0a1a;--bg4:#0f0f22;--bg5:#13132a;
+  --bg:#02020a;--bg2:#06060f;--bg3:#0a0a1a;--bg4:#0f0f22;
   --c:#00f0ff;--p:#ff2d78;--v:#a855f7;--g:#00ff88;--y:#ffd700;
-  --txt:#e2f0ff;--muted:#4a5580;
-  --border:rgba(0,240,255,0.1);
+  --txt:#e2f0ff;--muted:#4a5580;--border:rgba(0,240,255,.1);
   --ffh:'Orbitron',monospace;--ffb:'Rajdhani',sans-serif;--ffm:'Space Mono',monospace;
 }
 *{margin:0;padding:0;box-sizing:border-box;}
 html{scroll-behavior:smooth;}
 body{background:var(--bg);color:var(--txt);font-family:var(--ffb);overflow-x:hidden;cursor:none;}
-::selection{background:rgba(0,240,255,0.18);color:var(--c);}
-::-webkit-scrollbar{width:3px;}
-::-webkit-scrollbar-track{background:var(--bg);}
-::-webkit-scrollbar-thumb{background:linear-gradient(var(--c),var(--v));}
+::selection{background:rgba(0,240,255,.18);color:var(--c);}
+::-webkit-scrollbar{width:3px;}::-webkit-scrollbar-track{background:var(--bg);}::-webkit-scrollbar-thumb{background:linear-gradient(var(--c),var(--v));}
 #cur{position:fixed;width:9px;height:9px;background:var(--c);border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);mix-blend-mode:screen;box-shadow:0 0 12px var(--c);transition:width .18s,height .18s,background .18s;}
 #cur2{position:fixed;width:32px;height:32px;border:1px solid rgba(0,240,255,.45);border-radius:50%;pointer-events:none;z-index:9998;transform:translate(-50%,-50%);transition:left .09s,top .09s,width .2s,height .2s;}
-.gridbg{position:fixed;top:0;left:0;width:100%;height:100%;background-image:linear-gradient(rgba(0,240,255,.024) 1px,transparent 1px),linear-gradient(90deg,rgba(0,240,255,.024) 1px,transparent 1px);background-size:48px 48px;pointer-events:none;z-index:0;animation:gm 25s linear infinite;}
-@keyframes gm{0%{background-position:0 0;}100%{background-position:48px 48px;}}
+.gridbg{position:fixed;inset:0;background-image:linear-gradient(rgba(0,240,255,.024) 1px,transparent 1px),linear-gradient(90deg,rgba(0,240,255,.024) 1px,transparent 1px);background-size:48px 48px;pointer-events:none;z-index:0;animation:gm 25s linear infinite;}
+@keyframes gm{to{background-position:48px 48px;}}
 .scl{position:fixed;inset:0;pointer-events:none;z-index:1;background:repeating-linear-gradient(0deg,transparent,transparent 3px,rgba(0,0,0,.06) 3px,rgba(0,0,0,.06) 4px);}
 #pcv{position:fixed;inset:0;z-index:0;pointer-events:none;}
+/* NAV */
 nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:18px 64px;display:flex;align-items:center;justify-content:space-between;background:rgba(2,2,10,.88);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);}
 .nlo{font-family:var(--ffh);font-size:.9rem;font-weight:900;color:var(--c);letter-spacing:.18em;text-shadow:0 0 18px rgba(0,240,255,.45);}
 .nlo span{color:var(--p);}
 .nli{display:flex;gap:30px;list-style:none;}
 .nli a{font-family:var(--ffm);font-size:.63rem;color:var(--muted);text-decoration:none;letter-spacing:.18em;text-transform:uppercase;transition:color .25s;position:relative;}
 .nli a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:1px;background:var(--c);transition:width .3s;}
-.nli a:hover{color:var(--c);}.nli a:hover::after{width:100%;}
+.nli a:hover,.nli a.act{color:var(--c);}.nli a:hover::after,.nli a.act::after{width:100%;}
 .nst{display:flex;align-items:center;gap:7px;font-family:var(--ffm);font-size:.6rem;color:var(--g);letter-spacing:.12em;}
-.nst::before{content:'';width:6px;height:6px;background:var(--g);border-radius:50%;animation:gp 2s infinite;box-shadow:0 0 8px var(--g);}
-@keyframes gp{0%,100%{opacity:1;transform:scale(1);}50%{opacity:.4;transform:scale(1.5);}}
+.nst::before{content:'';width:6px;height:6px;background:var(--g);border-radius:50%;animation:pulse 2s infinite;box-shadow:0 0 8px var(--g);}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1);}50%{opacity:.4;transform:scale(1.5);}}
 section{position:relative;z-index:2;padding:110px 72px;}
 .sl{font-family:var(--ffm);font-size:.6rem;color:var(--p);letter-spacing:.3em;text-transform:uppercase;margin-bottom:14px;display:flex;align-items:center;gap:12px;}
 .sl::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,var(--p),transparent);max-width:180px;}
-.st{font-family:var(--ffh);font-size:clamp(1.7rem,3.8vw,2.8rem);font-weight:900;line-height:1.1;margin-bottom:8px;}
+.sttl{font-family:var(--ffh);font-size:clamp(1.7rem,3.8vw,2.8rem);font-weight:900;line-height:1.1;margin-bottom:8px;}
 .rev{opacity:0;transform:translateY(36px);transition:opacity .7s,transform .7s;}
 .rev.on{opacity:1;transform:translateY(0);}
 .revL{opacity:0;transform:translateX(-36px);transition:opacity .7s,transform .7s;}
@@ -49,7 +47,7 @@ section{position:relative;z-index:2;padding:110px 72px;}
 .revR{opacity:0;transform:translateX(36px);transition:opacity .7s,transform .7s;}
 .revR.on{opacity:1;transform:translateX(0);}
 .btn{display:inline-flex;align-items:center;gap:8px;padding:12px 26px;border-radius:3px;font-family:var(--ffm);font-size:.7rem;letter-spacing:.1em;text-decoration:none;text-transform:uppercase;cursor:none;transition:all .3s;position:relative;overflow:hidden;border:none;}
-.btn::before{content:'';position:absolute;inset:0;transform:translateX(-101%);transition:transform .4s ease;}
+.btn::before{content:'';position:absolute;inset:0;transform:translateX(-101%);transition:transform .4s;}
 .btn:hover::before{transform:translateX(0);}
 .bs{background:linear-gradient(135deg,var(--c),var(--v));color:var(--bg);font-weight:700;}
 .bs::before{background:linear-gradient(135deg,var(--v),var(--p));}
@@ -59,9 +57,9 @@ section{position:relative;z-index:2;padding:110px 72px;}
 .bo:hover{box-shadow:0 0 22px rgba(0,240,255,.2);}
 .bp{background:transparent;border:1px solid var(--p);color:var(--p);}
 .bp::before{background:rgba(255,45,120,.07);}
-.bp:hover{box-shadow:0 0 22px rgba(255,45,120,.2);}
 .bv{background:transparent;border:1px solid var(--v);color:var(--v);}
 .bv::before{background:rgba(168,85,247,.07);}
+/* HERO */
 #hero{min-height:100vh;display:flex;align-items:center;padding:0 72px;overflow:hidden;}
 .orb{position:absolute;border-radius:50%;filter:blur(90px);pointer-events:none;animation:ofl 9s ease-in-out infinite;}
 .o1{width:700px;height:700px;background:radial-gradient(circle,rgba(0,240,255,.07),transparent 70%);top:-150px;right:-150px;}
@@ -80,8 +78,8 @@ section{position:relative;z-index:2;padding:110px 72px;}
 @keyframes gt{0%,88%,100%{transform:none;}90%{transform:translate(-2px,1px);}93%{transform:translate(2px,-1px);}}
 @keyframes gb{0%,88%,100%{transform:none;}90%{transform:translate(2px,-1px);}93%{transform:translate(-2px,1px);}}
 .hro{font-family:var(--ffm);font-size:.9rem;color:var(--muted);margin-bottom:22px;min-height:24px;opacity:0;animation:fud .8s .55s forwards;}
-.hcu{color:var(--c);animation:cb .7s infinite;}
-@keyframes cb{0%,100%{opacity:1;}50%{opacity:0;}}
+.hcu{color:var(--c);animation:blink .7s infinite;}
+@keyframes blink{0%,100%{opacity:1;}50%{opacity:0;}}
 .hde{font-size:1.08rem;line-height:1.8;color:rgba(226,240,255,.72);max-width:540px;margin-bottom:34px;opacity:0;animation:fud .8s .75s forwards;}
 .hde strong{color:var(--c);}
 .hct{display:flex;gap:13px;flex-wrap:wrap;opacity:0;animation:fud .8s .95s forwards;}
@@ -94,12 +92,13 @@ section{position:relative;z-index:2;padding:110px 72px;}
 .sli{width:1px;height:52px;background:linear-gradient(var(--c),transparent);animation:sd 1.6s ease-in-out infinite;}
 @keyframes sd{0%{transform:scaleY(0);transform-origin:top;}50%{transform:scaleY(1);transform-origin:top;}51%{transform-origin:bottom;}100%{transform:scaleY(0);transform-origin:bottom;}}
 @keyframes fi{to{opacity:1;}}
+/* ABOUT */
 #about{background:linear-gradient(180deg,var(--bg),var(--bg2));}
 .abg{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start;margin-top:52px;}
 .abt p{font-size:1.03rem;line-height:1.85;color:rgba(226,240,255,.72);margin-bottom:16px;}
 .abt strong{color:var(--c);}
 .abadg{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0;}
-.abad{display:inline-flex;align-items:center;gap:6px;padding:6px 12px;border-radius:2px;font-family:var(--ffm);font-size:.6rem;letter-spacing:.1em;border:1px solid;transition:all .25s;}
+.abad{display:inline-flex;align-items:center;gap:6px;padding:6px 12px;border-radius:2px;font-family:var(--ffm);font-size:.6rem;letter-spacing:.1em;border:1px solid;}
 .aby{border-color:rgba(255,215,0,.3);color:var(--y);background:rgba(255,215,0,.04);}
 .abc{border-color:rgba(0,240,255,.3);color:var(--c);background:rgba(0,240,255,.04);}
 .abp{border-color:rgba(255,45,120,.3);color:var(--p);background:rgba(255,45,120,.04);}
@@ -107,52 +106,42 @@ section{position:relative;z-index:2;padding:110px 72px;}
 .bars{margin-top:26px;}
 .brow{margin-bottom:12px;}
 .bhead{display:flex;justify-content:space-between;margin-bottom:5px;}
-.bnm{font-family:var(--ffm);font-size:.62rem;color:var(--txt);letter-spacing:.07em;}
+.bnm{font-family:var(--ffm);font-size:.62rem;color:var(--txt);}
 .bpc{font-family:var(--ffm);font-size:.59rem;color:var(--muted);}
 .btr{height:3px;background:var(--bg4);border-radius:2px;overflow:hidden;}
 .bfi{height:100%;width:0;border-radius:2px;transition:width 1.3s cubic-bezier(.4,0,.2,1);}
+/* CODE BLOCK */
 .cbl{background:var(--bg3);border:1px solid var(--border);border-radius:6px;overflow:hidden;font-family:var(--ffm);display:flex;flex-direction:column;}
-.cblh{background:var(--bg4);padding:10px 16px;display:flex;align-items:center;gap:8px;border-bottom:1px solid var(--border);flex-shrink:0;}
+.cblh{background:var(--bg4);padding:10px 16px;display:flex;align-items:center;gap:8px;border-bottom:1px solid var(--border);}
 .cdot{width:10px;height:10px;border-radius:50%;}
-/* Code body — single controlled font size, no inheritance blowout */
 .cblb{padding:16px 20px;font-size:.68rem;line-height:1.85;overflow-x:auto;flex:1;}
-.cblb *{font-size:.68rem !important;line-height:1.85;font-family:var(--ffm) !important;}
-.cblb .kw{color:var(--v);}.cblb .cl{color:var(--y);}.cblb .fn{color:var(--c);}.cblb .st{color:var(--g);}.cblb .nm{color:var(--p);}.cblb .cm{color:var(--muted);}
-/* ── Cursor blink inside code block ── */
-.cblb .codeblink{display:inline-block;width:7px;height:.75em;background:var(--c);vertical-align:text-bottom;margin-left:2px;animation:cb .7s infinite;}
-/* ── Mini stat pills below code ── */
-.cbl-footer{background:var(--bg4);border-top:1px solid var(--border);padding:10px 18px;display:flex;gap:10px;flex-wrap:wrap;flex-shrink:0;}
-.cbl-pill{display:inline-flex;align-items:center;gap:5px;padding:4px 10px;border-radius:2px;font-family:var(--ffm);font-size:.58rem;letter-spacing:.1em;border:1px solid var(--border);color:var(--muted);transition:all .25s;}
-.cbl-pill:hover{border-color:var(--c);color:var(--c);}
-.cbl-pill .dot{width:5px;height:5px;border-radius:50%;background:var(--g);box-shadow:0 0 6px var(--g);}
-/* ── Live CGPA badge ── */
-.cgpa-live{display:inline-flex;align-items:center;gap:6px;padding:2px 8px;border-radius:2px;background:rgba(0,245,212,.07);border:1px solid rgba(0,240,255,.25);cursor:default;}
-.cgpa-live .val{color:var(--c);font-weight:700;transition:color .3s;}
-/* ── Edit tooltip hint ── */
-.edit-hint{font-family:var(--ffm);font-size:.52rem;color:var(--muted);letter-spacing:.1em;margin-top:8px;display:flex;align-items:center;gap:5px;opacity:.7;}
-.edit-hint::before{content:'✎';color:var(--c);}
+.cblb,.cblb *{font-size:.68rem !important;font-family:var(--ffm) !important;line-height:1.85;}
+.cblb .kw{color:var(--v)!important;}.cblb .cl{color:var(--y)!important;}.cblb .fn{color:var(--c)!important;}
+.cblb .st{color:var(--g)!important;}.cblb .nm{color:var(--p)!important;}.cblb .cm{color:var(--muted)!important;}
+.cblb .cblink{display:inline-block;width:7px;height:.8em;background:var(--c);vertical-align:text-bottom;margin-left:2px;animation:blink .7s infinite;}
+.cbl-footer{background:var(--bg4);border-top:1px solid var(--border);padding:9px 18px;display:flex;gap:9px;flex-wrap:wrap;}
+.cblpill{display:inline-flex;align-items:center;gap:5px;padding:4px 10px;border-radius:2px;font-family:var(--ffm);font-size:.57rem;letter-spacing:.1em;border:1px solid var(--border);color:var(--muted);transition:all .22s;}
+.cblpill:hover{border-color:var(--c);color:var(--c);}
+.cblpill .pdot{width:5px;height:5px;border-radius:50%;background:var(--g);box-shadow:0 0 5px var(--g);}
+/* SKILLS */
 #skills{background:var(--bg2);}
-.ski{font-size:1.03rem;line-height:1.7;color:rgba(226,240,255,.62);max-width:620px;margin:10px 0 48px;}
+.skintro{font-size:1.03rem;line-height:1.7;color:rgba(226,240,255,.62);max-width:620px;margin:10px 0 48px;}
 .skg{display:grid;grid-template-columns:repeat(auto-fit,minmax(278px,1fr));gap:22px;}
 .skc{background:var(--bg3);border:1px solid var(--border);border-radius:6px;padding:26px;position:relative;overflow:hidden;transition:border-color .3s,transform .3s,box-shadow .3s;}
-.skc::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--cg,linear-gradient(90deg,var(--c),var(--v)));}
+.skc::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;}
 .skc:hover{border-color:rgba(0,240,255,.22);transform:translateY(-4px);box-shadow:0 14px 42px rgba(0,0,0,.45);}
-.ski2{font-size:1.55rem;margin-bottom:12px;}
-.sct{font-family:var(--ffh);font-size:.78rem;font-weight:700;letter-spacing:.08em;margin-bottom:4px;}
-.scs{font-family:var(--ffm);font-size:.57rem;color:var(--muted);letter-spacing:.14em;margin-bottom:17px;}
+.skico{font-size:1.55rem;margin-bottom:12px;}
+.skttl{font-family:var(--ffh);font-size:.78rem;font-weight:700;letter-spacing:.08em;margin-bottom:4px;}
+.sksub{font-family:var(--ffm);font-size:.57rem;color:var(--muted);letter-spacing:.14em;margin-bottom:17px;}
 .skts{display:flex;flex-wrap:wrap;gap:7px;}
 .skt{padding:5px 11px;border-radius:2px;font-family:var(--ffm);font-size:.59rem;border:1px solid;letter-spacing:.07em;transition:all .22s;cursor:default;}
 .skt:hover{transform:scale(1.06);}
-.tc{border-color:rgba(0,240,255,.22);color:rgba(0,240,255,.85);background:rgba(0,240,255,.04);}
-.tc:hover{background:rgba(0,240,255,.12);box-shadow:0 0 8px rgba(0,240,255,.18);}
-.tp{border-color:rgba(255,45,120,.22);color:rgba(255,45,120,.85);background:rgba(255,45,120,.04);}
-.tp:hover{background:rgba(255,45,120,.12);}
-.tv{border-color:rgba(168,85,247,.22);color:rgba(168,85,247,.85);background:rgba(168,85,247,.04);}
-.tv:hover{background:rgba(168,85,247,.12);}
-.tg{border-color:rgba(0,255,136,.22);color:rgba(0,255,136,.85);background:rgba(0,255,136,.04);}
-.tg:hover{background:rgba(0,255,136,.12);}
-.ty{border-color:rgba(255,215,0,.22);color:rgba(255,215,0,.85);background:rgba(255,215,0,.04);}
-.ty:hover{background:rgba(255,215,0,.12);}
+.tc{border-color:rgba(0,240,255,.22);color:rgba(0,240,255,.85);background:rgba(0,240,255,.04);}.tc:hover{background:rgba(0,240,255,.12);}
+.tp{border-color:rgba(255,45,120,.22);color:rgba(255,45,120,.85);background:rgba(255,45,120,.04);}.tp:hover{background:rgba(255,45,120,.12);}
+.tv{border-color:rgba(168,85,247,.22);color:rgba(168,85,247,.85);background:rgba(168,85,247,.04);}.tv:hover{background:rgba(168,85,247,.12);}
+.tg{border-color:rgba(0,255,136,.22);color:rgba(0,255,136,.85);background:rgba(0,255,136,.04);}.tg:hover{background:rgba(0,255,136,.12);}
+.ty{border-color:rgba(255,215,0,.22);color:rgba(255,215,0,.85);background:rgba(255,215,0,.04);}.ty:hover{background:rgba(255,215,0,.12);}
+/* PROJECTS */
 #projects{background:linear-gradient(180deg,var(--bg2),var(--bg3));}
 .pfil{display:flex;gap:10px;flex-wrap:wrap;margin:30px 0 42px;}
 .pfb{padding:7px 19px;border-radius:2px;font-family:var(--ffm);font-size:.61rem;letter-spacing:.14em;text-transform:uppercase;border:1px solid var(--border);color:var(--muted);background:transparent;cursor:none;transition:all .22s;}
@@ -174,8 +163,8 @@ section{position:relative;z-index:2;padding:110px 72px;}
 .pde{font-size:.95rem;line-height:1.72;color:rgba(226,240,255,.7);margin-bottom:16px;}
 .psps{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:16px;}
 .psp{background:var(--bg4);border:1px solid var(--border);border-radius:3px;padding:8px 12px;}
-.psl{font-family:var(--ffm);font-size:.54rem;color:var(--muted);letter-spacing:.12em;text-transform:uppercase;margin-bottom:2px;}
-.psv{font-family:var(--ffm);font-size:.67rem;color:var(--txt);}
+.pspl{font-family:var(--ffm);font-size:.54rem;color:var(--muted);letter-spacing:.12em;text-transform:uppercase;margin-bottom:2px;}
+.pspv{font-family:var(--ffm);font-size:.67rem;color:var(--txt);}
 .phli{margin-bottom:16px;}
 .phi{display:flex;gap:9px;margin-bottom:8px;align-items:flex-start;}
 .phb{width:17px;height:17px;border-radius:3px;display:flex;align-items:center;justify-content:center;font-size:.72rem;flex-shrink:0;margin-top:1px;}
@@ -188,7 +177,23 @@ section{position:relative;z-index:2;padding:110px 72px;}
 .pls{display:flex;gap:8px;}
 .plk{display:inline-flex;align-items:center;gap:5px;padding:7px 14px;border-radius:2px;font-family:var(--ffm);font-size:.59rem;letter-spacing:.1em;text-decoration:none;text-transform:uppercase;border:1px solid var(--border);color:var(--muted);transition:all .22s;cursor:none;}
 .plk:hover{border-color:var(--c);color:var(--c);background:rgba(0,240,255,.04);}
-.pct{padding:3px 9px;border-radius:2px;font-family:var(--ffm);font-size:.54rem;letter-spacing:.1em;}
+.plk.demo{border-color:rgba(168,85,247,.3);color:var(--v);}
+.plk.demo:hover{background:rgba(168,85,247,.06);}
+.pcats{display:flex;gap:6px;flex-wrap:wrap;}
+.pctag{padding:3px 9px;border-radius:2px;font-family:var(--ffm);font-size:.54rem;letter-spacing:.1em;}
+/* color helpers for cat tags */
+.clr-c{border:1px solid rgba(0,240,255,.22);color:var(--c);background:rgba(0,240,255,.05);}
+.clr-p{border:1px solid rgba(255,45,120,.22);color:var(--p);background:rgba(255,45,120,.05);}
+.clr-v{border:1px solid rgba(168,85,247,.22);color:var(--v);background:rgba(168,85,247,.05);}
+.clr-g{border:1px solid rgba(0,255,136,.22);color:var(--g);background:rgba(0,255,136,.05);}
+.clr-y{border:1px solid rgba(255,215,0,.22);color:var(--y);background:rgba(255,215,0,.05);}
+/* bullet colors */
+.bc-c{background:rgba(0,240,255,.1);border:1px solid rgba(0,240,255,.3);}
+.bc-p{background:rgba(255,45,120,.1);border:1px solid rgba(255,45,120,.3);}
+.bc-v{background:rgba(168,85,247,.1);border:1px solid rgba(168,85,247,.3);}
+.bc-g{background:rgba(0,255,136,.1);border:1px solid rgba(0,255,136,.3);}
+.bc-y{background:rgba(255,215,0,.1);border:1px solid rgba(255,215,0,.3);}
+/* BUILDING */
 #building{background:var(--bg3);}
 .bldg{display:grid;grid-template-columns:repeat(auto-fit,minmax(258px,1fr));gap:19px;margin-top:48px;}
 .bca{background:var(--bg4);border:1px solid var(--border);border-radius:6px;padding:27px;position:relative;overflow:hidden;transition:all .3s;}
@@ -196,14 +201,15 @@ section{position:relative;z-index:2;padding:110px 72px;}
 .bca::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--c),transparent);opacity:0;transition:opacity .3s;}
 .bca:hover::after{opacity:1;}
 .bic{width:44px;height:44px;border-radius:8px;background:rgba(0,240,255,.06);border:1px solid rgba(0,240,255,.14);display:flex;align-items:center;justify-content:center;font-size:1.25rem;margin-bottom:16px;}
-.bti{font-family:var(--ffh);font-size:.8rem;font-weight:700;color:var(--c);margin-bottom:6px;}
+.btti{font-family:var(--ffh);font-size:.8rem;font-weight:700;color:var(--c);margin-bottom:6px;}
 .bde{font-size:.91rem;line-height:1.7;color:rgba(226,240,255,.62);}
 .bst{display:inline-flex;align-items:center;gap:5px;margin-top:13px;font-family:var(--ffm);font-size:.57rem;color:var(--g);letter-spacing:.14em;}
-.bst::before{content:'';width:5px;height:5px;background:var(--g);border-radius:50%;animation:gp 1.5s infinite;}
+.bst::before{content:'';width:5px;height:5px;background:var(--g);border-radius:50%;animation:pulse 1.5s infinite;}
+/* STATS */
 #stats{background:var(--bg2);}
 .stca{display:grid;grid-template-columns:repeat(auto-fit,minmax(205px,1fr));gap:17px;margin-top:48px;}
 .stc{background:var(--bg3);border:1px solid var(--border);border-radius:6px;padding:24px;text-align:center;transition:all .3s;position:relative;overflow:hidden;}
-.stc::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--cb,var(--c));}
+.stc::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;}
 .stc:hover{border-color:rgba(0,240,255,.18);transform:translateY(-4px);}
 .stn{font-family:var(--ffh);font-size:2.1rem;font-weight:900;margin-bottom:5px;}
 .stl{font-family:var(--ffm);font-size:.59rem;color:var(--muted);letter-spacing:.18em;text-transform:uppercase;}
@@ -211,54 +217,56 @@ section{position:relative;z-index:2;padding:110px 72px;}
 .ghc{border-radius:6px;border:1px solid var(--border);overflow:hidden;background:var(--bg3);}
 .ghc img{width:100%;height:auto;display:block;}
 .ghf{grid-column:1/-1;}
+/* CONTACT */
 #contact{background:linear-gradient(180deg,var(--bg3),var(--bg));}
 .ctop{text-align:center;margin-bottom:48px;}
 .ctop .sl{justify-content:center;}.ctop .sl::after{display:none;}
-.ctop .st{font-size:clamp(1.8rem,4.2vw,3rem);}
+.ctop .sttl{font-size:clamp(1.8rem,4.2vw,3rem);}
 .ctop p{font-size:.98rem;color:rgba(226,240,255,.6);margin-top:13px;line-height:1.7;}
 .cgri{display:grid;grid-template-columns:1fr 1fr;gap:17px;margin-bottom:22px;}
 .cca{background:var(--bg3);border:1px solid var(--border);border-radius:6px;padding:25px;transition:all .32s;text-decoration:none;display:block;cursor:none;position:relative;overflow:hidden;}
-.cca::before{content:'';position:absolute;inset:0;background:var(--cgg,linear-gradient(135deg,rgba(0,240,255,.05),transparent));opacity:0;transition:opacity .32s;}
+.cca::before{content:'';position:absolute;inset:0;opacity:0;transition:opacity .32s;}
 .cca:hover::before{opacity:1;}
 .cca:hover{transform:translateY(-4px);box-shadow:0 12px 34px rgba(0,0,0,.42);}
 .cci{width:49px;height:49px;border-radius:10px;border:1px solid;display:flex;align-items:center;justify-content:center;margin-bottom:17px;font-size:1.35rem;}
-.cct{font-family:var(--ffh);font-size:.8rem;font-weight:700;margin-bottom:5px;letter-spacing:.04em;}
+.cctt{font-family:var(--ffh);font-size:.8rem;font-weight:700;margin-bottom:5px;letter-spacing:.04em;}
 .ccd{font-family:var(--ffm);font-size:.67rem;color:rgba(226,240,255,.55);margin-bottom:4px;word-break:break-all;}
-.ccn{font-family:var(--ffm);font-size:.57rem;color:var(--muted);margin-bottom:11px;}
+.ccn{font-family:var(--ffm);font-size:.57rem;color:var(--muted);}
 .cca2{font-family:var(--ffm);font-size:.57rem;letter-spacing:.15em;text-transform:uppercase;display:inline-flex;align-items:center;gap:5px;margin-top:9px;}
 .car{display:inline-block;transition:transform .22s;}
 .cca:hover .car{transform:translateX(4px);}
-.cce{--cgg:linear-gradient(135deg,rgba(255,45,120,.06),transparent);}
-.cce:hover{border-color:rgba(255,45,120,.28);}
-.cce .cci{border-color:rgba(255,45,120,.28);background:rgba(255,45,120,.06);}
-.cce .cct,.cce .cca2{color:var(--p);}
-.ccl:hover{border-color:rgba(0,240,255,.28);}
-.ccl .cci{border-color:rgba(0,240,255,.28);background:rgba(0,240,255,.06);}
-.ccl .cct,.ccl .cca2{color:var(--c);}
-.ccg{--cgg:linear-gradient(135deg,rgba(168,85,247,.06),transparent);}
-.ccg:hover{border-color:rgba(168,85,247,.28);}
-.ccg .cci{border-color:rgba(168,85,247,.28);background:rgba(168,85,247,.06);}
-.ccg .cct,.ccg .cca2{color:var(--v);}
-.cci2{--cgg:linear-gradient(135deg,rgba(255,215,0,.05),transparent);}
-.cci2:hover{border-color:rgba(255,215,0,.28);}
-.cci2 .cci{border-color:rgba(255,215,0,.28);background:rgba(255,215,0,.05);}
-.cci2 .cct,.cci2 .cca2{color:var(--y);}
 .ope{background:var(--bg4);border:1px solid var(--border);border-radius:6px;padding:22px 30px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:22px;}
 .opl{font-family:var(--ffm);font-size:.58rem;color:var(--muted);letter-spacing:.2em;text-transform:uppercase;white-space:nowrap;}
 .ops{display:flex;flex-wrap:wrap;gap:8px;}
 .opp{padding:6px 13px;border-radius:2px;font-family:var(--ffm);font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;background:rgba(0,240,255,.05);border:1px solid rgba(0,240,255,.18);color:var(--c);transition:all .22s;}
-.opp:hover{background:rgba(0,240,255,.12);box-shadow:0 0 10px rgba(0,240,255,.14);}
+.opp:hover{background:rgba(0,240,255,.12);}
 .ctar{display:flex;justify-content:center;gap:13px;margin-top:34px;flex-wrap:wrap;}
+/* FOOTER */
 footer{background:var(--bg);border-top:1px solid var(--border);padding:26px 72px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:13px;position:relative;z-index:2;}
-.fn{font-family:var(--ffh);font-size:.8rem;font-weight:900;background:linear-gradient(90deg,var(--c),var(--v));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.fna{font-family:var(--ffh);font-size:.8rem;font-weight:900;background:linear-gradient(90deg,var(--c),var(--v));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
 .fco{font-family:var(--ffm);font-size:.58rem;color:var(--muted);letter-spacing:.1em;}
 .fli{display:flex;gap:17px;}
 .fli a{font-family:var(--ffm);font-size:.58rem;color:var(--muted);text-decoration:none;letter-spacing:.1em;transition:color .2s;}
 .fli a:hover{color:var(--c);}
-@media(max-width:900px){nav{padding:14px 18px;}.nli{display:none;}section{padding:76px 18px;}#hero{padding:0 18px;}.hsvg,.pfvis{display:none;}.abg,.pfin,.cgri,.ghr{grid-template-columns:1fr;}footer{padding:20px 18px;}}
+/* LOADING */
+#loader{position:fixed;inset:0;background:var(--bg);z-index:9000;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:14px;transition:opacity .5s;}
+#loader.hide{opacity:0;pointer-events:none;}
+.ldtxt{font-family:var(--ffm);font-size:.7rem;color:var(--c);letter-spacing:.3em;}
+.ldbar{width:200px;height:2px;background:var(--bg3);border-radius:1px;overflow:hidden;}
+.ldbar-fill{height:100%;width:0;background:linear-gradient(90deg,var(--c),var(--v));animation:ldani .8s ease forwards;}
+@keyframes ldani{to{width:100%;}}
+/* MOBILE */
+@media(max-width:900px){
+  nav{padding:14px 18px;}.nli{display:none;}
+  section{padding:76px 18px;}#hero{padding:0 18px;}
+  .hsvg,.pfvis{display:none;}
+  .abg,.pfin,.cgri,.ghr{grid-template-columns:1fr;}
+  footer{padding:20px 18px;}
+}
 </style>
 </head>
 <body>
+<div id="loader"><div class="ldtxt">LOADING DATA.JSON</div><div class="ldbar"><div class="ldbar-fill"></div></div></div>
 <div id="cur"></div><div id="cur2"></div>
 <div class="gridbg"></div><div class="scl"></div>
 <canvas id="pcv"></canvas>
@@ -273,30 +281,27 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:26px 72px
     <li><a href="#stats">Stats</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-  <div class="nst">Open to Internship 2025–26</div>
+  <div class="nst" id="nav-status">Open to Internship</div>
 </nav>
 
-<!-- ═══ HERO ═══ -->
+<!-- HERO -->
 <section id="hero">
   <div class="orb o1"></div><div class="orb o2"></div><div class="orb o3"></div>
   <div class="hsvg">
     <svg viewBox="0 0 560 860" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
-      <defs>
-        <filter id="gc"><feGaussianBlur stdDeviation="3.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-      </defs>
+      <defs><filter id="gc"><feGaussianBlur stdDeviation="3.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
       <g fill="none" stroke="#00f0ff" stroke-width="1" opacity="0.26">
-        <path d="M40 80 H180 V160 H380 V110 H520"/><path d="M80 220 H260 V320 H480"/>
-        <path d="M40 380 H140 V430 H340 V380 H480"/><path d="M180 520 H380 V620 H230 V680"/>
-        <path d="M380 280 V480 H480 V580"/><path d="M80 580 H180 V730"/>
-        <path d="M280 40 V140 H430 V240"/><path d="M480 680 H330 V780"/>
-        <path d="M160 760 H300 V840"/><path d="M40 500 V600 H100"/>
+        <path d="M40 80H180V160H380V110H520"/><path d="M80 220H260V320H480"/>
+        <path d="M40 380H140V430H340V380H480"/><path d="M180 520H380V620H230V680"/>
+        <path d="M380 280V480H480V580"/><path d="M80 580H180V730"/>
+        <path d="M280 40V140H430V240"/><path d="M480 680H330V780"/>
       </g>
       <g filter="url(#gc)">
-        <circle r="3" fill="#00f0ff"><animateMotion dur="4s" repeatCount="indefinite" path="M40 80 H180 V160 H380 V110 H520"/></circle>
-        <circle r="2.5" fill="#a855f7"><animateMotion dur="5.5s" repeatCount="indefinite" path="M80 220 H260 V320 H480"/></circle>
-        <circle r="3" fill="#ff2d78"><animateMotion dur="3.8s" repeatCount="indefinite" path="M40 380 H140 V430 H340 V380 H480"/></circle>
-        <circle r="2" fill="#00ff88"><animateMotion dur="6s" repeatCount="indefinite" path="M180 520 H380 V620 H230 V680"/></circle>
-        <circle r="2.5" fill="#ffd700"><animateMotion dur="4.5s" repeatCount="indefinite" path="M280 40 V140 H430 V240"/></circle>
+        <circle r="3" fill="#00f0ff"><animateMotion dur="4s" repeatCount="indefinite" path="M40 80H180V160H380V110H520"/></circle>
+        <circle r="2.5" fill="#a855f7"><animateMotion dur="5.5s" repeatCount="indefinite" path="M80 220H260V320H480"/></circle>
+        <circle r="3" fill="#ff2d78"><animateMotion dur="3.8s" repeatCount="indefinite" path="M40 380H140V430H340V380H480"/></circle>
+        <circle r="2" fill="#00ff88"><animateMotion dur="6s" repeatCount="indefinite" path="M180 520H380V620H230V680"/></circle>
+        <circle r="2.5" fill="#ffd700"><animateMotion dur="4.5s" repeatCount="indefinite" path="M280 40V140H430V240"/></circle>
       </g>
       <g filter="url(#gc)">
         <circle cx="180" cy="160" r="5" fill="#00f0ff"><animate attributeName="r" values="5;7.5;5" dur="2.2s" repeatCount="indefinite"/></circle>
@@ -304,11 +309,10 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:26px 72px
         <circle cx="260" cy="320" r="5.5" fill="#00f0ff"><animate attributeName="r" values="5.5;8;5.5" dur="1.9s" repeatCount="indefinite"/></circle>
         <circle cx="140" cy="430" r="4" fill="#ff2d78"><animate attributeName="r" values="4;6.5;4" dur="3.2s" repeatCount="indefinite"/></circle>
         <circle cx="380" cy="480" r="5" fill="#00ff88"><animate attributeName="r" values="5;7;5" dur="2.4s" repeatCount="indefinite"/></circle>
-        <circle cx="230" cy="680" r="4.5" fill="#a855f7"><animate attributeName="r" values="4.5;7;4.5" dur="1.7s" repeatCount="indefinite"/></circle>
       </g>
       <g stroke="#00f0ff" stroke-width="1" fill="rgba(0,240,255,0.04)" opacity="0.5">
         <rect x="148" y="128" width="64" height="64" rx="4"/><rect x="154" y="134" width="52" height="52" rx="2"/>
-        <rect x="230" y="288" width="64" height="64" rx="4"/><rect x="236" y="294" width="52" height="52" rx="2"/>
+        <rect x="230" y="288" width="64" height="64" rx="4"/>
       </g>
       <g stroke="#a855f7" stroke-width="1" fill="rgba(168,85,247,0.04)" opacity="0.45">
         <polygon points="430,100 455,87 480,100 480,126 455,139 430,126"/>
@@ -317,45 +321,37 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:26px 72px
     </svg>
   </div>
   <div class="hco">
-    <div class="hey">// System Online — Portfolio v2.0 · Initialising...</div>
+    <div class="hey" id="hero-eyebrow">// System Online — Portfolio v2.0 · Initialising...</div>
     <h1 class="hn">
-      <span class="hn1">Ankit</span>
-      <span class="hn2 glitch" data-text="Sengupta">Sengupta</span>
+      <span class="hn1" id="hero-firstname">Ankit</span>
+      <span class="hn2 glitch" id="hero-lastname" data-text="Sengupta">Sengupta</span>
     </h1>
     <div class="hro"><span id="typed"></span><span class="hcu">_</span></div>
-    <p class="hde">CS sophomore at <strong>VIT Amaravati</strong> (AI &amp; ML) — building <strong>intelligent systems that ship</strong>. From <strong>RAG pipelines &amp; AI agents</strong> to <strong>ESP32-powered smart glasses</strong> and full-stack Android apps — end-to-end, silicon to cloud.</p>
+    <p class="hde" id="hero-desc">CS sophomore at <strong>VIT Amaravati</strong> (AI &amp; ML) — building <strong>intelligent systems that ship</strong>.</p>
     <div class="hct">
       <a href="#projects" class="btn bs">View Projects ↓</a>
       <a href="#contact" class="btn bo">Hire Me →</a>
-      <a href="https://github.com/ankit-sengupta05" target="_blank" class="btn bp">GitHub ↗</a>
+      <a id="hero-gh" href="https://github.com/ankit-sengupta05" target="_blank" class="btn bp">GitHub ↗</a>
     </div>
-    <div class="hss">
-      <div><div class="hsn">5+</div><div class="hsl">AI Projects</div></div>
-      <div class="hdi"></div>
-      <div><div class="hsn">8.35</div><div class="hsl">CGPA</div></div>
-      <div class="hdi"></div>
-      <div><div class="hsn">🏅</div><div class="hsl">Expo Selected</div></div>
-      <div class="hdi"></div>
-      <div><div class="hsn">2028</div><div class="hsl">Class Of</div></div>
-      <div class="hdi"></div>
-      <div><div class="hsn">6</div><div class="hsl">Tech Domains</div></div>
+    <div class="hss" id="hero-stats">
+      <!-- populated by JS -->
     </div>
   </div>
   <div class="shi"><span>SCROLL</span><div class="sli"></div></div>
 </section>
 
-<!-- ═══ ABOUT ═══ -->
+<!-- ABOUT -->
 <section id="about">
   <div class="sl rev">01 // About Me</div>
-  <div class="st rev">From Silicon <span style="color:var(--c)">to Software</span></div>
+  <div class="sttl rev">From Silicon <span style="color:var(--c)">to Software</span></div>
   <div class="abg">
     <div class="abt revL">
       <p>I'm a <strong>CS sophomore at VIT Amaravati</strong> specialising in AI &amp; ML. I don't just study machine learning — I ship it. My work spans the full stack: C++ firmware on ESP32 microcontrollers, scalable Django/FastAPI backends, and TensorFlow models in production.</p>
-      <p>My flagship project — <strong>Smart Vision Aid</strong> — is a pair of AI-powered smart glasses with 3× ESP32-CAM modules and YOLO object detection, giving the visually impaired 360° spatial awareness. It was <strong>selected for VIT Amaravati's Internal Expo 2025</strong>.</p>
+      <p>My flagship project — <strong>Smart Vision Aid</strong> — is AI-powered smart glasses with 3× ESP32-CAM modules and YOLO object detection, giving the visually impaired 360° spatial awareness. It was <strong>selected for VIT Amaravati's Internal Expo 2025</strong>.</p>
       <p>My superpower: <strong>ML theory → production systems</strong>. I understand the math, write the code, and deploy the product.</p>
       <div class="abadg">
         <div class="abad aby">🏅 VIT Internal Expo — Selected</div>
-        <div class="abad abc">🎓 CGPA 8.35 · B.Tech CS AI&amp;ML</div>
+        <div class="abad abc" id="about-cgpa">🎓 CGPA 8.35 · B.Tech CS AI&amp;ML</div>
         <div class="abad abp">🟢 Open to Internships 2025–26</div>
         <div class="abad abv">📍 VIT Amaravati · Class of 2028</div>
       </div>
@@ -368,357 +364,53 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:26px 72px
         <div class="brow"><div class="bhead"><span class="bnm">JavaScript / TypeScript</span><span class="bpc">68%</span></div><div class="btr"><div class="bfi" data-w="68" style="background:linear-gradient(90deg,#00ff88,#00f0ff)"></div></div></div>
       </div>
     </div>
-    <div class="cbl revR" id="code-card">
+    <!-- code block — fully JS rendered from data.json -->
+    <div class="cbl revR">
       <div class="cblh">
         <div class="cdot" style="background:#ff5f57"></div>
         <div class="cdot" style="background:#febc2e"></div>
         <div class="cdot" style="background:#28c840"></div>
         <span style="font-family:var(--ffm);font-size:.6rem;color:var(--muted);margin-left:8px">ankit_sengupta.py</span>
-        <span style="margin-left:auto;font-family:var(--ffm);font-size:.55rem;color:var(--g);letter-spacing:.1em;display:flex;align-items:center;gap:4px"><span style="width:5px;height:5px;border-radius:50%;background:var(--g);display:inline-block;box-shadow:0 0 6px var(--g)"></span>data.json</span>
+        <span style="margin-left:auto;font-family:var(--ffm);font-size:.55rem;color:var(--g);display:flex;align-items:center;gap:4px">
+          <span style="width:5px;height:5px;border-radius:50%;background:var(--g);display:inline-block;box-shadow:0 0 6px var(--g)"></span>data.json
+        </span>
       </div>
-      <!-- JS renders code here -->
-      <div class="cblb" id="codeblock-body">
-        <span style="color:var(--muted)">// loading data.json…</span>
-      </div>
-      <!-- Creative footer with live stats -->
+      <div class="cblb" id="codeblock-body"><span style="color:var(--muted)">// loading…</span></div>
       <div class="cbl-footer" id="codeblock-footer"></div>
     </div>
   </div>
 </section>
 
-<!-- ═══ SKILLS ═══ -->
+<!-- SKILLS — JS loop renders from data.json skillCategories -->
 <section id="skills">
   <div class="sl rev">02 // Tech Arsenal</div>
-  <div class="st rev">What I <span style="color:var(--c)">Build With</span></div>
-  <p class="ski rev">A full-stack polyglot — fluent across AI/ML, backend systems, mobile, and embedded firmware. Every skill below has been used in a shipped project, not just studied.</p>
-  <div class="skg">
-
-    <div class="skc rev" style="--cg:linear-gradient(90deg,#00f0ff,#a855f7)">
-      <div class="ski2">🤖</div>
-      <div class="sct" style="color:var(--c)">AI & Machine Learning</div>
-      <div class="scs">// Neural networks · Agents · Computer vision</div>
-      <div class="skts">
-        <span class="skt tc">RAG Pipelines</span><span class="skt tc">AI Agents</span><span class="skt tc">TensorFlow</span>
-        <span class="skt tc">YOLO v5/v8</span><span class="skt tc">OpenCV</span><span class="skt tc">NLP / Sentiment</span>
-        <span class="skt tc">Pytesseract OCR</span><span class="skt tc">FuzzyWuzzy</span><span class="skt tc">Pandas</span>
-        <span class="skt tc">NumPy</span><span class="skt tc">Computer Vision</span><span class="skt tc">Object Detection</span>
-        <span class="skt tc">ML Pipelines</span><span class="skt tc">Model Deployment</span><span class="skt tc">LSTM</span>
-      </div>
-    </div>
-
-    <div class="skc rev" style="--cg:linear-gradient(90deg,#a855f7,#ff2d78)">
-      <div class="ski2">🌐</div>
-      <div class="sct" style="color:var(--v)">Backend & APIs</div>
-      <div class="scs">// REST · Async · Databases · Microservices</div>
-      <div class="skts">
-        <span class="skt tv">Django</span><span class="skt tv">Django REST Framework</span><span class="skt tv">FastAPI</span>
-        <span class="skt tv">Flask</span><span class="skt tv">Node.js</span><span class="skt tv">Express.js</span>
-        <span class="skt tv">MongoDB</span><span class="skt tv">REST APIs</span><span class="skt tv">JWT Auth</span>
-        <span class="skt tv">WebSockets</span><span class="skt tv">Async Python</span><span class="skt tv">Microservices</span>
-        <span class="skt tv">SQLite</span><span class="skt tv">Celery</span>
-      </div>
-    </div>
-
-    <div class="skc rev" style="--cg:linear-gradient(90deg,#ff2d78,#ffd700)">
-      <div class="ski2">💻</div>
-      <div class="sct" style="color:var(--p)">Programming Languages</div>
-      <div class="scs">// Core dev stack · Scripting · Systems</div>
-      <div class="skts">
-        <span class="skt tp">Python</span><span class="skt tp">JavaScript</span><span class="skt tp">TypeScript</span>
-        <span class="skt tp">Java</span><span class="skt tp">Kotlin</span><span class="skt tp">C++</span>
-        <span class="skt tp">C (Embedded)</span><span class="skt tp">MATLAB</span><span class="skt tp">HTML5</span>
-        <span class="skt tp">CSS3</span><span class="skt tp">Bash / Shell</span>
-      </div>
-    </div>
-
-    <div class="skc rev" style="--cg:linear-gradient(90deg,#00ff88,#00f0ff)">
-      <div class="ski2">📱</div>
-      <div class="sct" style="color:var(--g)">Mobile Development</div>
-      <div class="scs">// Android native · Firebase · Real-time</div>
-      <div class="skts">
-        <span class="skt tg">Android (Native)</span><span class="skt tg">Kotlin</span><span class="skt tg">Java (Android)</span>
-        <span class="skt tg">Firebase Auth</span><span class="skt tg">Firestore DB</span><span class="skt tg">Firebase Storage</span>
-        <span class="skt tg">SMS BroadcastReceiver</span><span class="skt tg">Android Studio</span>
-        <span class="skt tg">RecyclerView</span><span class="skt tg">Room DB</span><span class="skt tg">MPAndroidChart</span>
-      </div>
-    </div>
-
-    <div class="skc rev" style="--cg:linear-gradient(90deg,#ffd700,#ff2d78)">
-      <div class="ski2">🔧</div>
-      <div class="sct" style="color:var(--y)">Embedded & IoT</div>
-      <div class="scs">// Firmware · Sensors · Real-time systems</div>
-      <div class="skts">
-        <span class="skt ty">ESP32</span><span class="skt ty">ESP32-CAM</span><span class="skt ty">Arduino IDE</span>
-        <span class="skt ty">C++ (Firmware)</span><span class="skt ty">Ultrasonic Sensors</span>
-        <span class="skt ty">I2C / SPI / UART</span><span class="skt ty">Wi-Fi Streaming</span>
-        <span class="skt ty">GPIO Control</span><span class="skt ty">Interrupt Handling</span>
-        <span class="skt ty">Low-Latency Systems</span><span class="skt ty">IoT Protocols</span>
-      </div>
-    </div>
-
-    <div class="skc rev" style="--cg:linear-gradient(90deg,#a855f7,#00f0ff)">
-      <div class="ski2">🛠️</div>
-      <div class="sct" style="color:var(--c)">Tools & Dev Environment</div>
-      <div class="scs">// Version control · Build · Deploy</div>
-      <div class="skts">
-        <span class="skt tc">Git / GitHub</span><span class="skt tc">VS Code</span><span class="skt tc">PyCharm</span>
-        <span class="skt tc">Android Studio</span><span class="skt tc">Arduino IDE</span><span class="skt tc">Vite</span>
-        <span class="skt tc">Postman</span><span class="skt tc">Jupyter Notebook</span><span class="skt tc">Vercel</span>
-        <span class="skt tc">GitHub Actions</span><span class="skt tc">Linux / Ubuntu</span>
-      </div>
-    </div>
-
-  </div>
+  <div class="sttl rev">What I <span style="color:var(--c)">Build With</span></div>
+  <p class="skintro rev">A full-stack polyglot — fluent across AI/ML, backend systems, mobile, and embedded firmware. Every skill below has been used in a shipped project, not just studied.</p>
+  <div class="skg" id="skills-grid"></div>
 </section>
 
-<!-- ═══ PROJECTS ═══ -->
+<!-- PROJECTS — JS loop renders from data.json projects array -->
 <section id="projects">
   <div class="sl rev">03 // Project Showcase</div>
-  <div class="st rev">Built &amp; <span style="color:var(--p)">Shipped</span></div>
-  <div class="pfil rev">
-    <button class="pfb on" data-f="all">All (5)</button>
-    <button class="pfb" data-f="ai">AI / ML</button>
-    <button class="pfb" data-f="embedded">Embedded</button>
-    <button class="pfb" data-f="mobile">Mobile</button>
-    <button class="pfb" data-f="backend">Backend</button>
+  <div class="sttl rev">Built &amp; <span style="color:var(--p)">Shipped</span></div>
+  <div class="pfil rev" id="filter-bar">
+    <!-- filter buttons built dynamically based on categories in data.json -->
   </div>
-  <div class="pgrid">
-
-    <!-- 1. Smart Vision Aid FEATURED -->
-    <div class="pcard pfeat rev" data-cat="embedded ai mobile">
-      <div class="pglow"></div>
-      <div class="pfin">
-        <div style="display:flex;flex-direction:column">
-          <div class="phd">
-            <div>
-              <div class="ptro">🏅 VIT Amaravati Internal Expo — Selected 2025</div>
-              <div class="pti">🕶️ Smart Vision Aid</div>
-              <div class="psu">AI-powered assistive smart glasses — real-time spatial awareness for the visually impaired</div>
-            </div>
-            <div class="pic" style="background:rgba(0,240,255,.07)">🕶️</div>
-          </div>
-          <div class="pbo">
-            <p class="pde">An end-to-end embedded AI system giving visually impaired users <strong>real-time 360° spatial awareness</strong>. Three ESP32-CAM modules feed live video into a YOLO object detection pipeline. Ultrasonic sensors provide proximity data. The Android companion app converts all detections into instant audio alerts and turn-by-turn navigation guidance. All firmware runs in C++ for microsecond-level response.</p>
-            <div class="phli">
-              <div class="phi"><div class="phb" style="background:rgba(0,240,255,.1);border:1px solid rgba(0,240,255,.3)">📷</div><div class="pht"><strong>Vision System</strong> — 3× ESP32-CAM OV2640 modules + HC-SR04 ultrasonic sensors providing full 360° overlapping spatial coverage</div></div>
-              <div class="phi"><div class="phb" style="background:rgba(255,45,120,.1);border:1px solid rgba(255,45,120,.3)">⚡</div><div class="pht"><strong>AI Detection</strong> — YOLOv5/v8 real-time object detection; identifies obstacles, people &amp; hazards with precise bounding box coords</div></div>
-              <div class="phi"><div class="phb" style="background:rgba(0,255,136,.1);border:1px solid rgba(0,255,136,.3)">📱</div><div class="pht"><strong>Android Companion</strong> — receives live Wi-Fi detection data, delivers contextual audio alerts &amp; navigation feedback via TTS</div></div>
-              <div class="phi"><div class="phb" style="background:rgba(168,85,247,.1);border:1px solid rgba(168,85,247,.3)">🔧</div><div class="pht"><strong>Embedded Core</strong> — interrupt-driven C++ on Arduino IDE; sensor fusion pipeline with &lt;50ms end-to-end latency</div></div>
-              <div class="phi"><div class="phb" style="background:rgba(255,215,0,.1);border:1px solid rgba(255,215,0,.3)">🏅</div><div class="pht"><strong>Achievement</strong> — Selected for VIT Amaravati Internal Expo 2025 as a standout assistive technology innovation</div></div>
-            </div>
-            <div class="psps">
-              <div class="psp"><div class="psl">Cameras</div><div class="psv">3× ESP32-CAM OV2640</div></div>
-              <div class="psp"><div class="psl">Proximity</div><div class="psv">HC-SR04 Ultrasonic ×3</div></div>
-              <div class="psp"><div class="psl">AI Model</div><div class="psv">YOLOv5 / YOLOv8</div></div>
-              <div class="psp"><div class="psl">Latency</div><div class="psv">&lt;50ms End-to-End</div></div>
-              <div class="psp"><div class="psl">Link</div><div class="psv">ESP32 Wi-Fi Stream</div></div>
-              <div class="psp"><div class="psl">App</div><div class="psv">Android + TTS Alerts</div></div>
-            </div>
-            <div class="ptec">
-              <span class="ptp">ESP32-CAM</span><span class="ptp">YOLO</span><span class="ptp">OpenCV</span>
-              <span class="ptp">Android / Kotlin</span><span class="ptp">C++</span><span class="ptp">Arduino IDE</span>
-              <span class="ptp">Wi-Fi Streaming</span><span class="ptp">Ultrasonic Sensors</span>
-            </div>
-          </div>
-          <div class="pfo">
-            <div class="pls"><a href="https://github.com/ankit-sengupta05" target="_blank" class="plk">↗ GitHub</a></div>
-            <div style="display:flex;gap:6px">
-              <span class="pct" style="border:1px solid rgba(0,240,255,.22);color:var(--c);background:rgba(0,240,255,.05);font-family:var(--ffm);font-size:.54rem;padding:3px 8px;border-radius:2px">Embedded</span>
-              <span class="pct" style="border:1px solid rgba(255,45,120,.22);color:var(--p);background:rgba(255,45,120,.05);font-family:var(--ffm);font-size:.54rem;padding:3px 8px;border-radius:2px">AI/ML</span>
-              <span class="pct" style="border:1px solid rgba(0,255,136,.22);color:var(--g);background:rgba(0,255,136,.05);font-family:var(--ffm);font-size:.54rem;padding:3px 8px;border-radius:2px">Mobile</span>
-            </div>
-          </div>
-        </div>
-        <div class="pfvis">
-          <svg viewBox="0 0 320 320" width="290" height="290" xmlns="http://www.w3.org/2000/svg">
-            <defs><filter id="fg"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
-            <g filter="url(#fg)" stroke="#00f0ff" stroke-width="2.2" fill="none" opacity="0.95">
-              <rect x="28" y="118" width="96" height="72" rx="14"/>
-              <rect x="196" y="118" width="96" height="72" rx="14"/>
-              <line x1="124" y1="154" x2="196" y2="154"/>
-              <line x1="28" y1="154" x2="8" y2="168"/><line x1="292" y1="154" x2="312" y2="168"/>
-            </g>
-            <g stroke="#00f0ff" stroke-width=".7">
-              <line x1="38" y1="130" x2="114" y2="130"><animate attributeName="opacity" values=".4;1;.4" dur="1.6s" repeatCount="indefinite" begin="0s"/></line>
-              <line x1="38" y1="142" x2="114" y2="142"><animate attributeName="opacity" values=".4;1;.4" dur="1.6s" repeatCount="indefinite" begin=".25s"/></line>
-              <line x1="38" y1="154" x2="114" y2="154"><animate attributeName="opacity" values=".4;1;.4" dur="1.6s" repeatCount="indefinite" begin=".5s"/></line>
-              <line x1="38" y1="166" x2="114" y2="166"><animate attributeName="opacity" values=".4;1;.4" dur="1.6s" repeatCount="indefinite" begin=".75s"/></line>
-              <line x1="38" y1="178" x2="114" y2="178"><animate attributeName="opacity" values=".4;1;.4" dur="1.6s" repeatCount="indefinite" begin="1s"/></line>
-              <line x1="206" y1="130" x2="282" y2="130"><animate attributeName="opacity" values=".4;1;.4" dur="1.6s" repeatCount="indefinite" begin=".1s"/></line>
-              <line x1="206" y1="142" x2="282" y2="142"><animate attributeName="opacity" values=".4;1;.4" dur="1.6s" repeatCount="indefinite" begin=".35s"/></line>
-              <line x1="206" y1="154" x2="282" y2="154"><animate attributeName="opacity" values=".4;1;.4" dur="1.6s" repeatCount="indefinite" begin=".6s"/></line>
-              <line x1="206" y1="166" x2="282" y2="166"><animate attributeName="opacity" values=".4;1;.4" dur="1.6s" repeatCount="indefinite" begin=".85s"/></line>
-              <line x1="206" y1="178" x2="282" y2="178"><animate attributeName="opacity" values=".4;1;.4" dur="1.6s" repeatCount="indefinite" begin="1.1s"/></line>
-            </g>
-            <g stroke="#ff2d78" stroke-width="1.8" fill="none" filter="url(#fg)">
-              <rect x="44" y="124" width="36" height="36" rx="2"><animate attributeName="opacity" values="0;1;1;0" dur="2.8s" repeatCount="indefinite"/></rect>
-              <rect x="218" y="127" width="34" height="34" rx="2"><animate attributeName="opacity" values="0;1;1;0" dur="2.8s" begin="0.9s" repeatCount="indefinite"/></rect>
-            </g>
-            <text x="46" y="122" fill="#ff2d78" font-size="7.5" font-family="Space Mono,monospace"><animate attributeName="opacity" values="0;1;1;0" dur="2.8s" repeatCount="indefinite"/>OBJ 0.94</text>
-            <text x="218" y="125" fill="#ff2d78" font-size="7.5" font-family="Space Mono,monospace"><animate attributeName="opacity" values="0;1;1;0" dur="2.8s" begin="0.9s" repeatCount="indefinite"/>PATH 0.87</text>
-            <g fill="rgba(0,240,255,0.06)" stroke="#a855f7" stroke-width="1.2">
-              <rect x="55" y="234" width="52" height="30" rx="3"/>
-              <rect x="134" y="234" width="52" height="30" rx="3"/>
-              <rect x="213" y="234" width="52" height="30" rx="3"/>
-            </g>
-            <g font-family="Space Mono,monospace" font-size="7.5" text-anchor="middle" fill="#a855f7">
-              <text x="81" y="253">ESP32</text><text x="160" y="253">ESP32</text><text x="239" y="253">ESP32</text>
-            </g>
-            <line x1="81" y1="234" x2="72" y2="190" stroke="#a855f7" stroke-width="1" opacity=".5"/>
-            <line x1="160" y1="234" x2="160" y2="190" stroke="#a855f7" stroke-width="1" opacity=".5"/>
-            <line x1="239" y1="234" x2="248" y2="190" stroke="#a855f7" stroke-width="1" opacity=".5"/>
-            <g stroke="#00ff88" stroke-width="1.8" fill="none" filter="url(#fg)" opacity=".75">
-              <path d="M150,72 Q160,62 170,72"><animate attributeName="opacity" values=".75;1;.75" dur="1.1s" repeatCount="indefinite"/></path>
-              <path d="M141,63 Q160,47 179,63"><animate attributeName="opacity" values=".5;1;.5" dur="1.1s" begin=".25s" repeatCount="indefinite"/></path>
-              <path d="M132,54 Q160,32 188,54"><animate attributeName="opacity" values=".3;.8;.3" dur="1.1s" begin=".5s" repeatCount="indefinite"/></path>
-              <circle cx="160" cy="78" r="3.5" fill="#00ff88"/>
-            </g>
-            <text x="160" y="218" text-anchor="middle" font-family="Space Mono,monospace" font-size="7.5" fill="#00f0ff" opacity=".6">3× CAM · YOLO · 360° COVERAGE</text>
-          </svg>
-        </div>
-      </div>
-    </div>
-
-    <!-- 2. Smart Agriculture -->
-    <div class="pcard rev" data-cat="ai backend">
-      <div class="pglow"></div>
-      <div class="phd">
-        <div><div class="pti">🌾 Smart Agriculture Assistant</div><div class="psu">AI-powered crop analysis &amp; farmer–buyer marketplace</div></div>
-        <div class="pic" style="background:rgba(0,255,136,.07);border-color:rgba(0,255,136,.2)">🌿</div>
-      </div>
-      <div class="pbo">
-        <p class="pde">Full-stack platform using TensorFlow for crop yield prediction and OpenCV for real-time disease detection. A Django/Flask marketplace connects farmers directly with buyers, with ML-driven pricing recommendations.</p>
-        <div class="phli">
-          <div class="phi"><div class="phb" style="background:rgba(0,255,136,.08);border:1px solid rgba(0,255,136,.25)">🔬</div><div class="pht"><strong>ML Pipeline</strong> — TensorFlow model trained on crop dataset; Pandas for data preprocessing and yield trend analysis</div></div>
-          <div class="phi"><div class="phb" style="background:rgba(0,240,255,.08);border:1px solid rgba(0,240,255,.25)">👁️</div><div class="pht"><strong>Computer Vision</strong> — OpenCV disease detection pipeline with confidence scoring; identifies blight, rust, fungal infections</div></div>
-          <div class="phi"><div class="phb" style="background:rgba(168,85,247,.08);border:1px solid rgba(168,85,247,.25)">🌐</div><div class="pht"><strong>Backend Marketplace</strong> — Django/Flask REST API connecting farmers with buyers, order management and pricing logic</div></div>
-        </div>
-        <div class="psps">
-          <div class="psp"><div class="psl">ML Framework</div><div class="psv">TensorFlow + Pandas</div></div>
-          <div class="psp"><div class="psl">Vision</div><div class="psv">OpenCV Disease Det.</div></div>
-          <div class="psp"><div class="psl">Backend</div><div class="psv">Django REST / Flask</div></div>
-          <div class="psp"><div class="psl">Database</div><div class="psv">MongoDB / SQLite</div></div>
-        </div>
-        <div class="ptec"><span class="ptp">Python</span><span class="ptp">TensorFlow</span><span class="ptp">OpenCV</span><span class="ptp">Django</span><span class="ptp">Flask</span><span class="ptp">Pandas</span><span class="ptp">MongoDB</span></div>
-      </div>
-      <div class="pfo">
-        <div class="pls"><a href="https://github.com/ankit-sengupta05" target="_blank" class="plk">↗ GitHub</a></div>
-        <div style="display:flex;gap:6px">
-          <span style="border:1px solid rgba(0,240,255,.22);color:var(--c);background:rgba(0,240,255,.04);font-family:var(--ffm);font-size:.54rem;padding:3px 8px;border-radius:2px">AI/ML</span>
-          <span style="border:1px solid rgba(168,85,247,.22);color:var(--v);background:rgba(168,85,247,.04);font-family:var(--ffm);font-size:.54rem;padding:3px 8px;border-radius:2px">Backend</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- 3. Budget Manager -->
-    <div class="pcard rev" data-cat="mobile">
-      <div class="pglow"></div>
-      <div class="phd">
-        <div><div class="pti">💳 Smart Budget Manager</div><div class="psu">Zero-effort SMS-based expense tracking for Android</div></div>
-        <div class="pic" style="background:rgba(255,215,0,.07);border-color:rgba(255,215,0,.2)">📊</div>
-      </div>
-      <div class="pbo">
-        <p class="pde">Native Android app that passively reads bank transaction SMS and auto-categorises spending. Real-time dashboard with visual charts, Firebase-secured cloud sync, and encrypted local backup — no manual entry needed.</p>
-        <div class="phli">
-          <div class="phi"><div class="phb" style="background:rgba(255,215,0,.08);border:1px solid rgba(255,215,0,.25)">💬</div><div class="pht"><strong>SMS Engine</strong> — Android BroadcastReceiver captures bank messages; regex + NLP extracts amount, merchant, category</div></div>
-          <div class="phi"><div class="phb" style="background:rgba(0,240,255,.08);border:1px solid rgba(0,240,255,.25)">📈</div><div class="pht"><strong>Dashboard</strong> — MPAndroidChart visualisations; monthly summaries, category breakdowns, spend trend graphs</div></div>
-          <div class="phi"><div class="phb" style="background:rgba(255,45,120,.08);border:1px solid rgba(255,45,120,.25)">🔐</div><div class="pht"><strong>Security</strong> — Firebase Auth, encrypted Firestore storage, biometric lock, local Room DB cache</div></div>
-        </div>
-        <div class="psps">
-          <div class="psp"><div class="psl">Platform</div><div class="psv">Android Native</div></div>
-          <div class="psp"><div class="psl">Language</div><div class="psv">Kotlin + Java</div></div>
-          <div class="psp"><div class="psl">Auth</div><div class="psv">Firebase Auth</div></div>
-          <div class="psp"><div class="psl">DB</div><div class="psv">Firestore + Room</div></div>
-        </div>
-        <div class="ptec"><span class="ptp">Android</span><span class="ptp">Kotlin</span><span class="ptp">Java</span><span class="ptp">Firebase</span><span class="ptp">Room DB</span><span class="ptp">MPAndroidChart</span></div>
-      </div>
-      <div class="pfo">
-        <div class="pls"><a href="https://github.com/ankit-sengupta05" target="_blank" class="plk">↗ GitHub</a></div>
-        <span style="border:1px solid rgba(255,215,0,.22);color:var(--y);background:rgba(255,215,0,.04);font-family:var(--ffm);font-size:.54rem;padding:3px 8px;border-radius:2px">Mobile</span>
-      </div>
-    </div>
-
-    <!-- 4. Mental Health Chatbot -->
-    <div class="pcard rev" data-cat="ai">
-      <div class="pglow"></div>
-      <div class="phd">
-        <div><div class="pti">🧠 AI Mental Health Chatbot + OCR</div><div class="psu">Sentiment analysis · Medical report parsing · Health intel</div></div>
-        <div class="pic" style="background:rgba(168,85,247,.07);border-color:rgba(168,85,247,.2)">💬</div>
-      </div>
-      <div class="pbo">
-        <p class="pde">Dual-intelligence system: a TensorFlow NLP chatbot detecting emotional state in real time, paired with a Pytesseract OCR pipeline extracting structured data from medical reports and cross-referencing curated health datasets.</p>
-        <div class="phli">
-          <div class="phi"><div class="phb" style="background:rgba(168,85,247,.08);border:1px solid rgba(168,85,247,.25)">💬</div><div class="pht"><strong>NLP Engine</strong> — TensorFlow LSTM classifies emotional states (anxiety, depression, neutral) with 87%+ accuracy</div></div>
-          <div class="phi"><div class="phb" style="background:rgba(0,240,255,.08);border:1px solid rgba(0,240,255,.25)">📄</div><div class="pht"><strong>OCR Pipeline</strong> — Pytesseract extracts and structures text from lab reports; Pandas normalises and stores data</div></div>
-          <div class="phi"><div class="phb" style="background:rgba(0,255,136,.08);border:1px solid rgba(0,255,136,.25)">🔗</div><div class="pht"><strong>Health Intel</strong> — cross-references user health data with curated medical datasets for personalised recommendations</div></div>
-        </div>
-        <div class="psps">
-          <div class="psp"><div class="psl">NLP Model</div><div class="psv">TensorFlow LSTM</div></div>
-          <div class="psp"><div class="psl">OCR</div><div class="psv">Pytesseract</div></div>
-          <div class="psp"><div class="psl">Data</div><div class="psv">Pandas + CSV</div></div>
-          <div class="psp"><div class="psl">Accuracy</div><div class="psv">87%+ Sentiment</div></div>
-        </div>
-        <div class="ptec"><span class="ptp">Python</span><span class="ptp">TensorFlow</span><span class="ptp">Pytesseract</span><span class="ptp">Pandas</span><span class="ptp">NLTK</span><span class="ptp">NumPy</span></div>
-      </div>
-      <div class="pfo">
-        <div class="pls"><a href="https://github.com/ankit-sengupta05" target="_blank" class="plk">↗ GitHub</a></div>
-        <span style="border:1px solid rgba(168,85,247,.22);color:var(--v);background:rgba(168,85,247,.04);font-family:var(--ffm);font-size:.54rem;padding:3px 8px;border-radius:2px">AI/ML</span>
-      </div>
-    </div>
-
-    <!-- 5. Echo Health Assistant -->
-    <div class="pcard rev" data-cat="ai">
-      <div class="pglow"></div>
-      <div class="phd">
-        <div><div class="pti">💊 Echo — Personal AI Health Assistant</div><div class="psu">Fuzzy symptom matching · Medication guide · Diet recs</div></div>
-        <div class="pic" style="background:rgba(255,45,120,.07);border-color:rgba(255,45,120,.2)">🩺</div>
-      </div>
-      <div class="pbo">
-        <p class="pde">Desktop AI health companion using fuzzy string matching to map user-described symptoms to known conditions in a 5,000+ entry medical CSV dataset. Provides medication guidance and personalised dietary recommendations via a clean Tkinter GUI.</p>
-        <div class="phli">
-          <div class="phi"><div class="phb" style="background:rgba(255,45,120,.08);border:1px solid rgba(255,45,120,.25)">🔍</div><div class="pht"><strong>Fuzzy Matching</strong> — FuzzyWuzzy token-sort ratio maps typed symptoms (even with typos) to 5,000+ medical conditions</div></div>
-          <div class="phi"><div class="phb" style="background:rgba(0,240,255,.08);border:1px solid rgba(0,240,255,.25)">💊</div><div class="pht"><strong>Health Tracking</strong> — logs symptoms, medications, dietary recommendations; tracks history across sessions via CSV</div></div>
-          <div class="phi"><div class="phb" style="background:rgba(255,215,0,.08);border:1px solid rgba(255,215,0,.25)">🖥️</div><div class="pht"><strong>Desktop UI</strong> — clean multi-tab Tkinter GUI with real-time search, history view, exportable health reports</div></div>
-        </div>
-        <div class="psps">
-          <div class="psp"><div class="psl">Matching</div><div class="psv">FuzzyWuzzy Token-Sort</div></div>
-          <div class="psp"><div class="psl">Dataset</div><div class="psv">5,000+ Conditions</div></div>
-          <div class="psp"><div class="psl">Interface</div><div class="psv">Tkinter Multi-Tab</div></div>
-          <div class="psp"><div class="psl">Storage</div><div class="psv">CSV Session Logging</div></div>
-        </div>
-        <div class="ptec"><span class="ptp">Python</span><span class="ptp">FuzzyWuzzy</span><span class="ptp">Pandas</span><span class="ptp">Tkinter</span><span class="ptp">CSV Datasets</span></div>
-      </div>
-      <div class="pfo">
-        <div class="pls"><a href="https://github.com/ankit-sengupta05" target="_blank" class="plk">↗ GitHub</a></div>
-        <span style="border:1px solid rgba(255,45,120,.22);color:var(--p);background:rgba(255,45,120,.04);font-family:var(--ffm);font-size:.54rem;padding:3px 8px;border-radius:2px">AI/ML</span>
-      </div>
-    </div>
-
-  </div>
+  <div class="pgrid" id="projects-grid"></div>
 </section>
 
-<!-- ═══ BUILDING ═══ -->
+<!-- BUILDING — JS loop renders from data.json building array -->
 <section id="building">
   <div class="sl rev">04 // On My Workbench</div>
-  <div class="st rev">Currently <span style="color:var(--g)">Building</span></div>
-  <div class="bldg">
-    <div class="bca rev"><div class="bic">🤖</div><div class="bti">Autonomous AI Agent Systems</div><div class="bde">Self-directed agents with multi-step reasoning, tool use, memory, and autonomous decision-making. Exploring LangChain, LangGraph, and custom orchestration frameworks for complex real-world automation.</div><div class="bst">Active Development</div></div>
-    <div class="bca rev"><div class="bic">📚</div><div class="bti">Production RAG Pipelines</div><div class="bde">End-to-end Retrieval-Augmented Generation systems with vector databases (FAISS / Chroma / Pinecone), semantic chunking, hybrid search, and context-aware LLM response generation.</div><div class="bst">Active Development</div></div>
-    <div class="bca rev"><div class="bic">⚡</div><div class="bti">Scalable Backend Architectures</div><div class="bde">High-performance async APIs with FastAPI and Django, focusing on horizontal scalability, Celery task queues, Redis caching, and clean microservices patterns deployable on cloud infrastructure.</div><div class="bst">Ongoing</div></div>
-    <div class="bca rev"><div class="bic">🔗</div><div class="bti">Intelligent Automation &amp; Workflows</div><div class="bde">LLM-powered workflow orchestration — combining AI reasoning with programmatic control flows, API integrations, and event-driven automation to handle complex multi-step business processes.</div><div class="bst">Research Phase</div></div>
-  </div>
+  <div class="sttl rev">Currently <span style="color:var(--g)">Building</span></div>
+  <div class="bldg" id="building-grid"></div>
 </section>
 
-<!-- ═══ STATS ═══ -->
+<!-- STATS -->
 <section id="stats">
   <div class="sl rev">05 // GitHub Activity</div>
-  <div class="st rev">Code <span style="color:var(--c)">Metrics</span></div>
-  <div class="stca">
-    <div class="stc rev" style="--cb:var(--c)"><div class="stn" style="background:linear-gradient(135deg,var(--c),var(--v));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">5+</div><div class="stl">Projects Shipped</div></div>
-    <div class="stc rev" style="--cb:var(--v)"><div class="stn" style="background:linear-gradient(135deg,var(--v),var(--p));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">8.35</div><div class="stl">CGPA</div></div>
-    <div class="stc rev" style="--cb:var(--p)"><div class="stn" style="background:linear-gradient(135deg,var(--p),var(--y));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">🏅</div><div class="stl">Expo Selected</div></div>
-    <div class="stc rev" style="--cb:var(--g)"><div class="stn" style="background:linear-gradient(135deg,var(--g),var(--c));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">6</div><div class="stl">Tech Domains</div></div>
-  </div>
+  <div class="sttl rev">Code <span style="color:var(--c)">Metrics</span></div>
+  <div class="stca" id="stats-cards"></div>
   <div class="ghr rev" style="margin-top:26px">
     <div class="ghc"><img src="https://github-readme-stats.anuraghazra1.vercel.app/api?username=ankit-sengupta05&show_icons=true&theme=tokyonight&hide_border=true&title_color=00f0ff&icon_color=ff2d78&bg_color=06060f&text_color=e2e8f0&border_radius=6&include_all_commits=true&count_private=true" alt="GitHub Stats"/></div>
     <div class="ghc"><img src="https://github-readme-stats.anuraghazra1.vercel.app/api/top-langs/?username=ankit-sengupta05&layout=compact&theme=tokyonight&hide_border=true&title_color=00f0ff&bg_color=06060f&text_color=e2e8f0&border_radius=6&langs_count=8" alt="Top Languages"/></div>
@@ -727,189 +419,462 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:26px 72px
   </div>
 </section>
 
-<!-- ═══ CONTACT ═══ -->
+<!-- CONTACT — JS renders from data.json meta -->
 <section id="contact">
   <div class="ctop rev">
     <div class="sl" style="justify-content:center">06 // Contact</div>
-    <div class="st">Let's Build <span style="background:linear-gradient(90deg,var(--c),var(--v),var(--p));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Something Together</span></div>
-    <p>Actively seeking internships in AI/ML, backend dev &amp; embedded systems for 2025–26.<br>I respond fast — usually within a few hours.</p>
+    <div class="sttl">Let's Build <span style="background:linear-gradient(90deg,var(--c),var(--v),var(--p));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Something Together</span></div>
+    <p>Actively seeking internships in AI/ML, backend dev &amp; embedded systems for 2025–26.<br>Response time: usually within a few hours.</p>
   </div>
   <div style="max-width:800px;margin:0 auto">
-    <div class="cgri rev">
-      <a href="/cdn-cgi/l/email-protection#ceafa0a5a7bae0bdaba0a9bbbebaaffefb8ea9a3afa7a2e0ada1a3" class="cca cce">
-        <div class="cci">📧</div>
-        <div class="cct">Email — Primary Contact</div>
-        <div class="ccd"><span class="__cf_email__" data-cfemail="dfbeb1b4b6abf1acbab1b8aaafabbeefea9fb8b2beb6b3f1bcb0b2">[email&#160;protected]</span></div>
-        <div class="ccn">Best for internship enquiries, project collabs &amp; opportunities</div>
-        <div class="cca2">Send email <span class="car">→</span></div>
-      </a>
-      <a href="https://linkedin.com/in/Sengupta-ankit" target="_blank" class="cca ccl">
-        <div class="cci">💼</div>
-        <div class="cct">LinkedIn — Professional</div>
-        <div class="ccd">linkedin.com/in/Sengupta-ankit</div>
-        <div class="ccn">Connect for professional networking, recommendations &amp; opportunities</div>
-        <div class="cca2">View profile <span class="car">→</span></div>
-      </a>
-      <a href="https://github.com/ankit-sengupta05" target="_blank" class="cca ccg">
-        <div class="cci">🐙</div>
-        <div class="cct">GitHub — Code &amp; Projects</div>
-        <div class="ccd">github.com/ankit-sengupta05</div>
-        <div class="ccn">Browse all source code, repositories &amp; open-source contributions</div>
-        <div class="cca2">See all code <span class="car">→</span></div>
-      </a>
-      <a href="https://www.instagram.com/ankit_sengupta/" target="_blank" class="cca cci2">
-        <div class="cci">📸</div>
-        <div class="cct">Instagram</div>
-        <div class="ccd">@ankit_sengupta</div>
-        <div class="ccn">Dev updates, project previews &amp; behind-the-scenes builds</div>
-        <div class="cca2">Follow me <span class="car">→</span></div>
-      </a>
-    </div>
+    <div class="cgri rev" id="contact-cards"></div>
     <div class="ope rev">
       <div class="opl">✨ Open To</div>
-      <div class="ops">
-        <span class="opp">💼 Internships 2025–26</span>
-        <span class="opp">🤖 AI/ML Collabs</span>
-        <span class="opp">📂 Open Source</span>
-        <span class="opp">🏆 Hackathons</span>
-        <span class="opp">🔬 Research</span>
-        <span class="opp">⚡ Freelance</span>
-      </div>
+      <div class="ops" id="open-to-pills"></div>
     </div>
-    <div class="ctar rev">
-      <a href="/cdn-cgi/l/email-protection#fa9b9491938ed4899f949d8f8a8e9bcacfba9d979b9396d4999597" class="btn bs" style="padding:14px 36px;font-size:.76rem">📧 Hire Me — Send Email</a>
-      <a href="https://linkedin.com/in/Sengupta-ankit" target="_blank" class="btn bo">💼 LinkedIn</a>
-      <a href="https://github.com/ankit-sengupta05" target="_blank" class="btn bv">🐙 GitHub</a>
-    </div>
+    <div class="ctar rev" id="contact-cta"></div>
   </div>
 </section>
 
 <footer>
-  <div class="fn">ANKIT SENGUPTA</div>
-  <div class="fco">// VIT Amaravati · CS AI&amp;ML · Class of 2028 · CGPA 8.35</div>
-  <div class="fli">
-    <a href="/cdn-cgi/l/email-protection#2647484d4f52085543484153565247161366414b474f4a0845494b">Email</a>
-    <a href="https://github.com/ankit-sengupta05" target="_blank">GitHub</a>
-    <a href="https://linkedin.com/in/Sengupta-ankit" target="_blank">LinkedIn</a>
-    <a href="https://www.instagram.com/ankit_sengupta/" target="_blank">Instagram</a>
-  </div>
+  <div class="fna" id="footer-name">ANKIT SENGUPTA</div>
+  <div class="fco" id="footer-sub">// VIT Amaravati · CS AI&amp;ML · Class of 2028</div>
+  <div class="fli" id="footer-links"></div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
+/* ══════════════════════════════════════════
+   CURSOR
+══════════════════════════════════════════ */
 const cur=document.getElementById('cur'),cur2=document.getElementById('cur2');
 let mx=0,my=0,rx=0,ry=0;
 document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cur.style.left=mx+'px';cur.style.top=my+'px';});
 (function loop(){rx+=(mx-rx)*.11;ry+=(my-ry)*.11;cur2.style.left=rx+'px';cur2.style.top=ry+'px';requestAnimationFrame(loop);})();
-document.querySelectorAll('a,button,.pcard,.skc,.cca,.opp,.pfb,.skt').forEach(el=>{
-  el.addEventListener('mouseenter',()=>{cur.style.cssText+='width:18px;height:18px;background:var(--p);';cur2.style.cssText+='width:46px;height:46px;border-color:rgba(255,45,120,.5);';});
-  el.addEventListener('mouseleave',()=>{cur.style.cssText+='width:9px;height:9px;background:var(--c);';cur2.style.cssText+='width:32px;height:32px;border-color:rgba(0,240,255,.45);';});
-});
+function hookCursor(){
+  document.querySelectorAll('a,button,.pcard,.skc,.cca,.opp,.pfb,.skt,.bca').forEach(el=>{
+    if(el._ch) return; el._ch=true;
+    el.addEventListener('mouseenter',()=>{cur.style.cssText+=';width:18px;height:18px;background:var(--p);';cur2.style.cssText+=';width:46px;height:46px;border-color:rgba(255,45,120,.5);';});
+    el.addEventListener('mouseleave',()=>{cur.style.cssText+=';width:9px;height:9px;background:var(--c);';cur2.style.cssText+=';width:32px;height:32px;border-color:rgba(0,240,255,.45);';});
+  });
+}
+
+/* ══════════════════════════════════════════
+   PARTICLES
+══════════════════════════════════════════ */
 const cv=document.getElementById('pcv'),ctx=cv.getContext('2d');
 let W,H,pts=[];
-function resize(){W=cv.width=window.innerWidth;H=cv.height=window.innerHeight;}
-resize();window.addEventListener('resize',resize);
+function resize(){W=cv.width=innerWidth;H=cv.height=innerHeight;}
+resize();addEventListener('resize',resize);
 const COLS=['rgba(0,240,255,','rgba(168,85,247,','rgba(255,45,120,','rgba(0,255,136,','rgba(255,215,0,'];
 class P{constructor(){this.r();}r(){this.x=Math.random()*W;this.y=Math.random()*H;this.sz=Math.random()*1.4+.4;this.a=Math.random()*Math.PI*2;this.sp=Math.random()*.38+.08;this.col=COLS[Math.floor(Math.random()*COLS.length)];this.op=Math.random()*.45+.08;}u(){this.x+=Math.cos(this.a)*this.sp;this.y+=Math.sin(this.a)*this.sp;this.a+=.006*(Math.random()-.5);if(this.x<0||this.x>W||this.y<0||this.y>H)this.r();}d(){ctx.beginPath();ctx.arc(this.x,this.y,this.sz,0,Math.PI*2);ctx.fillStyle=this.col+this.op+')';ctx.fill();}}
 for(let i=0;i<90;i++)pts.push(new P());
 function conn(){for(let i=0;i<pts.length;i++)for(let j=i+1;j<pts.length;j++){const dx=pts[i].x-pts[j].x,dy=pts[i].y-pts[j].y,d=Math.sqrt(dx*dx+dy*dy);if(d<110){ctx.beginPath();ctx.strokeStyle='rgba(0,240,255,'+(0.055*(1-d/110))+')';ctx.lineWidth=.5;ctx.moveTo(pts[i].x,pts[i].y);ctx.lineTo(pts[j].x,pts[j].y);ctx.stroke();}}}
 (function anim(){ctx.clearRect(0,0,W,H);conn();pts.forEach(p=>{p.u();p.d();});requestAnimationFrame(anim);})();
-const phrases=["AI Engineer — RAG Pipelines & AI Agents","Backend Dev — Django · FastAPI · Node.js","Embedded IoT — ESP32 · YOLO · OpenCV","VIT Amaravati · CS AI&ML · Class of 2028","🟢 Open to Internships 2025–26"];
-let pi=0,ci=0,del=false;const tel=document.getElementById('typed');
-function type(){const ph=phrases[pi];if(!del){tel.textContent=ph.slice(0,++ci);if(ci===ph.length){del=true;setTimeout(type,2200);return;}}else{tel.textContent=ph.slice(0,--ci);if(ci===0){del=false;pi=(pi+1)%phrases.length;}}setTimeout(type,del?38:72);}
-type();
+
+/* ══════════════════════════════════════════
+   SCROLL REVEAL + BARS + NAV
+══════════════════════════════════════════ */
 const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('on');});},{threshold:.1,rootMargin:'0px 0px -50px 0px'});
-document.querySelectorAll('.rev,.revL,.revR').forEach(el=>obs.observe(el));
+function observeReveal(){document.querySelectorAll('.rev,.revL,.revR').forEach(el=>obs.observe(el));}
+observeReveal();
 const bobs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.style.width=e.target.dataset.w+'%';bobs.unobserve(e.target);}});},{threshold:.3});
 document.querySelectorAll('.bfi').forEach(b=>bobs.observe(b));
-document.querySelectorAll('.skg .skc').forEach((el,i)=>el.style.transitionDelay=`${i*.07}s`);
-document.querySelectorAll('.pgrid .pcard:not(.pfeat)').forEach((el,i)=>el.style.transitionDelay=`${i*.1}s`);
-document.querySelectorAll('.bldg .bca').forEach((el,i)=>el.style.transitionDelay=`${i*.08}s`);
-document.querySelectorAll('.stca .stc').forEach((el,i)=>el.style.transitionDelay=`${i*.08}s`);
-document.querySelectorAll('.pfb').forEach(b=>{b.addEventListener('click',()=>{document.querySelectorAll('.pfb').forEach(x=>x.classList.remove('on'));b.classList.add('on');const f=b.dataset.f;document.querySelectorAll('.pcard').forEach(c=>{c.style.display=(f==='all'||(c.dataset.cat||'').split(' ').includes(f))?'':'none';});});});
-document.querySelectorAll('.pcard').forEach(c=>{c.addEventListener('mousemove',e=>{const r=c.getBoundingClientRect();const x=((e.clientX-r.left)/r.width)*100,y=((e.clientY-r.top)/r.height)*100;c.querySelector('.pglow').style.background=`radial-gradient(circle at ${x}% ${y}%,rgba(0,240,255,.07),transparent 55%)`;});});
 const secs=document.querySelectorAll('section[id]'),nls=document.querySelectorAll('.nli a');
-window.addEventListener('scroll',()=>{let cs='';secs.forEach(s=>{if(window.scrollY>=s.offsetTop-160)cs=s.id;});nls.forEach(a=>{a.style.color=a.getAttribute('href')==='#'+cs?'var(--c)':'';});},{passive:true});
+addEventListener('scroll',()=>{let cs='';secs.forEach(s=>{if(scrollY>=s.offsetTop-160)cs=s.id;});nls.forEach(a=>{const active=a.getAttribute('href')==='#'+cs;a.classList.toggle('act',active);});},{passive:true});
 nls.forEach(a=>{a.addEventListener('click',e=>{e.preventDefault();document.querySelector(a.getAttribute('href'))?.scrollIntoView({behavior:'smooth'});});});
 
-/* ══ DATA.JSON LOADER ══
-   Edit data.json in the same directory to update CGPA, name, skills etc.
-   The code block in the About section re-renders automatically.
-══════════════════════ */
-async function loadData(){
+/* ══════════════════════════════════════════
+   TYPED EFFECT — phrases come from data.json
+══════════════════════════════════════════ */
+let typedPhrases=["AI Engineer — RAG Pipelines & AI Agents","Backend Dev — Django · FastAPI · Node.js","🟢 Open to Internships 2025–26"];
+let pi=0,ci=0,deleting=false;
+const tel=document.getElementById('typed');
+function type(){
+  const ph=typedPhrases[pi];
+  if(!deleting){tel.textContent=ph.slice(0,++ci);if(ci===ph.length){deleting=true;setTimeout(type,2200);return;}}
+  else{tel.textContent=ph.slice(0,--ci);if(ci===0){deleting=false;pi=(pi+1)%typedPhrases.length;}}
+  setTimeout(type,deleting?38:72);
+}
+type();
+
+/* ══════════════════════════════════════════
+   CARD GLOW MOUSE TRACKING
+══════════════════════════════════════════ */
+function hookGlow(){
+  document.querySelectorAll('.pcard').forEach(c=>{
+    if(c._gl) return; c._gl=true;
+    c.addEventListener('mousemove',e=>{
+      const r=c.getBoundingClientRect();
+      const x=((e.clientX-r.left)/r.width)*100,y=((e.clientY-r.top)/r.height)*100;
+      c.querySelector('.pglow').style.background=`radial-gradient(circle at ${x}% ${y}%,rgba(0,240,255,.07),transparent 55%)`;
+    });
+  });
+}
+
+/* ══════════════════════════════════════════
+   HTML HELPERS
+══════════════════════════════════════════ */
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+function kw(t){return`<span class="kw">${t}</span>`;}
+function cl(t){return`<span class="cl">${t}</span>`;}
+function fn(t){return`<span class="fn">${t}</span>`;}
+function st(t){return`<span class="st">"${esc(t)}"</span>`;}
+function nm(t){return`<span class="nm">${t}</span>`;}
+function cm(t){return`<span class="cm">${t}</span>`;}
+function sp(n){return'&nbsp;'.repeat(n);}
+
+/* ══════════════════════════════════════════
+   RENDER: CODE BLOCK
+══════════════════════════════════════════ */
+function renderCodeBlock(d){
+  const m=d.meta||{}, cb=d.codeBlock||{};
+  const skills=cb.skills||{};
+  const skillLines=Object.entries(skills).map(([k,v])=>{
+    const vals=v.map(x=>st(x)).join(', ');
+    const pad=Math.max(1,12-k.length);
+    return `${sp(6)}${st(k)}${sp(pad)}: [${vals}],`;
+  }).join('<br>');
+
+  const lines=[
+    cm('# ── auto-loaded from data.json ─────'),
+    '<br>',
+    `${kw('class')} ${cl('AnkitSengupta')}:`,
+    `${sp(2)}${kw('def')} ${fn('__init__')}(${nm('self')}):`,
+    `${sp(4)}${nm('self')}.name${sp(7)}= ${st(m.name||'Ankit Sengupta')}`,
+    `${sp(4)}${nm('self')}.role${sp(7)}= ${st(m.role||'AI Eng & Backend Dev')}`,
+    `${sp(4)}${nm('self')}.university = ${st(m.university||'VIT Amaravati · 2028')}`,
+    `${sp(4)}${nm('self')}.cgpa${sp(7)}= ${nm(d.stats?.cgpa||m.cgpa||8.35)}`,
+    `${sp(4)}${nm('self')}.email${sp(6)}= ${st(m.email||'')}`,
+    `${sp(4)}${nm('self')}.skills = {`,
+    skillLines,
+    `${sp(4)}}`,
+    `${sp(4)}${nm('self')}.trophy = ${st(m.trophy||'🏅 VIT Internal Expo 2025')}`,
+    `${sp(4)}${nm('self')}.power${sp(4)}= ${st(m.power||'ML theory → production')}`,
+    `${sp(4)}${nm('self')}.status = ${st(m.status||'🟢 Open to internships!')}`,
+    '<br>',
+    `${sp(2)}${kw('def')} ${fn('say_hi')}(${nm('self')}):`,
+    `${sp(4)}${kw('print')}(${st("Let's build something 🚀")})`,
+    '<br>',
+    cm('# ── run ──'),
+    `dev = ${cl('AnkitSengupta')}()`,
+    `dev.${fn('say_hi')}()<span class="cblink"></span>`,
+  ].join('<br>');
+
+  document.getElementById('codeblock-body').innerHTML=lines;
+
+  const count=d.projects?.length||0;
+  const cgpa=d.stats?.cgpa||m.cgpa||8.35;
+  document.getElementById('codeblock-footer').innerHTML=[
+    {e:'📊',l:`CGPA: ${cgpa}`},
+    {e:'🏅',l:'Expo Selected'},
+    {e:'📦',l:`${count} Projects`},
+    {e:'🟢',l:'Available'},
+  ].map(p=>`<span class="cblpill"><span class="pdot"></span>${p.e} ${p.l}</span>`).join('');
+}
+
+/* ══════════════════════════════════════════
+   RENDER: HERO STATS
+══════════════════════════════════════════ */
+function renderHeroStats(d){
+  const m=d.meta||{}, s=d.stats||{};
+  const count=d.projects?.length||0;
+  const items=[
+    {n:count+'+', l:'AI Projects'},
+    {n:s.cgpa||m.cgpa||8.35, l:'CGPA'},
+    {n:'🏅', l:'Expo Selected'},
+    {n:s.classOf||2028, l:'Class Of'},
+    {n:s.domains||6, l:'Tech Domains'},
+  ];
+  document.getElementById('hero-stats').innerHTML=items.map((it,i)=>
+    (i===0?'':' <div class="hdi"></div> ')+
+    `<div><div class="hsn">${it.n}</div><div class="hsl">${it.l}</div></div>`
+  ).join('');
+
+  // update hero github link
+  if(m.github) document.getElementById('hero-gh').href=m.github;
+  document.getElementById('about-cgpa').textContent=`🎓 CGPA ${s.cgpa||m.cgpa} · B.Tech CS AI&ML`;
+  document.getElementById('nav-status').textContent=m.status||'Open to Internship';
+  document.getElementById('footer-name').textContent=(m.name||'Ankit Sengupta').toUpperCase();
+  document.getElementById('footer-sub').textContent=`// ${m.university||'VIT Amaravati · 2028'} · CGPA ${s.cgpa||m.cgpa}`;
+
+  // typed phrases
+  if(m.typedPhrases?.length) typedPhrases=m.typedPhrases;
+}
+
+/* ══════════════════════════════════════════
+   RENDER: SKILLS GRID
+══════════════════════════════════════════ */
+function renderSkills(d){
+  const cats=d.skillCategories||[];
+  const html=cats.map((c,i)=>`
+    <div class="skc rev" style="--cg:${c.gradient||''};transition-delay:${i*.07}s">
+      <div class="skico">${c.icon||'🔧'}</div>
+      <div class="skttl" style="color:${c.colorVar||'var(--c)'}">${esc(c.title)}</div>
+      <div class="sksub">${esc(c.sub||'')}</div>
+      <div class="skts">${(c.tags||[]).map(t=>`<span class="skt ${t.cls||'tc'}">${esc(t.label)}</span>`).join('')}</div>
+      <div style="position:absolute;top:0;left:0;right:0;height:2px;background:${c.gradient||'var(--c)'}"></div>
+    </div>`).join('');
+  document.getElementById('skills-grid').innerHTML=html;
+}
+
+/* ══════════════════════════════════════════
+   RENDER: PROJECTS
+══════════════════════════════════════════ */
+function renderProjects(d){
+  const projs=d.projects||[];
+  // collect all unique categories
+  const allCats=new Set();
+  projs.forEach(p=>(p.categories||[]).forEach(c=>allCats.add(c)));
+
+  // filter bar
+  const filterBar=document.getElementById('filter-bar');
+  const catLabels={'all':'All','ai':'AI / ML','embedded':'Embedded','mobile':'Mobile','backend':'Backend'};
+  let filterBtns=`<button class="pfb on" data-f="all">All (${projs.length})</button>`;
+  allCats.forEach(c=>{ filterBtns+=`<button class="pfb" data-f="${c}">${catLabels[c]||c}</button>`; });
+  filterBar.innerHTML=filterBtns;
+
+  // cards
+  document.getElementById('projects-grid').innerHTML=projs.map((p,idx)=>
+    p.featured ? renderFeaturedCard(p) : renderCard(p,idx)
+  ).join('');
+
+  // filter logic
+  document.querySelectorAll('.pfb').forEach(b=>{
+    b.addEventListener('click',()=>{
+      document.querySelectorAll('.pfb').forEach(x=>x.classList.remove('on'));
+      b.classList.add('on');
+      const f=b.dataset.f;
+      document.querySelectorAll('.pcard').forEach(c=>{
+        c.style.display=(f==='all'||(c.dataset.cat||'').split(' ').includes(f))?'':'none';
+      });
+    });
+  });
+  hookGlow();
+  hookCursor();
+}
+
+function specHtml(specs){
+  return(specs||[]).map(s=>`<div class="psp"><div class="pspl">${esc(s.label)}</div><div class="pspv">${esc(s.value)}</div></div>`).join('');
+}
+function highlightHtml(hls){
+  return(hls||[]).map(h=>`
+    <div class="phi">
+      <div class="phb bc-${h.color||'c'}">${h.icon||'•'}</div>
+      <div class="pht"><strong>${esc(h.title)}</strong> — ${esc(h.detail)}</div>
+    </div>`).join('');
+}
+function techHtml(tech){return(tech||[]).map(t=>`<span class="ptp">${esc(t)}</span>`).join('');}
+function catTagHtml(tags){return(tags||[]).map(t=>`<span class="pctag clr-${t.clr||'c'}">${esc(t.label)}</span>`).join('');}
+function linksHtml(p){
+  let h='';
+  if(p.github) h+=`<a href="${p.github}" target="_blank" class="plk">↗ GitHub</a>`;
+  if(p.demo)   h+=`<a href="${p.demo}" target="_blank" class="plk demo">▶ Live Demo</a>`;
+  return h;
+}
+
+function renderFeaturedCard(p){
+  return`<div class="pcard pfeat rev" data-cat="${(p.categories||[]).join(' ')}">
+  <div class="pglow"></div>
+  <div class="pfin">
+    <div style="display:flex;flex-direction:column">
+      <div class="phd">
+        <div>
+          ${p.badge?`<div class="ptro">${esc(p.badge)}</div>`:''}
+          <div class="pti">${p.emoji||''} ${esc(p.title)}</div>
+          <div class="psu">${esc(p.subtitle||'')}</div>
+        </div>
+        <div class="pic" style="background:${p.iconBg||'rgba(0,240,255,.07)'}">${p.emoji||'🚀'}</div>
+      </div>
+      <div class="pbo">
+        <p class="pde">${esc(p.description||'')}</p>
+        <div class="phli">${highlightHtml(p.highlights)}</div>
+        <div class="psps">${specHtml(p.specs)}</div>
+        <div class="ptec">${techHtml(p.tech)}</div>
+      </div>
+      <div class="pfo">
+        <div class="pls">${linksHtml(p)}</div>
+        <div class="pcats">${catTagHtml(p.catTags)}</div>
+      </div>
+    </div>
+    <div class="pfvis">${featuredVisual()}</div>
+  </div>
+</div>`;
+}
+
+function renderCard(p,idx){
+  return`<div class="pcard rev" data-cat="${(p.categories||[]).join(' ')}" style="transition-delay:${idx*.08}s">
+  <div class="pglow"></div>
+  <div class="phd">
+    <div>
+      ${p.badge?`<div class="ptro">${esc(p.badge)}</div>`:''}
+      <div class="pti">${p.emoji||''} ${esc(p.title)}</div>
+      <div class="psu">${esc(p.subtitle||'')}</div>
+    </div>
+    <div class="pic" style="background:${p.iconBg||'rgba(0,240,255,.07)'};border-color:${p.iconBorderColor||'rgba(0,240,255,.2)'}">${p.emoji||'🚀'}</div>
+  </div>
+  <div class="pbo">
+    <p class="pde">${esc(p.description||'')}</p>
+    <div class="phli">${highlightHtml(p.highlights)}</div>
+    <div class="psps">${specHtml(p.specs)}</div>
+    <div class="ptec">${techHtml(p.tech)}</div>
+  </div>
+  <div class="pfo">
+    <div class="pls">${linksHtml(p)}</div>
+    <div class="pcats">${catTagHtml(p.catTags)}</div>
+  </div>
+</div>`;
+}
+
+function featuredVisual(){
+  return`<svg viewBox="0 0 320 320" width="290" height="290" xmlns="http://www.w3.org/2000/svg">
+    <defs><filter id="fg"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+    <g filter="url(#fg)" stroke="#00f0ff" stroke-width="2.2" fill="none" opacity=".95">
+      <rect x="28" y="118" width="96" height="72" rx="14"/>
+      <rect x="196" y="118" width="96" height="72" rx="14"/>
+      <line x1="124" y1="154" x2="196" y2="154"/>
+      <line x1="28" y1="154" x2="8" y2="168"/><line x1="292" y1="154" x2="312" y2="168"/>
+    </g>
+    <g stroke="#00f0ff" stroke-width=".7">
+      ${[130,142,154,166,178].map((y,i)=>`
+        <line x1="38" y1="${y}" x2="114" y2="${y}"><animate attributeName="opacity" values=".4;1;.4" dur="1.6s" begin="${i*.25}s" repeatCount="indefinite"/></line>
+        <line x1="206" y1="${y}" x2="282" y2="${y}"><animate attributeName="opacity" values=".4;1;.4" dur="1.6s" begin="${i*.25+.1}s" repeatCount="indefinite"/></line>
+      `).join('')}
+    </g>
+    <g stroke="#ff2d78" stroke-width="1.8" fill="none" filter="url(#fg)">
+      <rect x="44" y="124" width="36" height="36" rx="2"><animate attributeName="opacity" values="0;1;1;0" dur="2.8s" repeatCount="indefinite"/></rect>
+      <rect x="218" y="127" width="34" height="34" rx="2"><animate attributeName="opacity" values="0;1;1;0" dur="2.8s" begin=".9s" repeatCount="indefinite"/></rect>
+    </g>
+    <text x="46" y="122" fill="#ff2d78" font-size="7.5" font-family="Space Mono,monospace"><animate attributeName="opacity" values="0;1;1;0" dur="2.8s" repeatCount="indefinite"/>OBJ 0.94</text>
+    <text x="218" y="125" fill="#ff2d78" font-size="7.5" font-family="Space Mono,monospace"><animate attributeName="opacity" values="0;1;1;0" dur="2.8s" begin=".9s" repeatCount="indefinite"/>PATH 0.87</text>
+    <g fill="rgba(0,240,255,.06)" stroke="#a855f7" stroke-width="1.2">
+      <rect x="55" y="234" width="52" height="30" rx="3"/>
+      <rect x="134" y="234" width="52" height="30" rx="3"/>
+      <rect x="213" y="234" width="52" height="30" rx="3"/>
+    </g>
+    <g font-family="Space Mono,monospace" font-size="7.5" text-anchor="middle" fill="#a855f7">
+      <text x="81" y="253">ESP32</text><text x="160" y="253">ESP32</text><text x="239" y="253">ESP32</text>
+    </g>
+    <line x1="81" y1="234" x2="72" y2="190" stroke="#a855f7" stroke-width="1" opacity=".5"/>
+    <line x1="160" y1="234" x2="160" y2="190" stroke="#a855f7" stroke-width="1" opacity=".5"/>
+    <line x1="239" y1="234" x2="248" y2="190" stroke="#a855f7" stroke-width="1" opacity=".5"/>
+    <g stroke="#00ff88" stroke-width="1.8" fill="none" filter="url(#fg)" opacity=".75">
+      <path d="M150,72 Q160,62 170,72"><animate attributeName="opacity" values=".75;1;.75" dur="1.1s" repeatCount="indefinite"/></path>
+      <path d="M141,63 Q160,47 179,63"><animate attributeName="opacity" values=".5;1;.5" dur="1.1s" begin=".25s" repeatCount="indefinite"/></path>
+      <path d="M132,54 Q160,32 188,54"><animate attributeName="opacity" values=".3;.8;.3" dur="1.1s" begin=".5s" repeatCount="indefinite"/></path>
+      <circle cx="160" cy="78" r="3.5" fill="#00ff88"/>
+    </g>
+    <text x="160" y="218" text-anchor="middle" font-family="Space Mono,monospace" font-size="7.5" fill="#00f0ff" opacity=".6">3× CAM · YOLO · 360° COVERAGE</text>
+  </svg>`;
+}
+
+/* ══════════════════════════════════════════
+   RENDER: BUILDING GRID
+══════════════════════════════════════════ */
+function renderBuilding(d){
+  const items=d.building||[];
+  document.getElementById('building-grid').innerHTML=items.map((b,i)=>`
+    <div class="bca rev" style="transition-delay:${i*.08}s">
+      <div class="bic">${b.icon||'⚙️'}</div>
+      <div class="btti">${esc(b.title)}</div>
+      <div class="bde">${esc(b.desc)}</div>
+      <div class="bst">${esc(b.status||'In Progress')}</div>
+    </div>`).join('');
+}
+
+/* ══════════════════════════════════════════
+   RENDER: STATS CARDS
+══════════════════════════════════════════ */
+function renderStats(d){
+  const count=d.projects?.length||0;
+  const cgpa=d.stats?.cgpa||d.meta?.cgpa||8.35;
+  const cards=[
+    {n:count+'+', l:'Projects Shipped', g:'linear-gradient(135deg,var(--c),var(--v))', cb:'var(--c)'},
+    {n:cgpa,       l:'CGPA',             g:'linear-gradient(135deg,var(--v),var(--p))', cb:'var(--v)'},
+    {n:'🏅',       l:'Expo Selected',    g:'linear-gradient(135deg,var(--p),var(--y))', cb:'var(--p)'},
+    {n:d.stats?.domains||6, l:'Tech Domains', g:'linear-gradient(135deg,var(--g),var(--c))', cb:'var(--g)'},
+  ];
+  document.getElementById('stats-cards').innerHTML=cards.map((c,i)=>`
+    <div class="stc rev" style="--cb:${c.cb};transition-delay:${i*.08}s">
+      <div style="position:absolute;top:0;left:0;right:0;height:2px;background:${c.g}"></div>
+      <div class="stn" style="background:${c.g};-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">${c.n}</div>
+      <div class="stl">${c.l}</div>
+    </div>`).join('');
+}
+
+/* ══════════════════════════════════════════
+   RENDER: CONTACT
+══════════════════════════════════════════ */
+function renderContact(d){
+  const m=d.meta||{};
+  const cards=[
+    {href:`mailto:${m.email}`,cls:'cce',grad:'linear-gradient(135deg,rgba(255,45,120,.06),transparent)',hov:'rgba(255,45,120,.28)',icb:'rgba(255,45,120,.28)',icbg:'rgba(255,45,120,.06)',clr:'var(--p)',icon:'📧',title:'Email — Primary Contact',detail:m.email||'',note:'Best for internship enquiries, project collabs & opportunities',act:'Send email'},
+    {href:m.linkedin,cls:'ccl',grad:'linear-gradient(135deg,rgba(0,240,255,.06),transparent)',hov:'rgba(0,240,255,.28)',icb:'rgba(0,240,255,.28)',icbg:'rgba(0,240,255,.06)',clr:'var(--c)',icon:'💼',title:'LinkedIn — Professional',detail:(m.linkedin||'').replace('https://',''),note:'Connect for professional networking, recommendations & opportunities',act:'View profile'},
+    {href:m.github,cls:'ccg',grad:'linear-gradient(135deg,rgba(168,85,247,.06),transparent)',hov:'rgba(168,85,247,.28)',icb:'rgba(168,85,247,.28)',icbg:'rgba(168,85,247,.06)',clr:'var(--v)',icon:'🐙',title:'GitHub — Code & Projects',detail:(m.github||'').replace('https://',''),note:'Browse all source code, repositories & open-source contributions',act:'See all code'},
+    {href:m.instagram,cls:'cci2',grad:'linear-gradient(135deg,rgba(255,215,0,.05),transparent)',hov:'rgba(255,215,0,.28)',icb:'rgba(255,215,0,.28)',icbg:'rgba(255,215,0,.05)',clr:'var(--y)',icon:'📸',title:'Instagram',detail:(m.instagram||'').replace('https://www.instagram.com/','@').replace('/',''),note:'Dev updates, project previews & behind-the-scenes builds',act:'Follow me'},
+  ];
+  document.getElementById('contact-cards').innerHTML=cards.filter(c=>c.href).map(c=>`
+    <a href="${c.href}" target="${c.href.startsWith('mailto')?'_self':'_blank'}" class="cca"
+      style="--cgg:${c.grad}"
+      onmouseenter="this.style.borderColor='${c.hov}'"
+      onmouseleave="this.style.borderColor=''">
+      <div class="cci" style="border-color:${c.icb};background:${c.icbg}">${c.icon}</div>
+      <div class="cctt" style="color:${c.clr}">${c.title}</div>
+      <div class="ccd">${esc(c.detail)}</div>
+      <div class="ccn">${c.note}</div>
+      <div class="cca2" style="color:${c.clr}">${c.act} <span class="car">→</span></div>
+    </a>`).join('');
+
+  // open to pills
+  document.getElementById('open-to-pills').innerHTML=(d.openTo||[]).map(x=>`<span class="opp">${esc(x)}</span>`).join('');
+
+  // CTA
+  document.getElementById('contact-cta').innerHTML=`
+    <a href="mailto:${m.email||''}" class="btn bs" style="padding:14px 36px;font-size:.76rem">📧 Hire Me — Send Email</a>
+    <a href="${m.linkedin||'#'}" target="_blank" class="btn bo">💼 LinkedIn</a>
+    <a href="${m.github||'#'}" target="_blank" class="btn bv">🐙 GitHub</a>`;
+
+  // footer links
+  document.getElementById('footer-links').innerHTML=[
+    {l:'Email',h:`mailto:${m.email}`},
+    {l:'GitHub',h:m.github},
+    {l:'LinkedIn',h:m.linkedin},
+    {l:'Instagram',h:m.instagram},
+  ].filter(x=>x.h).map(x=>`<a href="${x.h}" target="_blank">${x.l}</a>`).join('');
+}
+
+/* ══════════════════════════════════════════
+   MAIN — FETCH data.json AND BOOT
+══════════════════════════════════════════ */
+async function boot(){
   let d;
   try{
     const res=await fetch('./data.json');
-    if(!res.ok)throw new Error();
+    if(!res.ok) throw 0;
     d=await res.json();
   }catch(e){
-    d={name:"Ankit Sengupta",role:"AI Eng & Backend Dev",university:"VIT Amaravati · 2028",
-       cgpa:8.35,email:"ankit.sengupta05@gmail.com",trophy:"🏅 VIT Internal Expo 2025",
-       power:"ML theory → production",status:"🟢 Open to internships!",projects:5,
-       skills:{"AI/ML":["RAG","Agents","YOLO","TF"],"Backend":["Django","FastAPI","Node"],
-                "Languages":["Python","JS","TS","C++"],"Mobile":["Android","Kotlin","FB"],
-                "Embedded":["ESP32","Arduino","C++"]}};
+    // graceful fallback — site still works with bare-minimum data
+    console.warn('data.json not found — using fallback');
+    d={meta:{name:'Ankit Sengupta',role:'AI Eng & Backend Dev',university:'VIT Amaravati · 2028',cgpa:8.35,email:'ankit.sengupta05@gmail.com',linkedin:'https://linkedin.com/in/Sengupta-ankit',github:'https://github.com/ankit-sengupta05',instagram:'https://www.instagram.com/ankit_sengupta/',trophy:'🏅 VIT Internal Expo 2025',power:'ML theory → production',status:'🟢 Open to internships!'},stats:{cgpa:8.35,domains:6,classOf:2028},projects:[],building:[],skillCategories:[],openTo:[],codeBlock:{skills:{}}};
   }
-  renderCode(d);
-  updateStats(d);
-}
-function kw(t){return`<span class="kw">${t}</span>`;}
-function cl2(t){return`<span class="cl">${t}</span>`;}
-function fn2(t){return`<span class="fn">${t}</span>`;}
-function st2(t){return`<span class="st">"${String(t).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}"</span>`;}
-function nm2(t){return`<span class="nm">${t}</span>`;}
-function cm2(t){return`<span class="cm">${t}</span>`;}
-function sp(n){return'&nbsp;'.repeat(n);}
 
-function renderCode(d){
-  const skills=d.skills||{};
-  const skillLines=Object.entries(skills).map(([k,v])=>{
-    const vals=v.map(x=>st2(x)).join(', ');
-    const pad=Math.max(1,11-k.length);
-    return `${sp(6)}${st2(k)}${sp(pad)}: [${vals}],`;
-  }).join('<br>');
+  // render all sections
+  renderHeroStats(d);
+  renderCodeBlock(d);
+  renderSkills(d);
+  renderProjects(d);
+  renderBuilding(d);
+  renderStats(d);
+  renderContact(d);
 
-  const html=[
-    cm2('# ── loaded from data.json ──────'),
-    '<br>',
-    `${kw('class')} ${cl2('AnkitSengupta')}:`,
-    `${sp(2)}${kw('def')} ${fn2('__init__')}(${nm2('self')}):`,
-    `${sp(4)}${nm2('self')}.name${sp(7)}= ${st2(d.name)}`,
-    `${sp(4)}${nm2('self')}.role${sp(7)}= ${st2(d.role)}`,
-    `${sp(4)}${nm2('self')}.university = ${st2(d.university)}`,
-    `${sp(4)}${nm2('self')}.cgpa${sp(7)}= <span class="nm" id="live-cgpa">${d.cgpa}</span>`,
-    `${sp(4)}${nm2('self')}.email${sp(6)}= ${st2(d.email)}`,
-    `${sp(4)}${nm2('self')}.skills = {`,
-    skillLines,
-    `${sp(4)}}`,
-    `${sp(4)}${nm2('self')}.trophy = ${st2(d.trophy)}`,
-    `${sp(4)}${nm2('self')}.power${sp(4)}= ${st2(d.power)}`,
-    `${sp(4)}${nm2('self')}.status = ${st2(d.status)}`,
-    '<br>',
-    `${sp(2)}${kw('def')} ${fn2('say_hi')}(${nm2('self')}):`,
-    `${sp(4)}${kw('print')}(${st2('Lets build something 🚀')})`,
-    '<br>',
-    cm2('# ── initialise ──'),
-    `dev = ${cl2('AnkitSengupta')}()`,
-    `dev.${fn2('say_hi')}()<span class="codeblink"></span>`,
-  ].join('<br>');
+  // re-observe any new .rev elements injected by JS
+  observeReveal();
+  hookCursor();
 
-  const body=document.getElementById('codeblock-body');
-  if(body) body.innerHTML=html;
-
-  const footer=document.getElementById('codeblock-footer');
-  if(footer) footer.innerHTML=[
-    {e:'📊',l:`CGPA: ${d.cgpa}`},{e:'🏅',l:'Expo Selected'},
-    {e:'📦',l:`${d.projects||5}+ Projects`},{e:'🟢',l:'Available'},
-  ].map(p=>`<span class="cbl-pill"><span class="dot"></span>${p.e} ${p.l}</span>`).join('');
+  // hide loader
+  setTimeout(()=>document.getElementById('loader').classList.add('hide'),400);
 }
 
-function updateStats(d){
-  const ns=document.querySelectorAll('.hsn');
-  if(ns[0]) ns[0].textContent=(d.projects||5)+'+';
-  if(ns[1]) ns[1].textContent=d.cgpa||'8.35';
-}
-
-loadData();
+boot();
 </script>
 </body>
 </html>
