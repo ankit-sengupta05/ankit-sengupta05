@@ -1,0 +1,26 @@
+{
+  "_readme": "Edit this file to update your portfolio. CGPA, name, skills, status all auto-update in the code block.",
+
+  "name": "Ankit Sengupta",
+  "role": "AI Eng & Backend Dev",
+  "university": "VIT Amaravati · 2028",
+
+  "cgpa": 8.35,
+
+  "email": "ankit.sengupta05@gmail.com",
+  "trophy": "🏅 VIT Internal Expo 2025",
+  "power": "ML theory → production",
+  "status": "🟢 Open to internships!",
+
+  "projects": 5,
+
+  "skills": {
+    "AI/ML"     : ["RAG", "Agents", "YOLO", "TF"],
+    "Backend"   : ["Django", "FastAPI", "Node"],
+    "Languages" : ["Python", "JS", "TS", "C++"],
+    "Mobile"    : ["Android", "Kotlin", "Firebase"],
+    "Embedded"  : ["ESP32", "Arduino", "C++"]
+  },
+
+  "openTo": ["Internships 2025-26", "AI/ML Collabs", "Open Source", "Hackathons", "Research"]
+}
