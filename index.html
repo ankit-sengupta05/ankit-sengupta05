@@ -181,13 +181,11 @@ section{position:relative;z-index:2;padding:110px 72px;}
 .plk.demo:hover{background:rgba(168,85,247,.06);}
 .pcats{display:flex;gap:6px;flex-wrap:wrap;}
 .pctag{padding:3px 9px;border-radius:2px;font-family:var(--ffm);font-size:.54rem;letter-spacing:.1em;}
-/* color helpers for cat tags */
 .clr-c{border:1px solid rgba(0,240,255,.22);color:var(--c);background:rgba(0,240,255,.05);}
 .clr-p{border:1px solid rgba(255,45,120,.22);color:var(--p);background:rgba(255,45,120,.05);}
 .clr-v{border:1px solid rgba(168,85,247,.22);color:var(--v);background:rgba(168,85,247,.05);}
 .clr-g{border:1px solid rgba(0,255,136,.22);color:var(--g);background:rgba(0,255,136,.05);}
 .clr-y{border:1px solid rgba(255,215,0,.22);color:var(--y);background:rgba(255,215,0,.05);}
-/* bullet colors */
 .bc-c{background:rgba(0,240,255,.1);border:1px solid rgba(0,240,255,.3);}
 .bc-p{background:rgba(255,45,120,.1);border:1px solid rgba(255,45,120,.3);}
 .bc-v{background:rgba(168,85,247,.1);border:1px solid rgba(168,85,247,.3);}
@@ -333,9 +331,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:26px 72px
       <a href="#contact" class="btn bo">Hire Me →</a>
       <a id="hero-gh" href="https://github.com/ankit-sengupta05" target="_blank" class="btn bp">GitHub ↗</a>
     </div>
-    <div class="hss" id="hero-stats">
-      <!-- populated by JS -->
-    </div>
+    <div class="hss" id="hero-stats"></div>
   </div>
   <div class="shi"><span>SCROLL</span><div class="sli"></div></div>
 </section>
@@ -348,6 +344,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:26px 72px
     <div class="abt revL">
       <p>I'm a <strong>CS sophomore at VIT Amaravati</strong> specialising in AI &amp; ML. I don't just study machine learning — I ship it. My work spans the full stack: C++ firmware on ESP32 microcontrollers, scalable Django/FastAPI backends, and TensorFlow models in production.</p>
       <p>My flagship project — <strong>Smart Vision Aid</strong> — is AI-powered smart glasses with 3× ESP32-CAM modules and YOLO object detection, giving the visually impaired 360° spatial awareness. It was <strong>selected for VIT Amaravati's Internal Expo 2025</strong>.</p>
+      <p>Most recently I built <strong>NewsAlphaAI</strong> — an 8-node LangGraph pipeline combining Gemma-3 LLM reasoning, ChromaDB RAG, and XGBoost with a reinforcement learning feedback loop to predict stock direction from real-time news.</p>
       <p>My superpower: <strong>ML theory → production systems</strong>. I understand the math, write the code, and deploy the product.</p>
       <div class="abadg">
         <div class="abad aby">🏅 VIT Internal Expo — Selected</div>
@@ -357,14 +354,14 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:26px 72px
       </div>
       <div class="bars">
         <div class="brow"><div class="bhead"><span class="bnm">Python / AI Engineering</span><span class="bpc">90%</span></div><div class="btr"><div class="bfi" data-w="90" style="background:linear-gradient(90deg,#00f0ff,#a855f7)"></div></div></div>
-        <div class="brow"><div class="bhead"><span class="bnm">TensorFlow / OpenCV / YOLO</span><span class="bpc">82%</span></div><div class="btr"><div class="bfi" data-w="82" style="background:linear-gradient(90deg,#a855f7,#ff2d78)"></div></div></div>
+        <div class="brow"><div class="bhead"><span class="bnm">LangGraph / LangChain / RAG</span><span class="bpc">84%</span></div><div class="btr"><div class="bfi" data-w="84" style="background:linear-gradient(90deg,#00D4AA,#a855f7)"></div></div></div>
+        <div class="brow"><div class="bhead"><span class="bnm">TensorFlow / OpenCV / YOLO / XGBoost</span><span class="bpc">82%</span></div><div class="btr"><div class="bfi" data-w="82" style="background:linear-gradient(90deg,#a855f7,#ff2d78)"></div></div></div>
         <div class="brow"><div class="bhead"><span class="bnm">Django / FastAPI / Flask / Node.js</span><span class="bpc">80%</span></div><div class="btr"><div class="bfi" data-w="80" style="background:linear-gradient(90deg,#00f0ff,#00ff88)"></div></div></div>
         <div class="brow"><div class="bhead"><span class="bnm">Android / Kotlin / Firebase</span><span class="bpc">72%</span></div><div class="btr"><div class="bfi" data-w="72" style="background:linear-gradient(90deg,#ff2d78,#ffd700)"></div></div></div>
         <div class="brow"><div class="bhead"><span class="bnm">ESP32 / Arduino / Embedded C++</span><span class="bpc">70%</span></div><div class="btr"><div class="bfi" data-w="70" style="background:linear-gradient(90deg,#ffd700,#a855f7)"></div></div></div>
-        <div class="brow"><div class="bhead"><span class="bnm">JavaScript / TypeScript</span><span class="bpc">68%</span></div><div class="btr"><div class="bfi" data-w="68" style="background:linear-gradient(90deg,#00ff88,#00f0ff)"></div></div></div>
+        <div class="brow"><div class="bhead"><span class="bnm">JavaScript / TypeScript / React</span><span class="bpc">70%</span></div><div class="btr"><div class="bfi" data-w="70" style="background:linear-gradient(90deg,#00ff88,#00f0ff)"></div></div></div>
       </div>
     </div>
-    <!-- code block — fully JS rendered from data.json -->
     <div class="cbl revR">
       <div class="cblh">
         <div class="cdot" style="background:#ff5f57"></div>
@@ -381,25 +378,23 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:26px 72px
   </div>
 </section>
 
-<!-- SKILLS — JS loop renders from data.json skillCategories -->
+<!-- SKILLS -->
 <section id="skills">
   <div class="sl rev">02 // Tech Arsenal</div>
   <div class="sttl rev">What I <span style="color:var(--c)">Build With</span></div>
-  <p class="skintro rev">A full-stack polyglot — fluent across AI/ML, backend systems, mobile, and embedded firmware. Every skill below has been used in a shipped project, not just studied.</p>
+  <p class="skintro rev">A full-stack polyglot — fluent across AI/ML, LLM orchestration, backend systems, mobile, and embedded firmware. Every skill below has been used in a shipped project, not just studied.</p>
   <div class="skg" id="skills-grid"></div>
 </section>
 
-<!-- PROJECTS — JS loop renders from data.json projects array -->
+<!-- PROJECTS -->
 <section id="projects">
   <div class="sl rev">03 // Project Showcase</div>
   <div class="sttl rev">Built &amp; <span style="color:var(--p)">Shipped</span></div>
-  <div class="pfil rev" id="filter-bar">
-    <!-- filter buttons built dynamically based on categories in data.json -->
-  </div>
+  <div class="pfil rev" id="filter-bar"></div>
   <div class="pgrid" id="projects-grid"></div>
 </section>
 
-<!-- BUILDING — JS loop renders from data.json building array -->
+<!-- BUILDING -->
 <section id="building">
   <div class="sl rev">04 // On My Workbench</div>
   <div class="sttl rev">Currently <span style="color:var(--g)">Building</span></div>
@@ -419,7 +414,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:26px 72px
   </div>
 </section>
 
-<!-- CONTACT — JS renders from data.json meta -->
+<!-- CONTACT -->
 <section id="contact">
   <div class="ctop rev">
     <div class="sl" style="justify-content:center">06 // Contact</div>
@@ -443,61 +438,38 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:26px 72px
 </footer>
 
 <script>
-/* ╔══════════════════════════════════════════════════════════════════════════╗
-   ║                                                                          ║
-   ║   ✏️  YOUR PORTFOLIO DATA — EDIT EVERYTHING HERE                         ║
-   ║                                                                          ║
-   ║   HOW IT WORKS:                                                          ║
-   ║   • Change any value below → save → push to GitHub                      ║
-   ║   • Vercel auto-deploys in ~30 seconds, site updates instantly           ║
-   ║   • Project count, CGPA, all stats — auto-calculated from this object   ║
-   ║   • Add a new project to the projects[] array — it auto-renders         ║
-   ║                                                                          ║
-   ╚══════════════════════════════════════════════════════════════════════════╝ */
-
 const DATA = {
 
-  /* ─────────────────────────────────────────────────────────────────────────
-     👤  PERSONAL INFO
-     Updates: name, title, university, CGPA, email, social links, nav status
-  ───────────────────────────────────────────────────────────────────────── */
   meta: {
     name:       "Ankit Sengupta",
     role:       "AI Eng & Backend Dev",
     university: "VIT Amaravati",
-    batch:      "2028",                         // graduation year
-    cgpa:       8.35,                           // ← update this anytime
+    batch:      "2028",
+    cgpa:       8.35,
     email:      "ankit.sengupta05@gmail.com",
     linkedin:   "https://linkedin.com/in/Sengupta-ankit",
     github:     "https://github.com/ankit-sengupta05",
     instagram:  "https://www.instagram.com/ankit_sengupta/",
     trophy:     "🏅 VIT Internal Expo 2025",
-    status:     "🟢 Open to internships!",      // shown in nav bar
-
-    // Typewriter phrases in hero section — add/remove as you like
+    power:      "ML theory → production systems",
+    status:     "🟢 Open to internships!",
     typedPhrases: [
       "AI Engineer — RAG Pipelines & AI Agents",
+      "LangGraph · LLM Orchestration · ChromaDB",
       "Backend Dev — Django · FastAPI · Node.js",
       "Embedded IoT — ESP32 · YOLO · OpenCV",
+      "📈 NewsAlphaAI — LLM Stock Prediction System",
       "VIT Amaravati · CS AI&ML · Class of 2028",
       "🟢 Open to Internships 2025–26"
     ]
   },
 
-  /* ─────────────────────────────────────────────────────────────────────────
-     📊  HERO STATS
-     project count is AUTO-CALCULATED from projects[] below — don't set it
-     manually. Just update cgpa, domains, classOf here.
-  ───────────────────────────────────────────────────────────────────────── */
   stats: {
-    cgpa:    8.35,   // ← keep in sync with meta.cgpa above
-    domains: 6,      // number of tech domains
-    classOf: 2028    // graduation year
+    cgpa:    8.35,
+    domains: 7,
+    classOf: 2028
   },
 
-  /* ─────────────────────────────────────────────────────────────────────────
-     ✅  OPEN TO (contact section pills)
-  ───────────────────────────────────────────────────────────────────────── */
   openTo: [
     "💼 Internships 2025–26",
     "🤖 AI/ML Collabs",
@@ -507,11 +479,6 @@ const DATA = {
     "⚡ Freelance"
   ],
 
-  /* ─────────────────────────────────────────────────────────────────────────
-     🛠️  SKILL CATEGORIES
-     Each category renders as a card in the Skills section.
-     cls values: "tc"=cyan  "tv"=violet  "tp"=pink  "tg"=green  "ty"=yellow
-  ───────────────────────────────────────────────────────────────────────── */
   skillCategories: [
     {
       icon: "🤖", title: "AI & Machine Learning",
@@ -521,11 +488,26 @@ const DATA = {
         {label:"RAG Pipelines",cls:"tc"}, {label:"AI Agents",cls:"tc"},
         {label:"TensorFlow",cls:"tc"},    {label:"YOLO v5/v8",cls:"tc"},
         {label:"OpenCV",cls:"tc"},        {label:"NLP / Sentiment",cls:"tc"},
-        {label:"Pytesseract OCR",cls:"tc"},{label:"FuzzyWuzzy",cls:"tc"},
-        {label:"Pandas",cls:"tc"},         {label:"NumPy",cls:"tc"},
-        {label:"Computer Vision",cls:"tc"},{label:"Object Detection",cls:"tc"},
-        {label:"ML Pipelines",cls:"tc"},   {label:"Model Deployment",cls:"tc"},
+        {label:"XGBoost",cls:"tc"},       {label:"scikit-learn",cls:"tc"},
+        {label:"RL Feedback Loop",cls:"tc"},{label:"Pytesseract OCR",cls:"tc"},
+        {label:"FuzzyWuzzy",cls:"tc"},    {label:"Pandas",cls:"tc"},
+        {label:"NumPy",cls:"tc"},         {label:"Computer Vision",cls:"tc"},
+        {label:"ML Pipelines",cls:"tc"},  {label:"Model Deployment",cls:"tc"},
         {label:"LSTM",cls:"tc"}
+      ]
+    },
+    {
+      icon: "🔗", title: "LLM Orchestration & RAG",
+      colorVar: "#00D4AA", gradient: "linear-gradient(90deg,#00D4AA,#a855f7)",
+      sub: "// LangGraph · Vector DBs · Embeddings · Tracing",
+      tags: [
+        {label:"LangChain",cls:"tg"},         {label:"LangGraph",cls:"tg"},
+        {label:"LangSmith",cls:"tg"},         {label:"ChromaDB",cls:"tg"},
+        {label:"FAISS",cls:"tg"},             {label:"HuggingFace",cls:"tg"},
+        {label:"Gemma-3-4B-IT",cls:"tg"},     {label:"sentence-transformers",cls:"tg"},
+        {label:"Vector Embeddings",cls:"tg"}, {label:"Prompt Engineering",cls:"tg"},
+        {label:"APScheduler",cls:"tg"},       {label:"WebSocket Streaming",cls:"tg"},
+        {label:"Pipeline Tracing",cls:"tg"},  {label:"Local LLM Inference",cls:"tg"}
       ]
     },
     {
@@ -553,6 +535,18 @@ const DATA = {
         {label:"C (Embedded)",cls:"tp"},{label:"MATLAB",cls:"tp"},
         {label:"HTML5",cls:"tp"},       {label:"CSS3",cls:"tp"},
         {label:"Bash / Shell",cls:"tp"}
+      ]
+    },
+    {
+      icon: "⚛️", title: "Frontend & UI",
+      colorVar: "#61DAFB", gradient: "linear-gradient(90deg,#61DAFB,#646CFF)",
+      sub: "// React · Vite · TailwindCSS · Charts",
+      tags: [
+        {label:"React 18",cls:"tc"},           {label:"Vite",cls:"tc"},
+        {label:"TailwindCSS",cls:"tc"},        {label:"lightweight-charts",cls:"tc"},
+        {label:"WebSocket Client",cls:"tc"},   {label:"HTML5",cls:"tc"},
+        {label:"CSS3",cls:"tc"},               {label:"Responsive Design",cls:"tc"},
+        {label:"Trading UI",cls:"tc"}
       ]
     },
     {
@@ -596,20 +590,45 @@ const DATA = {
     }
   ],
 
-  /* ─────────────────────────────────────────────────────────────────────────
-     🚀  PROJECTS
-     ─ project count in hero stats is AUTO-CALCULATED as projects.length
-     ─ filter buttons are AUTO-GENERATED from the categories[] you set
-     ─ set featured:true on ONE project for the wide full-width hero card
-     ─ github / demo: set "" to hide the button
-     ─ catTags clr: "c"=cyan  "p"=pink  "v"=violet  "g"=green  "y"=yellow
-
-     TO ADD A NEW PROJECT: copy any block below, paste at the end of this
-     array (before the final ]), fill in your details. Done.
-  ───────────────────────────────────────────────────────────────────────── */
   projects: [
 
-    /* ── PROJECT 1 — FEATURED (full-width card) ── */
+    /* ── PROJECT 1 — FEATURED: NewsAlphaAI ── */
+    {
+      id:          "news-alpha-ai",
+      featured:     true,
+      title:       "NewsAlphaAI",
+      emoji:       "📈",
+      subtitle:    "AI-powered stock direction prediction — LangGraph orchestration, LLM reasoning, RAG pipelines & RL feedback loop",
+      description: "An end-to-end AI trading intelligence system: 8 LangGraph nodes orchestrate the full pipeline from news ingestion through Gemma-3 LLM reasoning, ChromaDB RAG retrieval, and XGBoost ML prediction to an ensemble final signal. A custom reinforcement learning feedback loop retrains the model on real 3-day outcomes. Real-time updates stream via WebSocket to a React trading UI with live candlestick charts, sentiment gauge, and RL stats.",
+      github:      "https://github.com/ankit-sengupta05",
+      demo:        "",
+      categories:  ["ai","backend","llm"],
+      badge:       "🧠 LangGraph · Gemma-3 · XGBoost · RL",
+      iconBg:      "rgba(0,212,170,0.07)",
+      iconBorderColor: "rgba(0,212,170,0.25)",
+      highlights: [
+        {icon:"🔗", color:"g", title:"LangGraph Pipeline",    detail:"8-node orchestration: fetch_news → analyse_sentiment → embed_store → fetch_stock → rag_retrieve → llm_reason → ml_predict → final_predict"},
+        {icon:"🧠", color:"c", title:"LLM Core",              detail:"Gemma-3-4B-IT running locally via HuggingFace; reasons over news context to produce directional prediction with confidence scores"},
+        {icon:"📦", color:"v", title:"RAG Layer",             detail:"ChromaDB / FAISS vector store with sentence-transformers all-MiniLM-L6-v2; retrieves semantically relevant past articles per ticker"},
+        {icon:"🤖", color:"p", title:"ML Ensemble",           detail:"XGBoost binary direction classifier combined with LLM output; ensemble final call with HIGH/MEDIUM/LOW confidence thresholds"},
+        {icon:"🔁", color:"y", title:"RL Feedback Loop",      detail:"Resolves predictions after 3 days, assigns +1/−1/0 rewards, retrains XGBoost when 20+ labelled samples accumulate per ticker"},
+        {icon:"📊", color:"c", title:"React Trading UI",      detail:"Vite + TailwindCSS · candlestick charts, live price feed via WebSocket, pipeline step stepper, sentiment gauge, RL accuracy panel"}
+      ],
+      specs: [
+        {label:"LLM",         value:"Gemma-3-4B-IT (local)"},
+        {label:"Orchestration",value:"LangGraph 8-Node"},
+        {label:"Vector DB",   value:"ChromaDB / FAISS"},
+        {label:"ML Model",    value:"XGBoost Classifier"},
+        {label:"RL Loop",     value:"Custom Policy-Gradient"},
+        {label:"Backend",     value:"FastAPI + WebSockets"},
+        {label:"Observability",value:"LangSmith Tracing"},
+        {label:"Frontend",    value:"React + Vite + Tailwind"}
+      ],
+      tech:    ["LangGraph","LangChain","LangSmith","Gemma-3","ChromaDB","FAISS","XGBoost","FastAPI","React","Vite","TailwindCSS","WebSockets","HuggingFace","sentence-transformers","APScheduler","yfinance"],
+      catTags: [{label:"AI/ML",clr:"c"},{label:"LLM Infra",clr:"g"},{label:"Backend",clr:"v"},{label:"Frontend",clr:"p"}]
+    },
+
+    /* ── PROJECT 2 — FEATURED: Smart Vision Aid ── */
     {
       id:          "smart-vision-aid",
       featured:     true,
@@ -617,8 +636,8 @@ const DATA = {
       emoji:       "🕶️",
       subtitle:    "AI-powered assistive smart glasses — real-time 360° spatial awareness for the visually impaired",
       description: "An end-to-end embedded AI system giving visually impaired users real-time 360° spatial awareness. Three ESP32-CAM modules feed live video into a YOLO object detection pipeline. Ultrasonic sensors provide proximity data. The Android companion app converts all detections into instant audio alerts and turn-by-turn navigation guidance. All firmware runs in C++ for microsecond-level response.",
-      github:      "https://github.com/ankit-sengupta05",   // ← paste your actual repo URL
-      demo:        "",                                        // ← paste live demo URL or leave ""
+      github:      "https://github.com/ankit-sengupta05",
+      demo:        "",
       categories:  ["embedded","ai","mobile"],
       badge:       "🏅 VIT Amaravati Internal Expo — Selected 2025",
       iconBg:      "rgba(0,240,255,0.07)",
@@ -641,7 +660,7 @@ const DATA = {
       catTags: [{label:"Embedded",clr:"c"},{label:"AI/ML",clr:"p"},{label:"Mobile",clr:"g"}]
     },
 
-    /* ── PROJECT 2 ── */
+    /* ── PROJECT 3 ── */
     {
       id:          "smart-agriculture",
       featured:     false,
@@ -670,7 +689,7 @@ const DATA = {
       catTags: [{label:"AI/ML",clr:"c"},{label:"Backend",clr:"v"}]
     },
 
-    /* ── PROJECT 3 ── */
+    /* ── PROJECT 4 ── */
     {
       id:          "smart-budget-manager",
       featured:     false,
@@ -699,7 +718,7 @@ const DATA = {
       catTags: [{label:"Mobile",clr:"y"}]
     },
 
-    /* ── PROJECT 4 ── */
+    /* ── PROJECT 5 ── */
     {
       id:          "mental-health-chatbot",
       featured:     false,
@@ -728,7 +747,7 @@ const DATA = {
       catTags: [{label:"AI/ML",clr:"v"}]
     },
 
-    /* ── PROJECT 5 ── */
+    /* ── PROJECT 6 ── */
     {
       id:          "echo-health-assistant",
       featured:     false,
@@ -757,21 +776,14 @@ const DATA = {
       catTags: [{label:"AI/ML",clr:"p"}]
     }
 
-    /* ── ADD NEW PROJECTS HERE ──────────────────────────────────────────────
-       Copy the block above, paste it after the last },  and fill in your data.
-       The site will automatically:
-         ✓ add a new card in the Projects section
-         ✓ increment the project counter in Hero stats
-         ✓ update the filter buttons if you add a new category
-         ✓ update the Stats section card count
-    ─────────────────────────────────────────────────────────────────────── */
+  ],
 
-  ], // ← end of projects[]
-
-  /* ─────────────────────────────────────────────────────────────────────────
-     🔨  CURRENTLY BUILDING
-  ───────────────────────────────────────────────────────────────────────── */
   building: [
+    {
+      icon:"📈", title:"NewsAlphaAI — Live",
+      desc:"LangGraph 8-node stock prediction pipeline with Gemma-3 LLM, ChromaDB RAG, XGBoost, and a custom RL feedback loop that retrains on real outcome data every 3 days. React + WebSocket trading UI.",
+      status:"Actively Shipping"
+    },
     {
       icon:"🤖", title:"Autonomous AI Agent Systems",
       desc:"Self-directed agents with multi-step reasoning, tool use, memory, and autonomous decision-making. Exploring LangChain, LangGraph, and custom orchestration frameworks for complex real-world automation.",
@@ -794,36 +806,25 @@ const DATA = {
     }
   ],
 
-  /* ─────────────────────────────────────────────────────────────────────────
-     💻  CODE BLOCK (About section — the Python snippet)
-     Short skill preview shown in the animated code card.
-  ───────────────────────────────────────────────────────────────────────── */
   codeBlock: {
     skills: {
-      "AI/ML":     ["RAG", "Agents", "YOLO", "TF"],
-      "Backend":   ["Django", "FastAPI", "Node"],
-      "Languages": ["Python", "JS", "TS", "C++"],
-      "Mobile":    ["Android", "Kotlin", "Firebase"],
-      "Embedded":  ["ESP32", "Arduino", "C++"]
+      "AI/ML":       ["RAG", "Agents", "YOLO", "XGBoost"],
+      "LLM Infra":   ["LangGraph", "ChromaDB", "Gemma-3"],
+      "Backend":     ["Django", "FastAPI", "Node"],
+      "Languages":   ["Python", "JS", "TS", "C++"],
+      "Mobile":      ["Android", "Kotlin", "Firebase"],
+      "Embedded":    ["ESP32", "Arduino", "C++"]
     }
   }
 
-}; /* ═══ END OF DATA ═══ ALL VALUES ABOVE ARE EDITABLE ═══════════════════ */
+};
 
-/* ══════════════════════════════════════════════════════════════════════════
-   AUTO-COMPUTED VALUES — derived from DATA, do not edit
-══════════════════════════════════════════════════════════════════════════ */
-const PROJECT_COUNT = DATA.projects.length;  // auto-counts your projects[]
-const CGPA          = DATA.stats.cgpa;       // single source of truth for CGPA
-const GITHUB        = DATA.meta.github;      // used in hero + footer
+/* AUTO-COMPUTED */
+const PROJECT_COUNT = DATA.projects.length;
+const CGPA          = DATA.stats.cgpa;
+const GITHUB        = DATA.meta.github;
 
-/* ══════════════════════════════════════════════════════════════════════════
-   ENGINE — render functions below, no need to edit
-══════════════════════════════════════════════════════════════════════════ */
-
-/* ══════════════════════════════════════════
-   CURSOR
-══════════════════════════════════════════ */
+/* ══════════ CURSOR ══════════ */
 const cur=document.getElementById('cur'),cur2=document.getElementById('cur2');
 let mx=0,my=0,rx=0,ry=0;
 document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cur.style.left=mx+'px';cur.style.top=my+'px';});
@@ -836,9 +837,7 @@ function hookCursor(){
   });
 }
 
-/* ══════════════════════════════════════════
-   PARTICLES
-══════════════════════════════════════════ */
+/* ══════════ PARTICLES ══════════ */
 const cv=document.getElementById('pcv'),ctx=cv.getContext('2d');
 let W,H,pts=[];
 function resize(){W=cv.width=innerWidth;H=cv.height=innerHeight;}
@@ -849,9 +848,7 @@ for(let i=0;i<90;i++)pts.push(new P());
 function conn(){for(let i=0;i<pts.length;i++)for(let j=i+1;j<pts.length;j++){const dx=pts[i].x-pts[j].x,dy=pts[i].y-pts[j].y,d=Math.sqrt(dx*dx+dy*dy);if(d<110){ctx.beginPath();ctx.strokeStyle='rgba(0,240,255,'+(0.055*(1-d/110))+')';ctx.lineWidth=.5;ctx.moveTo(pts[i].x,pts[i].y);ctx.lineTo(pts[j].x,pts[j].y);ctx.stroke();}}}
 (function anim(){ctx.clearRect(0,0,W,H);conn();pts.forEach(p=>{p.u();p.d();});requestAnimationFrame(anim);})();
 
-/* ══════════════════════════════════════════
-   SCROLL REVEAL + SKILL BARS + NAV
-══════════════════════════════════════════ */
+/* ══════════ SCROLL REVEAL + SKILL BARS + NAV ══════════ */
 const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('on');});},{threshold:.1,rootMargin:'0px 0px -50px 0px'});
 function observeReveal(){document.querySelectorAll('.rev,.revL,.revR').forEach(el=>obs.observe(el));}
 observeReveal();
@@ -861,10 +858,8 @@ const secs=document.querySelectorAll('section[id]'),nls=document.querySelectorAl
 addEventListener('scroll',()=>{let cs='';secs.forEach(s=>{if(scrollY>=s.offsetTop-160)cs=s.id;});nls.forEach(a=>{a.classList.toggle('act',a.getAttribute('href')==='#'+cs);});},{passive:true});
 nls.forEach(a=>{a.addEventListener('click',e=>{e.preventDefault();document.querySelector(a.getAttribute('href'))?.scrollIntoView({behavior:'smooth'});});});
 
-/* ══════════════════════════════════════════
-   TYPED EFFECT
-══════════════════════════════════════════ */
-let typedPhrases=DATA.meta.typedPhrases||["AI Engineer","Backend Dev","Open to Internships"];
+/* ══════════ TYPED ══════════ */
+let typedPhrases=DATA.meta.typedPhrases||["AI Engineer","Backend Dev"];
 let pi=0,ci=0,deleting=false;
 const tel=document.getElementById('typed');
 function type(){
@@ -875,9 +870,7 @@ function type(){
 }
 type();
 
-/* ══════════════════════════════════════════
-   CARD GLOW
-══════════════════════════════════════════ */
+/* ══════════ CARD GLOW ══════════ */
 function hookGlow(){
   document.querySelectorAll('.pcard').forEach(c=>{
     if(c._gl) return; c._gl=true;
@@ -889,9 +882,7 @@ function hookGlow(){
   });
 }
 
-/* ══════════════════════════════════════════
-   HTML HELPERS
-══════════════════════════════════════════ */
+/* ══════════ HTML HELPERS ══════════ */
 function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
 function kw(t){return`<span class="kw">${t}</span>`;}
 function cl(t){return`<span class="cl">${t}</span>`;}
@@ -901,9 +892,7 @@ function nm(t){return`<span class="nm">${t}</span>`;}
 function cm(t){return`<span class="cm">${t}</span>`;}
 function sp(n){return'&nbsp;'.repeat(n);}
 
-/* ══════════════════════════════════════════
-   RENDER: CODE BLOCK
-══════════════════════════════════════════ */
+/* ══════════ RENDER: CODE BLOCK ══════════ */
 function renderCodeBlock(d){
   const m=d.meta||{},cb=d.codeBlock||{},skills=cb.skills||{};
   const skillLines=Object.entries(skills).map(([k,v])=>{
@@ -934,7 +923,6 @@ function renderCodeBlock(d){
     `dev = ${cl('AnkitSengupta')}()`,
     `dev.${fn('say_hi')}()<span class="cblink"></span>`,
   ].join('<br>');
-
   const cgpa=d.stats?.cgpa||m.cgpa||8.35;
   document.getElementById('codeblock-footer').innerHTML=[
     {e:'📊',l:`CGPA: ${cgpa}`},{e:'🏅',l:'Expo Selected'},
@@ -942,14 +930,12 @@ function renderCodeBlock(d){
   ].map(p=>`<span class="cblpill"><span class="pdot"></span>${p.e} ${p.l}</span>`).join('');
 }
 
-/* ══════════════════════════════════════════
-   RENDER: HERO STATS
-══════════════════════════════════════════ */
+/* ══════════ RENDER: HERO STATS ══════════ */
 function renderHeroStats(d){
   const m=d.meta||{},s=d.stats||{};
   document.getElementById('hero-stats').innerHTML=[
     {n:PROJECT_COUNT+'+',l:'AI Projects'},{n:CGPA,l:'CGPA'},
-    {n:'🏅',l:'Expo Selected'},{n:s.classOf||2028,l:'Class Of'},{n:s.domains||6,l:'Tech Domains'},
+    {n:'🏅',l:'Expo Selected'},{n:s.classOf||2028,l:'Class Of'},{n:s.domains||7,l:'Tech Domains'},
   ].map((it,i)=>(i?'<div class="hdi"></div>':'')+`<div><div class="hsn">${it.n}</div><div class="hsl">${it.l}</div></div>`).join('');
   document.getElementById('hero-gh').href=GITHUB;
   document.getElementById('about-cgpa').textContent=`🎓 CGPA ${s.cgpa||m.cgpa} · B.Tech CS AI&ML`;
@@ -958,9 +944,7 @@ function renderHeroStats(d){
   document.getElementById('footer-sub').textContent=`// ${m.university} · CGPA ${s.cgpa||m.cgpa}`;
 }
 
-/* ══════════════════════════════════════════
-   RENDER: SKILLS
-══════════════════════════════════════════ */
+/* ══════════ RENDER: SKILLS ══════════ */
 function renderSkills(d){
   document.getElementById('skills-grid').innerHTML=(d.skillCategories||[]).map((c,i)=>`
     <div class="skc rev" style="transition-delay:${i*.07}s">
@@ -972,14 +956,12 @@ function renderSkills(d){
     </div>`).join('');
 }
 
-/* ══════════════════════════════════════════
-   RENDER: PROJECTS
-══════════════════════════════════════════ */
+/* ══════════ RENDER: PROJECTS ══════════ */
 function renderProjects(d){
   const projs=d.projects||[];
   const allCats=new Set();
   projs.forEach(p=>(p.categories||[]).forEach(c=>allCats.add(c)));
-  const catLabel={ai:'AI / ML',embedded:'Embedded',mobile:'Mobile',backend:'Backend'};
+  const catLabel={ai:'AI / ML',embedded:'Embedded',mobile:'Mobile',backend:'Backend',llm:'LLM Infra'};
 
   document.getElementById('filter-bar').innerHTML=
     `<button class="pfb on" data-f="all">All (${PROJECT_COUNT})</button>`+
@@ -1009,32 +991,77 @@ function ctags(arr){return(arr||[]).map(t=>`<span class="pctag clr-${t.clr||'c'}
 function plinks(p){return(p.github?`<a href="${p.github}" target="_blank" class="plk">↗ GitHub</a>`:'')+
                          (p.demo  ?`<a href="${p.demo}"   target="_blank" class="plk demo">▶ Demo</a>`:'');}
 
-function featCard(p){return`
-<div class="pcard pfeat rev" data-cat="${(p.categories||[]).join(' ')}">
-  <div class="pglow"></div>
-  <div class="pfin">
-    <div style="display:flex;flex-direction:column">
-      <div class="phd">
-        <div>${p.badge?`<div class="ptro">${esc(p.badge)}</div>`:''}<div class="pti">${p.emoji} ${esc(p.title)}</div><div class="psu">${esc(p.subtitle)}</div></div>
-        <div class="pic" style="background:${p.iconBg||'rgba(0,240,255,.07)'}">${p.emoji}</div>
-      </div>
-      <div class="pbo"><p class="pde">${esc(p.description)}</p><div class="phli">${hls(p.highlights)}</div><div class="psps">${specs(p.specs)}</div><div class="ptec">${techs(p.tech)}</div></div>
-      <div class="pfo"><div class="pls">${plinks(p)}</div><div class="pcats">${ctags(p.catTags)}</div></div>
-    </div>
-    <div class="pfvis">${glassesVis()}</div>
-  </div>
-</div>`;}
-
-function card(p,i){return`
-<div class="pcard rev" data-cat="${(p.categories||[]).join(' ')}" style="transition-delay:${i*.08}s">
-  <div class="pglow"></div>
-  <div class="phd">
-    <div>${p.badge?`<div class="ptro">${esc(p.badge)}</div>`:''}<div class="pti">${p.emoji} ${esc(p.title)}</div><div class="psu">${esc(p.subtitle)}</div></div>
-    <div class="pic" style="background:${p.iconBg||'rgba(0,240,255,.07)'};border-color:${p.iconBorderColor||'rgba(0,240,255,.2)'}">${p.emoji}</div>
-  </div>
-  <div class="pbo"><p class="pde">${esc(p.description)}</p><div class="phli">${hls(p.highlights)}</div><div class="psps">${specs(p.specs)}</div><div class="ptec">${techs(p.tech)}</div></div>
-  <div class="pfo"><div class="pls">${plinks(p)}</div><div class="pcats">${ctags(p.catTags)}</div></div>
-</div>`;}
+/* NewsAlphaAI custom SVG visualizer — animated pipeline flow diagram */
+function newsAlphaVis(){return`<svg viewBox="0 0 300 360" width="270" height="324" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="fnag"><feGaussianBlur stdDeviation="3.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <linearGradient id="gflow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#00f0ff;stop-opacity:1"/>
+      <stop offset="50%" style="stop-color:#a855f7;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#ff2d78;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+  <!-- Pipeline nodes -->
+  <g font-family="Space Mono,monospace" font-size="6.5">
+    <!-- Node 1: fetch_news -->
+    <rect x="85" y="8" width="130" height="24" rx="3" fill="rgba(0,240,255,0.06)" stroke="#00f0ff" stroke-width="1"/>
+    <text x="150" y="24" text-anchor="middle" fill="#00f0ff">📰 fetch_news</text>
+    <!-- Node 2: analyse_sentiment -->
+    <rect x="85" y="46" width="130" height="24" rx="3" fill="rgba(168,85,247,0.06)" stroke="#a855f7" stroke-width="1"/>
+    <text x="150" y="62" text-anchor="middle" fill="#a855f7">🧠 analyse_sentiment</text>
+    <!-- Node 3: embed_store -->
+    <rect x="85" y="84" width="130" height="24" rx="3" fill="rgba(0,255,136,0.06)" stroke="#00ff88" stroke-width="1"/>
+    <text x="150" y="100" text-anchor="middle" fill="#00ff88">📦 embed_store</text>
+    <!-- Node 4: fetch_stock -->
+    <rect x="85" y="122" width="130" height="24" rx="3" fill="rgba(255,215,0,0.06)" stroke="#ffd700" stroke-width="1"/>
+    <text x="150" y="138" text-anchor="middle" fill="#ffd700">📊 fetch_stock</text>
+    <!-- Node 5: rag_retrieve -->
+    <rect x="85" y="160" width="130" height="24" rx="3" fill="rgba(0,240,255,0.06)" stroke="#00f0ff" stroke-width="1"/>
+    <text x="150" y="176" text-anchor="middle" fill="#00f0ff">🔍 rag_retrieve</text>
+    <!-- Node 6: llm_reason -->
+    <rect x="85" y="198" width="130" height="24" rx="3" fill="rgba(168,85,247,0.06)" stroke="#a855f7" stroke-width="1"/>
+    <text x="150" y="214" text-anchor="middle" fill="#a855f7">💬 llm_reason</text>
+    <!-- Node 7: ml_predict -->
+    <rect x="85" y="236" width="130" height="24" rx="3" fill="rgba(255,45,120,0.06)" stroke="#ff2d78" stroke-width="1"/>
+    <text x="150" y="252" text-anchor="middle" fill="#ff2d78">🤖 ml_predict</text>
+    <!-- Node 8: final_predict -->
+    <rect x="85" y="274" width="130" height="28" rx="3" fill="rgba(0,212,170,0.08)" stroke="#00D4AA" stroke-width="1.5"/>
+    <text x="150" y="292" text-anchor="middle" fill="#00D4AA" font-weight="bold">⚡ final_predict</text>
+  </g>
+  <!-- Connector lines with animated dots -->
+  <g stroke="url(#gflow)" stroke-width="1.2" opacity="0.45">
+    <line x1="150" y1="32" x2="150" y2="46"/><line x1="150" y1="70" x2="150" y2="84"/>
+    <line x1="150" y1="108" x2="150" y2="122"/><line x1="150" y1="146" x2="150" y2="160"/>
+    <line x1="150" y1="184" x2="150" y2="198"/><line x1="150" y1="222" x2="150" y2="236"/>
+    <line x1="150" y1="260" x2="150" y2="274"/>
+  </g>
+  <!-- Animated flow pulse -->
+  <circle r="3" fill="#00f0ff" filter="url(#fnag)">
+    <animateMotion dur="3.5s" repeatCount="indefinite"
+      path="M150,32 L150,46 L150,70 L150,84 L150,108 L150,122 L150,146 L150,160 L150,184 L150,198 L150,222 L150,236 L150,260 L150,274"/>
+  </circle>
+  <circle r="2.5" fill="#a855f7" filter="url(#fnag)">
+    <animateMotion dur="3.5s" begin="1.2s" repeatCount="indefinite"
+      path="M150,32 L150,46 L150,70 L150,84 L150,108 L150,122 L150,146 L150,160 L150,184 L150,198 L150,222 L150,236 L150,260 L150,274"/>
+  </circle>
+  <!-- Labels on sides -->
+  <text x="78" y="22" text-anchor="end" font-family="Space Mono,monospace" font-size="5.5" fill="rgba(0,240,255,0.4)">NewsAPI</text>
+  <text x="78" y="216" text-anchor="end" font-family="Space Mono,monospace" font-size="5.5" fill="rgba(168,85,247,0.4)">Gemma-3</text>
+  <text x="78" y="254" text-anchor="end" font-family="Space Mono,monospace" font-size="5.5" fill="rgba(255,45,120,0.4)">XGBoost</text>
+  <text x="222" y="98" font-family="Space Mono,monospace" font-size="5.5" fill="rgba(0,255,136,0.4)">ChromaDB</text>
+  <!-- Result badge -->
+  <rect x="105" y="315" width="90" height="18" rx="9" fill="rgba(0,212,170,0.1)" stroke="#00D4AA" stroke-width="1"/>
+  <text x="150" y="328" text-anchor="middle" font-family="Space Mono,monospace" font-size="6.5" fill="#00D4AA">UP ↑ 0.78 HIGH</text>
+  <line x1="150" y1="302" x2="150" y2="315" stroke="#00D4AA" stroke-width="1" opacity="0.5"/>
+  <!-- RL loop arrow -->
+  <path d="M215,288 Q260,288 260,162 Q260,36 215,36" fill="none" stroke="rgba(255,215,0,0.2)" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="265" y="165" font-family="Space Mono,monospace" font-size="5" fill="rgba(255,215,0,0.4)" text-anchor="middle">RL</text>
+  <text x="265" y="172" font-family="Space Mono,monospace" font-size="5" fill="rgba(255,215,0,0.4)" text-anchor="middle">Loop</text>
+  <circle r="2.5" fill="#ffd700" opacity="0.6">
+    <animateMotion dur="5s" repeatCount="indefinite"
+      path="M215,288 Q260,288 260,162 Q260,36 215,36"/>
+  </circle>
+</svg>`;}
 
 function glassesVis(){return`<svg viewBox="0 0 320 320" width="290" height="290" xmlns="http://www.w3.org/2000/svg">
   <defs><filter id="fg"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
@@ -1071,9 +1098,36 @@ function glassesVis(){return`<svg viewBox="0 0 320 320" width="290" height="290"
   <text x="160" y="218" text-anchor="middle" font-family="Space Mono,monospace" font-size="7.5" fill="#00f0ff" opacity=".6">3× CAM · YOLO · 360° COVERAGE</text>
 </svg>`;}
 
-/* ══════════════════════════════════════════
-   RENDER: BUILDING
-══════════════════════════════════════════ */
+function featCard(p){
+  const vis = p.id==='news-alpha-ai' ? newsAlphaVis() : glassesVis();
+  return`
+<div class="pcard pfeat rev" data-cat="${(p.categories||[]).join(' ')}">
+  <div class="pglow"></div>
+  <div class="pfin">
+    <div style="display:flex;flex-direction:column">
+      <div class="phd">
+        <div>${p.badge?`<div class="ptro">${esc(p.badge)}</div>`:''}<div class="pti">${p.emoji} ${esc(p.title)}</div><div class="psu">${esc(p.subtitle)}</div></div>
+        <div class="pic" style="background:${p.iconBg||'rgba(0,240,255,.07)'}">${p.emoji}</div>
+      </div>
+      <div class="pbo"><p class="pde">${esc(p.description)}</p><div class="phli">${hls(p.highlights)}</div><div class="psps">${specs(p.specs)}</div><div class="ptec">${techs(p.tech)}</div></div>
+      <div class="pfo"><div class="pls">${plinks(p)}</div><div class="pcats">${ctags(p.catTags)}</div></div>
+    </div>
+    <div class="pfvis">${vis}</div>
+  </div>
+</div>`;}
+
+function card(p,i){return`
+<div class="pcard rev" data-cat="${(p.categories||[]).join(' ')}" style="transition-delay:${i*.08}s">
+  <div class="pglow"></div>
+  <div class="phd">
+    <div>${p.badge?`<div class="ptro">${esc(p.badge)}</div>`:''}<div class="pti">${p.emoji} ${esc(p.title)}</div><div class="psu">${esc(p.subtitle)}</div></div>
+    <div class="pic" style="background:${p.iconBg||'rgba(0,240,255,.07)'};border-color:${p.iconBorderColor||'rgba(0,240,255,.2)'}">${p.emoji}</div>
+  </div>
+  <div class="pbo"><p class="pde">${esc(p.description)}</p><div class="phli">${hls(p.highlights)}</div><div class="psps">${specs(p.specs)}</div><div class="ptec">${techs(p.tech)}</div></div>
+  <div class="pfo"><div class="pls">${plinks(p)}</div><div class="pcats">${ctags(p.catTags)}</div></div>
+</div>`;}
+
+/* ══════════ RENDER: BUILDING ══════════ */
 function renderBuilding(d){
   document.getElementById('building-grid').innerHTML=(d.building||[]).map((b,i)=>`
     <div class="bca rev" style="transition-delay:${i*.08}s">
@@ -1084,15 +1138,13 @@ function renderBuilding(d){
     </div>`).join('');
 }
 
-/* ══════════════════════════════════════════
-   RENDER: STATS CARDS
-══════════════════════════════════════════ */
+/* ══════════ RENDER: STATS ══════════ */
 function renderStats(d){
   document.getElementById('stats-cards').innerHTML=[
     {n:PROJECT_COUNT+'+',l:'Projects Shipped',g:'linear-gradient(135deg,var(--c),var(--v))'},
     {n:CGPA,     l:'CGPA',            g:'linear-gradient(135deg,var(--v),var(--p))'},
     {n:'🏅',     l:'Expo Selected',   g:'linear-gradient(135deg,var(--p),var(--y))'},
-    {n:d.stats?.domains||6,l:'Tech Domains',g:'linear-gradient(135deg,var(--g),var(--c))'},
+    {n:d.stats?.domains||7,l:'Tech Domains',g:'linear-gradient(135deg,var(--g),var(--c))'},
   ].map((c,i)=>`
     <div class="stc rev" style="transition-delay:${i*.08}s">
       <div style="position:absolute;top:0;left:0;right:0;height:2px;background:${c.g}"></div>
@@ -1101,9 +1153,7 @@ function renderStats(d){
     </div>`).join('');
 }
 
-/* ══════════════════════════════════════════
-   RENDER: CONTACT
-══════════════════════════════════════════ */
+/* ══════════ RENDER: CONTACT ══════════ */
 function renderContact(d){
   const m=d.meta||{};
   document.getElementById('contact-cards').innerHTML=[
@@ -1113,7 +1163,6 @@ function renderContact(d){
     {href:m.instagram,hov:'rgba(255,215,0,.28)',icb:'rgba(255,215,0,.28)',icbg:'rgba(255,215,0,.05)',clr:'var(--y)',icon:'📸',title:'Instagram',detail:(m.instagram||'').replace('https://www.instagram.com/','@').replace('/',''),note:'Dev updates, project previews & behind-the-scenes builds',act:'Follow me'},
   ].filter(c=>c.href).map(c=>`
     <a href="${c.href}" target="${c.href.startsWith('mailto')?'_self':'_blank'}" class="cca"
-      style="--cgg:linear-gradient(135deg,${c.icbg},transparent)"
       onmouseenter="this.style.borderColor='${c.hov}'"
       onmouseleave="this.style.borderColor=''">
       <div class="cci" style="border-color:${c.icb};background:${c.icbg}">${c.icon}</div>
@@ -1122,7 +1171,6 @@ function renderContact(d){
       <div class="ccn">${c.note}</div>
       <div class="cca2" style="color:${c.clr}">${c.act} <span class="car">→</span></div>
     </a>`).join('');
-
   document.getElementById('open-to-pills').innerHTML=(d.openTo||[]).map(x=>`<span class="opp">${esc(x)}</span>`).join('');
   document.getElementById('contact-cta').innerHTML=`
     <a href="mailto:${m.email}" class="btn bs" style="padding:14px 36px;font-size:.76rem">📧 Hire Me — Send Email</a>
@@ -1134,9 +1182,7 @@ function renderContact(d){
   ].filter(x=>x.h).map(x=>`<a href="${x.h}" target="_blank">${x.l}</a>`).join('');
 }
 
-/* ══════════════════════════════════════════
-   BOOT — uses DATA object defined above
-══════════════════════════════════════════ */
+/* ══════════ BOOT ══════════ */
 function boot(){
   renderHeroStats(DATA);
   renderCodeBlock(DATA);
@@ -1150,7 +1196,6 @@ function boot(){
   setTimeout(()=>document.getElementById('loader').classList.add('hide'),300);
 }
 boot();
-
 </script>
 </body>
 </html>
