@@ -8,6 +8,7 @@
   Embedded IoT Developer, Machine Learning Engineer India,
   Full Stack Developer India, Open to Internship 2025 2026,
   LangChain, LangGraph, LangSmith, ChromaDB, XGBoost, RL Feedback Loop,
+  Cyborg AI, Local AI, RAG, Vector Search, Flutter, Qdrant,
   ankit-sengupta05, ankit.sengupta05@gmail.com
 -->
 <div align="center">
@@ -62,7 +63,7 @@
 
 </div>
 
-> 🚀 I'm a **CS sophomore** at VIT Amaravati specializing in **AI & ML**, passionate about building **intelligent systems** that actually ship. From **LangGraph-orchestrated prediction pipelines** and **autonomous AI agents** to **ESP32-powered smart glasses** and **full-stack Android apps** — I build end-to-end, from silicon to software.
+> 🚀 I'm a **CS sophomore** at VIT Amaravati specializing in **AI & ML**, passionate about building **intelligent systems** that actually ship. From **LangGraph-orchestrated prediction pipelines** and **autonomous AI agents** to **ESP32-powered smart glasses** and **fully local privacy-first AI systems** — I build end-to-end, from silicon to software.
 
 ### 🏆 Achievements
 
@@ -75,7 +76,7 @@
 🎓<br><b>CGPA 8.35</b><br><sub>B.Tech CS · AI & ML</sub>
 </td>
 <td align="center" style="padding:16px">
-🤖<br><b>6 AI Projects</b><br><sub>Shipped & Deployed</sub>
+🤖<br><b>7 AI Projects</b><br><sub>Shipped & Deployed</sub>
 </td>
 <td align="center" style="padding:16px">
 📈<br><b>LangGraph</b><br><sub>8-Node AI Pipelines</sub>
@@ -98,12 +99,12 @@ class AnkitSengupta:
         self.skills      = {
             "AI / ML"      : ["RAG Pipelines", "AI Agents", "LangGraph", "LangChain",
                               "TensorFlow", "YOLO", "OpenCV", "XGBoost", "RL Feedback"],
-            "LLM Infra"    : ["LangSmith", "ChromaDB", "FAISS", "HuggingFace",
-                              "Gemma-3", "Prompt Engineering", "Vector Embeddings"],
+            "LLM Infra"    : ["LangSmith", "ChromaDB", "FAISS", "Qdrant", "HuggingFace",
+                              "Gemma-3", "Phi-3", "Prompt Engineering", "Vector Embeddings"],
             "Backend"      : ["Django", "FastAPI", "Flask", "Node.js",
                               "MongoDB", "WebSockets", "APScheduler"],
-            "Languages"    : ["Python", "JavaScript", "TypeScript", "Java", "C++", "MATLAB"],
-            "Mobile"       : ["Android", "Kotlin", "Firebase"],
+            "Languages"    : ["Python", "JavaScript", "TypeScript", "Java", "C++", "Dart", "MATLAB"],
+            "Mobile"       : ["Flutter", "Android", "Kotlin", "Firebase"],
             "Embedded"     : ["ESP32", "Arduino", "C++", "IoT Sensors"],
         }
         self.trophy      = "🏅 Selected · VIT Internal Expo 2025"
@@ -120,7 +121,7 @@ class AnkitSengupta:
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=python,tensorflow,opencv,django,fastapi,flask,nodejs,mongodb,js,ts,java,kotlin,androidstudio,firebase,cpp,arduino,github,html,css,react&perline=10&theme=dark" alt="Ankit Sengupta Tech Stack"/>
+<img src="https://skillicons.dev/icons?i=python,tensorflow,opencv,django,fastapi,flask,nodejs,mongodb,js,ts,java,kotlin,flutter,androidstudio,firebase,cpp,arduino,github,html,css&perline=10&theme=dark" alt="Ankit Sengupta Tech Stack"/>
 
 <br/><br/>
 
@@ -141,9 +142,11 @@ class AnkitSengupta:
 ![LangGraph](https://img.shields.io/badge/LangGraph-00D4AA?style=for-the-badge&logo=langchain&logoColor=white)
 ![LangSmith](https://img.shields.io/badge/LangSmith-F0B429?style=for-the-badge&logo=langchain&logoColor=black)
 ![ChromaDB](https://img.shields.io/badge/ChromaDB-E06C75?style=for-the-badge&logo=databricks&logoColor=white)
+![Qdrant](https://img.shields.io/badge/Qdrant-DC143C?style=for-the-badge&logo=qdrant&logoColor=white)
 ![FAISS](https://img.shields.io/badge/FAISS-0467DF?style=for-the-badge&logo=meta&logoColor=white)
 ![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)
 ![Gemma](https://img.shields.io/badge/Gemma--3-4285F4?style=for-the-badge&logo=google&logoColor=white)
+![Phi-3](https://img.shields.io/badge/Phi--3_Mini-00ADEF?style=for-the-badge&logo=microsoft&logoColor=white)
 ![sentence--transformers](https://img.shields.io/badge/sentence--transformers-FF6B6B?style=for-the-badge&logo=python&logoColor=white)
 
 **── 🌐 Backend & Web ──**
@@ -158,6 +161,7 @@ class AnkitSengupta:
 **── 💻 Languages & Frameworks ──**
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=FFD43B)
+![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
@@ -172,6 +176,7 @@ class AnkitSengupta:
 
 **── 📱 Mobile & Embedded ──**
 
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
 ![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
 ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)
 ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
@@ -192,7 +197,54 @@ class AnkitSengupta:
 
 ---
 
-### 📈 NewsAlphaAI &nbsp;&nbsp; ![](https://img.shields.io/badge/🧠_LangGraph_·_LLM_·_RL-NEW-00D4AA?style=for-the-badge)
+### 🧠 Cyborg AI &nbsp;&nbsp; ![](https://img.shields.io/badge/🔥_Active_Development-WIP-FF4500?style=for-the-badge)
+
+> *Fully local, privacy-first personal intelligence system — query your entire life: documents, videos, audio, and code using natural language. No data leaves your machine.*
+
+[![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)](#)
+[![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)](#)
+[![LangGraph](https://img.shields.io/badge/LangGraph_(Planned)-00D4AA?style=for-the-badge&logo=langchain&logoColor=white)](#)
+[![Qdrant](https://img.shields.io/badge/Qdrant-DC143C?style=for-the-badge&logo=qdrant&logoColor=white)](#)
+[![Phi-3](https://img.shields.io/badge/Phi--3_Mini-00ADEF?style=for-the-badge&logo=microsoft&logoColor=white)](#)
+[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=FFD43B)](#)
+[![sentence-transformers](https://img.shields.io/badge/sentence--transformers-FF6B6B?style=for-the-badge&logo=python&logoColor=white)](#)
+
+| | |
+|:--|:--|
+| 🖥️ **Frontend** | Flutter desktop UI — cross-platform, native-speed, replacing PyQt6 |
+| 🧠 **LLM Core** | Phi-3 Mini (4-bit quantized, fully local) — no internet, no leaks |
+| 📦 **Vector DB** | Qdrant — multi-modal collections: text, PDF, audio, video, code, image |
+| 🔍 **Hybrid Search** | Vector semantic search + BM25 keyword ranking with description boost (1.25×) |
+| 🎙️ **Media Pipeline** | Whisper transcription → chunked embedding → timestamp-precise retrieval |
+| 🔗 **Orchestration** | Migrating to **LangChain + LangGraph** for modular, graph-based RAG pipelines |
+| 🌐 **Network** | LAN device discovery + SMB remote ingest — index your whole home network |
+| 🔒 **Privacy** | SHA-256 deduplication · All inference local · Zero cloud dependency |
+
+```
++─────────────────────────────────────────────────────────────────+
+│                     CYBORG AI ARCHITECTURE                       │
++─────────────────────────────────────────────────────────────────+
+│                                                                  │
+│   INPUT (docs / video / audio / code / images)                  │
+│       ↓                                                          │
+│   INGEST: SHA-256 dedup → extract → chunk → embed               │
+│       ↓                                                          │
+│   STORE: Qdrant (vector) + BM25 (keyword)                       │
+│       ↓                                                          │
+│   RETRIEVE: Hybrid search → description boost → top-k           │
+│       ↓                                                          │
+│   GENERATE: Phi-3 Mini (local 4-bit) → streaming response       │
+│       ↓                                                          │
+│   Flutter UI ← LangGraph Orchestration (migration in progress)  │
+│                                                                  │
++─────────────────────────────────────────────────────────────────+
+```
+
+> 🔄 **Migration Status:** Moving from standalone Python scripts → **LangChain + LangGraph** orchestrated pipeline · UI rebuilt in **Flutter** (cross-platform, replacing PyQt6)
+
+---
+
+### 📈 NewsAlphaAI &nbsp;&nbsp; ![](https://img.shields.io/badge/✅_Completed-SUCCESS-00D4AA?style=for-the-badge)
 
 > *AI-powered stock direction prediction using real-time news, LLM reasoning, RAG pipelines, LangGraph orchestration, and reinforcement learning feedback*
 
@@ -359,8 +411,8 @@ class AnkitSengupta:
 
 | 🏅 | 🎓 | 🤖 | 🔗 | 🔧 | 📱 |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| **VIT Internal Expo** | **CGPA 8.35** | **AI & ML** | **LLM Infra** | **Embedded IoT** | **Android Dev** |
-| Smart Vision Aid Selected | B.Tech CS · 2028 | RAG · Agents · YOLO | LangGraph · ChromaDB · RL | ESP32 · Arduino | Kotlin · Firebase |
+| **VIT Internal Expo** | **CGPA 8.35** | **AI & ML** | **LLM Infra** | **Embedded IoT** | **Mobile Dev** |
+| Smart Vision Aid Selected | B.Tech CS · 2028 | RAG · Agents · YOLO | LangGraph · Qdrant · RL | ESP32 · Arduino | Flutter · Kotlin · Firebase |
 
 <br/>
 
@@ -368,6 +420,7 @@ class AnkitSengupta:
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-Advanced-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
 ![LangChain](https://img.shields.io/badge/LangChain%2FGraph-Advanced-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
 ![Django](https://img.shields.io/badge/Django-Advanced-092E20?style=for-the-badge&logo=django&logoColor=white)
+![Flutter](https://img.shields.io/badge/Flutter-Intermediate-02569B?style=for-the-badge&logo=flutter&logoColor=white)
 ![XGBoost](https://img.shields.io/badge/XGBoost-Intermediate-FF6600?style=for-the-badge&logo=python&logoColor=white)
 ![Android](https://img.shields.io/badge/Android-Intermediate-3DDC84?style=for-the-badge&logo=android&logoColor=white)
 ![ESP32](https://img.shields.io/badge/ESP32-Intermediate-E7352C?style=for-the-badge&logo=espressif&logoColor=white)
@@ -385,7 +438,8 @@ class AnkitSengupta:
 ╔══════════════════════════════════════════════════════════════════╗
 ║                    🧭  On My Workbench                           ║
 ╠══════════════════════════════════════════════════════════════════╣
-║  📈  NewsAlphaAI — LangGraph Stock Prediction + RL Feedback      ║
+║  🧠  Cyborg AI — Local RAG System · Flutter UI · LangGraph      ║
+║  📈  NewsAlphaAI — LangGraph Stock Prediction ✅ Shipped         ║
 ║  🤖  Autonomous AI Agent Systems with Tool Use                   ║
 ║  📚  Retrieval-Augmented Generation (RAG) Pipelines              ║
 ║  ⚡  Scalable Backends  ·  FastAPI / Django / Node               ║
@@ -424,7 +478,7 @@ class AnkitSengupta:
 
 <br/>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=13&duration=4000&pause=1000&color=A855F7&center=true&vCenter=true&width=700&lines=Thanks+for+visiting+my+profile!+🙌;Always+building%2C+always+learning+⚡;From+silicon+to+software%2C+end-to-end+🔧;LangGraph+·+RAG+·+RL+·+YOLO+·+ESP32+🤖;Let's+create+something+amazing+together!+🚀;Open+to+internships+%26+collaborations+💼)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=13&duration=4000&pause=1000&color=A855F7&center=true&vCenter=true&width=700&lines=Thanks+for+visiting+my+profile!+🙌;Always+building%2C+always+learning+⚡;From+silicon+to+software%2C+end-to-end+🔧;LangGraph+·+RAG+·+RL+·+YOLO+·+ESP32+🤖;Cyborg+AI+—+Your+privacy-first+local+intelligence+🧠;Let's+create+something+amazing+together!+🚀;Open+to+internships+%26+collaborations+💼)](https://git.io/typing-svg)
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:00f0ff,50:a855f7,100:ff2d78&height=3&section=footer"/>
 
@@ -438,17 +492,20 @@ class AnkitSengupta:
   AI Engineer India | Backend Developer India | Python Developer
   Machine Learning Engineer | RAG Pipeline Developer | AI Agents
   LangGraph Developer | LangChain Developer | LangSmith
-  ChromaDB | FAISS | Vector Database | HuggingFace
-  Gemma LLM | XGBoost | Reinforcement Learning | RL Feedback Loop
+  ChromaDB | Qdrant | FAISS | Vector Database | HuggingFace
+  Gemma LLM | Phi-3 Mini | XGBoost | Reinforcement Learning | RL Feedback Loop
   TensorFlow Developer | OpenCV Engineer | YOLO Object Detection
   ESP32 Developer | Arduino IoT | Embedded Systems Engineer
   Django REST Framework | FastAPI Developer | Node.js Backend
+  Flutter Developer | Dart | Cross-Platform Mobile Developer
   React Developer | Vite | TailwindCSS | WebSockets
   Android Developer India | Kotlin Developer | Firebase
   Full Stack Developer | JavaScript TypeScript | MongoDB
+  Local AI | Privacy AI | Offline AI | Cyborg AI | Personal Intelligence System
   VIT Amaravati B.Tech CSE AI ML 2028 | CGPA 8.35
   Smart Vision Aid | VIT Internal Expo | Assistive Technology
   NewsAlphaAI | Stock Prediction AI | LLM Trading System
+  Cyborg AI | Local LLM | Qdrant Vector DB | Whisper Transcription
   Open to Internship Summer 2025 2026 | AI ML SWE Intern
   Hire Ankit Sengupta | ankit-sengupta05 | GitHub Profile
 -->
