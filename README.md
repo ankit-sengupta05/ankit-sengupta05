@@ -100,7 +100,7 @@ class AnkitSengupta:
             "AI / ML"      : ["RAG Pipelines", "AI Agents", "LangGraph", "LangChain",
                               "TensorFlow", "YOLO", "OpenCV", "XGBoost", "RL Feedback"],
             "LLM Infra"    : ["LangSmith", "ChromaDB", "FAISS", "Qdrant", "HuggingFace",
-                              "Gemma-3", "Phi-3", "Prompt Engineering", "Vector Embeddings"],
+                              "Gemma-4", "MedGemma-4B", "Phi-3", "Prompt Engineering", "Vector Embeddings"],
             "Backend"      : ["Django", "FastAPI", "Flask", "Node.js",
                               "MongoDB", "WebSockets", "APScheduler"],
             "Languages"    : ["Python", "JavaScript", "TypeScript", "Java", "C++", "Dart", "MATLAB"],
@@ -145,7 +145,8 @@ class AnkitSengupta:
 ![Qdrant](https://img.shields.io/badge/Qdrant-DC143C?style=for-the-badge&logo=qdrant&logoColor=white)
 ![FAISS](https://img.shields.io/badge/FAISS-0467DF?style=for-the-badge&logo=meta&logoColor=white)
 ![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)
-![Gemma](https://img.shields.io/badge/Gemma--3-4285F4?style=for-the-badge&logo=google&logoColor=white)
+![Gemma](https://img.shields.io/badge/Gemma--4-4285F4?style=for-the-badge&logo=google&logoColor=white)
+![MedGemma](https://img.shields.io/badge/MedGemma--4B-00BFA5?style=for-the-badge&logo=google&logoColor=white)
 ![Phi-3](https://img.shields.io/badge/Phi--3_Mini-00ADEF?style=for-the-badge&logo=microsoft&logoColor=white)
 ![sentence--transformers](https://img.shields.io/badge/sentence--transformers-FF6B6B?style=for-the-badge&logo=python&logoColor=white)
 
@@ -197,50 +198,54 @@ class AnkitSengupta:
 
 ---
 
-### 🧠 Cyborg AI &nbsp;&nbsp; ![](https://img.shields.io/badge/🔥_Active_Development-WIP-FF4500?style=for-the-badge)
+### 🧠 Cyborg AGI &nbsp;&nbsp; [![](https://img.shields.io/badge/🏆_Gemma_4_Good_Hackathon-Kaggle_×_Google_DeepMind-FF6B00?style=for-the-badge)](https://www.kaggle.com/competitions/gemma-4-good-hackathon) &nbsp; [![](https://img.shields.io/badge/✅_V1.0_Stable-SUCCESS-00D4AA?style=for-the-badge)](https://github.com/ankit-sengupta05/CyborgAI)
 
-> *Fully local, privacy-first personal intelligence system — query your entire life: documents, videos, audio, and code using natural language. No data leaves your machine.*
+> *A full-stack, locally-hosted Autonomous General Intelligence OS — your own private Jarvis that reasons, remembers, monitors the world, teaches, and assists with clinical questions, without sending a single byte to the cloud.*
 
-[![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)](#)
-[![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)](#)
-[![LangGraph](https://img.shields.io/badge/LangGraph_(Planned)-00D4AA?style=for-the-badge&logo=langchain&logoColor=white)](#)
-[![Qdrant](https://img.shields.io/badge/Qdrant-DC143C?style=for-the-badge&logo=qdrant&logoColor=white)](#)
-[![Phi-3](https://img.shields.io/badge/Phi--3_Mini-00ADEF?style=for-the-badge&logo=microsoft&logoColor=white)](#)
-[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=FFD43B)](#)
-[![sentence-transformers](https://img.shields.io/badge/sentence--transformers-FF6B6B?style=for-the-badge&logo=python&logoColor=white)](#)
+[![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)](https://github.com/ankit-sengupta05/CyborgAI)
+[![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://github.com/ankit-sengupta05/CyborgAI)
+[![Gemma4](https://img.shields.io/badge/Gemma_4-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://github.com/ankit-sengupta05/CyborgAI)
+[![MedGemma](https://img.shields.io/badge/MedGemma_4B-00BFA5?style=for-the-badge&logo=google&logoColor=white)](https://github.com/ankit-sengupta05/CyborgAI)
+[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=FFD43B)](https://github.com/ankit-sengupta05/CyborgAI)
+[![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://github.com/ankit-sengupta05/CyborgAI)
+[![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)](https://github.com/ankit-sengupta05/CyborgAI)
 
 | | |
 |:--|:--|
-| 🖥️ **Frontend** | Flutter desktop UI — cross-platform, native-speed, replacing PyQt6 |
-| 🧠 **LLM Core** | Phi-3 Mini (4-bit quantized, fully local) — no internet, no leaks |
-| 📦 **Vector DB** | Qdrant — multi-modal collections: text, PDF, audio, video, code, image |
-| 🔍 **Hybrid Search** | Vector semantic search + BM25 keyword ranking with description boost (1.25×) |
-| 🎙️ **Media Pipeline** | Whisper transcription → chunked embedding → timestamp-precise retrieval |
-| 🔗 **Orchestration** | Migrating to **LangChain + LangGraph** for modular, graph-based RAG pipelines |
-| 🌐 **Network** | LAN device discovery + SMB remote ingest — index your whole home network |
-| 🔒 **Privacy** | SHA-256 deduplication · All inference local · Zero cloud dependency |
+| 🧠 **General Chat** | Local Llama/Qwen models for general-purpose reasoning — fully offline |
+| 🏥 **Health Track** | MedGemma 4B isolated pipeline with SigLIP vision for X-ray & clinical reasoning; FHIR-compatible EHR; zero patient data exfiltration |
+| 🎓 **Education Track** | Adaptive Tutor with OCR-powered homework grading, dynamic quiz generation, and culturally localized content for India/SE Asia |
+| 🌍 **World Monitor** | Live GDELT + USGS feeds → AI-synthesized geopolitical & disaster briefings + country instability scoring |
+| 🕸️ **Mirofish Graph** | Force-directed semantic knowledge graph with Leiden community detection — visualize your entire knowledge base |
+| 🎙️ **Jarvis Voice** | Local Whisper STT + Kokoro/ONNX TTS — full duplex with interrupt support |
+| 📂 **ACE Knowledge Vault** | Obsidian-compatible vault (Atlas / Calendar / Efforts) — every AI interaction compounds into personal memory |
+| 🚀 **Edge Deployment** | Runs on Windows 10/11, Android, Raspberry Pi 5, and NVIDIA Jetson — no cloud required |
+| ⚡ **Performance** | 60+ tokens/sec (RTX 3070+) · MedGemma 4B ~6GB VRAM · Cold start < 8s · 10,000+ graph nodes tested |
 
 ```
-+─────────────────────────────────────────────────────────────────+
-│                     CYBORG AI ARCHITECTURE                       │
-+─────────────────────────────────────────────────────────────────+
-│                                                                  │
-│   INPUT (docs / video / audio / code / images)                  │
-│       ↓                                                          │
-│   INGEST: SHA-256 dedup → extract → chunk → embed               │
-│       ↓                                                          │
-│   STORE: Qdrant (vector) + BM25 (keyword)                       │
-│       ↓                                                          │
-│   RETRIEVE: Hybrid search → description boost → top-k           │
-│       ↓                                                          │
-│   GENERATE: Phi-3 Mini (local 4-bit) → streaming response       │
-│       ↓                                                          │
-│   Flutter UI ← LangGraph Orchestration (migration in progress)  │
-│                                                                  │
-+─────────────────────────────────────────────────────────────────+
++─────────────────────────────────────────────────────────────────────────+
+│                      CYBORG AGI ARCHITECTURE                            │
++─────────────────────────────────────────────────────────────────────────+
+│                                                                         │
+│   Frontend Shell (Flutter 3.x)                                          │
+│   Dashboard · World Monitor · Mirofish Graph · Jarvis Voice · Settings  │
+│       ↕  REST / WebSocket                                               │
+│   Backend Intelligence (FastAPI + Python)                               │
+│   General Chat │ MedGemma 4B │ Adaptive Tutor │ KGE │ World Monitor    │
+│       ↕                                                                 │
+│   Knowledge Vault (ACE / Obsidian Structure)                            │
+│   .md Semantic Nodes  ·  Wikilink Graph  ·  FHIR EHR Store             │
+│                                                                         │
+│   TRACKS:                                                               │
+│   🏥 Health  → MedGemma 4B (SigLIP Vision) → FHIR EHR (isolated)      │
+│   🎓 Education → Gemma 4 Tutor → OCR Grader → Quiz Generator           │
+│   🌍 Resilience → GDELT + USGS → World Monitor → Instability Index     │
+│                                                                         │
+│   DEPLOY: Windows · Android · Raspberry Pi · Jetson · Docker           │
++─────────────────────────────────────────────────────────────────────────+
 ```
 
-> 🔄 **Migration Status:** Moving from standalone Python scripts → **LangChain + LangGraph** orchestrated pipeline · UI rebuilt in **Flutter** (cross-platform, replacing PyQt6)
+> 🏆 **Built for the [Gemma 4 Good Hackathon](https://www.kaggle.com/competitions/gemma-4-good-hackathon) · Kaggle × Google DeepMind** · Targeting Health, Education & Global Resilience tracks · **V1.0 Stable** · [View Repo →](https://github.com/ankit-sengupta05/CyborgAI)
 
 ---
 
@@ -435,16 +440,17 @@ class AnkitSengupta:
 <div align="center">
 
 ```
-╔══════════════════════════════════════════════════════════════════╗
-║                    🧭  On My Workbench                           ║
-╠══════════════════════════════════════════════════════════════════╣
-║  🧠  Cyborg AI — Local RAG System · Flutter UI · LangGraph      ║
-║  📈  NewsAlphaAI — LangGraph Stock Prediction ✅ Shipped         ║
-║  🤖  Autonomous AI Agent Systems with Tool Use                   ║
-║  📚  Retrieval-Augmented Generation (RAG) Pipelines              ║
-║  ⚡  Scalable Backends  ·  FastAPI / Django / Node               ║
-║  🔗  LLM Orchestration  ·  LangGraph / LangChain                 ║
-╚══════════════════════════════════════════════════════════════════╝
+╔══════════════════════════════════════════════════════════════════════╗
+║                    🧭  On My Workbench                               ║
+╠══════════════════════════════════════════════════════════════════════╣
+║  🧠  Cyborg AGI — Local AGI OS · Gemma 4 Hackathon · V1.0 Stable    ║
+║      MedGemma 4B · Adaptive Tutor · World Monitor · Mirofish Graph  ║
+║  📈  NewsAlphaAI — LangGraph Stock Prediction ✅ Shipped             ║
+║  🤖  Autonomous AI Agent Systems with Tool Use                       ║
+║  📚  Retrieval-Augmented Generation (RAG) Pipelines                  ║
+║  ⚡  Scalable Backends  ·  FastAPI / Django / Node                   ║
+║  🔗  LLM Orchestration  ·  LangGraph / LangChain                     ║
+╚══════════════════════════════════════════════════════════════════════╝
 ```
 
 </div>
@@ -478,7 +484,7 @@ class AnkitSengupta:
 
 <br/>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=13&duration=4000&pause=1000&color=A855F7&center=true&vCenter=true&width=700&lines=Thanks+for+visiting+my+profile!+🙌;Always+building%2C+always+learning+⚡;From+silicon+to+software%2C+end-to-end+🔧;LangGraph+·+RAG+·+RL+·+YOLO+·+ESP32+🤖;Cyborg+AI+—+Your+privacy-first+local+intelligence+🧠;Let's+create+something+amazing+together!+🚀;Open+to+internships+%26+collaborations+💼)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=13&duration=4000&pause=1000&color=A855F7&center=true&vCenter=true&width=700&lines=Thanks+for+visiting+my+profile!+🙌;Always+building%2C+always+learning+⚡;From+silicon+to+software%2C+end-to-end+🔧;LangGraph+·+RAG+·+RL+·+YOLO+·+ESP32+🤖;Cyborg+AGI+—+Your+private+Jarvis%2C+fully+local+🧠;Let's+create+something+amazing+together!+🚀;Open+to+internships+%26+collaborations+💼)](https://git.io/typing-svg)
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:00f0ff,50:a855f7,100:ff2d78&height=3&section=footer"/>
 
@@ -493,7 +499,7 @@ class AnkitSengupta:
   Machine Learning Engineer | RAG Pipeline Developer | AI Agents
   LangGraph Developer | LangChain Developer | LangSmith
   ChromaDB | Qdrant | FAISS | Vector Database | HuggingFace
-  Gemma LLM | Phi-3 Mini | XGBoost | Reinforcement Learning | RL Feedback Loop
+  Gemma 4 | MedGemma 4B | XGBoost | Reinforcement Learning | RL Feedback Loop
   TensorFlow Developer | OpenCV Engineer | YOLO Object Detection
   ESP32 Developer | Arduino IoT | Embedded Systems Engineer
   Django REST Framework | FastAPI Developer | Node.js Backend
@@ -501,11 +507,14 @@ class AnkitSengupta:
   React Developer | Vite | TailwindCSS | WebSockets
   Android Developer India | Kotlin Developer | Firebase
   Full Stack Developer | JavaScript TypeScript | MongoDB
-  Local AI | Privacy AI | Offline AI | Cyborg AI | Personal Intelligence System
+  Local AI | Privacy AI | Offline AI | Cyborg AGI | Autonomous Intelligence OS
+  AGI OS | MedGemma | Adaptive Tutor | World Monitor | Mirofish Knowledge Graph
+  Jarvis Voice | Whisper STT | Kokoro TTS | ACE Vault | Obsidian Compatible
+  Gemma 4 Good Hackathon | Kaggle Google DeepMind | Health AI | Education AI
+  Edge AI | Raspberry Pi AI | Jetson Nano | FHIR | Clinical AI | SigLIP Vision
   VIT Amaravati B.Tech CSE AI ML 2028 | CGPA 8.35
   Smart Vision Aid | VIT Internal Expo | Assistive Technology
   NewsAlphaAI | Stock Prediction AI | LLM Trading System
-  Cyborg AI | Local LLM | Qdrant Vector DB | Whisper Transcription
   Open to Internship Summer 2025 2026 | AI ML SWE Intern
   Hire Ankit Sengupta | ankit-sengupta05 | GitHub Profile
 -->
