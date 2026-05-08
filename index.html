@@ -344,12 +344,12 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:26px 72px
     <div class="abt revL">
       <p>I'm a <strong>CS sophomore at VIT Amaravati</strong> specialising in AI &amp; ML. I don't just study machine learning — I ship it. My work spans the full stack: C++ firmware on ESP32 microcontrollers, scalable Django/FastAPI backends, and TensorFlow models in production.</p>
       <p>My flagship project — <strong>Smart Vision Aid</strong> — is AI-powered smart glasses with 3× ESP32-CAM modules and YOLO object detection, giving the visually impaired 360° spatial awareness. It was <strong>selected for VIT Amaravati's Internal Expo 2025</strong>.</p>
-      <p>Most recently I built <strong>NewsAlphaAI</strong> — an 8-node LangGraph pipeline combining Gemma-3 LLM reasoning, ChromaDB RAG, and XGBoost with a reinforcement learning feedback loop to predict stock direction from real-time news.</p>
+      <p>Most recently I built <strong>CyborgAI</strong> — a fully local AGI OS submitted to the <strong>Kaggle × Google DeepMind Gemma 4 Good Hackathon</strong>, combining MedGemma 4B for on-device clinical reasoning, an adaptive education tutor, Mirofish knowledge graph, and Jarvis voice engine — all running offline on your own hardware.</p>
       <p>My superpower: <strong>ML theory → production systems</strong>. I understand the math, write the code, and deploy the product.</p>
       <div class="abadg">
         <div class="abad aby">🏅 VIT Internal Expo — Selected</div>
         <div class="abad abc" id="about-cgpa">🎓 CGPA 8.35 · B.Tech CS AI&amp;ML</div>
-        <div class="abad abp">🟢 Open to Internships 2025–26</div>
+        <div class="abad abp">🏆 Kaggle × Google DeepMind Hackathon</div>
         <div class="abad abv">📍 VIT Amaravati · Class of 2028</div>
       </div>
       <div class="bars">
@@ -357,6 +357,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:26px 72px
         <div class="brow"><div class="bhead"><span class="bnm">LangGraph / LangChain / RAG</span><span class="bpc">84%</span></div><div class="btr"><div class="bfi" data-w="84" style="background:linear-gradient(90deg,#00D4AA,#a855f7)"></div></div></div>
         <div class="brow"><div class="bhead"><span class="bnm">TensorFlow / OpenCV / YOLO / XGBoost</span><span class="bpc">82%</span></div><div class="btr"><div class="bfi" data-w="82" style="background:linear-gradient(90deg,#a855f7,#ff2d78)"></div></div></div>
         <div class="brow"><div class="bhead"><span class="bnm">Django / FastAPI / Flask / Node.js</span><span class="bpc">80%</span></div><div class="btr"><div class="bfi" data-w="80" style="background:linear-gradient(90deg,#00f0ff,#00ff88)"></div></div></div>
+        <div class="brow"><div class="bhead"><span class="bnm">Flutter / Dart / Firebase</span><span class="bpc">75%</span></div><div class="btr"><div class="bfi" data-w="75" style="background:linear-gradient(90deg,#61DAFB,#8a2be2)"></div></div></div>
         <div class="brow"><div class="bhead"><span class="bnm">Android / Kotlin / Firebase</span><span class="bpc">72%</span></div><div class="btr"><div class="bfi" data-w="72" style="background:linear-gradient(90deg,#ff2d78,#ffd700)"></div></div></div>
         <div class="brow"><div class="bhead"><span class="bnm">ESP32 / Arduino / Embedded C++</span><span class="bpc">70%</span></div><div class="btr"><div class="bfi" data-w="70" style="background:linear-gradient(90deg,#ffd700,#a855f7)"></div></div></div>
         <div class="brow"><div class="bhead"><span class="bnm">JavaScript / TypeScript / React</span><span class="bpc">70%</span></div><div class="btr"><div class="bfi" data-w="70" style="background:linear-gradient(90deg,#00ff88,#00f0ff)"></div></div></div>
@@ -458,7 +459,9 @@ const DATA = {
       "LangGraph · LLM Orchestration · ChromaDB",
       "Backend Dev — Django · FastAPI · Node.js",
       "Embedded IoT — ESP32 · YOLO · OpenCV",
+      "🏆 CyborgAI — Kaggle × Google DeepMind Hackathon",
       "📈 NewsAlphaAI — LLM Stock Prediction System",
+      "Flutter · Dart · Local AGI OS",
       "VIT Amaravati · CS AI&ML · Class of 2028",
       "🟢 Open to Internships 2025–26"
     ]
@@ -466,7 +469,7 @@ const DATA = {
 
   stats: {
     cgpa:    8.35,
-    domains: 7,
+    domains: 8,
     classOf: 2028
   },
 
@@ -493,7 +496,8 @@ const DATA = {
         {label:"FuzzyWuzzy",cls:"tc"},    {label:"Pandas",cls:"tc"},
         {label:"NumPy",cls:"tc"},         {label:"Computer Vision",cls:"tc"},
         {label:"ML Pipelines",cls:"tc"},  {label:"Model Deployment",cls:"tc"},
-        {label:"LSTM",cls:"tc"}
+        {label:"LSTM",cls:"tc"},          {label:"MedGemma 4B",cls:"tc"},
+        {label:"SigLIP Vision",cls:"tc"}
       ]
     },
     {
@@ -504,10 +508,12 @@ const DATA = {
         {label:"LangChain",cls:"tg"},         {label:"LangGraph",cls:"tg"},
         {label:"LangSmith",cls:"tg"},         {label:"ChromaDB",cls:"tg"},
         {label:"FAISS",cls:"tg"},             {label:"HuggingFace",cls:"tg"},
-        {label:"Gemma-3-4B-IT",cls:"tg"},     {label:"sentence-transformers",cls:"tg"},
-        {label:"Vector Embeddings",cls:"tg"}, {label:"Prompt Engineering",cls:"tg"},
-        {label:"APScheduler",cls:"tg"},       {label:"WebSocket Streaming",cls:"tg"},
-        {label:"Pipeline Tracing",cls:"tg"},  {label:"Local LLM Inference",cls:"tg"}
+        {label:"Gemma-3-4B-IT",cls:"tg"},     {label:"Gemma 4",cls:"tg"},
+        {label:"sentence-transformers",cls:"tg"}, {label:"Vector Embeddings",cls:"tg"},
+        {label:"Prompt Engineering",cls:"tg"}, {label:"APScheduler",cls:"tg"},
+        {label:"WebSocket Streaming",cls:"tg"},{label:"Pipeline Tracing",cls:"tg"},
+        {label:"Local LLM Inference",cls:"tg"},{label:"Whisper STT",cls:"tg"},
+        {label:"Kokoro TTS",cls:"tg"}
       ]
     },
     {
@@ -521,7 +527,8 @@ const DATA = {
         {label:"MongoDB",cls:"tv"},               {label:"REST APIs",cls:"tv"},
         {label:"JWT Auth",cls:"tv"},              {label:"WebSockets",cls:"tv"},
         {label:"Async Python",cls:"tv"},          {label:"Microservices",cls:"tv"},
-        {label:"SQLite",cls:"tv"},                {label:"Celery",cls:"tv"}
+        {label:"SQLite",cls:"tv"},                {label:"Celery",cls:"tv"},
+        {label:"Docker",cls:"tv"},                {label:"FHIR EHR",cls:"tv"}
       ]
     },
     {
@@ -531,35 +538,36 @@ const DATA = {
       tags: [
         {label:"Python",cls:"tp"},      {label:"JavaScript",cls:"tp"},
         {label:"TypeScript",cls:"tp"},  {label:"Java",cls:"tp"},
-        {label:"Kotlin",cls:"tp"},      {label:"C++",cls:"tp"},
-        {label:"C (Embedded)",cls:"tp"},{label:"MATLAB",cls:"tp"},
-        {label:"HTML5",cls:"tp"},       {label:"CSS3",cls:"tp"},
-        {label:"Bash / Shell",cls:"tp"}
+        {label:"Kotlin",cls:"tp"},      {label:"Dart",cls:"tp"},
+        {label:"C++",cls:"tp"},         {label:"C (Embedded)",cls:"tp"},
+        {label:"MATLAB",cls:"tp"},      {label:"HTML5",cls:"tp"},
+        {label:"CSS3",cls:"tp"},        {label:"Bash / Shell",cls:"tp"}
       ]
     },
     {
       icon: "⚛️", title: "Frontend & UI",
       colorVar: "#61DAFB", gradient: "linear-gradient(90deg,#61DAFB,#646CFF)",
-      sub: "// React · Vite · TailwindCSS · Charts",
+      sub: "// React · Flutter · Vite · TailwindCSS",
       tags: [
-        {label:"React 18",cls:"tc"},           {label:"Vite",cls:"tc"},
-        {label:"TailwindCSS",cls:"tc"},        {label:"lightweight-charts",cls:"tc"},
-        {label:"WebSocket Client",cls:"tc"},   {label:"HTML5",cls:"tc"},
-        {label:"CSS3",cls:"tc"},               {label:"Responsive Design",cls:"tc"},
-        {label:"Trading UI",cls:"tc"}
+        {label:"Flutter 3.x",cls:"tc"},        {label:"React 18",cls:"tc"},
+        {label:"Dart",cls:"tc"},               {label:"Vite",cls:"tc"},
+        {label:"TailwindCSS",cls:"tc"},        {label:"Riverpod",cls:"tc"},
+        {label:"lightweight-charts",cls:"tc"}, {label:"WebSocket Client",cls:"tc"},
+        {label:"HTML5",cls:"tc"},              {label:"CSS3",cls:"tc"},
+        {label:"Responsive Design",cls:"tc"},  {label:"Trading UI",cls:"tc"}
       ]
     },
     {
       icon: "📱", title: "Mobile Development",
       colorVar: "var(--g)", gradient: "linear-gradient(90deg,#00ff88,#00f0ff)",
-      sub: "// Android native · Firebase · Real-time",
+      sub: "// Android native · Flutter · Firebase · Real-time",
       tags: [
-        {label:"Android (Native)",cls:"tg"},      {label:"Kotlin",cls:"tg"},
-        {label:"Java (Android)",cls:"tg"},        {label:"Firebase Auth",cls:"tg"},
-        {label:"Firestore DB",cls:"tg"},          {label:"Firebase Storage",cls:"tg"},
-        {label:"SMS BroadcastReceiver",cls:"tg"}, {label:"Android Studio",cls:"tg"},
-        {label:"RecyclerView",cls:"tg"},          {label:"Room DB",cls:"tg"},
-        {label:"MPAndroidChart",cls:"tg"}
+        {label:"Flutter (Cross-Platform)",cls:"tg"}, {label:"Android (Native)",cls:"tg"},
+        {label:"Kotlin",cls:"tg"},                   {label:"Java (Android)",cls:"tg"},
+        {label:"Firebase Auth",cls:"tg"},            {label:"Firestore DB",cls:"tg"},
+        {label:"Firebase Storage",cls:"tg"},         {label:"SMS BroadcastReceiver",cls:"tg"},
+        {label:"Android Studio",cls:"tg"},           {label:"RecyclerView",cls:"tg"},
+        {label:"Room DB",cls:"tg"},                  {label:"MPAndroidChart",cls:"tg"}
       ]
     },
     {
@@ -572,7 +580,7 @@ const DATA = {
         {label:"Ultrasonic Sensors",cls:"ty"},{label:"I2C / SPI / UART",cls:"ty"},
         {label:"Wi-Fi Streaming",cls:"ty"},   {label:"GPIO Control",cls:"ty"},
         {label:"Interrupt Handling",cls:"ty"},{label:"Low-Latency Sys",cls:"ty"},
-        {label:"IoT Protocols",cls:"ty"}
+        {label:"IoT Protocols",cls:"ty"},     {label:"Edge AI",cls:"ty"}
       ]
     },
     {
@@ -582,7 +590,7 @@ const DATA = {
       tags: [
         {label:"Git / GitHub",cls:"tc"},    {label:"VS Code",cls:"tc"},
         {label:"PyCharm",cls:"tc"},         {label:"Android Studio",cls:"tc"},
-        {label:"Arduino IDE",cls:"tc"},     {label:"Vite",cls:"tc"},
+        {label:"Arduino IDE",cls:"tc"},     {label:"Docker",cls:"tc"},
         {label:"Postman",cls:"tc"},         {label:"Jupyter Notebook",cls:"tc"},
         {label:"Vercel",cls:"tc"},          {label:"GitHub Actions",cls:"tc"},
         {label:"Linux / Ubuntu",cls:"tc"}
@@ -626,6 +634,42 @@ const DATA = {
       ],
       tech:    ["LangGraph","LangChain","LangSmith","Gemma-3","ChromaDB","FAISS","XGBoost","FastAPI","React","Vite","TailwindCSS","WebSockets","HuggingFace","sentence-transformers","APScheduler","yfinance"],
       catTags: [{label:"AI/ML",clr:"c"},{label:"LLM Infra",clr:"g"},{label:"Backend",clr:"v"},{label:"Frontend",clr:"p"}]
+    },
+
+    /* ── PROJECT 1b — FEATURED: CyborgAI ── */
+    {
+      id:          "cyborg-ai",
+      featured:     true,
+      title:       "CyborgAI",
+      emoji:       "🤖",
+      subtitle:    "Privacy-first local AGI OS — Gemma 4 · MedGemma 4B · Flutter · FastAPI · Kaggle × Google DeepMind Hackathon",
+      description: "A full-stack, locally-hosted Autonomous General Intelligence OS built for the Kaggle × Google DeepMind Gemma 4 Good Hackathon. Unifies a Flutter 3.x dashboard, FastAPI intelligence backend, and an ACE/Obsidian-compatible Knowledge Vault — all running on your own hardware with zero cloud dependency. Features: MedGemma 4B for on-device clinical reasoning, adaptive education tutor, Mirofish knowledge graph, Jarvis voice engine, and World Monitor geopolitical intelligence.",
+      github:      "https://github.com/ankit-sengupta05/CyborgAI",
+      demo:        "",
+      categories:  ["ai","llm","mobile","backend"],
+      badge:       "🏆 Kaggle × Google DeepMind — Gemma 4 Good Hackathon 2026",
+      iconBg:      "rgba(138,43,226,0.08)",
+      iconBorderColor: "rgba(138,43,226,0.3)",
+      highlights: [
+        {icon:"🏥", color:"g", title:"MedGemma 4B Health Track",   detail:"Fully isolated MedGemma 4B pipeline with SigLIP vision encoder for local X-ray analysis, FHIR-compatible EHR function calling — patient data never leaves the device; runs in rural clinics with zero internet"},
+        {icon:"🎓", color:"c", title:"Adaptive Education Tutor",    detail:"Gemma 4 powered tutor with OCR homework grading from photos, dynamic gap-targeted quiz generation, and culturally localised content for India/SE Asia — full offline operation"},
+        {icon:"🌍", color:"y", title:"World Monitor Dashboard",     detail:"AI-synthesised geopolitical & disaster intelligence via GDELT + USGS feeds; real-time vector map with proprietary country instability scoring updated every 5 minutes"},
+        {icon:"🕸️", color:"v", title:"Mirofish Knowledge Graph",   detail:"Force-directed semantic graph with Leiden community detection, semantic triplet extraction, interactive physics controls — tested to 10,000+ nodes with zero-deadlock Riverpod state engine"},
+        {icon:"🎙️", color:"p", title:"Jarvis Voice Engine",        detail:"Local Whisper STT + Kokoro/ONNX TTS for fully offline voice interaction with interrupt support and emotion-aware speech synthesis — no cloud transcription"},
+        {icon:"⚡", color:"c", title:"Edge-First Architecture",     detail:"Runs on Windows, Android, Raspberry Pi 5, and NVIDIA Jetson; 60+ tok/sec on RTX 3070, <8s cold start, MedGemma 4B at ~6GB VRAM (4-bit quantized), full offline capability"}
+      ],
+      specs: [
+        {label:"LLM",          value:"Gemma 4 + MedGemma 4B"},
+        {label:"Frontend",     value:"Flutter 3.x (Dart)"},
+        {label:"Backend",      value:"FastAPI + Python"},
+        {label:"Knowledge",    value:"ACE / Obsidian Vault"},
+        {label:"Inference",    value:"60+ tok/sec (RTX 3070)"},
+        {label:"Deployment",   value:"Docker · Edge · Android"},
+        {label:"Hackathon",    value:"Gemma 4 Good — Kaggle"},
+        {label:"Tracks",       value:"Health · Education · Climate"}
+      ],
+      tech:    ["Flutter","Dart","FastAPI","Python","Gemma 4","MedGemma 4B","Whisper","Kokoro TTS","ChromaDB","FAISS","LangChain","Firebase","Docker","Riverpod","GDELT API","USGS API"],
+      catTags: [{label:"AI/ML",clr:"c"},{label:"LLM Infra",clr:"v"},{label:"Mobile",clr:"g"},{label:"Backend",clr:"p"}]
     },
 
     /* ── PROJECT 2 — FEATURED: Smart Vision Aid ── */
@@ -780,6 +824,11 @@ const DATA = {
 
   building: [
     {
+      icon:"🤖", title:"CyborgAI — AGI OS",
+      desc:"Full local AGI platform with MedGemma 4B clinical reasoning, Adaptive Education Tutor, Mirofish knowledge graph, Jarvis Voice Engine, and World Monitor. Built for Kaggle × Google DeepMind Gemma 4 Good Hackathon 2026.",
+      status:"Hackathon Submitted"
+    },
+    {
       icon:"📈", title:"NewsAlphaAI — Live",
       desc:"LangGraph 8-node stock prediction pipeline with Gemma-3 LLM, ChromaDB RAG, XGBoost, and a custom RL feedback loop that retrains on real outcome data every 3 days. React + WebSocket trading UI.",
       status:"Actively Shipping"
@@ -798,21 +847,16 @@ const DATA = {
       icon:"⚡", title:"Scalable Backend Architectures",
       desc:"High-performance async APIs with FastAPI and Django, focusing on horizontal scalability, Celery task queues, Redis caching, and clean microservices patterns deployable on cloud infrastructure.",
       status:"Ongoing"
-    },
-    {
-      icon:"🔗", title:"Intelligent Automation & Workflows",
-      desc:"LLM-powered workflow orchestration — combining AI reasoning with programmatic control flows, API integrations, and event-driven automation to handle complex multi-step business processes.",
-      status:"Research Phase"
     }
   ],
 
   codeBlock: {
     skills: {
       "AI/ML":       ["RAG", "Agents", "YOLO", "XGBoost"],
-      "LLM Infra":   ["LangGraph", "ChromaDB", "Gemma-3"],
+      "LLM Infra":   ["LangGraph", "ChromaDB", "Gemma-4"],
       "Backend":     ["Django", "FastAPI", "Node"],
-      "Languages":   ["Python", "JS", "TS", "C++"],
-      "Mobile":      ["Android", "Kotlin", "Firebase"],
+      "Mobile":      ["Flutter", "Android", "Firebase"],
+      "Languages":   ["Python", "Dart", "JS", "C++"],
       "Embedded":    ["ESP32", "Arduino", "C++"]
     }
   }
@@ -926,7 +970,7 @@ function renderCodeBlock(d){
   const cgpa=d.stats?.cgpa||m.cgpa||8.35;
   document.getElementById('codeblock-footer').innerHTML=[
     {e:'📊',l:`CGPA: ${cgpa}`},{e:'🏅',l:'Expo Selected'},
-    {e:'📦',l:`${PROJECT_COUNT} Projects`},{e:'🟢',l:'Available'},
+    {e:'🏆',l:'Kaggle Hackathon'},{e:'📦',l:`${PROJECT_COUNT} Projects`},{e:'🟢',l:'Available'},
   ].map(p=>`<span class="cblpill"><span class="pdot"></span>${p.e} ${p.l}</span>`).join('');
 }
 
@@ -935,7 +979,7 @@ function renderHeroStats(d){
   const m=d.meta||{},s=d.stats||{};
   document.getElementById('hero-stats').innerHTML=[
     {n:PROJECT_COUNT+'+',l:'AI Projects'},{n:CGPA,l:'CGPA'},
-    {n:'🏅',l:'Expo Selected'},{n:s.classOf||2028,l:'Class Of'},{n:s.domains||7,l:'Tech Domains'},
+    {n:'🏅',l:'Expo Selected'},{n:'🏆',l:'Kaggle Hackathon'},{n:s.domains||8,l:'Tech Domains'},
   ].map((it,i)=>(i?'<div class="hdi"></div>':'')+`<div><div class="hsn">${it.n}</div><div class="hsl">${it.l}</div></div>`).join('');
   document.getElementById('hero-gh').href=GITHUB;
   document.getElementById('about-cgpa').textContent=`🎓 CGPA ${s.cgpa||m.cgpa} · B.Tech CS AI&ML`;
@@ -991,7 +1035,7 @@ function ctags(arr){return(arr||[]).map(t=>`<span class="pctag clr-${t.clr||'c'}
 function plinks(p){return(p.github?`<a href="${p.github}" target="_blank" class="plk">↗ GitHub</a>`:'')+
                          (p.demo  ?`<a href="${p.demo}"   target="_blank" class="plk demo">▶ Demo</a>`:'');}
 
-/* NewsAlphaAI custom SVG visualizer — animated pipeline flow diagram */
+/* NewsAlphaAI custom SVG visualizer */
 function newsAlphaVis(){return`<svg viewBox="0 0 300 360" width="270" height="324" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <filter id="fnag"><feGaussianBlur stdDeviation="3.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
@@ -1001,66 +1045,100 @@ function newsAlphaVis(){return`<svg viewBox="0 0 300 360" width="270" height="32
       <stop offset="100%" style="stop-color:#ff2d78;stop-opacity:1"/>
     </linearGradient>
   </defs>
-  <!-- Pipeline nodes -->
   <g font-family="Space Mono,monospace" font-size="6.5">
-    <!-- Node 1: fetch_news -->
     <rect x="85" y="8" width="130" height="24" rx="3" fill="rgba(0,240,255,0.06)" stroke="#00f0ff" stroke-width="1"/>
     <text x="150" y="24" text-anchor="middle" fill="#00f0ff">📰 fetch_news</text>
-    <!-- Node 2: analyse_sentiment -->
     <rect x="85" y="46" width="130" height="24" rx="3" fill="rgba(168,85,247,0.06)" stroke="#a855f7" stroke-width="1"/>
     <text x="150" y="62" text-anchor="middle" fill="#a855f7">🧠 analyse_sentiment</text>
-    <!-- Node 3: embed_store -->
     <rect x="85" y="84" width="130" height="24" rx="3" fill="rgba(0,255,136,0.06)" stroke="#00ff88" stroke-width="1"/>
     <text x="150" y="100" text-anchor="middle" fill="#00ff88">📦 embed_store</text>
-    <!-- Node 4: fetch_stock -->
     <rect x="85" y="122" width="130" height="24" rx="3" fill="rgba(255,215,0,0.06)" stroke="#ffd700" stroke-width="1"/>
     <text x="150" y="138" text-anchor="middle" fill="#ffd700">📊 fetch_stock</text>
-    <!-- Node 5: rag_retrieve -->
     <rect x="85" y="160" width="130" height="24" rx="3" fill="rgba(0,240,255,0.06)" stroke="#00f0ff" stroke-width="1"/>
     <text x="150" y="176" text-anchor="middle" fill="#00f0ff">🔍 rag_retrieve</text>
-    <!-- Node 6: llm_reason -->
     <rect x="85" y="198" width="130" height="24" rx="3" fill="rgba(168,85,247,0.06)" stroke="#a855f7" stroke-width="1"/>
     <text x="150" y="214" text-anchor="middle" fill="#a855f7">💬 llm_reason</text>
-    <!-- Node 7: ml_predict -->
     <rect x="85" y="236" width="130" height="24" rx="3" fill="rgba(255,45,120,0.06)" stroke="#ff2d78" stroke-width="1"/>
     <text x="150" y="252" text-anchor="middle" fill="#ff2d78">🤖 ml_predict</text>
-    <!-- Node 8: final_predict -->
     <rect x="85" y="274" width="130" height="28" rx="3" fill="rgba(0,212,170,0.08)" stroke="#00D4AA" stroke-width="1.5"/>
     <text x="150" y="292" text-anchor="middle" fill="#00D4AA" font-weight="bold">⚡ final_predict</text>
   </g>
-  <!-- Connector lines with animated dots -->
   <g stroke="url(#gflow)" stroke-width="1.2" opacity="0.45">
     <line x1="150" y1="32" x2="150" y2="46"/><line x1="150" y1="70" x2="150" y2="84"/>
     <line x1="150" y1="108" x2="150" y2="122"/><line x1="150" y1="146" x2="150" y2="160"/>
     <line x1="150" y1="184" x2="150" y2="198"/><line x1="150" y1="222" x2="150" y2="236"/>
     <line x1="150" y1="260" x2="150" y2="274"/>
   </g>
-  <!-- Animated flow pulse -->
   <circle r="3" fill="#00f0ff" filter="url(#fnag)">
-    <animateMotion dur="3.5s" repeatCount="indefinite"
-      path="M150,32 L150,46 L150,70 L150,84 L150,108 L150,122 L150,146 L150,160 L150,184 L150,198 L150,222 L150,236 L150,260 L150,274"/>
+    <animateMotion dur="3.5s" repeatCount="indefinite" path="M150,32 L150,46 L150,70 L150,84 L150,108 L150,122 L150,146 L150,160 L150,184 L150,198 L150,222 L150,236 L150,260 L150,274"/>
   </circle>
   <circle r="2.5" fill="#a855f7" filter="url(#fnag)">
-    <animateMotion dur="3.5s" begin="1.2s" repeatCount="indefinite"
-      path="M150,32 L150,46 L150,70 L150,84 L150,108 L150,122 L150,146 L150,160 L150,184 L150,198 L150,222 L150,236 L150,260 L150,274"/>
+    <animateMotion dur="3.5s" begin="1.2s" repeatCount="indefinite" path="M150,32 L150,46 L150,70 L150,84 L150,108 L150,122 L150,146 L150,160 L150,184 L150,198 L150,222 L150,236 L150,260 L150,274"/>
   </circle>
-  <!-- Labels on sides -->
   <text x="78" y="22" text-anchor="end" font-family="Space Mono,monospace" font-size="5.5" fill="rgba(0,240,255,0.4)">NewsAPI</text>
   <text x="78" y="216" text-anchor="end" font-family="Space Mono,monospace" font-size="5.5" fill="rgba(168,85,247,0.4)">Gemma-3</text>
   <text x="78" y="254" text-anchor="end" font-family="Space Mono,monospace" font-size="5.5" fill="rgba(255,45,120,0.4)">XGBoost</text>
   <text x="222" y="98" font-family="Space Mono,monospace" font-size="5.5" fill="rgba(0,255,136,0.4)">ChromaDB</text>
-  <!-- Result badge -->
   <rect x="105" y="315" width="90" height="18" rx="9" fill="rgba(0,212,170,0.1)" stroke="#00D4AA" stroke-width="1"/>
   <text x="150" y="328" text-anchor="middle" font-family="Space Mono,monospace" font-size="6.5" fill="#00D4AA">UP ↑ 0.78 HIGH</text>
   <line x1="150" y1="302" x2="150" y2="315" stroke="#00D4AA" stroke-width="1" opacity="0.5"/>
-  <!-- RL loop arrow -->
   <path d="M215,288 Q260,288 260,162 Q260,36 215,36" fill="none" stroke="rgba(255,215,0,0.2)" stroke-width="1" stroke-dasharray="4,3"/>
   <text x="265" y="165" font-family="Space Mono,monospace" font-size="5" fill="rgba(255,215,0,0.4)" text-anchor="middle">RL</text>
   <text x="265" y="172" font-family="Space Mono,monospace" font-size="5" fill="rgba(255,215,0,0.4)" text-anchor="middle">Loop</text>
   <circle r="2.5" fill="#ffd700" opacity="0.6">
-    <animateMotion dur="5s" repeatCount="indefinite"
-      path="M215,288 Q260,288 260,162 Q260,36 215,36"/>
+    <animateMotion dur="5s" repeatCount="indefinite" path="M215,288 Q260,288 260,162 Q260,36 215,36"/>
   </circle>
+</svg>`;}
+
+/* CyborgAI — radial AGI hub diagram */
+function cyborgVis(){return`<svg viewBox="0 0 300 360" width="270" height="324" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="fcyb"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <radialGradient id="gcybr" cx="50%" cy="46%" r="50%">
+      <stop offset="0%" style="stop-color:rgba(138,43,226,0.32);stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:rgba(138,43,226,0);stop-opacity:1"/>
+    </radialGradient>
+  </defs>
+  <!-- Central AGI core glow -->
+  <circle cx="150" cy="165" r="52" fill="url(#gcybr)" filter="url(#fcyb)"/>
+  <circle cx="150" cy="165" r="34" fill="rgba(138,43,226,0.05)" stroke="#8a2be2" stroke-width="1.5">
+    <animate attributeName="r" values="34;38;34" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="1;0.25;1" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="150" cy="165" r="64" fill="none" stroke="rgba(138,43,226,0.09)" stroke-width="1" stroke-dasharray="3,9"/>
+  <text x="150" y="160" text-anchor="middle" font-family="Space Mono,monospace" font-size="8.5" fill="#8a2be2" font-weight="bold">CYBORG</text>
+  <text x="150" y="174" text-anchor="middle" font-family="Space Mono,monospace" font-size="6.5" fill="rgba(138,43,226,0.6)">AGI OS</text>
+  <!-- 6 satellite nodes -->
+  <rect x="111" y="44" width="78" height="22" rx="3" fill="rgba(0,255,136,0.06)" stroke="#00ff88" stroke-width="1"/>
+  <text x="150" y="59" text-anchor="middle" font-family="Space Mono,monospace" font-size="6" fill="#00ff88">🏥 MedGemma 4B</text>
+  <rect x="216" y="98" width="70" height="22" rx="3" fill="rgba(0,240,255,0.06)" stroke="#00f0ff" stroke-width="1"/>
+  <text x="251" y="113" text-anchor="middle" font-family="Space Mono,monospace" font-size="6" fill="#00f0ff">🎓 Edu Tutor</text>
+  <rect x="216" y="220" width="70" height="22" rx="3" fill="rgba(255,215,0,0.06)" stroke="#ffd700" stroke-width="1"/>
+  <text x="251" y="235" text-anchor="middle" font-family="Space Mono,monospace" font-size="6" fill="#ffd700">🌍 World Mon.</text>
+  <rect x="111" y="270" width="78" height="22" rx="3" fill="rgba(168,85,247,0.06)" stroke="#a855f7" stroke-width="1"/>
+  <text x="150" y="285" text-anchor="middle" font-family="Space Mono,monospace" font-size="6" fill="#a855f7">🕸️ Mirofish KG</text>
+  <rect x="14" y="220" width="70" height="22" rx="3" fill="rgba(255,45,120,0.06)" stroke="#ff2d78" stroke-width="1"/>
+  <text x="49" y="235" text-anchor="middle" font-family="Space Mono,monospace" font-size="6" fill="#ff2d78">🎙️ Jarvis Voice</text>
+  <rect x="14" y="98" width="70" height="22" rx="3" fill="rgba(97,218,251,0.06)" stroke="#61DAFB" stroke-width="1"/>
+  <text x="49" y="113" text-anchor="middle" font-family="Space Mono,monospace" font-size="6" fill="#61DAFB">📱 Flutter UI</text>
+  <!-- Connector lines -->
+  <g stroke="rgba(138,43,226,0.22)" stroke-width="0.9">
+    <line x1="150" y1="131" x2="150" y2="66"/><line x1="184" y1="147" x2="216" y2="120"/>
+    <line x1="184" y1="183" x2="216" y2="220"/><line x1="150" y1="199" x2="150" y2="270"/>
+    <line x1="116" y1="183" x2="84" y2="220"/><line x1="116" y1="147" x2="84" y2="120"/>
+  </g>
+  <!-- Animated data pulses -->
+  <circle r="2.5" fill="#00ff88" filter="url(#fcyb)"><animateMotion dur="2.2s" repeatCount="indefinite" path="M150,131 L150,66"/></circle>
+  <circle r="2.5" fill="#00f0ff" filter="url(#fcyb)"><animateMotion dur="2.6s" begin="0.4s" repeatCount="indefinite" path="M184,147 L216,120"/></circle>
+  <circle r="2.5" fill="#ffd700" filter="url(#fcyb)"><animateMotion dur="2.4s" begin="0.8s" repeatCount="indefinite" path="M184,183 L216,220"/></circle>
+  <circle r="2.5" fill="#a855f7" filter="url(#fcyb)"><animateMotion dur="2.8s" begin="1.2s" repeatCount="indefinite" path="M150,199 L150,270"/></circle>
+  <circle r="2.5" fill="#ff2d78" filter="url(#fcyb)"><animateMotion dur="2.3s" begin="1.6s" repeatCount="indefinite" path="M116,183 L84,220"/></circle>
+  <circle r="2.5" fill="#61DAFB" filter="url(#fcyb)"><animateMotion dur="2.5s" begin="2.0s" repeatCount="indefinite" path="M116,147 L84,120"/></circle>
+  <!-- Central pulse dot -->
+  <circle cx="150" cy="165" r="3.5" fill="#8a2be2" filter="url(#fcyb)"><animate attributeName="opacity" values="1;0.15;1" dur="1.5s" repeatCount="indefinite"/></circle>
+  <!-- Kaggle badge -->
+  <rect x="64" y="312" width="172" height="18" rx="9" fill="rgba(138,43,226,0.08)" stroke="#8a2be2" stroke-width="1"/>
+  <text x="150" y="324.5" text-anchor="middle" font-family="Space Mono,monospace" font-size="5.8" fill="#8a2be2">🏆 KAGGLE × GOOGLE DEEPMIND 2026</text>
 </svg>`;}
 
 function glassesVis(){return`<svg viewBox="0 0 320 320" width="290" height="290" xmlns="http://www.w3.org/2000/svg">
@@ -1099,7 +1177,7 @@ function glassesVis(){return`<svg viewBox="0 0 320 320" width="290" height="290"
 </svg>`;}
 
 function featCard(p){
-  const vis = p.id==='news-alpha-ai' ? newsAlphaVis() : glassesVis();
+  const vis = p.id==='news-alpha-ai' ? newsAlphaVis() : p.id==='cyborg-ai' ? cyborgVis() : glassesVis();
   return`
 <div class="pcard pfeat rev" data-cat="${(p.categories||[]).join(' ')}">
   <div class="pglow"></div>
@@ -1144,7 +1222,8 @@ function renderStats(d){
     {n:PROJECT_COUNT+'+',l:'Projects Shipped',g:'linear-gradient(135deg,var(--c),var(--v))'},
     {n:CGPA,     l:'CGPA',            g:'linear-gradient(135deg,var(--v),var(--p))'},
     {n:'🏅',     l:'Expo Selected',   g:'linear-gradient(135deg,var(--p),var(--y))'},
-    {n:d.stats?.domains||7,l:'Tech Domains',g:'linear-gradient(135deg,var(--g),var(--c))'},
+    {n:'🏆',     l:'Kaggle Hackathon',g:'linear-gradient(135deg,var(--y),#8a2be2)'},
+    {n:d.stats?.domains||8,l:'Tech Domains',g:'linear-gradient(135deg,var(--g),var(--c))'},
   ].map((c,i)=>`
     <div class="stc rev" style="transition-delay:${i*.08}s">
       <div style="position:absolute;top:0;left:0;right:0;height:2px;background:${c.g}"></div>
