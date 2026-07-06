@@ -348,7 +348,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:26px 72px
       <p>My superpower: <strong>ML theory → production systems</strong>. I understand the math, write the code, and deploy the product.</p>
       <div class="abadg">
         <div class="abad aby">🏅 VIT Internal Expo — Selected</div>
-        <div class="abad abc" id="about-cgpa">🎓 CGPA 8.35 · B.Tech CS AI&amp;ML</div>
+        <div class="abad abc" id="about-cgpa">🎓 CGPA 8.22 · B.Tech CS AI&amp;ML</div>
         <div class="abad abp">🏆 Kaggle × Google DeepMind Hackathon</div>
         <div class="abad abv">📍 VIT Amaravati · Class of 2028</div>
       </div>
@@ -446,7 +446,7 @@ const DATA = {
     role:       "AI Eng & Backend Dev",
     university: "VIT Amaravati",
     batch:      "2028",
-    cgpa:       8.35,
+    cgpa:       8.22,
     email:      "ankit.sengupta05@gmail.com",
     linkedin:   "https://linkedin.com/in/Sengupta-ankit",
     github:     "https://github.com/ankit-sengupta05",
@@ -468,7 +468,7 @@ const DATA = {
   },
 
   stats: {
-    cgpa:    8.35,
+    cgpa:    8.22,
     domains: 8,
     classOf: 2028
   },
@@ -702,6 +702,67 @@ const DATA = {
       ],
       tech:    ["ESP32-CAM","YOLO","OpenCV","Android / Kotlin","C++","Arduino IDE","Wi-Fi Streaming","Ultrasonic Sensors"],
       catTags: [{label:"Embedded",clr:"c"},{label:"AI/ML",clr:"p"},{label:"Mobile",clr:"g"}]
+    },
+
+    /* ── PROJECT: MeetMind ── */
+    {
+      id:          "meetmind",
+      featured:     false,
+      title:       "MeetMind",
+      emoji:       "🧭",
+      subtitle:    "AI Teams co-pilot for meeting knowledge — built for a Microsoft hackathon",
+      description: "An AI-powered co-pilot for Microsoft Teams that turns meeting transcripts into structured, searchable knowledge. Captures discussion context in real time, surfaces action items and decisions, and lets teams query past meetings in natural language instead of scrubbing through recordings.",
+      github:      "https://github.com/ankit-sengupta05/MeetMind",
+      demo:        "",
+      categories:  ["ai","llm","backend"],
+      badge:       "🏆 Microsoft Hackathon",
+      iconBg:      "rgba(0,240,255,0.07)",
+      iconBorderColor: "rgba(0,240,255,0.2)",
+      highlights: [
+        {icon:"🎙️",color:"c",title:"Meeting Ingestion", detail:"Captures and processes Teams meeting transcripts in real time to build a structured knowledge base"},
+        {icon:"🔍",color:"v",title:"Natural-Language Search", detail:"RAG-style retrieval lets users query past meetings conversationally instead of rewatching recordings"},
+        {icon:"✅",color:"g",title:"Action-Item Extraction", detail:"Surfaces decisions and follow-up tasks automatically from meeting content"}
+      ],
+      specs: [
+        {label:"Platform",value:"Microsoft Teams"},
+        {label:"Type",    value:"AI Co-Pilot"},
+        {label:"Focus",   value:"Meeting Knowledge"},
+        {label:"Event",   value:"Microsoft Hackathon"}
+      ],
+      tech:    ["Python","LLM Orchestration","RAG","FastAPI","Microsoft Teams API"],
+      catTags: [{label:"AI/ML",clr:"c"},{label:"LLM Infra",clr:"v"},{label:"Backend",clr:"g"}]
+    },
+
+    /* ── PROJECT: mesh_guard ── */
+    {
+      id:          "mesh-guard",
+      featured:     false,
+      title:       "mesh_guard (AgentOps Security Mesh)",
+      emoji:       "🛡️",
+      subtitle:    "A security OS for AI agent swarms — LangGraph, Neo4j, Redis, FastAPI, React",
+      description: "A security-focused operating layer for fleets of autonomous AI agents. Models agent-to-agent interactions as a graph in Neo4j to detect anomalous or malicious behaviour, uses Redis for low-latency state and event streaming, and orchestrates monitoring/response workflows with LangGraph — all surfaced through a React security dashboard.",
+      github:      "https://github.com/ankit-sengupta05/mesh_guard",
+      demo:        "",
+      categories:  ["ai","backend","llm"],
+      badge:       "🏆 Security Hackathon",
+      iconBg:      "rgba(255,45,120,0.07)",
+      iconBorderColor: "rgba(255,45,120,0.2)",
+      highlights: [
+        {icon:"🕸️",color:"p",title:"Agent Graph Modelling", detail:"Neo4j graph database models agent-to-agent communication and trust relationships across the swarm"},
+        {icon:"⚡",color:"c",title:"Real-Time Event Pipeline", detail:"Redis-backed low-latency state and event streaming for live monitoring of agent behaviour"},
+        {icon:"🔗",color:"v",title:"LangGraph Orchestration", detail:"Coordinates detection and response workflows across the agent mesh"},
+        {icon:"🖥️",color:"g",title:"Security Dashboard", detail:"React frontend surfaces anomalies, agent activity, and mesh health in real time"}
+      ],
+      specs: [
+        {label:"Graph DB",    value:"Neo4j"},
+        {label:"Event Store", value:"Redis"},
+        {label:"Orchestration",value:"LangGraph"},
+        {label:"Backend",     value:"FastAPI"},
+        {label:"Frontend",    value:"React"},
+        {label:"Domain",      value:"AI Agent Security"}
+      ],
+      tech:    ["LangGraph","Neo4j","Redis","FastAPI","React","Python"],
+      catTags: [{label:"AI/ML",clr:"p"},{label:"Backend",clr:"c"},{label:"LLM Infra",clr:"v"}]
     },
 
     /* ── PROJECT 3 ── */
@@ -967,7 +1028,7 @@ function renderCodeBlock(d){
     `dev = ${cl('AnkitSengupta')}()`,
     `dev.${fn('say_hi')}()<span class="cblink"></span>`,
   ].join('<br>');
-  const cgpa=d.stats?.cgpa||m.cgpa||8.35;
+  const cgpa=d.stats?.cgpa||m.cgpa||8.22;
   document.getElementById('codeblock-footer').innerHTML=[
     {e:'📊',l:`CGPA: ${cgpa}`},{e:'🏅',l:'Expo Selected'},
     {e:'🏆',l:'Kaggle Hackathon'},{e:'📦',l:`${PROJECT_COUNT} Projects`},{e:'🟢',l:'Available'},
