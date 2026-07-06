@@ -4,11 +4,12 @@
   Keywords: Ankit Sengupta, AI Engineer, Backend Developer, Python Developer India,
   RAG Pipelines, AI Agents, TensorFlow, OpenCV, YOLO, ESP32, Arduino,
   Django Developer, FastAPI, Android Developer, Kotlin, Firebase,
-  VIT Amaravati, CS AI ML 2028, CGPA 8.35, Smart Vision Aid,
+  VIT Amaravati, CS AI ML 2028, CGPA 8.22, Smart Vision Aid,
   Embedded IoT Developer, Machine Learning Engineer India,
   Full Stack Developer India, Open to Internship 2025 2026,
   LangChain, LangGraph, LangSmith, ChromaDB, XGBoost, RL Feedback Loop,
   Cyborg AI, Local AI, RAG, Vector Search, Flutter, Qdrant,
+  MeetMind, mesh_guard, AgentOps Security Mesh, Neo4j, Redis,
   ankit-sengupta05, ankit.sengupta05@gmail.com
 -->
 <div align="center">
@@ -37,7 +38,7 @@
 
 ![](https://img.shields.io/badge/VIT_Amaravati-00f0ff?style=flat-square&labelColor=0d0d0d)
 ![](https://img.shields.io/badge/Class_of_2028-a855f7?style=flat-square&labelColor=0d0d0d)
-![](https://img.shields.io/badge/CGPA_8.35-ff2d78?style=flat-square&labelColor=0d0d0d)
+![](https://img.shields.io/badge/CGPA_8.22-ff2d78?style=flat-square&labelColor=0d0d0d)
 ![](https://img.shields.io/badge/ankit.sengupta05%40gmail.com-ffd700?style=flat-square&labelColor=0d0d0d)
 
 <br/>
@@ -73,10 +74,10 @@
 🏅<br><b>VIT Internal Expo</b><br><sub>Smart Vision Aid Selected</sub>
 </td>
 <td align="center" style="padding:16px">
-🎓<br><b>CGPA 8.35</b><br><sub>B.Tech CS · AI & ML</sub>
+🎓<br><b>CGPA 8.22</b><br><sub>B.Tech CS · AI & ML</sub>
 </td>
 <td align="center" style="padding:16px">
-🤖<br><b>7 AI Projects</b><br><sub>Shipped & Deployed</sub>
+🤖<br><b>9 AI Projects</b><br><sub>Shipped & Deployed</sub>
 </td>
 <td align="center" style="padding:16px">
 📈<br><b>LangGraph</b><br><sub>8-Node AI Pipelines</sub>
@@ -95,14 +96,14 @@ class AnkitSengupta:
         self.name        = "Ankit Sengupta"
         self.role        = "AI Engineer & Backend Developer"
         self.university  = "VIT Amaravati · Class of 2028"
-        self.cgpa        = 8.35
+        self.cgpa        = 8.22
         self.skills      = {
             "AI / ML"      : ["RAG Pipelines", "AI Agents", "LangGraph", "LangChain",
                               "TensorFlow", "YOLO", "OpenCV", "XGBoost", "RL Feedback"],
             "LLM Infra"    : ["LangSmith", "ChromaDB", "FAISS", "Qdrant", "HuggingFace",
                               "Gemma-4", "MedGemma-4B", "Phi-3", "Prompt Engineering", "Vector Embeddings"],
             "Backend"      : ["Django", "FastAPI", "Flask", "Node.js",
-                              "MongoDB", "WebSockets", "APScheduler"],
+                              "MongoDB", "WebSockets", "APScheduler", "Neo4j", "Redis"],
             "Languages"    : ["Python", "JavaScript", "TypeScript", "Java", "C++", "Dart", "MATLAB"],
             "Mobile"       : ["Flutter", "Android", "Kotlin", "Firebase"],
             "Embedded"     : ["ESP32", "Arduino", "C++", "IoT Sensors"],
@@ -158,6 +159,8 @@ class AnkitSengupta:
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 ![WebSockets](https://img.shields.io/badge/WebSockets-010101?style=for-the-badge&logo=socketdotio&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![Neo4j](https://img.shields.io/badge/Neo4j-008CC1?style=for-the-badge&logo=neo4j&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
 
 **── 💻 Languages & Frameworks ──**
 
@@ -293,6 +296,48 @@ class AnkitSengupta:
 
 ---
 
+### 🧭 MeetMind &nbsp;&nbsp; ![](https://img.shields.io/badge/🏆_Microsoft_Hackathon-4285F4?style=for-the-badge)
+
+> *An AI Teams co-pilot that turns meeting transcripts into structured, searchable knowledge — surfacing decisions and action items instead of buried recordings*
+
+[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=FFD43B)](https://github.com/ankit-sengupta05/MeetMind)
+[![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://github.com/ankit-sengupta05/MeetMind)
+[![RAG](https://img.shields.io/badge/RAG_Pipelines-8A2BE2?style=for-the-badge&logo=openai&logoColor=white)](https://github.com/ankit-sengupta05/MeetMind)
+[![Microsoft Teams](https://img.shields.io/badge/Microsoft_Teams-6264A7?style=for-the-badge&logo=microsoftteams&logoColor=white)](https://github.com/ankit-sengupta05/MeetMind)
+
+| | |
+|:--|:--|
+| 🎙️ **Meeting Ingestion** | Captures & processes Teams meeting transcripts in real time into a structured knowledge base |
+| 🔍 **Natural-Language Search** | RAG-style retrieval lets users query past meetings conversationally instead of rewatching recordings |
+| ✅ **Action-Item Extraction** | Automatically surfaces decisions and follow-up tasks from meeting content |
+| 🏆 **Origin** | Built for a **Microsoft Hackathon** |
+
+> [View Repo →](https://github.com/ankit-sengupta05/MeetMind)
+
+---
+
+### 🛡️ mesh_guard — AgentOps Security Mesh &nbsp;&nbsp; ![](https://img.shields.io/badge/🏆_Security_Hackathon-DC143C?style=for-the-badge)
+
+> *A security OS for fleets of AI agents — modelling agent-to-agent behaviour as a graph to detect and respond to anomalies in real time*
+
+[![LangGraph](https://img.shields.io/badge/LangGraph-00D4AA?style=for-the-badge&logo=langchain&logoColor=white)](https://github.com/ankit-sengupta05/mesh_guard)
+[![Neo4j](https://img.shields.io/badge/Neo4j-008CC1?style=for-the-badge&logo=neo4j&logoColor=white)](https://github.com/ankit-sengupta05/mesh_guard)
+[![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)](https://github.com/ankit-sengupta05/mesh_guard)
+[![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://github.com/ankit-sengupta05/mesh_guard)
+[![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://github.com/ankit-sengupta05/mesh_guard)
+
+| | |
+|:--|:--|
+| 🕸️ **Agent Graph Modelling** | Neo4j graph database models agent-to-agent communication & trust relationships across the swarm |
+| ⚡ **Real-Time Event Pipeline** | Redis-backed low-latency state and event streaming for live monitoring of agent behaviour |
+| 🔗 **LangGraph Orchestration** | Coordinates detection and response workflows across the agent mesh |
+| 🖥️ **Security Dashboard** | React frontend surfaces anomalies, agent activity, and mesh health in real time |
+| 🏆 **Origin** | Built for a **security-focused hackathon** |
+
+> [View Repo →](https://github.com/ankit-sengupta05/mesh_guard)
+
+---
+
 ### 🕶️ Smart Vision Aid &nbsp;&nbsp; ![](https://img.shields.io/badge/🏅_VIT_Internal_Expo-SELECTED-FFD700?style=for-the-badge)
 
 > *Real-time AI-powered assistive smart glasses — giving spatial freedom to the visually impaired*
@@ -416,7 +461,7 @@ class AnkitSengupta:
 
 | 🏅 | 🎓 | 🤖 | 🔗 | 🔧 | 📱 |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| **VIT Internal Expo** | **CGPA 8.35** | **AI & ML** | **LLM Infra** | **Embedded IoT** | **Mobile Dev** |
+| **VIT Internal Expo** | **CGPA 8.22** | **AI & ML** | **LLM Infra** | **Embedded IoT** | **Mobile Dev** |
 | Smart Vision Aid Selected | B.Tech CS · 2028 | RAG · Agents · YOLO | LangGraph · Qdrant · RL | ESP32 · Arduino | Flutter · Kotlin · Firebase |
 
 <br/>
@@ -446,6 +491,8 @@ class AnkitSengupta:
 ║  🧠  Cyborg AGI — Local AGI OS · Gemma 4 Hackathon · V1.0 Stable    ║
 ║      MedGemma 4B · Adaptive Tutor · World Monitor · Mirofish Graph  ║
 ║  📈  NewsAlphaAI — LangGraph Stock Prediction ✅ Shipped             ║
+║  🧭  MeetMind — AI Teams Co-Pilot ✅ Shipped (Microsoft Hackathon)   ║
+║  🛡️  mesh_guard — AgentOps Security Mesh ✅ Shipped (Security Hack) ║
 ║  🤖  Autonomous AI Agent Systems with Tool Use                       ║
 ║  📚  Retrieval-Augmented Generation (RAG) Pipelines                  ║
 ║  ⚡  Scalable Backends  ·  FastAPI / Django / Node                   ║
@@ -512,9 +559,11 @@ class AnkitSengupta:
   Jarvis Voice | Whisper STT | Kokoro TTS | ACE Vault | Obsidian Compatible
   Gemma 4 Good Hackathon | Kaggle Google DeepMind | Health AI | Education AI
   Edge AI | Raspberry Pi AI | Jetson Nano | FHIR | Clinical AI | SigLIP Vision
-  VIT Amaravati B.Tech CSE AI ML 2028 | CGPA 8.35
+  VIT Amaravati B.Tech CSE AI ML 2028 | CGPA 8.22
   Smart Vision Aid | VIT Internal Expo | Assistive Technology
   NewsAlphaAI | Stock Prediction AI | LLM Trading System
+  MeetMind | Microsoft Teams AI Co-Pilot | Meeting Knowledge Management
+  mesh_guard | AgentOps Security Mesh | AI Agent Security | Neo4j | Redis
   Open to Internship Summer 2025 2026 | AI ML SWE Intern
   Hire Ankit Sengupta | ankit-sengupta05 | GitHub Profile
 -->
