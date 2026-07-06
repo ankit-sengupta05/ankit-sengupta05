@@ -10,6 +10,8 @@
   LangChain, LangGraph, LangSmith, ChromaDB, XGBoost, RL Feedback Loop,
   Cyborg AI, Local AI, RAG, Vector Search, Flutter, Qdrant,
   MeetMind, mesh_guard, AgentOps Security Mesh, Neo4j, Redis,
+  Docker, Kubernetes, Distributed Systems, Self-Healing Architecture,
+  Editor Cyclops, Video Editor, Motion Design, Content Strategist,
   ankit-sengupta05, ankit.sengupta05@gmail.com
 -->
 <div align="center">
@@ -23,7 +25,7 @@
 <br/>
 
 <!-- Animated role tagline -->
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=18&duration=2400&pause=800&color=FF2D78&center=true&vCenter=true&width=700&lines=🤖+AI+Engineer+%7C+RAG+Pipelines+%26+AI+Agents;📈+LangGraph+Orchestration+%7C+LLM+Reasoning+Systems;⚡+Backend+Dev+%7C+Django+%2B+FastAPI+%2B+Node.js;🔧+Embedded+IoT+%7C+ESP32+%2B+YOLO+%2B+OpenCV;🏅+Smart+Vision+Aid+—+Selected+for+VIT+Internal+Expo;🎓+VIT+Amaravati+CS+%28AI+%26+ML%29+·+Class+of+2028)](https://github.com/ankit-sengupta05)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=18&duration=2400&pause=800&color=FF2D78&center=true&vCenter=true&width=700&lines=🤖+AI+Engineer+%7C+RAG+Pipelines+%26+AI+Agents;📈+LangGraph+Orchestration+%7C+LLM+Reasoning+Systems;⚡+Backend+Dev+%7C+Django+%2B+FastAPI+%2B+Node.js;🐳+Distributed+Systems+%7C+Docker+%2B+Kubernetes;🔧+Embedded+IoT+%7C+ESP32+%2B+YOLO+%2B+OpenCV;🎬+Video+Editor+%7C+Editor+Cyclops+—+Short-Form+Specialist;🏅+Smart+Vision+Aid+—+Selected+for+VIT+Internal+Expo;🎓+VIT+Amaravati+CS+%28AI+%26+ML%29+·+Class+of+2028)](https://github.com/ankit-sengupta05)
 
 <br/>
 
@@ -31,7 +33,9 @@
 ![](https://img.shields.io/badge/🤖_AI_Engineer-00f0ff?style=for-the-badge&labelColor=0d0d0d)
 ![](https://img.shields.io/badge/📈_LangGraph_Dev-a855f7?style=for-the-badge&labelColor=0d0d0d)
 ![](https://img.shields.io/badge/⚡_Backend_Dev-ff6b35?style=for-the-badge&labelColor=0d0d0d)
+![](https://img.shields.io/badge/🐳_Distributed_Systems-2496ED?style=for-the-badge&labelColor=0d0d0d)
 ![](https://img.shields.io/badge/🔧_Embedded_IoT-ff2d78?style=for-the-badge&labelColor=0d0d0d)
+![](https://img.shields.io/badge/🎬_Editor_Cyclops-E4405F?style=for-the-badge&labelColor=0d0d0d)
 ![](https://img.shields.io/badge/🏅_VIT_Expo_Selected-ffd700?style=for-the-badge&labelColor=0d0d0d)
 
 <br/>
@@ -46,6 +50,8 @@
 [![Gmail](https://img.shields.io/badge/📧_Email_Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=000000)](mailto:ankit.sengupta05@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/💼_LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=000000)](https://linkedin.com/in/Sengupta-ankit)
 [![GitHub](https://img.shields.io/badge/🐙_Follow_Me-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=000000)](https://github.com/ankit-sengupta05)
+[![Editor Cyclops](https://img.shields.io/badge/🎬_Editor_Cyclops-000000?style=for-the-badge&logo=vercel&logoColor=white&labelColor=000000)](https://editor-cyclops.vercel.app/)
+[![Instagram](https://img.shields.io/badge/📸_@editorcyclops-E4405F?style=for-the-badge&logo=instagram&logoColor=white&labelColor=000000)](https://www.instagram.com/editorcyclops/)
 
 <br/>
 
@@ -64,7 +70,7 @@
 
 </div>
 
-> 🚀 I'm a **CS sophomore** at VIT Amaravati specializing in **AI & ML**, passionate about building **intelligent systems** that actually ship. From **LangGraph-orchestrated prediction pipelines** and **autonomous AI agents** to **ESP32-powered smart glasses** and **fully local privacy-first AI systems** — I build end-to-end, from silicon to software.
+> 🚀 I'm a **CS sophomore** at VIT Amaravati specializing in **AI & ML**, with hands-on experience designing **distributed systems**, **autonomous multi-agent pipelines**, and **high-performance AI-integrated applications**. Comfortable with **Docker containerization**, **Kubernetes orchestration**, and **horizontal scaling** for reliable, production-grade infrastructure. From **LangGraph-orchestrated prediction pipelines** and **self-healing AGI systems** to **ESP32-powered smart glasses** and a full **video editing & content strategy practice (Editor Cyclops)** — I build end-to-end, from silicon to software to screen.
 
 ### 🏆 Achievements
 
@@ -80,10 +86,10 @@
 🤖<br><b>9 AI Projects</b><br><sub>Shipped & Deployed</sub>
 </td>
 <td align="center" style="padding:16px">
-📈<br><b>LangGraph</b><br><sub>8-Node AI Pipelines</sub>
+📈<br><b>LangGraph</b><br><sub>8-Node Distributed Pipelines</sub>
 </td>
 <td align="center" style="padding:16px">
-📍<br><b>VIT Amaravati</b><br><sub>Class of 2028</sub>
+🎬<br><b>50+ Edits</b><br><sub>Editor Cyclops · 3+ Yrs</sub>
 </td>
 </tr>
 </table>
@@ -102,14 +108,17 @@ class AnkitSengupta:
                               "TensorFlow", "YOLO", "OpenCV", "XGBoost", "RL Feedback"],
             "LLM Infra"    : ["LangSmith", "ChromaDB", "FAISS", "Qdrant", "HuggingFace",
                               "Gemma-4", "MedGemma-4B", "Phi-3", "Prompt Engineering", "Vector Embeddings"],
+            "Systems"      : ["Distributed Systems", "Concurrency & Multi-threading", "Docker",
+                              "Kubernetes", "Self-Healing Architecture", "Fault Tolerance"],
             "Backend"      : ["Django", "FastAPI", "Flask", "Node.js",
                               "MongoDB", "WebSockets", "APScheduler", "Neo4j", "Redis"],
-            "Languages"    : ["Python", "JavaScript", "TypeScript", "Java", "C++", "Dart", "MATLAB"],
+            "Languages"    : ["Python", "C", "C++", "JavaScript", "TypeScript", "Java", "Dart", "MATLAB"],
             "Mobile"       : ["Flutter", "Android", "Kotlin", "Firebase"],
             "Embedded"     : ["ESP32", "Arduino", "C++", "IoT Sensors"],
+            "Video Editing": ["Premiere Pro", "After Effects", "DaVinci Resolve", "Motion Design"],
         }
         self.trophy      = "🏅 Selected · VIT Internal Expo 2025"
-        self.superpower  = "ML theory → production systems"
+        self.superpower  = "ML theory → production systems, and story → screen"
         self.status      = "🟢 Open to internships & collaborations!"
 
     def say_hi(self):
@@ -118,11 +127,37 @@ class AnkitSengupta:
 
 ---
 
+## 💼 Experience
+
+<div align="center">
+
+### 🎬 Freelance Video Editor & Content Strategist · *Editor Cyclops*
+**Self-Employed · Remote · 2023 — Present**
+
+</div>
+
+> Independently run an end-to-end video editing and content strategy practice under the brand **[Editor Cyclops](https://editor-cyclops.vercel.app/)**, serving **10+ creator-economy clients** with short-form content for Instagram Reels, YouTube Shorts, and brand campaigns.
+
+| | |
+|:--|:--|
+| 🎯 **Production Pipeline** | Manage end-to-end editing pipelines for 10+ concurrent clients — from brief and rough cut to final delivery across vertical, horizontal, and square formats |
+| ⚡ **Signature Style** | Fluent in **Devin Jatho-style editing** — rhythm-locked cuts, deliberate colour contrast, beat-synced motion, and raw, hook-first energy |
+| 🍎 **Motion & UI Design** | Apple-style **Glass UI / liquid-glass animations**, kinetic typography, and layered motion graphics for app promos and brand clips |
+| 📊 **Data-Driven Strategy** | Apply engagement data to editing decisions — pacing, hooks, and colour treatment tuned to platform-native performance |
+| 🚀 **Client Ownership** | Full project ownership and client-facing leadership; ships deliverables on tight deadlines across multiple concurrent workflows |
+| 📈 **Track Record** | **50+ projects delivered** · **100% client satisfaction / repeat clients** · tools mastered: Premiere Pro, After Effects, DaVinci Resolve |
+
+**Process:** Discovery Call → Creative Strategy (hook structure, pacing, colour) → Production (edit, motion graphics, sound design, VFX) → Delivery (revisions + platform-ready exports)
+
+[🎬 View Portfolio →](https://editor-cyclops.vercel.app/) &nbsp;·&nbsp; [📸 @editorcyclops on Instagram →](https://www.instagram.com/editorcyclops/)
+
+---
+
 ## 🛠️ Tech Arsenal
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=python,tensorflow,opencv,django,fastapi,flask,nodejs,mongodb,js,ts,java,kotlin,flutter,androidstudio,firebase,cpp,arduino,github,html,css&perline=10&theme=dark" alt="Ankit Sengupta Tech Stack"/>
+<img src="https://skillicons.dev/icons?i=python,tensorflow,opencv,django,fastapi,flask,nodejs,mongodb,js,ts,java,kotlin,flutter,androidstudio,firebase,cpp,arduino,docker,kubernetes,github,html,css&perline=10&theme=dark" alt="Ankit Sengupta Tech Stack"/>
 
 <br/><br/>
 
@@ -151,13 +186,23 @@ class AnkitSengupta:
 ![Phi-3](https://img.shields.io/badge/Phi--3_Mini-00ADEF?style=for-the-badge&logo=microsoft&logoColor=white)
 ![sentence--transformers](https://img.shields.io/badge/sentence--transformers-FF6B6B?style=for-the-badge&logo=python&logoColor=white)
 
+**── 🐳 Systems & Infrastructure ──**
+
+![Distributed Systems](https://img.shields.io/badge/Distributed_Systems-2496ED?style=for-the-badge&logo=serverless&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
+![Concurrency](https://img.shields.io/badge/Concurrency_%26_Multithreading-4B8BBE?style=for-the-badge&logo=python&logoColor=white)
+![Self-Healing](https://img.shields.io/badge/Self--Healing_Architecture-00BFA5?style=for-the-badge&logo=statuspage&logoColor=white)
+![Fault Tolerance](https://img.shields.io/badge/Fault_Tolerance-FF6600?style=for-the-badge&logo=cloudflare&logoColor=white)
+![WebSockets](https://img.shields.io/badge/WebSockets-010101?style=for-the-badge&logo=socketdotio&logoColor=white)
+![REST APIs](https://img.shields.io/badge/REST_APIs-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+
 **── 🌐 Backend & Web ──**
 
 ![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
 ![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![WebSockets](https://img.shields.io/badge/WebSockets-010101?style=for-the-badge&logo=socketdotio&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
 ![Neo4j](https://img.shields.io/badge/Neo4j-008CC1?style=for-the-badge&logo=neo4j&logoColor=white)
 ![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
@@ -169,6 +214,7 @@ class AnkitSengupta:
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=white)
 ![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
 ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
@@ -187,6 +233,15 @@ class AnkitSengupta:
 ![ESP32](https://img.shields.io/badge/ESP32-E7352C?style=for-the-badge&logo=espressif&logoColor=white)
 ![Arduino](https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white)
 
+**── 🎬 Video Editing & Motion Design (Editor Cyclops) ──**
+
+![Premiere Pro](https://img.shields.io/badge/Premiere_Pro-9999FF?style=for-the-badge&logo=adobepremierepro&logoColor=white)
+![After Effects](https://img.shields.io/badge/After_Effects-9999FF?style=for-the-badge&logo=adobeaftereffects&logoColor=white)
+![DaVinci Resolve](https://img.shields.io/badge/DaVinci_Resolve-233A51?style=for-the-badge&logo=davinciresolve&logoColor=white)
+![Devin Jatho Style](https://img.shields.io/badge/Devin_Jatho_Style-FF2D78?style=for-the-badge&logo=youtubeshorts&logoColor=white)
+![Motion Design](https://img.shields.io/badge/Motion_Design-A855F7?style=for-the-badge&logo=aftereffects&logoColor=white)
+![Apple Glass UI](https://img.shields.io/badge/Apple_Glass_UI-000000?style=for-the-badge&logo=apple&logoColor=white)
+
 </div>
 
 ---
@@ -203,7 +258,7 @@ class AnkitSengupta:
 
 ### 🧠 Cyborg AGI &nbsp;&nbsp; [![](https://img.shields.io/badge/🏆_Gemma_4_Good_Hackathon-Kaggle_×_Google_DeepMind-FF6B00?style=for-the-badge)](https://www.kaggle.com/competitions/gemma-4-good-hackathon) &nbsp; [![](https://img.shields.io/badge/✅_V1.0_Stable-SUCCESS-00D4AA?style=for-the-badge)](https://github.com/ankit-sengupta05/CyborgAI)
 
-> *A full-stack, locally-hosted Autonomous General Intelligence OS — your own private Jarvis that reasons, remembers, monitors the world, teaches, and assists with clinical questions, without sending a single byte to the cloud.*
+> *A high-performance, modular, locally-hosted Autonomous General Intelligence OS — self-healing, horizontally scalable, and containerized — that reasons, remembers, monitors the world, teaches, and assists with clinical questions, without sending a single byte to the cloud.*
 
 [![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)](https://github.com/ankit-sengupta05/CyborgAI)
 [![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://github.com/ankit-sengupta05/CyborgAI)
@@ -211,6 +266,7 @@ class AnkitSengupta:
 [![MedGemma](https://img.shields.io/badge/MedGemma_4B-00BFA5?style=for-the-badge&logo=google&logoColor=white)](https://github.com/ankit-sengupta05/CyborgAI)
 [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=FFD43B)](https://github.com/ankit-sengupta05/CyborgAI)
 [![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://github.com/ankit-sengupta05/CyborgAI)
+[![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)](https://github.com/ankit-sengupta05/CyborgAI)
 [![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)](https://github.com/ankit-sengupta05/CyborgAI)
 
 | | |
@@ -222,6 +278,8 @@ class AnkitSengupta:
 | 🕸️ **Mirofish Graph** | Force-directed semantic knowledge graph with Leiden community detection — visualize your entire knowledge base |
 | 🎙️ **Jarvis Voice** | Local Whisper STT + Kokoro/ONNX TTS — full duplex with interrupt support |
 | 📂 **ACE Knowledge Vault** | Obsidian-compatible vault (Atlas / Calendar / Efforts) — every AI interaction compounds into personal memory |
+| 🛠️ **Self-Healing Ops** | Automatic health monitoring, failure detection, and service restart logic maintaining uptime across all distributed pipeline components |
+| 🐳 **Containerized Deploy** | Fully Dockerized services with Kubernetes concepts applied for service orchestration and horizontal scaling |
 | 🚀 **Edge Deployment** | Runs on Windows 10/11, Android, Raspberry Pi 5, and NVIDIA Jetson — no cloud required |
 | ⚡ **Performance** | 60+ tokens/sec (RTX 3070+) · MedGemma 4B ~6GB VRAM · Cold start < 8s · 10,000+ graph nodes tested |
 
@@ -233,7 +291,7 @@ class AnkitSengupta:
 │   Frontend Shell (Flutter 3.x)                                          │
 │   Dashboard · World Monitor · Mirofish Graph · Jarvis Voice · Settings  │
 │       ↕  REST / WebSocket                                               │
-│   Backend Intelligence (FastAPI + Python)                               │
+│   Backend Intelligence (FastAPI + Python, Dockerized, self-healing)     │
 │   General Chat │ MedGemma 4B │ Adaptive Tutor │ KGE │ World Monitor    │
 │       ↕                                                                 │
 │   Knowledge Vault (ACE / Obsidian Structure)                            │
@@ -244,7 +302,7 @@ class AnkitSengupta:
 │   🎓 Education → Gemma 4 Tutor → OCR Grader → Quiz Generator           │
 │   🌍 Resilience → GDELT + USGS → World Monitor → Instability Index     │
 │                                                                         │
-│   DEPLOY: Windows · Android · Raspberry Pi · Jetson · Docker           │
+│   DEPLOY: Docker · Kubernetes concepts · Windows · Android · Pi · Jetson│
 +─────────────────────────────────────────────────────────────────────────+
 ```
 
@@ -254,7 +312,7 @@ class AnkitSengupta:
 
 ### 📈 NewsAlphaAI &nbsp;&nbsp; ![](https://img.shields.io/badge/✅_Completed-SUCCESS-00D4AA?style=for-the-badge)
 
-> *AI-powered stock direction prediction using real-time news, LLM reasoning, RAG pipelines, LangGraph orchestration, and reinforcement learning feedback*
+> *AI-powered stock direction prediction using an 8-node distributed agent pipeline — real-time news, LLM reasoning, RAG pipelines, concurrency & multi-threading, and reinforcement learning feedback*
 
 [![LangGraph](https://img.shields.io/badge/LangGraph-00D4AA?style=for-the-badge&logo=langchain&logoColor=white)](#)
 [![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)](#)
@@ -266,11 +324,11 @@ class AnkitSengupta:
 
 | | |
 |:--|:--|
-| 🔗 **Orchestration** | 8-node LangGraph pipeline: fetch → sentiment → embed → stock → RAG → LLM → ML → ensemble |
+| 🔗 **Orchestration** | 8-node **distributed** LangGraph pipeline: fetch → sentiment → embed → stock → RAG → LLM → ML → ensemble, using concurrency & multi-threading to parallelize data ingestion and analysis across asynchronous nodes |
 | 🧠 **LLM Core** | Gemma-3-4B-IT (local HuggingFace) for news reasoning & directional prediction |
 | 📦 **RAG Layer** | ChromaDB / FAISS vector store + `sentence-transformers all-MiniLM-L6-v2` embeddings |
-| 🤖 **ML Model** | XGBoost binary direction classifier — combines with LLM for ensemble final call |
-| 🔁 **RL Feedback** | Custom reward loop: record → resolve → retrain XGBoost on real outcomes after 3 days |
+| 🤖 **ML Model** | Reward-weighted XGBoost binary direction classifier — combines with LLM for ensemble final call |
+| 🔁 **RL Feedback** | Custom reward loop: record → resolve → retrain XGBoost on real outcomes after 3 days, improving prediction reliability at scale |
 | 🌐 **Backend** | FastAPI + WebSockets (real-time pipeline streaming) + APScheduler background jobs |
 | 📊 **Frontend** | React + Vite + TailwindCSS trading UI — candlestick charts, live price feed, sentiment gauge |
 | 🔍 **Observability** | LangSmith tracing for full LangGraph pipeline visibility |
@@ -328,7 +386,7 @@ class AnkitSengupta:
 
 | | |
 |:--|:--|
-| 🕸️ **Agent Graph Modelling** | Neo4j graph database models agent-to-agent communication & trust relationships across the swarm |
+| 🕸️ **Agent Graph Modelling** | Neo4j graph database models agent-to-agent communication and trust relationships across the swarm |
 | ⚡ **Real-Time Event Pipeline** | Redis-backed low-latency state and event streaming for live monitoring of agent behaviour |
 | 🔗 **LangGraph Orchestration** | Coordinates detection and response workflows across the agent mesh |
 | 🖥️ **Security Dashboard** | React frontend surfaces anomalies, agent activity, and mesh health in real time |
@@ -340,7 +398,7 @@ class AnkitSengupta:
 
 ### 🕶️ Smart Vision Aid &nbsp;&nbsp; ![](https://img.shields.io/badge/🏅_VIT_Internal_Expo-SELECTED-FFD700?style=for-the-badge)
 
-> *Real-time AI-powered assistive smart glasses — giving spatial freedom to the visually impaired*
+> *Real-time AI-powered assistive smart glasses with synchronized multi-threaded ultrasonic telemetry — giving spatial freedom to the visually impaired*
 
 [![ESP32](https://img.shields.io/badge/ESP32-E7352C?style=for-the-badge&logo=espressif&logoColor=white)](#)
 [![YOLO](https://img.shields.io/badge/YOLO-00FFFF?style=for-the-badge&logo=yolo&logoColor=black)](#)
@@ -350,10 +408,10 @@ class AnkitSengupta:
 
 | | |
 |:--|:--|
-| 📷 **Vision System** | 3× ESP32-CAM modules + ultrasonic sensors → full 360° spatial coverage |
-| ⚡ **AI Detection** | YOLO real-time object detection for precise obstacle identification |
-| 📱 **Mobile App** | Android companion with live audio alerts & navigation feedback |
-| 🔧 **Embedded Core** | C++ on Arduino IDE for ultra-low-latency performance |
+| 📷 **Vision System** | 3× synchronized ESP32-CAM modules + ultrasonic sensors → full 360° spatial coverage with multi-threaded telemetry |
+| ⚡ **AI Detection** | YOLO real-time object detection for sub-100ms obstacle identification |
+| 📱 **Mobile App** | Android companion (Java/Kotlin) with live audio alerts & navigation feedback |
+| 🔧 **Embedded Core** | C++ on Arduino IDE for ultra-low-latency, concurrency-safe performance |
 | 🏅 **Achievement** | **Selected for VIT Amaravati Internal Expo** |
 
 ---
@@ -370,9 +428,9 @@ class AnkitSengupta:
 
 | | |
 |:--|:--|
-| 🔬 **ML Pipeline** | Crop yield prediction — TensorFlow + Pandas |
-| 👁️ **Computer Vision** | OpenCV real-time crop disease detection |
-| 🌐 **Backend** | Django/Flask marketplace connecting farmers with buyers |
+| 🔬 **ML Pipeline** | TensorFlow model trained on crop dataset; Pandas for feature engineering and yield trend analysis |
+| 👁️ **Computer Vision** | OpenCV disease detection pipeline with confidence scoring |
+| 🌐 **Backend Marketplace** | Django/Flask REST API connecting farmers with buyers; order management, inventory tracking, and ML-driven pricing logic |
 
 ---
 
@@ -445,7 +503,7 @@ class AnkitSengupta:
 
 <br/><br/>
 
-[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=ankit-sengupta05&theme=tokyo-night&hide_border=true&bg_color=0d1117&color=00f0ff&line=a855f7&point=ff2d78&area=true&area_color=00f0ff)](https://github.com/ashutosh00710/github-readme-activity-graph)
+[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=ankit-sengupta05&theme=tokyo-night&hide_border=true&bg_color=0d1117&color=00f0ff&line=a855f7&point=ff2d78&area=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
 
 </div>
 
@@ -459,10 +517,10 @@ class AnkitSengupta:
 
 <br/>
 
-| 🏅 | 🎓 | 🤖 | 🔗 | 🔧 | 📱 |
+| 🏅 | 🎓 | 🤖 | 🔗 | 🐳 | 🎬 |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| **VIT Internal Expo** | **CGPA 8.22** | **AI & ML** | **LLM Infra** | **Embedded IoT** | **Mobile Dev** |
-| Smart Vision Aid Selected | B.Tech CS · 2028 | RAG · Agents · YOLO | LangGraph · Qdrant · RL | ESP32 · Arduino | Flutter · Kotlin · Firebase |
+| **VIT Internal Expo** | **CGPA 8.22** | **AI & ML** | **LLM Infra** | **Distributed Systems** | **Editor Cyclops** |
+| Smart Vision Aid Selected | B.Tech CS · 2028 | RAG · Agents · YOLO | LangGraph · Qdrant · RL | Docker · Kubernetes | 50+ Edits · 3+ Yrs |
 
 <br/>
 
@@ -470,11 +528,15 @@ class AnkitSengupta:
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-Advanced-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
 ![LangChain](https://img.shields.io/badge/LangChain%2FGraph-Advanced-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
 ![Django](https://img.shields.io/badge/Django-Advanced-092E20?style=for-the-badge&logo=django&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-Intermediate-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-Intermediate-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
 ![Flutter](https://img.shields.io/badge/Flutter-Intermediate-02569B?style=for-the-badge&logo=flutter&logoColor=white)
 ![XGBoost](https://img.shields.io/badge/XGBoost-Intermediate-FF6600?style=for-the-badge&logo=python&logoColor=white)
 ![Android](https://img.shields.io/badge/Android-Intermediate-3DDC84?style=for-the-badge&logo=android&logoColor=white)
 ![ESP32](https://img.shields.io/badge/ESP32-Intermediate-E7352C?style=for-the-badge&logo=espressif&logoColor=white)
 ![OpenCV](https://img.shields.io/badge/OpenCV-Advanced-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
+![Premiere Pro](https://img.shields.io/badge/Premiere_Pro-Advanced-9999FF?style=for-the-badge&logo=adobepremierepro&logoColor=white)
+![After Effects](https://img.shields.io/badge/After_Effects-Advanced-9999FF?style=for-the-badge&logo=adobeaftereffects&logoColor=white)
 
 </div>
 
@@ -490,13 +552,16 @@ class AnkitSengupta:
 ╠══════════════════════════════════════════════════════════════════════╣
 ║  🧠  Cyborg AGI — Local AGI OS · Gemma 4 Hackathon · V1.0 Stable    ║
 ║      MedGemma 4B · Adaptive Tutor · World Monitor · Mirofish Graph  ║
-║  📈  NewsAlphaAI — LangGraph Stock Prediction ✅ Shipped             ║
+║      Self-healing · Dockerized · Kubernetes-orchestrated             ║
+║  📈  NewsAlphaAI — LangGraph Distributed Stock Prediction ✅ Shipped ║
 ║  🧭  MeetMind — AI Teams Co-Pilot ✅ Shipped (Microsoft Hackathon)   ║
 ║  🛡️  mesh_guard — AgentOps Security Mesh ✅ Shipped (Security Hack) ║
+║  🎬  Editor Cyclops — Video Editing & Content Strategy ✅ Ongoing    ║
 ║  🤖  Autonomous AI Agent Systems with Tool Use                       ║
 ║  📚  Retrieval-Augmented Generation (RAG) Pipelines                  ║
-║  ⚡  Scalable Backends  ·  FastAPI / Django / Node                   ║
+║  ⚡  Scalable Distributed Backends · FastAPI / Django / Node         ║
 ║  🔗  LLM Orchestration  ·  LangGraph / LangChain                     ║
+║  🐳  Containerization & Orchestration · Docker / Kubernetes          ║
 ╚══════════════════════════════════════════════════════════════════════╝
 ```
 
@@ -511,7 +576,7 @@ class AnkitSengupta:
 <img src="https://user-images.githubusercontent.com/74038190/212284158-e840e285-664b-44d7-b79b-e264b5e54825.gif" width="180" alt="Connect with Ankit Sengupta"/>
 
 **✨ Currently open to:**
-`💼 Internships` &nbsp;·&nbsp; `🤖 AI/ML Collabs` &nbsp;·&nbsp; `📂 Open Source` &nbsp;·&nbsp; `🏆 Hackathons`
+`💼 Internships` &nbsp;·&nbsp; `🤖 AI/ML Collabs` &nbsp;·&nbsp; `📂 Open Source` &nbsp;·&nbsp; `🏆 Hackathons` &nbsp;·&nbsp; `🎬 Video Editing Projects`
 
 <br/>
 
@@ -519,7 +584,11 @@ class AnkitSengupta:
 &nbsp;
 [![LinkedIn](https://img.shields.io/badge/💼_Connect_on_LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=000)](https://linkedin.com/in/Sengupta-ankit)
 &nbsp;
-[![Instagram](https://img.shields.io/badge/📸_Follow_on_Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white&labelColor=000)](https://www.instagram.com/ankit_sengupta/)
+[![GitHub](https://img.shields.io/badge/🐙_Follow_Me-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=000)](https://github.com/ankit-sengupta05)
+&nbsp;
+[![Editor Cyclops](https://img.shields.io/badge/🎬_Editor_Cyclops_Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white&labelColor=000)](https://editor-cyclops.vercel.app/)
+&nbsp;
+[![Instagram](https://img.shields.io/badge/📸_@editorcyclops-E4405F?style=for-the-badge&logo=instagram&logoColor=white&labelColor=000)](https://www.instagram.com/editorcyclops/)
 
 <br/><br/>
 
@@ -531,7 +600,7 @@ class AnkitSengupta:
 
 <br/>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=13&duration=4000&pause=1000&color=A855F7&center=true&vCenter=true&width=700&lines=Thanks+for+visiting+my+profile!+🙌;Always+building%2C+always+learning+⚡;From+silicon+to+software%2C+end-to-end+🔧;LangGraph+·+RAG+·+RL+·+YOLO+·+ESP32+🤖;Cyborg+AGI+—+Your+private+Jarvis%2C+fully+local+🧠;Let's+create+something+amazing+together!+🚀;Open+to+internships+%26+collaborations+💼)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=13&duration=4000&pause=1000&color=A855F7&center=true&vCenter=true&width=700&lines=Thanks+for+visiting+my+profile!+🙌;Always+building%2C+always+learning+⚡;From+silicon+to+software%2C+end-to-end+🔧;LangGraph+·+RAG+·+RL+·+YOLO+·+ESP32+🤖;Distributed+Systems+·+Docker+·+Kubernetes+🐳;Cyborg+AGI+—+Your+private+Jarvis%2C+fully+local+🧠;Editor+Cyclops+—+Short-Form+%26+Motion+Design+🎬;Let's+create+something+amazing+together!+🚀;Open+to+internships+%26+collaborations+💼)](https://git.io/typing-svg)
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:00f0ff,50:a855f7,100:ff2d78&height=3&section=footer"/>
 
@@ -554,6 +623,8 @@ class AnkitSengupta:
   React Developer | Vite | TailwindCSS | WebSockets
   Android Developer India | Kotlin Developer | Firebase
   Full Stack Developer | JavaScript TypeScript | MongoDB
+  Distributed Systems | Docker | Kubernetes | Self-Healing Architecture
+  Fault Tolerance | Concurrency | Multi-threading | Horizontal Scaling
   Local AI | Privacy AI | Offline AI | Cyborg AGI | Autonomous Intelligence OS
   AGI OS | MedGemma | Adaptive Tutor | World Monitor | Mirofish Knowledge Graph
   Jarvis Voice | Whisper STT | Kokoro TTS | ACE Vault | Obsidian Compatible
@@ -564,6 +635,9 @@ class AnkitSengupta:
   NewsAlphaAI | Stock Prediction AI | LLM Trading System
   MeetMind | Microsoft Teams AI Co-Pilot | Meeting Knowledge Management
   mesh_guard | AgentOps Security Mesh | AI Agent Security | Neo4j | Redis
+  Editor Cyclops | Video Editor Mumbai | Motion Designer | Content Strategist
+  Devin Jatho Style Editing | Apple Glass UI Animation | Short-Form Content
+  Instagram Reels Editor | YouTube Shorts Editor | Premiere Pro | After Effects
   Open to Internship Summer 2025 2026 | AI ML SWE Intern
   Hire Ankit Sengupta | ankit-sengupta05 | GitHub Profile
 -->
