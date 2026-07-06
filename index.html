@@ -191,8 +191,40 @@ section{position:relative;z-index:2;padding:110px 72px;}
 .bc-v{background:rgba(168,85,247,.1);border:1px solid rgba(168,85,247,.3);}
 .bc-g{background:rgba(0,255,136,.1);border:1px solid rgba(0,255,136,.3);}
 .bc-y{background:rgba(255,215,0,.1);border:1px solid rgba(255,215,0,.3);}
+/* EXPERIENCE */
+#experience{background:var(--bg3);}
+.exwrap{margin-top:48px;display:grid;grid-template-columns:1fr;gap:26px;}
+.exrow{display:grid;grid-template-columns:220px 1fr;gap:34px;background:var(--bg4);border:1px solid var(--border);border-radius:6px;padding:30px;position:relative;overflow:hidden;transition:all .3s;}
+.exrow:hover{border-color:rgba(0,240,255,.2);box-shadow:0 14px 40px rgba(0,0,0,.4);}
+.exrow::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--p),var(--v),var(--c));}
+.exside{display:flex;flex-direction:column;gap:8px;border-right:1px solid var(--border);padding-right:24px;}
+.exdate{font-family:var(--ffm);font-size:.62rem;color:var(--c);letter-spacing:.12em;text-transform:uppercase;}
+.exstat{display:inline-flex;align-items:center;gap:5px;font-family:var(--ffm);font-size:.58rem;color:var(--g);letter-spacing:.1em;}
+.exstat::before{content:'';width:5px;height:5px;background:var(--g);border-radius:50%;animation:pulse 1.5s infinite;}
+.exstic{display:flex;flex-direction:column;gap:10px;margin-top:6px;}
+.exstn{font-family:var(--ffh);font-size:1.4rem;font-weight:900;color:var(--p);}
+.exstl{font-family:var(--ffm);font-size:.54rem;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;}
+.exhead{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;margin-bottom:6px;flex-wrap:wrap;}
+.extitle{font-family:var(--ffh);font-size:1.05rem;font-weight:700;color:var(--txt);}
+.exrole{font-family:var(--ffm);font-size:.68rem;color:var(--p);letter-spacing:.06em;margin-top:4px;}
+.exsummary{font-size:.96rem;line-height:1.75;color:rgba(226,240,255,.72);margin:14px 0 18px;}
+.exsummary strong{color:var(--c);}
+.exli{display:flex;flex-direction:column;gap:10px;margin-bottom:18px;}
+.exit{display:flex;gap:10px;align-items:flex-start;}
+.exib{width:19px;height:19px;border-radius:3px;background:rgba(255,45,120,.1);border:1px solid rgba(255,45,120,.3);display:flex;align-items:center;justify-content:center;font-size:.72rem;flex-shrink:0;margin-top:1px;}
+.exit p{font-size:.9rem;line-height:1.62;color:rgba(226,240,255,.7);}
+.exit p strong{color:var(--txt);}
+.exproc{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px;}
+.exps{display:flex;align-items:center;gap:6px;font-family:var(--ffm);font-size:.58rem;color:var(--muted);letter-spacing:.08em;padding:6px 12px;border:1px solid var(--border);border-radius:2px;background:var(--bg3);}
+.exarr{color:var(--p);}
+.extags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:18px;}
+.exlinks{display:flex;gap:8px;flex-wrap:wrap;}
+.exquote{margin-top:16px;padding:14px 18px;border-left:2px solid var(--v);background:rgba(168,85,247,.04);border-radius:0 4px 4px 0;}
+.exquote p{font-size:.86rem;line-height:1.6;color:rgba(226,240,255,.62);font-style:italic;}
+.exquote span{display:block;margin-top:6px;font-family:var(--ffm);font-size:.58rem;color:var(--v);font-style:normal;letter-spacing:.06em;}
+@media(max-width:800px){.exrow{grid-template-columns:1fr;}.exside{border-right:none;border-bottom:1px solid var(--border);padding-right:0;padding-bottom:18px;flex-direction:row;flex-wrap:wrap;align-items:center;}.exstic{flex-direction:row;margin-top:0;}}
 /* BUILDING */
-#building{background:var(--bg3);}
+#building{background:var(--bg2);}
 .bldg{display:grid;grid-template-columns:repeat(auto-fit,minmax(258px,1fr));gap:19px;margin-top:48px;}
 .bca{background:var(--bg4);border:1px solid var(--border);border-radius:6px;padding:27px;position:relative;overflow:hidden;transition:all .3s;}
 .bca:hover{border-color:rgba(0,240,255,.18);box-shadow:0 8px 26px rgba(0,0,0,.35);}
@@ -204,7 +236,7 @@ section{position:relative;z-index:2;padding:110px 72px;}
 .bst{display:inline-flex;align-items:center;gap:5px;margin-top:13px;font-family:var(--ffm);font-size:.57rem;color:var(--g);letter-spacing:.14em;}
 .bst::before{content:'';width:5px;height:5px;background:var(--g);border-radius:50%;animation:pulse 1.5s infinite;}
 /* STATS */
-#stats{background:var(--bg2);}
+#stats{background:var(--bg3);}
 .stca{display:grid;grid-template-columns:repeat(auto-fit,minmax(205px,1fr));gap:17px;margin-top:48px;}
 .stc{background:var(--bg3);border:1px solid var(--border);border-radius:6px;padding:24px;text-align:center;transition:all .3s;position:relative;overflow:hidden;}
 .stc::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;}
@@ -275,6 +307,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:26px 72px
     <li><a href="#about">About</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
     <li><a href="#building">Building</a></li>
     <li><a href="#stats">Stats</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -342,25 +375,29 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:26px 72px
   <div class="sttl rev">From Silicon <span style="color:var(--c)">to Software</span></div>
   <div class="abg">
     <div class="abt revL">
-      <p>I'm a <strong>CS sophomore at VIT Amaravati</strong> specialising in AI &amp; ML. I don't just study machine learning — I ship it. My work spans the full stack: C++ firmware on ESP32 microcontrollers, scalable Django/FastAPI backends, and TensorFlow models in production.</p>
+      <p>I'm a <strong>CS sophomore at VIT Amaravati</strong> specialising in AI &amp; ML, with hands-on experience designing <strong>distributed systems</strong>, <strong>autonomous multi-agent pipelines</strong>, and high-performance AI-integrated applications. I don't just study machine learning — I ship it. My work spans the full stack: C++ firmware on ESP32 microcontrollers, scalable Django/FastAPI backends containerised with <strong>Docker</strong> and orchestrated with <strong>Kubernetes</strong> concepts, and TensorFlow models in production.</p>
       <p>My flagship project — <strong>Smart Vision Aid</strong> — is AI-powered smart glasses with 3× ESP32-CAM modules and YOLO object detection, giving the visually impaired 360° spatial awareness. It was <strong>selected for VIT Amaravati's Internal Expo 2025</strong>.</p>
-      <p>Most recently I built <strong>CyborgAI</strong> — a fully local AGI OS submitted to the <strong>Kaggle × Google DeepMind Gemma 4 Good Hackathon</strong>, combining MedGemma 4B for on-device clinical reasoning, an adaptive education tutor, Mirofish knowledge graph, and Jarvis voice engine — all running offline on your own hardware.</p>
-      <p>My superpower: <strong>ML theory → production systems</strong>. I understand the math, write the code, and deploy the product.</p>
+      <p>Most recently I built <strong>CyborgAI</strong> — a fully local, self-healing AGI OS submitted to the <strong>Kaggle × Google DeepMind Gemma 4 Good Hackathon</strong>, combining MedGemma 4B for on-device clinical reasoning, an adaptive education tutor, Mirofish knowledge graph, and Jarvis voice engine — all running offline on your own hardware with automatic health monitoring and failure recovery.</p>
+      <p>Alongside engineering, I run <strong>Editor Cyclops</strong> — a freelance video editing and content strategy practice serving 10+ creator-economy clients with short-form content for Instagram Reels and YouTube Shorts.</p>
+      <p>My superpower: <strong>ML theory → production systems</strong>. I understand the math, write the code, deploy the product — and cut the story together.</p>
       <div class="abadg">
         <div class="abad aby">🏅 VIT Internal Expo — Selected</div>
         <div class="abad abc" id="about-cgpa">🎓 CGPA 8.22 · B.Tech CS AI&amp;ML</div>
         <div class="abad abp">🏆 Kaggle × Google DeepMind Hackathon</div>
         <div class="abad abv">📍 VIT Amaravati · Class of 2028</div>
+        <div class="abad" style="border-color:rgba(255,45,120,.3);color:var(--p);background:rgba(255,45,120,.04)">🎬 Editor Cyclops · 50+ Edits Delivered</div>
       </div>
       <div class="bars">
         <div class="brow"><div class="bhead"><span class="bnm">Python / AI Engineering</span><span class="bpc">90%</span></div><div class="btr"><div class="bfi" data-w="90" style="background:linear-gradient(90deg,#00f0ff,#a855f7)"></div></div></div>
         <div class="brow"><div class="bhead"><span class="bnm">LangGraph / LangChain / RAG</span><span class="bpc">84%</span></div><div class="btr"><div class="bfi" data-w="84" style="background:linear-gradient(90deg,#00D4AA,#a855f7)"></div></div></div>
         <div class="brow"><div class="bhead"><span class="bnm">TensorFlow / OpenCV / YOLO / XGBoost</span><span class="bpc">82%</span></div><div class="btr"><div class="bfi" data-w="82" style="background:linear-gradient(90deg,#a855f7,#ff2d78)"></div></div></div>
         <div class="brow"><div class="bhead"><span class="bnm">Django / FastAPI / Flask / Node.js</span><span class="bpc">80%</span></div><div class="btr"><div class="bfi" data-w="80" style="background:linear-gradient(90deg,#00f0ff,#00ff88)"></div></div></div>
+        <div class="brow"><div class="bhead"><span class="bnm">Docker / Kubernetes / Distributed Systems</span><span class="bpc">76%</span></div><div class="btr"><div class="bfi" data-w="76" style="background:linear-gradient(90deg,#2496ED,#326CE5)"></div></div></div>
         <div class="brow"><div class="bhead"><span class="bnm">Flutter / Dart / Firebase</span><span class="bpc">75%</span></div><div class="btr"><div class="bfi" data-w="75" style="background:linear-gradient(90deg,#61DAFB,#8a2be2)"></div></div></div>
         <div class="brow"><div class="bhead"><span class="bnm">Android / Kotlin / Firebase</span><span class="bpc">72%</span></div><div class="btr"><div class="bfi" data-w="72" style="background:linear-gradient(90deg,#ff2d78,#ffd700)"></div></div></div>
         <div class="brow"><div class="bhead"><span class="bnm">ESP32 / Arduino / Embedded C++</span><span class="bpc">70%</span></div><div class="btr"><div class="bfi" data-w="70" style="background:linear-gradient(90deg,#ffd700,#a855f7)"></div></div></div>
         <div class="brow"><div class="bhead"><span class="bnm">JavaScript / TypeScript / React</span><span class="bpc">70%</span></div><div class="btr"><div class="bfi" data-w="70" style="background:linear-gradient(90deg,#00ff88,#00f0ff)"></div></div></div>
+        <div class="brow"><div class="bhead"><span class="bnm">Video Editing / Motion Design (Editor Cyclops)</span><span class="bpc">88%</span></div><div class="btr"><div class="bfi" data-w="88" style="background:linear-gradient(90deg,#ff2d78,#a855f7)"></div></div></div>
       </div>
     </div>
     <div class="cbl revR">
@@ -383,7 +420,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:26px 72px
 <section id="skills">
   <div class="sl rev">02 // Tech Arsenal</div>
   <div class="sttl rev">What I <span style="color:var(--c)">Build With</span></div>
-  <p class="skintro rev">A full-stack polyglot — fluent across AI/ML, LLM orchestration, backend systems, mobile, and embedded firmware. Every skill below has been used in a shipped project, not just studied.</p>
+  <p class="skintro rev">A full-stack polyglot — fluent across AI/ML, LLM orchestration, distributed systems, backend infrastructure, mobile, embedded firmware, and motion design. Every skill below has been used in a shipped project, not just studied.</p>
   <div class="skg" id="skills-grid"></div>
 </section>
 
@@ -395,16 +432,24 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:26px 72px
   <div class="pgrid" id="projects-grid"></div>
 </section>
 
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="sl rev">04 // Experience</div>
+  <div class="sttl rev">Where I've <span style="color:var(--g)">Worked</span></div>
+  <p class="skintro rev">Engineering builds and a freelance creative practice, running side by side.</p>
+  <div class="exwrap" id="experience-list"></div>
+</section>
+
 <!-- BUILDING -->
 <section id="building">
-  <div class="sl rev">04 // On My Workbench</div>
+  <div class="sl rev">05 // On My Workbench</div>
   <div class="sttl rev">Currently <span style="color:var(--g)">Building</span></div>
   <div class="bldg" id="building-grid"></div>
 </section>
 
 <!-- STATS -->
 <section id="stats">
-  <div class="sl rev">05 // GitHub Activity</div>
+  <div class="sl rev">06 // GitHub Activity</div>
   <div class="sttl rev">Code <span style="color:var(--c)">Metrics</span></div>
   <div class="stca" id="stats-cards"></div>
   <div class="ghr rev" style="margin-top:26px">
@@ -418,9 +463,9 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:26px 72px
 <!-- CONTACT -->
 <section id="contact">
   <div class="ctop rev">
-    <div class="sl" style="justify-content:center">06 // Contact</div>
+    <div class="sl" style="justify-content:center">07 // Contact</div>
     <div class="sttl">Let's Build <span style="background:linear-gradient(90deg,var(--c),var(--v),var(--p));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Something Together</span></div>
-    <p>Actively seeking internships in AI/ML, backend dev &amp; embedded systems for 2025–26.<br>Response time: usually within a few hours.</p>
+    <p>Actively seeking internships in AI/ML, backend dev &amp; distributed systems for 2025–26, plus freelance video editing projects via Editor Cyclops.<br>Response time: usually within a few hours.</p>
   </div>
   <div style="max-width:800px;margin:0 auto">
     <div class="cgri rev" id="contact-cards"></div>
@@ -451,6 +496,8 @@ const DATA = {
     linkedin:   "https://linkedin.com/in/Sengupta-ankit",
     github:     "https://github.com/ankit-sengupta05",
     instagram:  "https://www.instagram.com/ankit_sengupta/",
+    editorCyclops: "https://editor-cyclops.vercel.app/",
+    editorCyclopsInstagram: "https://www.instagram.com/editorcyclops/",
     trophy:     "🏅 VIT Internal Expo 2025",
     power:      "ML theory → production systems",
     status:     "🟢 Open to internships!",
@@ -458,9 +505,11 @@ const DATA = {
       "AI Engineer — RAG Pipelines & AI Agents",
       "LangGraph · LLM Orchestration · ChromaDB",
       "Backend Dev — Django · FastAPI · Node.js",
+      "Distributed Systems — Docker · Kubernetes",
       "Embedded IoT — ESP32 · YOLO · OpenCV",
       "🏆 CyborgAI — Kaggle × Google DeepMind Hackathon",
       "📈 NewsAlphaAI — LLM Stock Prediction System",
+      "🎬 Editor Cyclops — Short-Form Video & Motion Design",
       "Flutter · Dart · Local AGI OS",
       "VIT Amaravati · CS AI&ML · Class of 2028",
       "🟢 Open to Internships 2025–26"
@@ -469,7 +518,7 @@ const DATA = {
 
   stats: {
     cgpa:    8.22,
-    domains: 8,
+    domains: 9,
     classOf: 2028
   },
 
@@ -479,7 +528,36 @@ const DATA = {
     "📂 Open Source",
     "🏆 Hackathons",
     "🔬 Research",
-    "⚡ Freelance"
+    "⚡ Freelance",
+    "🎬 Video Editing Projects"
+  ],
+
+  experience: [
+    {
+      title: "Freelance Video Editor & Content Strategist",
+      brand: "Editor Cyclops · Self-Employed",
+      dates: "2023 — Present",
+      location: "Remote · Mumbai",
+      status: "Actively Taking Clients",
+      statNum: "50+",
+      statLabel: "Projects Delivered",
+      summary: "Independently run an end-to-end video editing and content strategy practice under the brand <strong>Editor Cyclops</strong>, serving 10+ creator-economy clients with short-form content for Instagram Reels, YouTube Shorts, and brand campaigns. Fluent in <strong>Devin Jatho-style editing</strong> — rhythm-locked cuts, deliberate colour contrast, and hook-first structure — plus Apple-style Glass UI motion design for brand and app promos.",
+      highlights: [
+        {icon:"🎯", title:"Production Pipeline", detail:"Independently manage end-to-end editing pipelines for 10+ concurrent creator clients — brief → rough cut → motion graphics → colour grade → final delivery across vertical, horizontal & square formats"},
+        {icon:"⚡", title:"Signature Style", detail:"Fluent in Devin Jatho-style editing — rhythm-locked cuts, deliberate colour contrast, beat-synced motion, raw hook-first energy for Reels & Shorts"},
+        {icon:"🍎", title:"Motion & UI Design", detail:"Apple-style Glass UI / liquid-glass animations, kinetic typography, and layered motion graphics for app promos and brand clips"},
+        {icon:"📊", title:"Data-Driven Decisions", detail:"Apply engagement data to editing decisions — pacing, hooks and colour treatment tuned to drive measurable engagement growth"},
+        {icon:"🚀", title:"Client Ownership", detail:"Full project ownership and client-facing leadership; ships deliverables on tight deadlines across multiple concurrent client workflows"},
+        {icon:"🏆", title:"Track Record", detail:"50+ projects delivered · 100% client satisfaction / repeat clients · tools mastered: Premiere Pro, After Effects, DaVinci Resolve"}
+      ],
+      process: ["📞 Discovery Call","🧠 Creative Strategy","✂️ Production","🚀 Delivery"],
+      tags: ["Premiere Pro","After Effects","DaVinci Resolve","Devin Jatho Style","Motion Design","Apple Glass UI","Colour Grading","Client Management"],
+      quote: {text:"Ankit's short-form edits are on another level. The transitions and motion work for our brand Reels were cinematic — engagement tripled within a week.", author:"— Rohan Mehta, Brand Director"},
+      links: [
+        {label:"🎬 Portfolio", href:"https://editor-cyclops.vercel.app/"},
+        {label:"📸 @editorcyclops", href:"https://www.instagram.com/editorcyclops/"}
+      ]
+    }
   ],
 
   skillCategories: [
@@ -517,6 +595,18 @@ const DATA = {
       ]
     },
     {
+      icon: "🐳", title: "Systems & Infrastructure",
+      colorVar: "#2496ED", gradient: "linear-gradient(90deg,#2496ED,#326CE5)",
+      sub: "// Distributed systems · Containers · Resilience",
+      tags: [
+        {label:"Distributed Systems",cls:"tc"}, {label:"Concurrency & Multi-threading",cls:"tc"},
+        {label:"Docker",cls:"tc"},              {label:"Kubernetes",cls:"tc"},
+        {label:"Self-Healing Architecture",cls:"tc"}, {label:"Fault Tolerance",cls:"tc"},
+        {label:"WebSockets",cls:"tc"},          {label:"REST APIs",cls:"tc"},
+        {label:"Horizontal Scaling",cls:"tc"},  {label:"Service Orchestration",cls:"tc"}
+      ]
+    },
+    {
       icon: "🌐", title: "Backend & APIs",
       colorVar: "var(--v)", gradient: "linear-gradient(90deg,#a855f7,#ff2d78)",
       sub: "// REST · Async · Databases · Microservices",
@@ -539,9 +629,10 @@ const DATA = {
         {label:"Python",cls:"tp"},      {label:"JavaScript",cls:"tp"},
         {label:"TypeScript",cls:"tp"},  {label:"Java",cls:"tp"},
         {label:"Kotlin",cls:"tp"},      {label:"Dart",cls:"tp"},
-        {label:"C++",cls:"tp"},         {label:"C (Embedded)",cls:"tp"},
-        {label:"MATLAB",cls:"tp"},      {label:"HTML5",cls:"tp"},
-        {label:"CSS3",cls:"tp"},        {label:"Bash / Shell",cls:"tp"}
+        {label:"C",cls:"tp"},           {label:"C++",cls:"tp"},
+        {label:"C (Embedded)",cls:"tp"},{label:"MATLAB",cls:"tp"},
+        {label:"HTML5",cls:"tp"},       {label:"CSS3",cls:"tp"},
+        {label:"Bash / Shell",cls:"tp"}
       ]
     },
     {
@@ -584,6 +675,18 @@ const DATA = {
       ]
     },
     {
+      icon: "🎬", title: "Video Editing & Motion Design",
+      colorVar: "var(--p)", gradient: "linear-gradient(90deg,#ff2d78,#a855f7)",
+      sub: "// Editor Cyclops · Short-form · Motion graphics",
+      tags: [
+        {label:"Premiere Pro",cls:"tp"},   {label:"After Effects",cls:"tp"},
+        {label:"DaVinci Resolve",cls:"tp"},{label:"Devin Jatho Style",cls:"tp"},
+        {label:"Motion Design",cls:"tp"},  {label:"Apple Glass UI",cls:"tp"},
+        {label:"Colour Grading",cls:"tp"}, {label:"Beat Sync Editing",cls:"tp"},
+        {label:"Kinetic Typography",cls:"tp"}, {label:"Reels / Shorts",cls:"tp"}
+      ]
+    },
+    {
       icon: "🛠️", title: "Tools & Dev Environment",
       colorVar: "var(--c)", gradient: "linear-gradient(90deg,#a855f7,#00f0ff)",
       sub: "// Version control · Build · Deploy",
@@ -591,9 +694,9 @@ const DATA = {
         {label:"Git / GitHub",cls:"tc"},    {label:"VS Code",cls:"tc"},
         {label:"PyCharm",cls:"tc"},         {label:"Android Studio",cls:"tc"},
         {label:"Arduino IDE",cls:"tc"},     {label:"Docker",cls:"tc"},
-        {label:"Postman",cls:"tc"},         {label:"Jupyter Notebook",cls:"tc"},
-        {label:"Vercel",cls:"tc"},          {label:"GitHub Actions",cls:"tc"},
-        {label:"Linux / Ubuntu",cls:"tc"}
+        {label:"Kubernetes",cls:"tc"},      {label:"Postman",cls:"tc"},
+        {label:"Jupyter Notebook",cls:"tc"},{label:"Vercel",cls:"tc"},
+        {label:"GitHub Actions",cls:"tc"},  {label:"Linux / Ubuntu",cls:"tc"}
       ]
     }
   ],
@@ -606,8 +709,8 @@ const DATA = {
       featured:     true,
       title:       "NewsAlphaAI",
       emoji:       "📈",
-      subtitle:    "AI-powered stock direction prediction — LangGraph orchestration, LLM reasoning, RAG pipelines & RL feedback loop",
-      description: "An end-to-end AI trading intelligence system: 8 LangGraph nodes orchestrate the full pipeline from news ingestion through Gemma-3 LLM reasoning, ChromaDB RAG retrieval, and XGBoost ML prediction to an ensemble final signal. A custom reinforcement learning feedback loop retrains the model on real 3-day outcomes. Real-time updates stream via WebSocket to a React trading UI with live candlestick charts, sentiment gauge, and RL stats.",
+      subtitle:    "AI-powered stock direction prediction — distributed LangGraph orchestration, LLM reasoning, RAG pipelines & RL feedback loop",
+      description: "An end-to-end AI trading intelligence system: 8 LangGraph nodes orchestrate the full pipeline as a distributed agent system, using concurrency and multi-threading to parallelize news ingestion, sentiment analysis, and low-latency data processing across asynchronous nodes — from Gemma-3 LLM reasoning and ChromaDB RAG retrieval to a reward-weighted XGBoost ML prediction and ensemble final signal. A custom reinforcement learning feedback loop retrains the model on real 3-day outcomes for improved reliability at scale. Real-time updates stream via WebSocket to a React trading UI with live candlestick charts, sentiment gauge, and RL stats.",
       github:      "https://github.com/ankit-sengupta05",
       demo:        "",
       categories:  ["ai","backend","llm"],
@@ -615,25 +718,25 @@ const DATA = {
       iconBg:      "rgba(0,212,170,0.07)",
       iconBorderColor: "rgba(0,212,170,0.25)",
       highlights: [
-        {icon:"🔗", color:"g", title:"LangGraph Pipeline",    detail:"8-node orchestration: fetch_news → analyse_sentiment → embed_store → fetch_stock → rag_retrieve → llm_reason → ml_predict → final_predict"},
+        {icon:"🔗", color:"g", title:"Distributed LangGraph Pipeline",    detail:"8-node distributed orchestration: fetch_news → analyse_sentiment → embed_store → fetch_stock → rag_retrieve → llm_reason → ml_predict → final_predict, with concurrency & multi-threading for parallel data ingestion across asynchronous nodes"},
         {icon:"🧠", color:"c", title:"LLM Core",              detail:"Gemma-3-4B-IT running locally via HuggingFace; reasons over news context to produce directional prediction with confidence scores"},
         {icon:"📦", color:"v", title:"RAG Layer",             detail:"ChromaDB / FAISS vector store with sentence-transformers all-MiniLM-L6-v2; retrieves semantically relevant past articles per ticker"},
-        {icon:"🤖", color:"p", title:"ML Ensemble",           detail:"XGBoost binary direction classifier combined with LLM output; ensemble final call with HIGH/MEDIUM/LOW confidence thresholds"},
-        {icon:"🔁", color:"y", title:"RL Feedback Loop",      detail:"Resolves predictions after 3 days, assigns +1/−1/0 rewards, retrains XGBoost when 20+ labelled samples accumulate per ticker"},
+        {icon:"🤖", color:"p", title:"ML Ensemble",           detail:"Reward-weighted XGBoost binary direction classifier combined with LLM output; ensemble final call with HIGH/MEDIUM/LOW confidence thresholds"},
+        {icon:"🔁", color:"y", title:"RL Feedback Loop",      detail:"Resolves predictions after 3 days, assigns +1/−1/0 rewards, retrains XGBoost when 20+ labelled samples accumulate per ticker — improving prediction reliability at scale"},
         {icon:"📊", color:"c", title:"React Trading UI",      detail:"Vite + TailwindCSS · candlestick charts, live price feed via WebSocket, pipeline step stepper, sentiment gauge, RL accuracy panel"}
       ],
       specs: [
         {label:"LLM",         value:"Gemma-3-4B-IT (local)"},
-        {label:"Orchestration",value:"LangGraph 8-Node"},
+        {label:"Orchestration",value:"LangGraph 8-Node Distributed"},
         {label:"Vector DB",   value:"ChromaDB / FAISS"},
-        {label:"ML Model",    value:"XGBoost Classifier"},
+        {label:"ML Model",    value:"Reward-Weighted XGBoost"},
         {label:"RL Loop",     value:"Custom Policy-Gradient"},
         {label:"Backend",     value:"FastAPI + WebSockets"},
         {label:"Observability",value:"LangSmith Tracing"},
         {label:"Frontend",    value:"React + Vite + Tailwind"}
       ],
-      tech:    ["LangGraph","LangChain","LangSmith","Gemma-3","ChromaDB","FAISS","XGBoost","FastAPI","React","Vite","TailwindCSS","WebSockets","HuggingFace","sentence-transformers","APScheduler","yfinance"],
-      catTags: [{label:"AI/ML",clr:"c"},{label:"LLM Infra",clr:"g"},{label:"Backend",clr:"v"},{label:"Frontend",clr:"p"}]
+      tech:    ["LangGraph","LangChain","LangSmith","Gemma-3","ChromaDB","FAISS","XGBoost","FastAPI","React","Vite","TailwindCSS","WebSockets","HuggingFace","sentence-transformers","APScheduler","yfinance","Concurrency","Multi-threading"],
+      catTags: [{label:"AI/ML",clr:"c"},{label:"LLM Infra",clr:"g"},{label:"Distributed",clr:"v"},{label:"Frontend",clr:"p"}]
     },
 
     /* ── PROJECT 1b — FEATURED: CyborgAI ── */
@@ -642,8 +745,8 @@ const DATA = {
       featured:     true,
       title:       "CyborgAI",
       emoji:       "🤖",
-      subtitle:    "Privacy-first local AGI OS — Gemma 4 · MedGemma 4B · Flutter · FastAPI · Kaggle × Google DeepMind Hackathon",
-      description: "A full-stack, locally-hosted Autonomous General Intelligence OS built for the Kaggle × Google DeepMind Gemma 4 Good Hackathon. Unifies a Flutter 3.x dashboard, FastAPI intelligence backend, and an ACE/Obsidian-compatible Knowledge Vault — all running on your own hardware with zero cloud dependency. Features: MedGemma 4B for on-device clinical reasoning, adaptive education tutor, Mirofish knowledge graph, Jarvis voice engine, and World Monitor geopolitical intelligence.",
+      subtitle:    "Privacy-first, self-healing local AGI OS — Gemma 4 · MedGemma 4B · Docker · Kubernetes · Flutter · FastAPI · Kaggle × Google DeepMind Hackathon",
+      description: "A high-performance, modular AI OS built for the Kaggle × Google DeepMind Gemma 4 Good Hackathon. Architected as a locally-hosted, containerised system with a Flutter 3.x dashboard, FastAPI intelligence backend, and an ACE/Obsidian-compatible Knowledge Vault — all running on your own hardware with zero cloud dependency. Ships with a self-healing system: automatic health monitoring, failure detection, and service restart logic maintaining uptime across all distributed pipeline components. Fully Dockerized for reproducible deployment, with Kubernetes concepts applied for service orchestration and horizontal scaling. Features: MedGemma 4B for on-device clinical reasoning, adaptive education tutor, Mirofish knowledge graph with Leiden community detection, Jarvis voice engine, and World Monitor geopolitical intelligence.",
       github:      "https://github.com/ankit-sengupta05/CyborgAI",
       demo:        "",
       categories:  ["ai","llm","mobile","backend"],
@@ -656,6 +759,8 @@ const DATA = {
         {icon:"🌍", color:"y", title:"World Monitor Dashboard",     detail:"AI-synthesised geopolitical & disaster intelligence via GDELT + USGS feeds; real-time vector map with proprietary country instability scoring updated every 5 minutes"},
         {icon:"🕸️", color:"v", title:"Mirofish Knowledge Graph",   detail:"Force-directed semantic graph with Leiden community detection, semantic triplet extraction, interactive physics controls — tested to 10,000+ nodes with zero-deadlock Riverpod state engine"},
         {icon:"🎙️", color:"p", title:"Jarvis Voice Engine",        detail:"Local Whisper STT + Kokoro/ONNX TTS for fully offline voice interaction with interrupt support and emotion-aware speech synthesis — no cloud transcription"},
+        {icon:"🛠️", color:"g", title:"Self-Healing Architecture",  detail:"Automatic health monitoring, failure detection, and service restart logic maintaining uptime across all distributed pipeline components"},
+        {icon:"🐳", color:"c", title:"Containerised & Orchestrated", detail:"Fully Dockerized services for reproducible deployment; Kubernetes concepts applied for service orchestration and horizontal scaling"},
         {icon:"⚡", color:"c", title:"Edge-First Architecture",     detail:"Runs on Windows, Android, Raspberry Pi 5, and NVIDIA Jetson; 60+ tok/sec on RTX 3070, <8s cold start, MedGemma 4B at ~6GB VRAM (4-bit quantized), full offline capability"}
       ],
       specs: [
@@ -664,12 +769,12 @@ const DATA = {
         {label:"Backend",      value:"FastAPI + Python"},
         {label:"Knowledge",    value:"ACE / Obsidian Vault"},
         {label:"Inference",    value:"60+ tok/sec (RTX 3070)"},
-        {label:"Deployment",   value:"Docker · Edge · Android"},
-        {label:"Hackathon",    value:"Gemma 4 Good — Kaggle"},
-        {label:"Tracks",       value:"Health · Education · Climate"}
+        {label:"Deployment",   value:"Docker · Kubernetes · Edge"},
+        {label:"Resilience",   value:"Self-Healing / Auto-Restart"},
+        {label:"Hackathon",    value:"Gemma 4 Good — Kaggle"}
       ],
-      tech:    ["Flutter","Dart","FastAPI","Python","Gemma 4","MedGemma 4B","Whisper","Kokoro TTS","ChromaDB","FAISS","LangChain","Firebase","Docker","Riverpod","GDELT API","USGS API"],
-      catTags: [{label:"AI/ML",clr:"c"},{label:"LLM Infra",clr:"v"},{label:"Mobile",clr:"g"},{label:"Backend",clr:"p"}]
+      tech:    ["Flutter","Dart","FastAPI","Python","Gemma 4","MedGemma 4B","Whisper","Kokoro TTS","ChromaDB","FAISS","LangChain","Firebase","Docker","Kubernetes","Riverpod","GDELT API","USGS API","Self-Healing Systems"],
+      catTags: [{label:"AI/ML",clr:"c"},{label:"LLM Infra",clr:"v"},{label:"Distributed",clr:"g"},{label:"Backend",clr:"p"}]
     },
 
     /* ── PROJECT 2 — FEATURED: Smart Vision Aid ── */
@@ -679,17 +784,17 @@ const DATA = {
       title:       "Smart Vision Aid",
       emoji:       "🕶️",
       subtitle:    "AI-powered assistive smart glasses — real-time 360° spatial awareness for the visually impaired",
-      description: "An end-to-end embedded AI system giving visually impaired users real-time 360° spatial awareness. Three ESP32-CAM modules feed live video into a YOLO object detection pipeline. Ultrasonic sensors provide proximity data. The Android companion app converts all detections into instant audio alerts and turn-by-turn navigation guidance. All firmware runs in C++ for microsecond-level response.",
+      description: "An end-to-end embedded AI system giving visually impaired users real-time 360° spatial awareness. Three synchronized, multi-threaded ESP32-CAM modules feed live video into a YOLO object detection pipeline for sub-100ms detection. Ultrasonic sensors provide proximity telemetry. The Android companion app (Java/Kotlin) converts all detections into instant audio alerts and turn-by-turn navigation guidance. All firmware runs in concurrency-safe C++ for microsecond-level response.",
       github:      "https://github.com/ankit-sengupta05",
       demo:        "",
       categories:  ["embedded","ai","mobile"],
       badge:       "🏅 VIT Amaravati Internal Expo — Selected 2025",
       iconBg:      "rgba(0,240,255,0.07)",
       highlights: [
-        {icon:"📷", color:"c", title:"Vision System",    detail:"3× ESP32-CAM OV2640 modules + HC-SR04 ultrasonic sensors providing full 360° overlapping spatial coverage"},
-        {icon:"⚡", color:"p", title:"AI Detection",     detail:"YOLOv5/v8 real-time object detection; identifies obstacles, people & hazards with precise bounding box coordinates"},
-        {icon:"📱", color:"g", title:"Android Companion",detail:"Receives live Wi-Fi detection data, delivers contextual audio alerts & navigation feedback via TTS engine"},
-        {icon:"🔧", color:"v", title:"Embedded Core",    detail:"Interrupt-driven C++ on Arduino IDE; sensor fusion pipeline with <50ms end-to-end latency"},
+        {icon:"📷", color:"c", title:"Vision System",    detail:"3× synchronized ESP32-CAM OV2640 modules with multi-threaded telemetry + HC-SR04 ultrasonic sensors providing full 360° overlapping spatial coverage"},
+        {icon:"⚡", color:"p", title:"AI Detection",     detail:"YOLOv5/v8 real-time object detection; identifies obstacles, people & hazards with sub-100ms bounding box detection"},
+        {icon:"📱", color:"g", title:"Android Companion",detail:"Java/Kotlin app receives live Wi-Fi detection data, delivers contextual audio alerts & navigation feedback via TTS engine"},
+        {icon:"🔧", color:"v", title:"Embedded Core",    detail:"Interrupt-driven, concurrency-safe C++ on Arduino IDE; sensor fusion pipeline with <50ms end-to-end latency"},
         {icon:"🏅", color:"y", title:"Achievement",      detail:"Selected for VIT Amaravati Internal Expo 2025 as a standout assistive technology innovation"}
       ],
       specs: [
@@ -698,9 +803,9 @@ const DATA = {
         {label:"AI Model",  value:"YOLOv5 / YOLOv8"},
         {label:"Latency",   value:"<50ms End-to-End"},
         {label:"Link",      value:"ESP32 Wi-Fi Stream"},
-        {label:"App",       value:"Android + TTS Alerts"}
+        {label:"App",       value:"Android (Java/Kotlin) + TTS"}
       ],
-      tech:    ["ESP32-CAM","YOLO","OpenCV","Android / Kotlin","C++","Arduino IDE","Wi-Fi Streaming","Ultrasonic Sensors"],
+      tech:    ["ESP32-CAM","YOLO","OpenCV","Android / Kotlin","Java","C++","Arduino IDE","Wi-Fi Streaming","Ultrasonic Sensors","Multi-threading"],
       catTags: [{label:"Embedded",clr:"c"},{label:"AI/ML",clr:"p"},{label:"Mobile",clr:"g"}]
     },
 
@@ -886,13 +991,18 @@ const DATA = {
   building: [
     {
       icon:"🤖", title:"CyborgAI — AGI OS",
-      desc:"Full local AGI platform with MedGemma 4B clinical reasoning, Adaptive Education Tutor, Mirofish knowledge graph, Jarvis Voice Engine, and World Monitor. Built for Kaggle × Google DeepMind Gemma 4 Good Hackathon 2026.",
+      desc:"Full local, self-healing AGI platform with MedGemma 4B clinical reasoning, Adaptive Education Tutor, Mirofish knowledge graph, Jarvis Voice Engine, and World Monitor. Dockerized, Kubernetes-orchestrated. Built for Kaggle × Google DeepMind Gemma 4 Good Hackathon 2026.",
       status:"Hackathon Submitted"
     },
     {
       icon:"📈", title:"NewsAlphaAI — Live",
-      desc:"LangGraph 8-node stock prediction pipeline with Gemma-3 LLM, ChromaDB RAG, XGBoost, and a custom RL feedback loop that retrains on real outcome data every 3 days. React + WebSocket trading UI.",
+      desc:"Distributed 8-node LangGraph stock prediction pipeline with Gemma-3 LLM, ChromaDB RAG, XGBoost, and a custom RL feedback loop that retrains on real outcome data every 3 days. React + WebSocket trading UI.",
       status:"Actively Shipping"
+    },
+    {
+      icon:"🎬", title:"Editor Cyclops — Video Editing",
+      desc:"Freelance short-form video editing & content strategy practice for 10+ creator clients — Devin Jatho-style edits, Apple Glass UI motion design, Reels & Shorts.",
+      status:"Actively Taking Clients"
     },
     {
       icon:"🤖", title:"Autonomous AI Agent Systems",
@@ -905,8 +1015,8 @@ const DATA = {
       status:"Active Development"
     },
     {
-      icon:"⚡", title:"Scalable Backend Architectures",
-      desc:"High-performance async APIs with FastAPI and Django, focusing on horizontal scalability, Celery task queues, Redis caching, and clean microservices patterns deployable on cloud infrastructure.",
+      icon:"🐳", title:"Distributed & Containerised Backends",
+      desc:"High-performance async APIs with FastAPI and Django, focused on distributed systems, fault tolerance, and horizontal scalability — Docker containerization, Kubernetes concepts, Celery task queues, Redis caching.",
       status:"Ongoing"
     }
   ],
@@ -915,10 +1025,11 @@ const DATA = {
     skills: {
       "AI/ML":       ["RAG", "Agents", "YOLO", "XGBoost"],
       "LLM Infra":   ["LangGraph", "ChromaDB", "Gemma-4"],
+      "Systems":     ["Docker", "Kubernetes", "Distributed"],
       "Backend":     ["Django", "FastAPI", "Node"],
       "Mobile":      ["Flutter", "Android", "Firebase"],
-      "Languages":   ["Python", "Dart", "JS", "C++"],
-      "Embedded":    ["ESP32", "Arduino", "C++"]
+      "Languages":   ["Python", "C++", "Dart", "JS"],
+      "Editing":     ["Premiere Pro", "After Effects", "DaVinci"]
     }
   }
 
@@ -935,7 +1046,7 @@ let mx=0,my=0,rx=0,ry=0;
 document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cur.style.left=mx+'px';cur.style.top=my+'px';});
 (function loop(){rx+=(mx-rx)*.11;ry+=(my-ry)*.11;cur2.style.left=rx+'px';cur2.style.top=ry+'px';requestAnimationFrame(loop);})();
 function hookCursor(){
-  document.querySelectorAll('a,button,.pcard,.skc,.cca,.opp,.pfb,.skt,.bca').forEach(el=>{
+  document.querySelectorAll('a,button,.pcard,.skc,.cca,.opp,.pfb,.skt,.bca,.exrow').forEach(el=>{
     if(el._ch) return; el._ch=true;
     el.addEventListener('mouseenter',()=>{cur.style.cssText+=';width:18px;height:18px;background:var(--p);';cur2.style.cssText+=';width:46px;height:46px;border-color:rgba(255,45,120,.5);';});
     el.addEventListener('mouseleave',()=>{cur.style.cssText+=';width:9px;height:9px;background:var(--c);';cur2.style.cssText+=';width:32px;height:32px;border-color:rgba(0,240,255,.45);';});
@@ -1031,7 +1142,7 @@ function renderCodeBlock(d){
   const cgpa=d.stats?.cgpa||m.cgpa||8.22;
   document.getElementById('codeblock-footer').innerHTML=[
     {e:'📊',l:`CGPA: ${cgpa}`},{e:'🏅',l:'Expo Selected'},
-    {e:'🏆',l:'Kaggle Hackathon'},{e:'📦',l:`${PROJECT_COUNT} Projects`},{e:'🟢',l:'Available'},
+    {e:'🏆',l:'Kaggle Hackathon'},{e:'📦',l:`${PROJECT_COUNT} Projects`},{e:'🎬',l:'Editor Cyclops'},{e:'🟢',l:'Available'},
   ].map(p=>`<span class="cblpill"><span class="pdot"></span>${p.e} ${p.l}</span>`).join('');
 }
 
@@ -1040,7 +1151,7 @@ function renderHeroStats(d){
   const m=d.meta||{},s=d.stats||{};
   document.getElementById('hero-stats').innerHTML=[
     {n:PROJECT_COUNT+'+',l:'AI Projects'},{n:CGPA,l:'CGPA'},
-    {n:'🏅',l:'Expo Selected'},{n:'🏆',l:'Kaggle Hackathon'},{n:s.domains||8,l:'Tech Domains'},
+    {n:'🏅',l:'Expo Selected'},{n:'🏆',l:'Kaggle Hackathon'},{n:s.domains||9,l:'Tech Domains'},
   ].map((it,i)=>(i?'<div class="hdi"></div>':'')+`<div><div class="hsn">${it.n}</div><div class="hsl">${it.l}</div></div>`).join('');
   document.getElementById('hero-gh').href=GITHUB;
   document.getElementById('about-cgpa').textContent=`🎓 CGPA ${s.cgpa||m.cgpa} · B.Tech CS AI&ML`;
@@ -1058,6 +1169,33 @@ function renderSkills(d){
       <div class="skttl" style="color:${c.colorVar}">${esc(c.title)}</div>
       <div class="sksub">${esc(c.sub)}</div>
       <div class="skts">${(c.tags||[]).map(t=>`<span class="skt ${t.cls}">${esc(t.label)}</span>`).join('')}</div>
+    </div>`).join('');
+}
+
+/* ══════════ RENDER: EXPERIENCE ══════════ */
+function renderExperience(d){
+  document.getElementById('experience-list').innerHTML=(d.experience||[]).map((e,i)=>`
+    <div class="exrow rev" style="transition-delay:${i*.08}s">
+      <div class="exside">
+        <div class="exdate">${esc(e.dates)}</div>
+        <div style="font-family:var(--ffm);font-size:.6rem;color:var(--muted);letter-spacing:.08em">${esc(e.location||'')}</div>
+        <div class="exstat">${esc(e.status||'')}</div>
+        <div class="exstic">
+          <div><div class="exstn">${esc(e.statNum||'')}</div><div class="exstl">${esc(e.statLabel||'')}</div></div>
+        </div>
+      </div>
+      <div>
+        <div class="exhead">
+          <div><div class="extitle">${esc(e.title)}</div><div class="exrole">${esc(e.brand)}</div></div>
+        </div>
+        <div class="exsummary">${e.summary}</div>
+        <div class="exli">${(e.highlights||[]).map(h=>`
+          <div class="exit"><div class="exib">${h.icon}</div><p><strong>${esc(h.title)}</strong> — ${esc(h.detail)}</p></div>`).join('')}</div>
+        ${e.process?`<div class="exproc">${e.process.map((p,pi)=>`<span class="exps">${esc(p)}</span>${pi<e.process.length-1?'<span class="exarr">→</span>':''}`).join('')}</div>`:''}
+        <div class="extags">${(e.tags||[]).map(t=>`<span class="ptp">${esc(t)}</span>`).join('')}</div>
+        ${e.quote?`<div class="exquote"><p>"${esc(e.quote.text)}"</p><span>${esc(e.quote.author)}</span></div>`:''}
+        <div class="exlinks" style="margin-top:16px">${(e.links||[]).map(l=>`<a href="${l.href}" target="_blank" class="plk">${esc(l.label)} ↗</a>`).join('')}</div>
+      </div>
     </div>`).join('');
 }
 
@@ -1284,7 +1422,8 @@ function renderStats(d){
     {n:CGPA,     l:'CGPA',            g:'linear-gradient(135deg,var(--v),var(--p))'},
     {n:'🏅',     l:'Expo Selected',   g:'linear-gradient(135deg,var(--p),var(--y))'},
     {n:'🏆',     l:'Kaggle Hackathon',g:'linear-gradient(135deg,var(--y),#8a2be2)'},
-    {n:d.stats?.domains||8,l:'Tech Domains',g:'linear-gradient(135deg,var(--g),var(--c))'},
+    {n:'50+',    l:'Edits · Editor Cyclops',g:'linear-gradient(135deg,#ff2d78,#a855f7)'},
+    {n:d.stats?.domains||9,l:'Tech Domains',g:'linear-gradient(135deg,var(--g),var(--c))'},
   ].map((c,i)=>`
     <div class="stc rev" style="transition-delay:${i*.08}s">
       <div style="position:absolute;top:0;left:0;right:0;height:2px;background:${c.g}"></div>
@@ -1300,7 +1439,8 @@ function renderContact(d){
     {href:`mailto:${m.email}`,hov:'rgba(255,45,120,.28)',icb:'rgba(255,45,120,.28)',icbg:'rgba(255,45,120,.06)',clr:'var(--p)',icon:'📧',title:'Email — Primary Contact',detail:m.email,note:'Best for internship enquiries, project collabs & opportunities',act:'Send email'},
     {href:m.linkedin,hov:'rgba(0,240,255,.28)',icb:'rgba(0,240,255,.28)',icbg:'rgba(0,240,255,.06)',clr:'var(--c)',icon:'💼',title:'LinkedIn — Professional',detail:(m.linkedin||'').replace('https://',''),note:'Connect for networking, recommendations & opportunities',act:'View profile'},
     {href:m.github,hov:'rgba(168,85,247,.28)',icb:'rgba(168,85,247,.28)',icbg:'rgba(168,85,247,.06)',clr:'var(--v)',icon:'🐙',title:'GitHub — Code & Projects',detail:(m.github||'').replace('https://',''),note:'Browse all source code, repositories & contributions',act:'See all code'},
-    {href:m.instagram,hov:'rgba(255,215,0,.28)',icb:'rgba(255,215,0,.28)',icbg:'rgba(255,215,0,.05)',clr:'var(--y)',icon:'📸',title:'Instagram',detail:(m.instagram||'').replace('https://www.instagram.com/','@').replace('/',''),note:'Dev updates, project previews & behind-the-scenes builds',act:'Follow me'},
+    {href:m.editorCyclops,hov:'rgba(255,45,120,.28)',icb:'rgba(255,45,120,.28)',icbg:'rgba(255,45,120,.05)',clr:'var(--p)',icon:'🎬',title:'Editor Cyclops — Video Portfolio',detail:(m.editorCyclops||'').replace('https://',''),note:'Short-form edits, Devin Jatho style, Apple Glass UI motion design',act:'Watch reel'},
+    {href:m.editorCyclopsInstagram,hov:'rgba(255,215,0,.28)',icb:'rgba(255,215,0,.28)',icbg:'rgba(255,215,0,.05)',clr:'var(--y)',icon:'📸',title:'@editorcyclops — Instagram',detail:'@editorcyclops',note:'Process videos, WIP edits & daily short-form content',act:'Follow'},
   ].filter(c=>c.href).map(c=>`
     <a href="${c.href}" target="${c.href.startsWith('mailto')?'_self':'_blank'}" class="cca"
       onmouseenter="this.style.borderColor='${c.hov}'"
@@ -1315,10 +1455,11 @@ function renderContact(d){
   document.getElementById('contact-cta').innerHTML=`
     <a href="mailto:${m.email}" class="btn bs" style="padding:14px 36px;font-size:.76rem">📧 Hire Me — Send Email</a>
     <a href="${m.linkedin||'#'}" target="_blank" class="btn bo">💼 LinkedIn</a>
-    <a href="${m.github||'#'}" target="_blank" class="btn bv">🐙 GitHub</a>`;
+    <a href="${m.github||'#'}" target="_blank" class="btn bv">🐙 GitHub</a>
+    <a href="${m.editorCyclops||'#'}" target="_blank" class="btn" style="border:1px solid var(--p);color:var(--p);background:transparent">🎬 Editor Cyclops</a>`;
   document.getElementById('footer-links').innerHTML=[
     {l:'Email',h:`mailto:${m.email}`},{l:'GitHub',h:m.github},
-    {l:'LinkedIn',h:m.linkedin},{l:'Instagram',h:m.instagram},
+    {l:'LinkedIn',h:m.linkedin},{l:'Editor Cyclops',h:m.editorCyclops},{l:'Instagram',h:m.editorCyclopsInstagram},
   ].filter(x=>x.h).map(x=>`<a href="${x.h}" target="_blank">${x.l}</a>`).join('');
 }
 
@@ -1328,6 +1469,7 @@ function boot(){
   renderCodeBlock(DATA);
   renderSkills(DATA);
   renderProjects(DATA);
+  renderExperience(DATA);
   renderBuilding(DATA);
   renderStats(DATA);
   renderContact(DATA);
