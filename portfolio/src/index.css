@@ -222,7 +222,9 @@ img { max-width: 100%; display: block; }
   color: var(--text-secondary);
   letter-spacing: 0.02em;
   transition: var(--transition);
-  white-space: nowrap;
+  white-space: normal;
+  line-height: 1.4;
+  text-align: left;
 }
 .tag:hover {
   border-color: var(--border-mid);
