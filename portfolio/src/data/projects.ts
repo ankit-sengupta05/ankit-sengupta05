@@ -20,6 +20,29 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    id: 'open-bci-eeg',
+    title: 'Open-BCI EEG → Text Translation & Robotic Implementation',
+    subtitle: '🔬 Active Research — BCI Signal Processing + Robotics Commercialization',
+    description:
+      'An active research project translating raw EEG brainwave signals captured via OpenBCI hardware into text commands, with further investigation into robotic control implementations. Exploring signal processing pipelines, NLP decoding strategies, and real-world commercialization pathways for non-invasive BCI technology.',
+    longDescription:
+      'Actively researching novel approaches to decode EEG waveforms (alpha, beta, theta, delta bands) into structured text using signal processing and transformer-based decoders. The research explores direct robotic actuation from thought — a potential step toward non-invasive brain-computer interfaces for accessibility and industrial applications. Developing new strategy around commercialization — targeting assistive technology, neurorehabilitation, and human-robot collaboration markets.',
+    tags: ['OpenBCI', 'EEG', 'Python', 'MATLAB', 'Signal Processing', 'NLP', 'Transformers', 'Robotics', 'BCI', 'Neurotechnology', 'MNE-Python'],
+    category: ['Research', 'AI/ML', 'Embedded'],
+    status: 'Active Research',
+    statusLabel: '🔬 Actively Researching',
+    isResearch: true,
+    repoUrl: 'https://github.com/ankit-sengupta05/Open-BCI-EEG-To-Text',
+    highlights: [
+      'OpenBCI hardware integration for non-invasive EEG signal capture',
+      'Multi-band signal processing: alpha, beta, theta, delta wave analysis',
+      'Transformer-based EEG-to-text decoding pipeline under development',
+      'Robotic control actuation from decoded thought signals',
+      'Commercialization strategy: assistive tech, neurorehabilitation, human-robot collaboration',
+      'Actively exploring new architectures and real-world deployment approaches',
+    ],
+  },
+  {
     id: 'cyborg-agi',
     title: 'Cyborg AGI',
     subtitle: 'Local Autonomous General Intelligence OS',
@@ -178,29 +201,7 @@ export const projects: Project[] = [
       'Android companion with live audio alerts & navigation feedback',
     ],
   },
-  {
-    id: 'open-bci-eeg',
-    title: 'Open-BCI EEG → Text Translation & Robotic Implementation',
-    subtitle: '🔬 Active Research — BCI Signal Processing + Robotics Commercialization',
-    description:
-      'An active research project translating raw EEG brainwave signals captured via OpenBCI hardware into text commands, with further investigation into robotic control implementations. Exploring signal processing pipelines, NLP decoding strategies, and real-world commercialization pathways for non-invasive BCI technology.',
-    longDescription:
-      'Actively researching novel approaches to decode EEG waveforms (alpha, beta, theta, delta bands) into structured text using signal processing and transformer-based decoders. The research explores direct robotic actuation from thought — a potential step toward non-invasive brain-computer interfaces for accessibility and industrial applications. Developing new strategy around commercialization — targeting assistive technology, neurorehabilitation, and human-robot collaboration markets.',
-    tags: ['OpenBCI', 'EEG', 'Python', 'MATLAB', 'Signal Processing', 'NLP', 'Transformers', 'Robotics', 'BCI', 'Neurotechnology', 'MNE-Python'],
-    category: ['Research', 'AI/ML', 'Embedded'],
-    status: 'Active Research',
-    statusLabel: '🔬 Actively Researching',
-    isResearch: true,
-    repoUrl: 'https://github.com/ankit-sengupta05/Open-BCI-EEG-To-Text',
-    highlights: [
-      'OpenBCI hardware integration for non-invasive EEG signal capture',
-      'Multi-band signal processing: alpha, beta, theta, delta wave analysis',
-      'Transformer-based EEG-to-text decoding pipeline under development',
-      'Robotic control actuation from decoded thought signals',
-      'Commercialization strategy: assistive tech, neurorehabilitation, human-robot collaboration',
-      'Actively exploring new architectures and real-world deployment approaches',
-    ],
-  },
+
   {
     id: 'smart-agriculture',
     title: 'Smart Agriculture Assistant',

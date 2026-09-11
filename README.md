@@ -198,6 +198,38 @@ class AnkitSengupta:
 
 ---
 
+### 🔬 Open-BCI EEG → Text Translation & Robotic Implementation
+
+<div>
+
+![](https://img.shields.io/badge/🔬_ACTIVE_RESEARCH-A855F7?style=for-the-badge&labelColor=111111)
+![](https://img.shields.io/badge/Actively_Researching-10B981?style=for-the-badge)
+![](https://img.shields.io/badge/New_Strategy_Development-3B82F6?style=for-the-badge)
+
+</div>
+
+> *Actively researching novel approaches to decode raw EEG brainwave signals captured via OpenBCI hardware into text commands and robotic control inputs — with a long-term focus on commercialization in assistive technology, neurorehabilitation, and human-robot collaboration.*
+
+[![OpenBCI](https://img.shields.io/badge/OpenBCI_Hardware-2B2D42?style=for-the-badge&logo=python&logoColor=white)](https://github.com/ankit-sengupta05/Open-BCI-EEG-To-Text)
+[![EEG Processing](https://img.shields.io/badge/EEG_Signal_Processing-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://github.com/ankit-sengupta05/Open-BCI-EEG-To-Text)
+[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://github.com/ankit-sengupta05/Open-BCI-EEG-To-Text)
+[![MATLAB](https://img.shields.io/badge/MATLAB-0076A8?style=for-the-badge&logo=mathworks&logoColor=white)](https://github.com/ankit-sengupta05/Open-BCI-EEG-To-Text)
+[![Transformers](https://img.shields.io/badge/Transformer_Decoders-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)](https://github.com/ankit-sengupta05/Open-BCI-EEG-To-Text)
+[![Robotics](https://img.shields.io/badge/Robotics_Integration-E34F26?style=for-the-badge&logo=python&logoColor=white)](https://github.com/ankit-sengupta05/Open-BCI-EEG-To-Text)
+
+| | |
+|:--|:--|
+| 🧠 **EEG Capture** | OpenBCI hardware for non-invasive brainwave signal capture |
+| 📊 **Signal Processing** | Multi-band analysis: alpha, beta, theta, delta wave decomposition (MNE-Python) |
+| 🔤 **EEG → Text Pipeline** | Transformer-based decoder under active development — mapping neural patterns to text outputs |
+| 🤖 **Robotic Actuation** | Investigating direct robotic control from decoded thought signals |
+| 💡 **New Strategy** | Actively developing new architectural and signal-processing approaches to improve decode accuracy |
+| 🏭 **Commercialization** | Targeting assistive technology, neurorehabilitation, and human-robot collaboration markets |
+
+> 🔬 **Actively researching alongside other projects** — developing new strategies and real-world implementation approaches for this technology. This research area holds significant commercial potential and I am committed to advancing it toward production-grade deployment. [View Repo →](https://github.com/ankit-sengupta05/Open-BCI-EEG-To-Text)
+
+---
+
 ### 🧠 Cyborg AGI &nbsp;&nbsp; [![](https://img.shields.io/badge/🏆_Gemma_4_Good_Hackathon-Kaggle_×_Google_DeepMind-A855F7?style=for-the-badge)](https://www.kaggle.com/competitions/gemma-4-good-hackathon) &nbsp; [![](https://img.shields.io/badge/✅_V1.0_Stable-10B981?style=for-the-badge)](https://github.com/ankit-sengupta05/CyborgAI)
 
 > *A high-performance, modular, locally-hosted AGI OS — self-healing, horizontally scalable, and containerized — that reasons, remembers, monitors the world, teaches, and assists clinically, without sending a single byte to the cloud.*
@@ -375,37 +407,6 @@ class AnkitSengupta:
 
 ---
 
-### 🔬 Open-BCI EEG → Text Translation & Robotic Implementation
-
-<div>
-
-![](https://img.shields.io/badge/🔬_ACTIVE_RESEARCH-A855F7?style=for-the-badge&labelColor=111111)
-![](https://img.shields.io/badge/Actively_Researching-10B981?style=for-the-badge)
-![](https://img.shields.io/badge/New_Strategy_Development-3B82F6?style=for-the-badge)
-
-</div>
-
-> *Actively researching novel approaches to decode raw EEG brainwave signals captured via OpenBCI hardware into text commands and robotic control inputs — with a long-term focus on commercialization in assistive technology, neurorehabilitation, and human-robot collaboration.*
-
-[![OpenBCI](https://img.shields.io/badge/OpenBCI_Hardware-2B2D42?style=for-the-badge&logo=python&logoColor=white)](https://github.com/ankit-sengupta05/Open-BCI-EEG-To-Text)
-[![EEG Processing](https://img.shields.io/badge/EEG_Signal_Processing-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://github.com/ankit-sengupta05/Open-BCI-EEG-To-Text)
-[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://github.com/ankit-sengupta05/Open-BCI-EEG-To-Text)
-[![MATLAB](https://img.shields.io/badge/MATLAB-0076A8?style=for-the-badge&logo=mathworks&logoColor=white)](https://github.com/ankit-sengupta05/Open-BCI-EEG-To-Text)
-[![Transformers](https://img.shields.io/badge/Transformer_Decoders-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)](https://github.com/ankit-sengupta05/Open-BCI-EEG-To-Text)
-[![Robotics](https://img.shields.io/badge/Robotics_Integration-E34F26?style=for-the-badge&logo=python&logoColor=white)](https://github.com/ankit-sengupta05/Open-BCI-EEG-To-Text)
-
-| | |
-|:--|:--|
-| 🧠 **EEG Capture** | OpenBCI hardware for non-invasive brainwave signal capture |
-| 📊 **Signal Processing** | Multi-band analysis: alpha, beta, theta, delta wave decomposition (MNE-Python) |
-| 🔤 **EEG → Text Pipeline** | Transformer-based decoder under active development — mapping neural patterns to text outputs |
-| 🤖 **Robotic Actuation** | Investigating direct robotic control from decoded thought signals |
-| 💡 **New Strategy** | Actively developing new architectural and signal-processing approaches to improve decode accuracy |
-| 🏭 **Commercialization** | Targeting assistive technology, neurorehabilitation, and human-robot collaboration markets |
-
-> 🔬 **Actively researching alongside other projects** — developing new strategies and real-world implementation approaches for this technology. This research area holds significant commercial potential and I am committed to advancing it toward production-grade deployment. [View Repo →](https://github.com/ankit-sengupta05/Open-BCI-EEG-To-Text)
-
----
 
 ### 🌾 Smart Agriculture Assistant
 
