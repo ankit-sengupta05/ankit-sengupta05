@@ -114,3 +114,10 @@
 @media (max-width: 900px) {
   .about__grid { grid-template-columns: 1fr; gap: 40px; }
 }
+
+@media (max-width: 480px) {
+  .about__info-pills { grid-template-columns: 1fr; }
+  .about__info-pill { border-right: none; border-bottom: 1px solid var(--border-subtle); }
+  .about__info-pill:last-child { border-bottom: none; }
+  .about__info-pill:nth-child(n+3) { border-top: none; }
+}

@@ -44,7 +44,7 @@
 /* Grid */
 .projects__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 24px;
 }
 
@@ -175,6 +175,7 @@
 }
 .project-card__expand:hover { color: var(--text-primary); background: var(--bg-glass); }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .projects__grid { grid-template-columns: 1fr; }
+  .project-card { padding: 20px; }
 }

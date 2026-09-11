@@ -63,7 +63,7 @@
 
 /* Name */
 .hero__name {
-  font-size: clamp(4rem, 12vw, 10rem);
+  font-size: clamp(2.8rem, 12vw, 10rem);
   font-weight: 900;
   line-height: 0.9;
   letter-spacing: -0.04em;
