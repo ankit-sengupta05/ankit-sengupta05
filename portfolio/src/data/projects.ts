@@ -33,7 +33,7 @@ export const projects: Project[] = [
     statusLabel: '🔬 Actively Researching',
     isResearch: true,
     featured: true,
-    repoUrl: 'https://github.com/ankit-sengupta05/Open-BCI-EEG-To-Text',
+    repoUrl: 'https://github.com/ankit-sengupta05/NeuroLink-Open-BCI-EEG-to-Text-Robotic-Implementation',
     highlights: [
       'OpenBCI hardware integration for non-invasive EEG signal capture',
       'Multi-band signal processing: alpha, beta, theta, delta wave analysis',
@@ -138,7 +138,7 @@ export const projects: Project[] = [
     category: ['AI/ML', 'Security', 'Backend', 'Frontend'],
     status: 'Hackathon',
     badge: '🏆 Security Hackathon',
-    repoUrl: 'https://github.com/ankit-sengupta05/mesh_guard',
+    repoUrl: 'https://github.com/ankit-sengupta05/CyberX',
     highlights: [
       'Prompt Injection Firewall: heuristic + LLM-based real-time evaluation',
       'Neo4j Trust Graph: agents earn/lose trust, below-threshold agents sandboxed',
@@ -195,6 +195,7 @@ export const projects: Project[] = [
     category: ['Embedded', 'AI/ML'],
     status: 'Shipped',
     badge: '🏅 VIT Internal Expo — Selected',
+    repoUrl: 'https://github.com/ankit-sengupta05/Smart-Vision-Aid-For-The-Visually-Impaired',
     highlights: [
       '3× synchronized ESP32-CAM modules for 360° spatial coverage',
       'YOLO real-time object detection — sub-100ms obstacle identification',
@@ -242,6 +243,7 @@ export const projects: Project[] = [
     tags: ['Python', 'TensorFlow', 'Pytesseract', 'OCR', 'Pandas', 'NLP', 'Sentiment Analysis'],
     category: ['AI/ML'],
     status: 'Shipped',
+    repoUrl: 'https://github.com/ankit-sengupta05/AI-Mental-Health-Chatbot-OCR-Scanner',
     highlights: [
       'TensorFlow NLP for real-time emotional state detection',
       'Pytesseract OCR medical report extraction',

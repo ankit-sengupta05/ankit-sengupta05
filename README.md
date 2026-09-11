@@ -9,7 +9,7 @@
   Cyborg AGI, Local AI OS, Offline AI System, Gemma 4 Hackathon,
   NewsAlphaAI, Stock Prediction AI, LangGraph Distributed Pipeline,
   MeetMind, Microsoft Teams AI Co-Pilot, Azure OpenAI, Semantic Kernel,
-  mesh_guard, AgentOps Security Mesh, Prompt Injection Firewall,
+  CyberX, AgentOps Security Mesh, Prompt Injection Firewall,
   Smart Vision Aid, ESP32 Smart Glasses, VIT Expo,
   FastAPI Developer India, Django Developer India, Next.js Developer India,
   Flutter Developer India, ESP32 IoT Developer, Docker Kubernetes India,
@@ -210,12 +210,12 @@ class AnkitSengupta:
 
 > *Actively researching novel approaches to decode raw EEG brainwave signals captured via OpenBCI hardware into text commands and robotic control inputs — with a long-term focus on commercialization in assistive technology, neurorehabilitation, and human-robot collaboration.*
 
-[![OpenBCI](https://img.shields.io/badge/OpenBCI_Hardware-2B2D42?style=for-the-badge&logo=python&logoColor=white)](https://github.com/ankit-sengupta05/Open-BCI-EEG-To-Text)
-[![EEG Processing](https://img.shields.io/badge/EEG_Signal_Processing-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://github.com/ankit-sengupta05/Open-BCI-EEG-To-Text)
-[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://github.com/ankit-sengupta05/Open-BCI-EEG-To-Text)
-[![MATLAB](https://img.shields.io/badge/MATLAB-0076A8?style=for-the-badge&logo=mathworks&logoColor=white)](https://github.com/ankit-sengupta05/Open-BCI-EEG-To-Text)
-[![Transformers](https://img.shields.io/badge/Transformer_Decoders-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)](https://github.com/ankit-sengupta05/Open-BCI-EEG-To-Text)
-[![Robotics](https://img.shields.io/badge/Robotics_Integration-E34F26?style=for-the-badge&logo=python&logoColor=white)](https://github.com/ankit-sengupta05/Open-BCI-EEG-To-Text)
+[![OpenBCI](https://img.shields.io/badge/OpenBCI_Hardware-2B2D42?style=for-the-badge&logo=python&logoColor=white)](https://github.com/ankit-sengupta05/NeuroLink-Open-BCI-EEG-to-Text-Robotic-Implementation)
+[![EEG Processing](https://img.shields.io/badge/EEG_Signal_Processing-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://github.com/ankit-sengupta05/NeuroLink-Open-BCI-EEG-to-Text-Robotic-Implementation)
+[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://github.com/ankit-sengupta05/NeuroLink-Open-BCI-EEG-to-Text-Robotic-Implementation)
+[![MATLAB](https://img.shields.io/badge/MATLAB-0076A8?style=for-the-badge&logo=mathworks&logoColor=white)](https://github.com/ankit-sengupta05/NeuroLink-Open-BCI-EEG-to-Text-Robotic-Implementation)
+[![Transformers](https://img.shields.io/badge/Transformer_Decoders-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)](https://github.com/ankit-sengupta05/NeuroLink-Open-BCI-EEG-to-Text-Robotic-Implementation)
+[![Robotics](https://img.shields.io/badge/Robotics_Integration-E34F26?style=for-the-badge&logo=python&logoColor=white)](https://github.com/ankit-sengupta05/NeuroLink-Open-BCI-EEG-to-Text-Robotic-Implementation)
 
 | | |
 |:--|:--|
@@ -226,7 +226,7 @@ class AnkitSengupta:
 | 💡 **New Strategy** | Actively developing new architectural and signal-processing approaches to improve decode accuracy |
 | 🏭 **Commercialization** | Targeting assistive technology, neurorehabilitation, and human-robot collaboration markets |
 
-> 🔬 **Actively researching alongside other projects** — developing new strategies and real-world implementation approaches for this technology. This research area holds significant commercial potential and I am committed to advancing it toward production-grade deployment. [View Repo →](https://github.com/ankit-sengupta05/Open-BCI-EEG-To-Text)
+> 🔬 **Actively researching alongside other projects** — developing new strategies and real-world implementation approaches for this technology. This research area holds significant commercial potential and I am committed to advancing it toward production-grade deployment. [View Repo →](https://github.com/ankit-sengupta05/NeuroLink-Open-BCI-EEG-to-Text-Robotic-Implementation)
 
 ---
 
@@ -322,15 +322,15 @@ class AnkitSengupta:
 
 ---
 
-### 🛡️ mesh_guard — AgentOps Security Mesh &nbsp;&nbsp; [![](https://img.shields.io/badge/🏆_Security_Hackathon-F43F5E?style=for-the-badge)](https://github.com/ankit-sengupta05/mesh_guard)
+### 🛡️ CyberX — AgentOps Security Mesh &nbsp;&nbsp; [![](https://img.shields.io/badge/🏆_Security_Hackathon-F43F5E?style=for-the-badge)](https://github.com/ankit-sengupta05/CyberX)
 
 > *A security OS for AI agent swarms — Prompt Injection Firewall, Neo4j Trust Graph, Self-Healing Daemon with snapshot/rollback, and a built-in Attack Simulator to validate swarm resilience against prompt injections and context overflows.*
 
-[![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)](https://github.com/ankit-sengupta05/mesh_guard)
-[![Neo4j](https://img.shields.io/badge/Neo4j-008CC1?style=for-the-badge&logo=neo4j&logoColor=white)](https://github.com/ankit-sengupta05/mesh_guard)
-[![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)](https://github.com/ankit-sengupta05/mesh_guard)
-[![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://github.com/ankit-sengupta05/mesh_guard)
-[![React](https://img.shields.io/badge/React_+_Vite-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://github.com/ankit-sengupta05/mesh_guard)
+[![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)](https://github.com/ankit-sengupta05/CyberX)
+[![Neo4j](https://img.shields.io/badge/Neo4j-008CC1?style=for-the-badge&logo=neo4j&logoColor=white)](https://github.com/ankit-sengupta05/CyberX)
+[![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)](https://github.com/ankit-sengupta05/CyberX)
+[![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://github.com/ankit-sengupta05/CyberX)
+[![React](https://img.shields.io/badge/React_+_Vite-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://github.com/ankit-sengupta05/CyberX)
 
 | | |
 |:--|:--|
@@ -340,7 +340,7 @@ class AnkitSengupta:
 | 🧪 **Attack Simulator** | Built-in endpoints to safely simulate API poisonings, context overflows, and prompt injections |
 | 🔄 **Hot-Swappable LLMs** | Instantly switch between OpenAI, Azure, and local LM Studio models mid-execution via UI |
 
-> [View Repo →](https://github.com/ankit-sengupta05/mesh_guard)
+> [View Repo →](https://github.com/ankit-sengupta05/CyberX)
 
 ---
 
@@ -387,15 +387,15 @@ class AnkitSengupta:
 
 ---
 
-### 🕶️ Smart Vision Aid &nbsp;&nbsp; [![](https://img.shields.io/badge/🏅_VIT_Internal_Expo-SELECTED-FFD700?style=for-the-badge&labelColor=111111)](https://github.com/ankit-sengupta05/Smart-Vision-Aid)
+### 🕶️ Smart Vision Aid &nbsp;&nbsp; [![](https://img.shields.io/badge/🏅_VIT_Internal_Expo-SELECTED-FFD700?style=for-the-badge&labelColor=111111)](https://github.com/ankit-sengupta05/Smart-Vision-Aid-For-The-Visually-Impaired)
 
 > *Real-time AI-powered assistive smart glasses with 3× synchronized ESP32-CAM modules, multi-threaded ultrasonic telemetry, and YOLO object detection for sub-100ms obstacle identification.*
 
-[![ESP32](https://img.shields.io/badge/ESP32-E7352C?style=for-the-badge&logo=espressif&logoColor=white)](https://github.com/ankit-sengupta05/Smart-Vision-Aid)
-[![YOLO](https://img.shields.io/badge/YOLO-00FFFF?style=for-the-badge&logo=yolo&logoColor=black)](https://github.com/ankit-sengupta05/Smart-Vision-Aid)
-[![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)](https://github.com/ankit-sengupta05/Smart-Vision-Aid)
-[![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://github.com/ankit-sengupta05/Smart-Vision-Aid)
-[![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)](https://github.com/ankit-sengupta05/Smart-Vision-Aid)
+[![ESP32](https://img.shields.io/badge/ESP32-E7352C?style=for-the-badge&logo=espressif&logoColor=white)](https://github.com/ankit-sengupta05/Smart-Vision-Aid-For-The-Visually-Impaired)
+[![YOLO](https://img.shields.io/badge/YOLO-00FFFF?style=for-the-badge&logo=yolo&logoColor=black)](https://github.com/ankit-sengupta05/Smart-Vision-Aid-For-The-Visually-Impaired)
+[![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)](https://github.com/ankit-sengupta05/Smart-Vision-Aid-For-The-Visually-Impaired)
+[![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://github.com/ankit-sengupta05/Smart-Vision-Aid-For-The-Visually-Impaired)
+[![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)](https://github.com/ankit-sengupta05/Smart-Vision-Aid-For-The-Visually-Impaired)
 
 | | |
 |:--|:--|
@@ -432,9 +432,9 @@ class AnkitSengupta:
 
 > *TensorFlow sentiment analysis + Pytesseract medical report parsing — emotion intelligence meets medical data.*
 
-[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](#)
-[![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)](#)
-[![OCR](https://img.shields.io/badge/Pytesseract_OCR-4285F4?style=for-the-badge&logo=google&logoColor=white)](#)
+[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://github.com/ankit-sengupta05/AI-Mental-Health-Chatbot-OCR-Scanner)
+[![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)](https://github.com/ankit-sengupta05/AI-Mental-Health-Chatbot-OCR-Scanner)
+[![OCR](https://img.shields.io/badge/Pytesseract_OCR-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://github.com/ankit-sengupta05/AI-Mental-Health-Chatbot-OCR-Scanner)
 
 ---
 
@@ -479,7 +479,7 @@ class AnkitSengupta:
 ║  🍔  VIT-AP Eats — Campus Food Delivery PWA ✅ Live on Vercel            ║
 ║  📈  NewsAlphaAI — LangGraph Distributed Stock Prediction ✅ Shipped     ║
 ║  🧭  MeetMind — AI Teams Co-Pilot ✅ Shipped (Microsoft Hackathon)       ║
-║  🛡️  mesh_guard — AgentOps Security Mesh ✅ Shipped (Security Hack)     ║
+║  🛡️  CyberX — AgentOps Security Mesh ✅ Shipped (Security Hack)     ║
 ║  🎬  Editor Cyclops — Video Editing & Content Strategy ✅ Ongoing        ║
 ╚══════════════════════════════════════════════════════════════════════════╝
 ```
@@ -560,7 +560,7 @@ class AnkitSengupta:
   Smart Vision Aid | VIT Internal Expo | Assistive Technology
   NewsAlphaAI | Stock Prediction AI | LLM Trading System
   MeetMind | Microsoft Teams AI Co-Pilot | Azure OpenAI GPT-4o | Semantic Kernel
-  mesh_guard | AgentOps Security Mesh | Prompt Injection Firewall | AI Agent Security
+  CyberX | AgentOps Security Mesh | Prompt Injection Firewall | AI Agent Security
   Editor Cyclops | Video Editor India | Motion Designer | Content Strategist
   Devin Jatho Style | Apple Glass UI Animation | Short-Form Content
   Instagram Reels Editor | YouTube Shorts Editor | Premiere Pro | After Effects | DaVinci Resolve
@@ -569,3 +569,4 @@ class AnkitSengupta:
   Ankit Sengupta BCI researcher | Ankit Sengupta flood prediction AI
   Ankit Sengupta EEG robotics | Ankit Sengupta OpenBCI
 -->
+
