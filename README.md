@@ -322,15 +322,15 @@ class AnkitSengupta:
 
 ---
 
-### 🛡️ CyberX — AgentOps Security Mesh &nbsp;&nbsp; [![](https://img.shields.io/badge/🏆_Security_Hackathon-F43F5E?style=for-the-badge)](https://github.com/ankit-sengupta05/CyberX)
+### 🛡️ CyberX — AgentOps Security Mesh &nbsp;&nbsp; [![](https://img.shields.io/badge/🏆_Security_Hackathon-F43F5E?style=for-the-badge)](https://github.com/ankit-sengupta05/mesh_guard)
 
 > *A security OS for AI agent swarms — Prompt Injection Firewall, Neo4j Trust Graph, Self-Healing Daemon with snapshot/rollback, and a built-in Attack Simulator to validate swarm resilience against prompt injections and context overflows.*
 
-[![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)](https://github.com/ankit-sengupta05/CyberX)
-[![Neo4j](https://img.shields.io/badge/Neo4j-008CC1?style=for-the-badge&logo=neo4j&logoColor=white)](https://github.com/ankit-sengupta05/CyberX)
-[![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)](https://github.com/ankit-sengupta05/CyberX)
-[![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://github.com/ankit-sengupta05/CyberX)
-[![React](https://img.shields.io/badge/React_+_Vite-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://github.com/ankit-sengupta05/CyberX)
+[![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)](https://github.com/ankit-sengupta05/mesh_guard)
+[![Neo4j](https://img.shields.io/badge/Neo4j-008CC1?style=for-the-badge&logo=neo4j&logoColor=white)](https://github.com/ankit-sengupta05/mesh_guard)
+[![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)](https://github.com/ankit-sengupta05/mesh_guard)
+[![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://github.com/ankit-sengupta05/mesh_guard)
+[![React](https://img.shields.io/badge/React_+_Vite-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://github.com/ankit-sengupta05/mesh_guard)
 
 | | |
 |:--|:--|
@@ -340,7 +340,7 @@ class AnkitSengupta:
 | 🧪 **Attack Simulator** | Built-in endpoints to safely simulate API poisonings, context overflows, and prompt injections |
 | 🔄 **Hot-Swappable LLMs** | Instantly switch between OpenAI, Azure, and local LM Studio models mid-execution via UI |
 
-> [View Repo →](https://github.com/ankit-sengupta05/CyberX)
+> [View Repo →](https://github.com/ankit-sengupta05/mesh_guard)
 
 ---
 
@@ -412,9 +412,9 @@ class AnkitSengupta:
 
 > *AI-powered platform connecting farmers and buyers through TensorFlow crop analysis, OpenCV disease detection, and Django REST marketplace.*
 
-[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](#)
-[![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)](#)
-[![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)](#)
+[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://github.com/ankit-sengupta05/Smart-Agriculture-Assistant)
+[![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)](https://github.com/ankit-sengupta05/Smart-Agriculture-Assistant)
+[![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)](https://github.com/ankit-sengupta05/Smart-Agriculture-Assistant)
 
 ---
 
@@ -422,9 +422,9 @@ class AnkitSengupta:
 
 > *Zero-effort expense tracking via secure Android bank SMS parsing — Firebase auth, real-time dashboard.*
 
-[![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)](#)
-[![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)](#)
-[![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)](#)
+[![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://github.com/ankit-sengupta05/Smart-Budget-Manager)
+[![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)](https://github.com/ankit-sengupta05/Smart-Budget-Manager)
+[![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)](https://github.com/ankit-sengupta05/Smart-Budget-Manager)
 
 ---
 
@@ -435,6 +435,15 @@ class AnkitSengupta:
 [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://github.com/ankit-sengupta05/AI-Mental-Health-Chatbot-OCR-Scanner)
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)](https://github.com/ankit-sengupta05/AI-Mental-Health-Chatbot-OCR-Scanner)
 [![OCR](https://img.shields.io/badge/Pytesseract_OCR-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://github.com/ankit-sengupta05/AI-Mental-Health-Chatbot-OCR-Scanner)
+
+---
+
+### 🩺 Echo Personal AI Health Assistant
+
+> *Personalized AI health assistant for intelligent monitoring and conversational health insights.*
+
+[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://github.com/ankit-sengupta05/Echo-Personal-AI-Health-Assistant)
+[![HealthTech](https://img.shields.io/badge/HealthTech-009688?style=for-the-badge&logo=health&logoColor=white)](https://github.com/ankit-sengupta05/Echo-Personal-AI-Health-Assistant)
 
 ---
 
@@ -569,4 +578,5 @@ class AnkitSengupta:
   Ankit Sengupta BCI researcher | Ankit Sengupta flood prediction AI
   Ankit Sengupta EEG robotics | Ankit Sengupta OpenBCI
 -->
+
 

@@ -100,6 +100,7 @@ export const projects: Project[] = [
     category: ['AI/ML', 'Backend', 'Frontend'],
     status: 'Shipped',
     statusLabel: 'Completed',
+    repoUrl: 'https://github.com/ankit-sengupta05/NewsAlphaAI',
     highlights: [
       '8-node distributed LangGraph pipeline with concurrency & multi-threading',
       'Gemma-3-4B-IT local LLM for news reasoning',
@@ -138,7 +139,7 @@ export const projects: Project[] = [
     category: ['AI/ML', 'Security', 'Backend', 'Frontend'],
     status: 'Hackathon',
     badge: '🏆 Security Hackathon',
-    repoUrl: 'https://github.com/ankit-sengupta05/CyberX',
+    repoUrl: 'https://github.com/ankit-sengupta05/mesh_guard',
     highlights: [
       'Prompt Injection Firewall: heuristic + LLM-based real-time evaluation',
       'Neo4j Trust Graph: agents earn/lose trust, below-threshold agents sandboxed',
@@ -213,6 +214,7 @@ export const projects: Project[] = [
     tags: ['Python', 'TensorFlow', 'OpenCV', 'Django', 'Pandas', 'REST API', 'Computer Vision'],
     category: ['AI/ML', 'Backend'],
     status: 'Shipped',
+    repoUrl: 'https://github.com/ankit-sengupta05/Smart-Agriculture-Assistant',
     highlights: [
       'TensorFlow crop disease classification with confidence scoring',
       'OpenCV disease detection pipeline',
@@ -228,6 +230,7 @@ export const projects: Project[] = [
     tags: ['Android', 'Kotlin', 'Java', 'Firebase', 'Firebase Auth'],
     category: ['Mobile'],
     status: 'Shipped',
+    repoUrl: 'https://github.com/ankit-sengupta05/Smart-Budget-Manager',
     highlights: [
       'Automatic expense categorization from bank SMS',
       'Real-time dashboard with visual breakdowns',
@@ -249,6 +252,16 @@ export const projects: Project[] = [
       'Pytesseract OCR medical report extraction',
       'Cross-references health info with curated medical datasets',
     ],
+  },
+  {
+    id: 'echo-health',
+    title: 'Echo Personal AI Health Assistant',
+    subtitle: 'Personalized AI Health Monitoring',
+    description: 'A personal AI health assistant for intelligent monitoring and conversational health insights.',
+    tags: ['AI/ML', 'Python', 'HealthTech'],
+    category: ['AI/ML'],
+    status: 'Shipped',
+    repoUrl: 'https://github.com/ankit-sengupta05/Echo-Personal-AI-Health-Assistant',
   },
 ];
 
