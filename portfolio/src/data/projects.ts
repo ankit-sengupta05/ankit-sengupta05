@@ -32,6 +32,7 @@ export const projects: Project[] = [
     status: 'Active Research',
     statusLabel: '🔬 Actively Researching',
     isResearch: true,
+    featured: true,
     repoUrl: 'https://github.com/ankit-sengupta05/Open-BCI-EEG-To-Text',
     highlights: [
       'OpenBCI hardware integration for non-invasive EEG signal capture',
