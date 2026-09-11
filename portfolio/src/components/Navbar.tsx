@@ -56,7 +56,9 @@ export function Navbar() {
 
           <div className="navbar__cta">
             <a
-              href="mailto:ankit.sengupta05@gmail.com"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=ankit.sengupta05@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn btn-primary navbar__hire-btn"
               aria-label="Hire Ankit Sengupta — Send Email"
             >
@@ -102,7 +104,12 @@ export function Navbar() {
                   {label}
                 </motion.button>
               ))}
-              <a href="mailto:ankit.sengupta05@gmail.com" className="btn btn-primary mobile-menu__hire-btn">
+              <a 
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=ankit.sengupta05@gmail.com" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-primary mobile-menu__hire-btn"
+              >
                 Hire Me
               </a>
             </nav>

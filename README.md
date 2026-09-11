@@ -23,7 +23,7 @@
 <div align="center">
 
 <!-- NAME -->
-[![name](https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=900&size=52&duration=1&pause=99999&color=A855F7&center=true&vCenter=true&width=860&height=90&lines=Ankit+Sengupta)](https://github.com/ankit-sengupta05)
+[![name](https://readme-typing-svg.demolab.com?font=Outfit&weight=900&size=52&duration=1&pause=99999&color=A855F7&center=true&vCenter=true&width=860&height=90&lines=Ankit+Sengupta)](https://github.com/ankit-sengupta05)
 
 <!-- Gradient divider -->
 ![divider](https://capsule-render.vercel.app/api?type=rect&color=0:00f0ff,50:a855f7,100:ff2d78&height=3&section=header)

@@ -6,7 +6,7 @@ const CONTACT_LINKS = [
   {
     label: 'Email',
     value: 'ankit.sengupta05@gmail.com',
-    href: 'mailto:ankit.sengupta05@gmail.com',
+    href: 'https://mail.google.com/mail/?view=cm&fs=1&to=ankit.sengupta05@gmail.com',
     icon: '✉',
     desc: 'Best for project inquiries & internship opportunities',
   },
@@ -128,7 +128,7 @@ export function Footer() {
         <div className="footer__links">
           <a href="https://github.com/ankit-sengupta05" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">GitHub</a>
           <a href="https://linkedin.com/in/Sengupta-ankit" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">LinkedIn</a>
-          <a href="mailto:ankit.sengupta05@gmail.com" aria-label="Email Ankit Sengupta">Email</a>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ankit.sengupta05@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email Ankit Sengupta">Email</a>
         </div>
       </div>
     </footer>

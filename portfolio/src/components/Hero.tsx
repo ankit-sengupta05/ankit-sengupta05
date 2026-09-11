@@ -6,7 +6,7 @@ import './Hero.css';
 const SOCIALS = [
   { label: 'GitHub', href: 'https://github.com/ankit-sengupta05', icon: '⌥' },
   { label: 'LinkedIn', href: 'https://linkedin.com/in/Sengupta-ankit', icon: '◈' },
-  { label: 'Email', href: 'mailto:ankit.sengupta05@gmail.com', icon: '◉' },
+  { label: 'Email', href: 'https://mail.google.com/mail/?view=cm&fs=1&to=ankit.sengupta05@gmail.com', icon: '◉' },
   { label: 'Editor Cyclops', href: 'https://editor-cyclops.vercel.app/', icon: '▶' },
 ];
 
