@@ -514,11 +514,7 @@ class AnkitSengupta:
 
 > *"The best way to predict the future is to build it."* 🚀
 
-<br/>
 
-<img src="https://raw.githubusercontent.com/platane/platane/output/github-contribution-grid-snake-dark.svg" width="100%" alt="Ankit Sengupta GitHub contribution snake animation"/>
-
-<br/>
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=13&duration=4000&pause=1000&color=A855F7&center=true&vCenter=true&width=720&lines=Thanks+for+visiting+my+profile!+🙌;EEG+→+Text+BCI+Research+·+Actively+Developing+🔬;Flood-Guard+AI+·+Satellite-Validated+Simulation+🌊;Comic+Companion+·+VIT-AP+Eats+·+Cyborg+AGI+🚀;LangGraph+·+RAG+·+RL+·+YOLO+·+ESP32+🤖;Docker+·+Kubernetes+·+Distributed+Systems+🐳;Always+building,+always+researching+⚡;Open+to+internships+%26+collaborations+💼)](https://git.io/typing-svg)
 

@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { fadeUp } from '../utils/variants';
-import './Experience.css';
+import './Skills.css';
 
 const SKILLS_GRID = [
   {
@@ -36,6 +36,19 @@ const SKILLS_GRID = [
     category: '🔬 Research',
     items: ['OpenBCI', 'EEG Signal Processing', 'MNE-Python', 'BCI Systems', 'Hydrodynamic Simulation', 'Google Earth Engine', 'Satellite Remote Sensing'],
   },
+];
+
+const SKILL_BARS = [
+  { name: 'Python / AI Engineering', percentage: 90 },
+  { name: 'LangGraph / LangChain / RAG', percentage: 84 },
+  { name: 'TensorFlow / OpenCV / YOLO / XGBoost', percentage: 82 },
+  { name: 'Django / FastAPI / Flask / Node.js', percentage: 80 },
+  { name: 'Docker / Kubernetes / Distributed Systems', percentage: 76 },
+  { name: 'Flutter / Dart / Firebase', percentage: 75 },
+  { name: 'Android / Kotlin / Firebase', percentage: 72 },
+  { name: 'ESP32 / Arduino / Embedded C++', percentage: 70 },
+  { name: 'JavaScript / TypeScript / React', percentage: 70 },
+  { name: 'Video Editing / Motion Design (Editor Cyclops)', percentage: 88 },
 ];
 
 export function Skills() {
@@ -84,6 +97,31 @@ export function Skills() {
             </motion.div>
           ))}
         </div>
+
+        <motion.div
+          className="skills__bars"
+          initial={{ opacity: 0, y: 40 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, delay: 0.3 }}
+        >
+          <h3 className="skills__group-title" style={{ textAlign: 'center', marginBottom: '1rem' }}>Proficiency Levels</h3>
+          {SKILL_BARS.map((skill, index) => (
+            <div key={skill.name} className="skill-bar">
+              <div className="skill-bar__header">
+                <span className="skill-bar__name">{skill.name}</span>
+                <span className="skill-bar__percentage">{skill.percentage}%</span>
+              </div>
+              <div className="skill-bar__track">
+                <motion.div
+                  className="skill-bar__fill"
+                  initial={{ scaleX: 0 }}
+                  animate={inView ? { scaleX: skill.percentage / 100 } : {}}
+                  transition={{ duration: 1, delay: 0.5 + index * 0.1, ease: 'easeOut' }}
+                />
+              </div>
+            </div>
+          ))}
+        </motion.div>
       </div>
     </section>
   );
