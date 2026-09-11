@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ankit-sengupta05.vercel.app/sitemap.xml
+
+# Block unnecessary paths
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /src/

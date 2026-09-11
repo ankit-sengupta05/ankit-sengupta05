@@ -1,0 +1,14 @@
+# Root .gitignore for ankit-sengupta05 repo
+
+# Zip project files (do NOT push these)
+*.zip
+scratch_extract/
+
+# Portfolio node_modules (handled by portfolio/.gitignore)
+portfolio/node_modules/
+portfolio/dist/
+portfolio/.vercel/
+
+# OS
+.DS_Store
+Thumbs.db

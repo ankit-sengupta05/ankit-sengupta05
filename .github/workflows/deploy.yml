@@ -1,0 +1,57 @@
+name: Deploy Portfolio to Vercel
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'portfolio/**'
+      - '.github/workflows/deploy.yml'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'portfolio/**'
+
+env:
+  VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+  VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+
+jobs:
+  deploy:
+    name: Build & Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: portfolio/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+        working-directory: portfolio
+
+      - name: Build portfolio
+        run: npm run build
+        working-directory: portfolio
+
+      - name: Install Vercel CLI
+        run: npm install -g vercel@latest
+
+      - name: Pull Vercel environment
+        run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
+        working-directory: portfolio
+
+      - name: Deploy to Vercel (Preview on PR)
+        if: github.event_name == 'pull_request'
+        run: vercel deploy --token=${{ secrets.VERCEL_TOKEN }} 2>&1 | tail -1
+        working-directory: portfolio
+
+      - name: Deploy to Vercel (Production on main)
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+        run: vercel deploy --prod --token=${{ secrets.VERCEL_TOKEN }} 2>&1 | tail -1
+        working-directory: portfolio
