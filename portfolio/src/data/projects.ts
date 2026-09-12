@@ -75,10 +75,11 @@ export const projects: Project[] = [
       'Given a dam, reservoir state, and breach scenario — it runs a full hydrodynamic simulation, predicts where the flood goes AND when it arrives, validates against satellite imagery, and converts everything into a time-aware evacuation plan with a ranked emergency action list.',
     longDescription:
       'Flood-Guard AI goes beyond existing dam-break tools. It combines SPH + Delft3D hydrodynamic engines with Google Earth Engine satellite validation, uncertain-ensemble simulation, and networkx + osmnx road-network routing to produce explainable, audit-trail emergency decisions. The 3D React dashboard (Three.js / WebGL) visualizes real terrain from SRTM DEMs. Every recommendation is auditable back to its inputs and assumptions.',
-    tags: ['React', 'Three.js', 'FastAPI', 'Python', 'PostGIS', 'PostgreSQL', 'Celery', 'Redis', 'Google Earth Engine', 'Sentinel-2', 'networkx', 'osmnx', 'SPH', 'Delft3D', 'Vercel'],
+    tags: ['React', 'Three.js', 'FastAPI', 'Python', 'PostGIS', 'PostgreSQL', 'Celery', 'Redis', 'Google Earth Engine', 'Sentinel-2', 'networkx', 'osmnx', 'SPH', 'Delft3D', 'Vercel', 'SIH 2026'],
     category: ['AI/ML', 'Frontend', 'Backend'],
     status: 'Shipped',
     statusLabel: 'Deployed',
+    badge: '🏆 SIH 2026',
     repoUrl: 'https://github.com/ankit-sengupta05/Flood-Guard-AI',
     featured: true,
     highlights: [

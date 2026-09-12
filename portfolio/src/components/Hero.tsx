@@ -14,7 +14,7 @@ const STATS = [
   { value: '12+', label: 'Projects Shipped' },
   { value: '8.22', label: 'CGPA' },
   { value: '3+', label: 'Years Editing' },
-  { value: '50+', label: 'Client Deliveries' },
+  { value: '5+', label: 'Client Deliveries' },
 ];
 
 export function Hero() {
