@@ -52,7 +52,7 @@
 ![](https://img.shields.io/badge/CGPA_8.22-F59E0B?style=flat-square&labelColor=78350F)
 ![](https://img.shields.io/badge/ankit.sengupta05%40gmail.com-EA4335?style=flat-square&labelColor=111111)
 
-<br/>
+<br/> 
 
 [![Gmail](https://img.shields.io/badge/📧_Email_Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=000)](mailto:ankit.sengupta05@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/💼_LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=000)](https://linkedin.com/in/Sengupta-ankit)
