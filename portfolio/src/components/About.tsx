@@ -49,6 +49,7 @@ export function About() {
               {[
                 { icon: '🏅', text: 'VIT Internal Expo — Smart Vision Aid Selected' },
                 { icon: '🏆', text: 'Gemma 4 Good Hackathon — Kaggle × Google DeepMind' },
+                { icon: '🏆', text: 'SIH 2026 — Flood-Guard AI' },
                 { icon: '🏆', text: 'Microsoft Teams Hackathon — MeetMind' },
                 { icon: '🔬', text: 'Active BCI Research — EEG-to-Text + Robotics' },
               ].map(({ icon, text }) => (
