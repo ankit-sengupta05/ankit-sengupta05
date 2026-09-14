@@ -256,7 +256,7 @@ class AnkitSengupta:
 
 ---
 
-### 🌊 Flood-Guard AI &nbsp;&nbsp; [![](https://img.shields.io/badge/✅_Deployed-3B82F6?style=for-the-badge)](https://github.com/ankit-sengupta05/Flood-Guard-AI)
+### 🌊 Flood-Guard AI &nbsp;&nbsp; [![](https://img.shields.io/badge/🏆_SIH_2026-A855F7?style=for-the-badge)](https://github.com/ankit-sengupta05/Flood-Guard-AI) &nbsp; [![](https://img.shields.io/badge/✅_Deployed-3B82F6?style=for-the-badge)](https://github.com/ankit-sengupta05/Flood-Guard-AI)
 
 > *Given a dam, reservoir state, and breach scenario — it runs a full hydrodynamic simulation, predicts WHERE the flood goes AND WHEN it arrives, validates against satellite imagery, and converts everything into a time-aware evacuation plan with a ranked, auditable emergency action list.*
 
