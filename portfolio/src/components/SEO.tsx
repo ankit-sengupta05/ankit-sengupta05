@@ -17,7 +17,7 @@ const SCHEMA = {
         'https://github.com/ankit-sengupta05',
         'https://linkedin.com/in/Sengupta-ankit',
         'https://www.instagram.com/editorcyclops/',
-        'https://editor-cyclops.vercel.app/',
+        'https://editorcyclops.vercel.app/',
       ],
       knowsAbout: [
         'Artificial Intelligence', 'Machine Learning', 'RAG Pipelines', 'AI Agents',

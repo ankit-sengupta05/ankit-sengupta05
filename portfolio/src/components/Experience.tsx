@@ -8,7 +8,7 @@ const TIMELINE = [
     period: '2023 — Present',
     role: 'Freelance Video Editor & Content Strategist',
     company: 'Editor Cyclops',
-    companyUrl: 'https://editor-cyclops.vercel.app/',
+    companyUrl: 'https://editorcyclops.vercel.app/',
     type: 'Self-Employed · Remote',
     description:
       'Independently run an end-to-end video editing and content strategy practice serving 10+ creator-economy clients. Fluent in Devin Jatho-style editing — rhythm-locked cuts, deliberate colour contrast, beat-synced motion, and raw hook-first energy.',

@@ -26,8 +26,8 @@ const CONTACT_LINKS = [
   },
   {
     label: 'Editor Cyclops',
-    value: 'editor-cyclops.vercel.app',
-    href: 'https://editor-cyclops.vercel.app/',
+    value: 'editorcyclops.vercel.app',
+    href: 'https://editorcyclops.vercel.app/',
     icon: '▶',
     desc: 'Video editing portfolio',
   },

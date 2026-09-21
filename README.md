@@ -58,7 +58,7 @@
 [![LinkedIn](https://img.shields.io/badge/💼_LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=000)](https://linkedin.com/in/Sengupta-ankit)
 [![GitHub](https://img.shields.io/badge/🐙_Follow_Me-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=000)](https://github.com/ankit-sengupta05)
 [![Portfolio](https://img.shields.io/badge/🌐_Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white&labelColor=000)](https://ankit-sengupta05.vercel.app)
-[![Editor Cyclops](https://img.shields.io/badge/🎬_Editor_Cyclops-000000?style=for-the-badge&logo=vercel&logoColor=white&labelColor=000)](https://editor-cyclops.vercel.app/)
+[![Editor Cyclops](https://img.shields.io/badge/🎬_Editor_Cyclops-000000?style=for-the-badge&logo=vercel&logoColor=white&labelColor=000)](https://editorcyclops.vercel.app/)
 
 <br/>
 
@@ -148,7 +148,7 @@ class AnkitSengupta:
 
 </div>
 
-> Independently run an end-to-end video editing and content strategy practice under the brand **[Editor Cyclops](https://editor-cyclops.vercel.app/)**, serving **10+ creator-economy clients** with short-form content for Instagram Reels, YouTube Shorts, and brand campaigns.
+> Independently run an end-to-end video editing and content strategy practice under the brand **[Editor Cyclops](https://editorcyclops.vercel.app/)**, serving **10+ creator-economy clients** with short-form content for Instagram Reels, YouTube Shorts, and brand campaigns.
 
 | | |
 |:--|:--|
@@ -158,7 +158,7 @@ class AnkitSengupta:
 | 📊 **Data-Driven Strategy** | Engagement data applied to pacing, hooks, and colour treatment for platform-native performance |
 | 📈 **Track Record** | **50+ projects** · **100% client satisfaction** · Premiere Pro · After Effects · DaVinci Resolve |
 
-[🎬 View Portfolio →](https://editor-cyclops.vercel.app/) &nbsp;·&nbsp; [📸 @editorcyclops →](https://www.instagram.com/editorcyclops/)
+[🎬 View Portfolio →](https://editorcyclops.vercel.app/) &nbsp;·&nbsp; [📸 @editorcyclops →](https://www.instagram.com/editorcyclops/)
 
 ---
 
@@ -516,7 +516,7 @@ class AnkitSengupta:
 &nbsp;
 [![GitHub](https://img.shields.io/badge/🐙_Follow_Me-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=000)](https://github.com/ankit-sengupta05)
 &nbsp;
-[![Editor Cyclops](https://img.shields.io/badge/🎬_Editor_Cyclops_Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white&labelColor=000)](https://editor-cyclops.vercel.app/)
+[![Editor Cyclops](https://img.shields.io/badge/🎬_Editor_Cyclops_Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white&labelColor=000)](https://editorcyclops.vercel.app/)
 &nbsp;
 [![Instagram](https://img.shields.io/badge/📸_@editorcyclops-E4405F?style=for-the-badge&logo=instagram&logoColor=white&labelColor=000)](https://www.instagram.com/editorcyclops/)
 
